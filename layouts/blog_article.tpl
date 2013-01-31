@@ -42,7 +42,7 @@
           </div>
           
           <div class="comments-holder">
-            <div class="comments">
+            <div class="comments" id="comments">
             {% if article.comments_count > 0 %}
             <h2>{{"comments"|lc }}</h2>
             {% endif %}

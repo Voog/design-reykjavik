@@ -1,3 +1,5 @@
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  
   <meta name="keywords" content="{{ page.keywords }}" />
   <meta name="description" content="{{ page.description }}" />
   <meta name="copyright" content="{{ site.copyright }}" />

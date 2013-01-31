@@ -21,9 +21,7 @@
       <div id="container" class="cfx">
         <div id="content" class="cfx">
           <div class="content-left slogan">
-              <div class="cfx">
-              {% content name="slogan" %}
-              </div>
+              <div class="cfx">{% content name="slogan" %}</div>
           </div>
 
           <div class="content-right">
@@ -33,9 +31,10 @@
             
             <div class="cfx">
             {% contentblock name="default-content" %}
-              <p style="margin-bottom: 0;">
-                <img src="{{ images_path }}/photo01.jpg" alt="" >
-              </p>
+              <div>
+              <br/>
+                <img src="{{ images_path }}/reykjavik_photo01.jpg" alt="Reykjavik" >
+              </div>
             {% endcontentblock %}
             </div>
           </div>

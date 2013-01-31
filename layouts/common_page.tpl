@@ -24,8 +24,8 @@
         
         <div id="content"{% unless editmode%}{% for item in site.menuitems_with_hidden %}{% if item.selected? and item.visible_children.size == 0 %} class="content-centered"{%endif%}{% endfor%}{% endunless%}>
           <div class="cfx">
+            <h1>{% contentblock name="slogan" %}{{ "title_goes_here" | lc }}{% endcontentblock %}</h1>
             {% content %}
-            
           </div>
         </div>
       </div>

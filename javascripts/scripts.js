@@ -24,4 +24,12 @@
   });
   
   $('a.news-older-show').click(function() { $(this).addClass('no-bg'); $('.news-older-hidden').show(); return false; }); 
+  
+  if ($('.form_error, .form_notice, .comment-errors').length > 0) {
+    var top = $('.form_error, .form_notice, .comment-errors').eq(0).offset().top - 50;
+    if (top < 0) { top = 0; }
+    $('html, body').scrollTop(top);
+  }
+  
+  
 });
