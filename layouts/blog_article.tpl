@@ -38,6 +38,21 @@
               <div class="cfx">
                 {% unless article.new_record? %}{% content name="gallery" bind="Article" %}{% endunless %}
               </div>
+                  {% if editmode %}
+                    <div class="cfx article-tags">
+                        <div class="article-tag-icon"></div>
+                        {% editable article.tags %}
+                    </div>
+                  {% else %}
+                    {% unless article.tags == empty %}
+                        <div class="cfx article-tags">
+                            <div class="article-tag-icon"></div>
+                            {% for tag in article.tags %}
+                                <a href="{{ article.page.url }}/tagged/{{ tag.path }}">{{ tag.name }}</a>{% unless forloop.last %}, {% endunless %}
+                            {% endfor %}
+                        </div>
+                    {% endunless %}
+                  {% endif %}
             </div>
           </div>
           
@@ -50,7 +65,7 @@
             {% if article.comments_count > 0 %}
             <ul class="comments-list">{% for comment in article.comments %}
               <li class="edy-site-blog-comment">
-                {{ article.author.name }} &nbsp;&#149;&nbsp; <span class="date">{{article.created_at | format_date:"short"}}, {{article.created_at | format_date:"%Y"}}</span> {% removebutton %}
+                {{comment.author}} &nbsp;&#149;&nbsp; <span class="date">{{comment.created_at | format_date:"short"}}, {{comment.created_at | format_date:"%Y"}}</span> {% removebutton %}
                 <p class="comment-body">
                   {{comment.body_html}}
                 </p>

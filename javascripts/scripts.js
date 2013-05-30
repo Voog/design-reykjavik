@@ -1,5 +1,4 @@
-
-                  $(function() {
+$(function() {
   $('.langmenu select').change(function() {
     window.location = $(this).children(':selected').val();
   });
