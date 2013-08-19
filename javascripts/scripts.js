@@ -30,5 +30,9 @@ $(function() {
     $('html, body').scrollTop(top);
   }
   
+  $('.mobile-menu-arr').click(function(event) {
+    $(event.target).closest('li').toggleClass('open');
+  });
+  
   
 });

@@ -10,7 +10,7 @@
 {% unless editmode %}{{site.analytics}}{% endunless %}
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script src="{{ javascripts_path }}/scripts.js"></script>
+<script src="{{ javascripts_path }}/scripts.js?1"></script>
 
     
     

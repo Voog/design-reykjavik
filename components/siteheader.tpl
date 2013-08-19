@@ -13,7 +13,7 @@
   {% endif %}
   
   {% if site.search.enabled %}{% stylesheet_link "assets/site_search/3.0/style.css?1" static_host="true" %}{% endif %}
-  {% stylesheet_link "style.css?reykjavik1" %}
+  {% stylesheet_link "style.css?reykjavik3" %}
   {% if editmode %}{% stylesheet_link "assets/admin/editmode.css" static_host="true" %}{% endif %}
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
