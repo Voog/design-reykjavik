@@ -156,15 +156,159 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
+      "file": "assets/arr-bottom.svg",
+      "kind": "assets",
+      "filename": "arr-bottom.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/arr-top.svg",
+      "kind": "assets",
+      "filename": "arr-top.svg"
+    },
+    {
+      "content_type": "application/vnd.ms-fontobject",
+      "file": "assets/avenir-light-webfont.eot",
+      "kind": "assets",
+      "filename": "avenir-light-webfont.eot"
+    },
+    {
+      "content_type": "application/x-font-truetype",
+      "file": "assets/avenir-light-webfont.ttf",
+      "kind": "assets",
+      "filename": "avenir-light-webfont.ttf"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/avenir-light-webfont.woff",
+      "kind": "assets",
+      "filename": "avenir-light-webfont.woff"
+    },
+    {
+      "content_type": "application/vnd.ms-fontobject",
+      "file": "assets/avenir-medium-webfont.eot",
+      "kind": "assets",
+      "filename": "avenir-medium-webfont.eot"
+    },
+    {
+      "content_type": "application/x-font-truetype",
+      "file": "assets/avenir-medium-webfont.ttf",
+      "kind": "assets",
+      "filename": "avenir-medium-webfont.ttf"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/avenir-medium-webfont.woff",
+      "kind": "assets",
+      "filename": "avenir-medium-webfont.woff"
+    },
+    {
+      "content_type": "application/vnd.ms-fontobject",
+      "file": "assets/avenir-roman-webfont.eot",
+      "kind": "assets",
+      "filename": "avenir-roman-webfont.eot"
+    },
+    {
+      "content_type": "application/x-font-truetype",
+      "file": "assets/avenir-roman-webfont.ttf",
+      "kind": "assets",
+      "filename": "avenir-roman-webfont.ttf"
+    },
+    {
+      "content_type": "application/font-woff",
+      "file": "assets/avenir-roman-webfont.woff",
+      "kind": "assets",
+      "filename": "avenir-roman-webfont.woff"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/header-tag.svg",
+      "kind": "assets",
+      "filename": "header-tag.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/ico-flags.svg",
       "kind": "assets",
       "filename": "ico-flags.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/tag.svg",
+      "kind": "assets",
+      "filename": "tag.svg"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/arr-bottom.png",
+      "kind": "images",
+      "filename": "arr-bottom.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/arr-top.png",
+      "kind": "images",
+      "filename": "arr-top.png"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/arr_down.gif",
+      "kind": "images",
+      "filename": "arr_down.gif"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/header-tag2.png",
+      "kind": "images",
+      "filename": "header-tag2.png"
     },
     {
       "content_type": "image/png",
       "file": "images/ico-flags.png",
       "kind": "images",
       "filename": "ico-flags.png"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/list_dot.gif",
+      "kind": "images",
+      "filename": "list_dot.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/list_dot_2x.gif",
+      "kind": "images",
+      "filename": "list_dot_2x.gif"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/photo01.jpg",
+      "kind": "images",
+      "filename": "photo01.jpg"
+    },
+    {
+      "content_type": "image/jpeg",
+      "file": "images/reykjavik_photo01.jpg",
+      "kind": "images",
+      "filename": "reykjavik_photo01.jpg"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/search.gif",
+      "kind": "images",
+      "filename": "search.gif"
+    },
+    {
+      "content_type": "image/gif",
+      "file": "images/search_2x.gif",
+      "kind": "images",
+      "filename": "search_2x.gif"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/tag.png",
+      "kind": "images",
+      "filename": "tag.png"
     },
     {
       "content_type": "application/javascript",
@@ -203,6 +347,12 @@
       "filename": "retina.js"
     },
     {
+      "content_type": "application/javascript",
+      "file": "javascripts/scripts.js",
+      "kind": "javascripts",
+      "filename": "scripts.js"
+    },
+    {
       "content_type": "text/css",
       "file": "stylesheets/ie8.css",
       "kind": "stylesheets",
@@ -213,6 +363,12 @@
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "stylesheets/sass",
+      "kind": "stylesheets",
+      "filename": "sass"
     }
   ]
 }
