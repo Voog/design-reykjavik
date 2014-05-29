@@ -167,60 +167,6 @@
       "filename": "arr-top.svg"
     },
     {
-      "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/avenir-light-webfont.eot",
-      "kind": "assets",
-      "filename": "avenir-light-webfont.eot"
-    },
-    {
-      "content_type": "application/x-font-truetype",
-      "file": "assets/avenir-light-webfont.ttf",
-      "kind": "assets",
-      "filename": "avenir-light-webfont.ttf"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/avenir-light-webfont.woff",
-      "kind": "assets",
-      "filename": "avenir-light-webfont.woff"
-    },
-    {
-      "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/avenir-medium-webfont.eot",
-      "kind": "assets",
-      "filename": "avenir-medium-webfont.eot"
-    },
-    {
-      "content_type": "application/x-font-truetype",
-      "file": "assets/avenir-medium-webfont.ttf",
-      "kind": "assets",
-      "filename": "avenir-medium-webfont.ttf"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/avenir-medium-webfont.woff",
-      "kind": "assets",
-      "filename": "avenir-medium-webfont.woff"
-    },
-    {
-      "content_type": "application/vnd.ms-fontobject",
-      "file": "assets/avenir-roman-webfont.eot",
-      "kind": "assets",
-      "filename": "avenir-roman-webfont.eot"
-    },
-    {
-      "content_type": "application/x-font-truetype",
-      "file": "assets/avenir-roman-webfont.ttf",
-      "kind": "assets",
-      "filename": "avenir-roman-webfont.ttf"
-    },
-    {
-      "content_type": "application/font-woff",
-      "file": "assets/avenir-roman-webfont.woff",
-      "kind": "assets",
-      "filename": "avenir-roman-webfont.woff"
-    },
-    {
       "content_type": "image/svg+xml",
       "file": "assets/header-tag.svg",
       "kind": "assets",
@@ -234,9 +180,9 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/tag.svg",
+      "file": "assets/header-tag.svg",
       "kind": "assets",
-      "filename": "tag.svg"
+      "filename": "header-tag.svg"
     },
     {
       "content_type": "image/png",
