@@ -3,7 +3,6 @@
 
 // Menu button. Only visible on smaller screens.
 .menu-btn {
-  display: none;
 
   @include query($tablet-2) {
     position: absolute;
@@ -12,8 +11,8 @@
     display: inline-block;
     margin: 0;
     padding: 0;
-    background: none;
     border: none;
+    background: none;
     cursor: pointer;
 
     &.open {
@@ -32,11 +31,11 @@
     }
 
     .menu-stripe {
+      @include bg($secondary-color, 0.67);
       display: block;
+      margin: 4px 0;
       width: 23px;
       height: 4px;
-      margin: 4px 0;
-      @include bg($secondary-color, 0.67);
       border-radius: 5px;
 
       &:first-child,
@@ -45,6 +44,7 @@
       }
     }
   }
+  display: none;
 }
 
 // Wrapper for the CMS adminmode on-page buttons. For example "hidden menu items" or "add-page" buttons.
@@ -67,62 +67,28 @@
 
 // Styling rules for the site's main menu. Usually the first level menu but can have the sub menu in it aswell.
 .menu-main {
-  padding: 6px 0;
-
-  .menu {
-    .menu-item {
-      margin-right: 20px;
-      line-height: 1;
-
-      &.edit-btn {
-        margin-right: 0;
-      }
-    }
-
-    .menu-link {
-      display: block;
-      @include color($blue-1);
-
-      &.untranslated {
-        @include color($red, 0.5);
-      }
-
-      &:hover {
-        @include color($primary-color);
-      }
-
-      &.active {
-        font-weight: 700;
-        @include color($primary-color, 0.8);
-      }
-    }
-  }
-
-  .menu-lang {
-    display: none;
-  }
 
   @include query($tablet-2) {
     display: none;
 
     &.expanded {
+      @include bg($white);
+      @include box-shadow(0, 0, 5px, rgba($black, 0.3));
       position: absolute;
       top: 75px;
       right: 20px;
       z-index: 1;
       display: block;
-      min-width: 350px;
       margin-bottom: 60px;
       padding: 0;
+      min-width: 350px;
       text-align: left;
-      @include bg($white);
-      @include box-shadow(0, 0, 5px, rgba($black, 0.3));
 
       .menu {
         .menu-item {
+          @include border(top, 1px, solid, $primary-color, 0.2);
           display: block;
           margin-right: 0;
-          @include border(top, 1px, solid, $primary-color, 0.2);
 
           &:first-child {
             border-top: none;
@@ -146,16 +112,16 @@
 
       // Styling rules for the language menu in the site's main menu. Only visible on smaller screens.
       .menu-lang {
+        @include border(top, 1px, solid, $primary-color, 0.2);
         display: block;
         margin-top: 0;
-        @include border(top, 1px, solid, $primary-color, 0.2);
 
         .menu-item {
           .menu-link {
+            @include color($secondary-color);
             position: relative;
             padding: 14px 20px 14px 50px;
             font-size: 12px;
-            @include color($secondary-color);
 
             &, &.active {
               &:hover {
@@ -184,9 +150,9 @@
             }
 
             &.lang-flag:after {
-              opacity: 0.95;
               background-size: 200px;
               background-repeat: no-repeat;
+              opacity: 0.95;
 
               .no-svg & {
                 background-image: url('../images/ico-flags.png');
@@ -209,14 +175,54 @@
 
   @include query($mobile-1) {
     &.expanded {
-      min-width: 100%;
-      right: 0;
-      left: 0;
-      margin: 0 0 60px;
       @include border(top, 1px, solid, $primary-color, 0.2);
       @include border(bottom, 1px, solid, $primary-color, 0.2);
       @include no-box-shadow;
+      right: 0;
+      left: 0;
+      margin: 0 0 60px;
+      min-width: 100%;
     }
+  }
+  display: inline-block;
+  padding: 6px 0;
+
+  .menu {
+    float: right;
+    .menu-item,
+    .edit-btn {
+      margin-right: 30px;
+      line-height: 1.3em;
+    }
+
+    .menu-link {
+      @include color($primary-color);
+      display: block;
+      text-transform: uppercase;
+      font-weight: 400;
+      font-size: 14px;
+
+      &.untranslated {
+        @include color($red, 0.5);
+      }
+
+      &:hover {
+        @include color($secondary-color);
+      }
+
+      &.active {
+        @include color($secondary-color);
+        border-bottom: 1px solid $grey-1;
+        font-weight: 700;
+        &:hover {
+          @include color($secondary-color);
+        }
+      }
+    }
+  }
+
+  .menu-lang {
+    display: none;
   }
 }
 
@@ -239,8 +245,8 @@
         @include color($blue-1);
 
         &.active {
-          font-weight: 700;
           @include color($primary-color);
+          font-weight: 700;
         }
 
         &:hover {
@@ -251,27 +257,166 @@
   }
 }
 
-// Styling rules for the site's language menu.
-.menu-lang {
+.langmenu {
   @extend %inline-block;
+  position: relative;
+  z-index: 100;
+  float: right;
+  margin-top: 1px;
+  height: 24px;
+  border: 1px solid $grey-2;
+  border-radius: 20px;
 
-  .menu {
-    vertical-align: middle;
-  }
+  .langmenu-content {
+    @include color($third-color);
+    padding: 6px 22px 0 12px;
+    height: 18px;
+    font-size: 11px;
+    line-height: 1em;
+    cursor: pointer;
 
-  .header-right & {
-    .edit-btn {
-      margin-left: 20px;
+    &:before {
+      position: absolute;
+      top: 9px;
+      right: 7px;
+      display: block;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      border-width: 5px;
+      border-style: solid;
+      border-color: none;
+      border-color: transparent;
+      border-color: rgba(255,255,255,0.01);
+      border-top-color: $grey-2;
+      content: '';
     }
   }
 
-
-  @include query($tablet-1) {
-    margin-top: 5px;
+  select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    outline: 0;
+    border: none;
+    background: none;
+    background: white;
+    color: #8f8f8f;
+    font-size: 11px;
+    line-height: 1.1em;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    cursor: pointer;
+    text-direction: rtl;
   }
 
-  @include query($tablet-2) {
-    display: block;
+  .langmenu-popup {
+    position: absolute;
+    top: 36px;
+    left: 50%;
+    display: none;
+    margin-left: -50px;
+    width: 100px;
+  }
+
+  .langmenu-arrow {
+    position: absolute;
+    top: -23px;
+    left: 50%;
+    overflow: hidden;
+    margin-left:-12px;
+    width: 0;
+    height: 0;
+    border-width: 12px;
+    border-style: solid;
+    border-color: none;
+    border-color: transparent;
+    border-color: rgba(255,255,255,0.01);
+    border-bottom-color: #d6d6d6;
+  }
+
+  .langmenu-arrow2 {
+    position: absolute;
+    top: -19px;
+    left: 50%;
+    z-index: 2;
+    overflow: hidden;
+    margin-left:-10px;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+    border-color: none;
+    border-color: transparent;
+    border-color: rgba(255,255,255,0.01);
+    border-bottom-color: #f7f7f7;
+  }
+
+  ul {
+    margin: 0;
+    padding: 4px 0;
+    border: 1px solid #d6d6d6;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    background: #f7f7f7;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+    list-style-type: none;
+
+    a {
+      @include color($secondary-color);
+      display: block;
+      padding: 3px 0;
+      border-bottom: none;
+
+      &.active {
+        @include color($secondary-color);
+        font-weight: bold;
+      }
+    }
+  }
+
+  li {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+    line-height: 1.1em;
+  }
+}
+
+.popup {
+  position: absolute !important;
+  top: 7px !important;
+  right: 20px !important;
+  float: none !important;
+  border: none !important;
+  background: none !important;
+
+  .popup-content:before {
+    border-top-color: white !important;
+  }
+
+  .popup-content {
+    overflow: hidden;
+    color: #8f8f8f;
+    color: white !important;
+    text-transform: uppercase;
+    white-space: nowrap;
+    font-size: 11px ;
+    line-height: 1.1em;
+  }
+}
+
+// Styling rules for the site's language menu.
+.menu-lang {
+  @extend %inline-block;
+  padding: 6px 0;
+
+  .menu {
+    vertical-align: middle;
   }
 }
 
@@ -321,8 +466,7 @@ $flags:
 (sv, -160px -42px),
 (tr, -180px -42px),
 (uk,    0px -56px),
-(en,  -20px -56px)
-;
+(en,  -20px -56px);
 
 @each $flag, $pos in $flags {
   .lang-flag-#{$flag}:after { background-position: $pos; }

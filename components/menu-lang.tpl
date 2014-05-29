@@ -1,20 +1,22 @@
-{% comment %}<!-- Use this code if you want a select type language menu -->{% endcomment %}
-<select class="menu">
-  {% for language in site.languages %}
-    <option class="menu-item" value="{{ language.url }}" {% if language.selected? %}selected="selected"{% endif %}>{{ language.title }}</option>
-  {% endfor %}
-</select>
-{% if editmode %}<div class="edit-btn">{% languageadd %}</div>{% endif %}
+<div class="langmenu langmenu-with-popup">
+  <div class="langmenu-content">{% for language in site.languages %}{% if language.selected? %}{{language.title}}{% endif %}{% endfor %}</div>
+  <div class="langmenu-popup">
+    <div class="langmenu-arrow"></div>
+    <div class="langmenu-arrow2"></div>
+    <ul>
+      {% for language in site.languages %}
+        <li><a href="{{ language.url}}"{% if language.selected? %} class="active"{% endif %}>{{language.title}}</a></li>
+      {% endfor %}
+      {% if editmode %}<li>{% languageadd %}</li>{% endif %}
+    </ul>
+  </div>
+</div>
 
-
-{% comment %}
-<!-- Use this code if you want a list type language menu -->
-<!--
-<ul class="menu">
-  {% for language in site.languages %}
-    <li><a class="lang-flag lang-flag-{{ language.code }}{% if language.selected? %} active{% endif %}" href="{{ language.url }}">{{ language.title }}</a></li>
-  {% endfor %}
-  {% if editmode %}<li class="edit-btn">{% languageadd %}</li>{% endif %}
-</ul>
--->
-{% endcomment %}
+<div class="langmenu popup">
+  <div class="popup-content">{% for language in site.languages %}{% if language.selected? %}{{language.title}}{% endif %}{% endfor %}</div>
+  <select>
+    {% for language in site.languages %}
+      <option value="{{language.url}}"{% if language.selected? %} selected="selected"{% endif %}>{{language.title}}</option>
+    {% endfor %}
+  </select>
+</div>
