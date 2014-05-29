@@ -1,0 +1,352 @@
+/* MENUS */
+// Styling rules for the site's menus. These rules affect the entire site.
+
+// Menu button. Only visible on smaller screens.
+.menu-btn {
+  display: none;
+
+  @include query($tablet-2) {
+    position: absolute;
+    top: 28px;
+    right: 20px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    &.open {
+      .menu-stripe {
+        @include bg($secondary-color, 0.47);
+      }
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
+    .menu-stripe {
+      display: block;
+      width: 23px;
+      height: 4px;
+      margin: 4px 0;
+      @include bg($secondary-color, 0.67);
+      border-radius: 5px;
+
+      &:first-child,
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Wrapper for the CMS adminmode on-page buttons. For example "hidden menu items" or "add-page" buttons.
+.edit-btn {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 0.8;
+}
+
+// General rules for the menus. These rules affect all menus on the site.
+.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .menu-item {
+    @extend %inline-block;
+  }
+}
+
+// Styling rules for the site's main menu. Usually the first level menu but can have the sub menu in it aswell.
+.menu-main {
+  padding: 6px 0;
+
+  .menu {
+    .menu-item {
+      margin-right: 20px;
+      line-height: 1;
+
+      &.edit-btn {
+        margin-right: 0;
+      }
+    }
+
+    .menu-link {
+      display: block;
+      @include color($blue-1);
+
+      &.untranslated {
+        @include color($red, 0.5);
+      }
+
+      &:hover {
+        @include color($primary-color);
+      }
+
+      &.active {
+        font-weight: 700;
+        @include color($primary-color, 0.8);
+      }
+    }
+  }
+
+  .menu-lang {
+    display: none;
+  }
+
+  @include query($tablet-2) {
+    display: none;
+
+    &.expanded {
+      position: absolute;
+      top: 75px;
+      right: 20px;
+      z-index: 1;
+      display: block;
+      min-width: 350px;
+      margin-bottom: 60px;
+      padding: 0;
+      text-align: left;
+      @include bg($white);
+      @include box-shadow(0, 0, 5px, rgba($black, 0.3));
+
+      .menu {
+        .menu-item {
+          display: block;
+          margin-right: 0;
+          @include border(top, 1px, solid, $primary-color, 0.2);
+
+          &:first-child {
+            border-top: none;
+          }
+
+          .menu-link {
+            display: block;
+            padding: 11px 20px;
+            font-size: 20px;
+
+            &:hover {
+              @include bg($blue-2, 0.5);
+            }
+
+            &.active {
+              @include bg($blue-2);
+            }
+          }
+        }
+      }
+
+      // Styling rules for the language menu in the site's main menu. Only visible on smaller screens.
+      .menu-lang {
+        display: block;
+        margin-top: 0;
+        @include border(top, 1px, solid, $primary-color, 0.2);
+
+        .menu-item {
+          .menu-link {
+            position: relative;
+            padding: 14px 20px 14px 50px;
+            font-size: 12px;
+            @include color($secondary-color);
+
+            &, &.active {
+              &:hover {
+                @include bg($grey-2, 0.1);
+              }
+            }
+
+            &.active {
+              @include color($grey-2);
+              background: none;
+            }
+
+            &.lang-flag:before,
+            &.lang-flag:after {
+              position: absolute;
+              top: 14px;
+              left: 20px;
+              display: block;
+              width: 20px;
+              height: 13px;
+              content: '';
+            }
+
+            &.lang-flag:before {
+              @include bg($black);
+            }
+
+            &.lang-flag:after {
+              opacity: 0.95;
+              background-size: 200px;
+              background-repeat: no-repeat;
+
+              .no-svg & {
+                background-image: url('../images/ico-flags.png');
+              }
+
+              .svg & {
+                background-image: url('../assets/ico-flags.svg');
+              }
+            }
+
+            &.edy-menu-langadd {
+              padding-left: 20px;
+            }
+          }
+
+        }
+      }
+    }
+  }
+
+  @include query($mobile-1) {
+    &.expanded {
+      min-width: 100%;
+      right: 0;
+      left: 0;
+      margin: 0 0 60px;
+      @include border(top, 1px, solid, $primary-color, 0.2);
+      @include border(bottom, 1px, solid, $primary-color, 0.2);
+      @include no-box-shadow;
+    }
+  }
+}
+
+// Styling rules for the site's sub menu.
+.menu-sub {
+  margin-top: 30px;
+
+  .menu {
+    text-align: center;
+
+    .menu-item {
+      margin-left: 15px;
+      font-size: 14px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      .menu-link {
+        @include color($blue-1);
+
+        &.active {
+          font-weight: 700;
+          @include color($primary-color);
+        }
+
+        &:hover {
+          @include color($blue-1, 0.8);
+        }
+      }
+    }
+  }
+}
+
+// Styling rules for the site's language menu.
+.menu-lang {
+  @extend %inline-block;
+
+  .menu {
+    vertical-align: middle;
+  }
+
+  .header-right & {
+    .edit-btn {
+      margin-left: 20px;
+    }
+  }
+
+
+  @include query($tablet-1) {
+    margin-top: 5px;
+  }
+
+  @include query($tablet-2) {
+    display: block;
+  }
+}
+
+// Language flag icons positioning in the spritemap.
+$flags:
+(sq,   0        0),
+(hy,  -20px     0),
+(bn,  -40px     0),
+(pt,  -60px     0),
+(bg,  -80px     0),
+(zh, -100px     0),
+(hr, -120px     0),
+(da, -140px     0),
+(cs, -160px     0),
+(et, -180px     0),
+
+(fi,    0px -14px),
+(fr,  -20px -14px),
+(ka,  -40px -14px),
+(de,  -60px -14px),
+(el,  -80px -14px),
+(hu, -100px -14px),
+(is, -120px -14px),
+(hi, -140px -14px),
+(id, -160px -14px),
+(fa, -180px -14px),
+
+(he,    0px -28px),
+(it,  -20px -28px),
+(ja,  -40px -28px),
+(ko,  -60px -28px),
+(lv,  -80px -28px),
+(lt, -100px -28px),
+(ms, -120px -28px),
+(nl, -140px -28px),
+(no, -160px -28px),
+(ur, -180px -28px),
+
+(fil,   0px -42px),
+(pl,  -20px -42px),
+(ro,  -40px -42px),
+(ru,  -60px -42px),
+(ar,  -80px -42px),
+(lt, -100px -42px),
+(sk, -120px -42px),
+(es, -140px -42px),
+(sv, -160px -42px),
+(tr, -180px -42px),
+(uk,    0px -56px),
+(en,  -20px -56px)
+;
+
+@each $flag, $pos in $flags {
+  .lang-flag-#{$flag}:after { background-position: $pos; }
+}
+
+// Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
+.menu-tags {
+  margin-bottom: 20px;
+
+  .menu {
+    .menu-item {
+      margin-right: 15px;
+
+      .menu-link {
+        @include color($blue-1);
+
+        &:hover {
+          @include color($blue-1, 0.8);
+        }
+
+        &.active {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+}

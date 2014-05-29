@@ -1,22 +1,22 @@
 {
-  "description": "Reykjavik",
-  "name": "Reykjavik",
-  "preview_medium": "http://static.edicy.com/designs/previews/reykjavik_medium.jpg",
-  "preview_small": "http://static.edicy.com/designs/previews/reykjavik_small.jpg",
-  "author": "Paavel Liik",
+  "description": "New design",
+  "name": "New design",
+  "preview_medium": "",
+  "preview_small": "",
+  "author": "",
   "layouts": [
     {
-      "content_type": "blog",
+      "content_type": "page",
       "component": false,
       "file": "layouts/blog___news.tpl",
-      "layout_name": "blog",
+      "layout_name": "page_default",
       "title": "Blog & News"
     },
     {
-      "content_type": "blog_article",
+      "content_type": "page",
       "component": false,
       "file": "layouts/blog_article.tpl",
-      "layout_name": "blog_article",
+      "layout_name": "page_default",
       "title": "Blog article"
     },
     {
@@ -30,235 +30,189 @@
       "content_type": "page",
       "component": false,
       "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
+      "layout_name": "page_default",
       "title": "Front page"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/js.tpl",
-      "layout_name": "js",
-      "title": "JS"
+      "file": "components/bg-picker.tpl",
+      "layout_name": "bg-picker",
+      "title": "bg-picker"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/langmenu.tpl",
-      "layout_name": "langmenu",
-      "title": "Langmenu"
+      "file": "components/comment-form.tpl",
+      "layout_name": "comment-form",
+      "title": "comment-form"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/langmenuselect.tpl",
-      "layout_name": "langmenuselect",
-      "title": "LangmenuSelect"
+      "file": "components/footer.tpl",
+      "layout_name": "footer",
+      "title": "footer"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/latestnews.tpl",
-      "layout_name": "latestnews",
-      "title": "LatestNews"
+      "file": "components/header.tpl",
+      "layout_name": "header",
+      "title": "header"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/mainmenu.tpl",
-      "layout_name": "mainmenu",
-      "title": "Mainmenu"
+      "file": "components/html-head.tpl",
+      "layout_name": "html-head",
+      "title": "html-head"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/mobilemenus.tpl",
-      "layout_name": "mobilemenus",
-      "title": "MobileMenus"
+      "file": "components/javascripts.tpl",
+      "layout_name": "javascripts",
+      "title": "javascripts"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-lang-mobile.tpl",
+      "layout_name": "menu-lang-mobile",
+      "title": "menu-lang-mobile"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-lang.tpl",
+      "layout_name": "menu-lang",
+      "title": "menu-lang"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-1.tpl",
+      "layout_name": "menu-level-1",
+      "title": "menu-level-1"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-2.tpl",
+      "layout_name": "menu-level-2",
+      "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/post-box.tpl",
+      "layout_name": "post-box",
+      "title": "post-box"
     },
     {
       "content_type": "component",
       "component": true,
       "file": "components/search.tpl",
       "layout_name": "search",
-      "title": "Search"
+      "title": "search"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/siteheader.tpl",
-      "layout_name": "siteheader",
-      "title": "SiteHeader"
+      "file": "components/sidebar.tpl",
+      "layout_name": "sidebar",
+      "title": "sidebar"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/submenu.tpl",
-      "layout_name": "submenu",
-      "title": "Submenu"
+      "file": "components/tags-blog.tpl",
+      "layout_name": "tags-blog",
+      "title": "tags-blog"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-post.tpl",
+      "layout_name": "tags-post",
+      "title": "tags-post"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-translations.tpl",
+      "layout_name": "",
+      "title": "tags-translations"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/topbar.tpl",
+      "layout_name": "topbar",
+      "title": "topbar"
     }
   ],
   "assets": [
     {
       "content_type": "image/svg+xml",
-      "file": "assets/arr-bottom.svg",
+      "file": "assets/ico-flags.svg",
       "kind": "assets",
-      "filename": "arr-bottom.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/arr-top.svg",
-      "kind": "assets",
-      "filename": "arr-top.svg"
-    },
-    {
-      "content_type": "font/eot",
-      "file": "assets/avenir-light-webfont.eot",
-      "kind": "assets",
-      "filename": "avenir-light-webfont.eot"
-    },
-    {
-      "content_type": "font/ttf",
-      "file": "assets/avenir-light-webfont.ttf",
-      "kind": "assets",
-      "filename": "avenir-light-webfont.ttf"
-    },
-    {
-      "content_type": "font/woff",
-      "file": "assets/avenir-light-webfont.woff",
-      "kind": "assets",
-      "filename": "avenir-light-webfont.woff"
-    },
-    {
-      "content_type": "font/eot",
-      "file": "assets/avenir-medium-webfont.eot",
-      "kind": "assets",
-      "filename": "avenir-medium-webfont.eot"
-    },
-    {
-      "content_type": "font/ttf",
-      "file": "assets/avenir-medium-webfont.ttf",
-      "kind": "assets",
-      "filename": "avenir-medium-webfont.ttf"
-    },
-    {
-      "content_type": "font/woff",
-      "file": "assets/avenir-medium-webfont.woff",
-      "kind": "assets",
-      "filename": "avenir-medium-webfont.woff"
-    },
-    {
-      "content_type": "font/eot",
-      "file": "assets/avenir-roman-webfont.eot",
-      "kind": "assets",
-      "filename": "avenir-roman-webfont.eot"
-    },
-    {
-      "content_type": "font/ttf",
-      "file": "assets/avenir-roman-webfont.ttf",
-      "kind": "assets",
-      "filename": "avenir-roman-webfont.ttf"
-    },
-    {
-      "content_type": "font/woff",
-      "file": "assets/avenir-roman-webfont.woff",
-      "kind": "assets",
-      "filename": "avenir-roman-webfont.woff"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/header-tag.svg",
-      "kind": "assets",
-      "filename": "header-tag.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/tag.svg",
-      "kind": "assets",
-      "filename": "tag.svg"
+      "filename": "ico-flags.svg"
     },
     {
       "content_type": "image/png",
-      "file": "images/arr-bottom.png",
+      "file": "images/ico-flags.png",
       "kind": "images",
-      "filename": "arr-bottom.png"
+      "filename": "ico-flags.png"
     },
     {
-      "content_type": "image/png",
-      "file": "images/arr-top.png",
-      "kind": "images",
-      "filename": "arr-top.png"
+      "content_type": "application/javascript",
+      "file": "javascripts/autogrow.js",
+      "kind": "javascripts",
+      "filename": "autogrow.js"
     },
     {
-      "content_type": "image/gif",
-      "file": "images/arr_down.gif",
-      "kind": "images",
-      "filename": "arr_down.gif"
+      "content_type": "application/javascript",
+      "file": "javascripts/jquery.js",
+      "kind": "javascripts",
+      "filename": "jquery.js"
     },
     {
-      "content_type": "image/png",
-      "file": "images/header-tag2.png",
-      "kind": "images",
-      "filename": "header-tag2.png"
+      "content_type": "application/javascript",
+      "file": "javascripts/main.js",
+      "kind": "javascripts",
+      "filename": "main.js"
     },
     {
-      "content_type": "image/gif",
-      "file": "images/list_dot.gif",
-      "kind": "images",
-      "filename": "list_dot.gif"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/list_dot_2x.gif",
-      "kind": "images",
-      "filename": "list_dot_2x.gif"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/reykjavik_photo01.jpg",
-      "kind": "images",
-      "filename": "reykjavik_photo01.jpg"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/photo01.jpg",
-      "kind": "images",
-      "filename": "photo01.jpg"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/search.gif",
-      "kind": "images",
-      "filename": "search.gif"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/search_2x.gif",
-      "kind": "images",
-      "filename": "search_2x.gif"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/tag.png",
-      "kind": "images",
-      "filename": "tag.png"
-    },
-    {
-      "content_type": "text/javascript",
+      "content_type": "application/javascript",
       "file": "javascripts/modernizr.js",
       "kind": "javascripts",
       "filename": "modernizr.js"
     },
     {
-      "content_type": "text/javascript",
-      "file": "javascripts/scripts.js",
+      "content_type": "application/javascript",
+      "file": "javascripts/overthrow.js",
       "kind": "javascripts",
-      "filename": "scripts.js"
+      "filename": "overthrow.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/retina.js",
+      "kind": "javascripts",
+      "filename": "retina.js"
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/style.css",
+      "file": "stylesheets/ie8.css",
       "kind": "stylesheets",
-      "filename": "style.css"
+      "filename": "ie8.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/main.css",
+      "kind": "stylesheets",
+      "filename": "main.css"
     }
   ]
 }

@@ -1,0 +1,73 @@
+/* HEADER */
+// Styling rules for the site's header. These rules affect the entire site.
+.header {
+  .no-flexbox &,
+  .flexbox & {
+    @include query($tablet-1) {
+      width: 100%;
+    }
+
+    @include query($tablet-2) {
+      display: block;
+    }
+  }
+
+  .no-flexbox & {
+    display: table;
+    vertical-align: top;
+    width: 100%;
+  }
+
+  .flexbox & {
+    @include flexbox;
+    @include align-items(flex-start);
+  }
+
+  .header-left,
+  .header-right {
+    .no-flexbox & {
+      display: table-cell;
+    }
+  }
+
+  .header-left {
+    .flexbox & {
+      width: 580px;
+    }
+
+    .header-title {
+      display: none;
+
+      @include query($tablet-2) {
+        display: block;
+        margin-right: 40px;
+      }
+
+      &, & a {
+        font-size: 28px;
+        font-weight: 700;
+        @include color($primary-color);
+
+        &:hover {
+          @include color($primary-color, 0.8);
+        }
+      }
+    }
+  }
+
+  .header-right {
+    width: 380px;
+    text-align: right;
+
+    @include query($tablet-2) {
+      .no-flexbox &,
+      .flexbox & {
+        display: none;
+      }
+    }
+  }
+
+  .flexbox & {
+    @include flexbox;
+  }
+}

@@ -1,50 +1,34 @@
 <!DOCTYPE html>
-<html>
-
+<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
-  {% include "SiteHeader" %}
+  {% include "html-head" %}
+
+  <!-- FACEBOOK OPENGRAPH -->
+  <!-- site specific opengraph tags are located in "html-head" component -->
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ site.name }}">
+  {% unless page.description == nil or page.description == "" %}<meta property="og:description" content="{{ page.description }}">{% endunless %}
+  {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endif %}
 </head>
 
-<body>
+<body class="common-page blog-page js-bgpicker-body-image" {% if site.data.body_image %}style="background-image: url('{{ site.data.body_image}}');"{% endif %}>
+  {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ site.data.body_image }}" data-bg-color="{{ site.data.body_color }}"></button>{% endif %}
+  <div class="background-color js-bgpicker-body-color"{% if site.data.body_color %} style="background-color: {{ site.data.body_color }};{% if site.data.body_image %} opacity: 0.5;{% endif %}"{% endif %}></div>
 
-  <div id="holder">
-    {% include "MobileMenus" %}
-    <div class="wrap">
-      <div id="header" class="cfx">
-        <div id="logo">{% editable site.header %}</div>
-        <div class="inner">
-          {% include "Langmenu" %}
-          {% include "Mainmenu" %}
-        </div>
-      </div>
+  <div class="container">
+    {% include "header" %}
+    {% include "menu-level-2" %}
 
-      <div id="container" class="cfx">
-        
-        {% include "Submenu" %}
-        
-        <div id="content"{% unless editmode%}{% for item in site.menuitems_with_hidden %}{% if item.selected? and item.visible_children.size == 0 %} class="content-centered"{%endif%}{% endfor%}{% endunless%}>
-          <div class="cfx">
-            <h1>{% contentblock name="slogan" %}{{ "title_goes_here" | lc }}{% endcontentblock %}</h1>
-            {% content %}
-          </div>
-        </div>
-      </div>
+    <main class="content" role="main">
+      <header class="content-header content-formatted">{% content name="slogan" %}</header>
+      <section class="content-body content-formatted">{% content %}</section>
+    </main>
 
-    </div>
+    {% include "footer" %}
+
   </div>
 
-  <div id="footer">
-    <div class="wrap cfx">
-      
-      <div class="inner">
-        <div class="cfx">
-          {% xcontent name="footer" %}
-        </div>
-      </div>
-      {% include "Search" %}
-    </div>
-  </div>
-
-  {% include "JS" %}
+  {% include "javascripts" %}
+  {% include "bg-picker" %}
 </body>
 </html>

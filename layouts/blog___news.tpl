@@ -1,91 +1,50 @@
 <!DOCTYPE html>
-<html>
-
+<html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
-  {% include "SiteHeader" %}
+  {% include "html-head" %}
+
+  <meta property="og:url" content="{{ site.url }}">
+  <meta property="og:title" content="{{ site.name }}">
+  {% unless page.description == nil or page.description == "" %}<meta property="og:description" content="{{ page.description }}">{% endunless %}
+  {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endif %}
+
+  {{ blog.rss_link }}
 </head>
 
-<body id="blog">
+<body class="blog-page js-bgpicker-body-image" {% if site.data.body_image %}style="background-image: url('{{ site.data.body_image}}');{% if site.data.body_color %} position: relative;{% endif %}"{% endif %}>
+  {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ site.data.body_image }}" data-bg-color="{{ site.data.body_color }}"></button>{% endif %}
+  <div class="background-color js-bgpicker-body-color"{% if site.data.body_color %} style="background-color: {{ site.data.body_color }};{% if site.data.body_image %} opacity: 0.5;{% endif %}"{% endif %}></div>
 
-  <div id="holder">
-    {% include "MobileMenus" %}
-    <div class="wrap">
-      <div id="header" class="cfx">
-        <div id="logo">{% editable site.header %}</div>
-        <div class="inner">
-          {% include "Langmenu" %}
-          {% include "Mainmenu" %}
-        </div>
-      </div>
+  <div class="container">
+    {% include "header" %}
+    {% include "menu-level-2" %}
 
-      
-        {% if tags %}
-            <div class="tagged-list-header">
-                <div class="header-tag-icon"></div>
-                {% if tags == empty %}
-                    {{ "no_posts_tagged" | lc }}
-                {% else %}
-                    {{ "posts_tagged" | lc }} '{{ tags | sort:"name" | map:"name" | join:"', '"}}'.
-                {% endif %}
-            </div>
-        {% endif %}
-        
-      <div id="container" class="cfx">
-        <div id="content">
-          {% if editmode %}
-            <div style="padding-bottom: 30px;">{% addbutton class="add-article" %}</div>
-          {% endif %}
-          <div class="news-list news-list-all">
-            {% for article in articles %}
-              {% if forloop.index < 11 %}
-                <div class="news-item{% if forloop.index == 1%} news-item-first{% endif %}">
-                  <div class="news-info">
-                    {{ article.author.name }} &nbsp;&#149;&nbsp; <span class="date">{{article.created_at | format_date:"short"}}, {{article.created_at | format_date:"%Y"}}</span> {% if article.comments_count > 0 %}&nbsp;<a href="{{article.url}}#comments" class="comments-count">{{article.comments_count}}</a>{% endif %}
-                  </div>
+    <main class="content" role="main">
+      {% include "tags-blog" %}
 
-                  <h1><a href="{{ article.url }}">{{ article.title }}</a></h1>
+      {% addbutton %}
+      {% for article in articles %}
+        {% include "post-box" %}
+      {% endfor %}
+    </main>
 
-                  <div class="excerpt cfx">{{ article.excerpt }} <a href="{{ article.url }}" class="nowrap">{{ "read_more"|lc }}</a></div>
-                </div>
-              {% endif %}
-            {% endfor %}
+    {% include "footer" %}
 
-            
-            {% if articles.size > 10%}
-            <div class="news-older">
-              <h3><a href="#" class="news-older-show">{{ "older_news"|lc }}</a></h3>
-
-              <div class="news-older-hidden">
-                {% for article in articles %}
-                {% if forloop.index > 10 %}
-                <div class="cfx news-older-item">
-                  <div class="date">{{article.created_at | format_date:"short"}}, {{article.created_at | format_date:"%Y"}}</div>
-                  <div class="news-older-item-text"><a href="{{article.url}}">{{ article.title }}</a></div>
-                </div>
-                {% endif %}
-                {% endfor %}
-              </div>
-            </div>
-            {% endif %}
-          </div>
-        </div>
-      </div>
-
-    </div>
   </div>
 
-  <div id="footer">
-    <div class="wrap cfx">
-      
-      <div class="inner">
-        <div class="cfx">
-          {% xcontent name="footer" %}
-        </div>
-      </div>
-      {% include "Search" %}
-    </div>
-  </div>
+  {% include "javascripts" %}
+  {% include "bg-picker" %}
 
-  {% include "JS" %}
+  <script>
+    $(document).ready(function() {
+      currentUrl = window.location.href;
+      blogUrl = '{{ site.url }}{{ page.path }}';
+      if (currentUrl === blogUrl) {
+        $('.js-tags-all').addClass('active');
+      };
+    });
+
+    site.initBlogPage();
+  </script>
 </body>
 </html>

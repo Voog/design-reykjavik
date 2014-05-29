@@ -1,0 +1,27 @@
+/* SEARCH */
+// Styling rules for the site's search box. These rules affect the entire site.
+.search,
+.search-left,
+.search-right {
+  @extend %inline-block;
+}
+
+.search {
+}
+
+.search-left {
+  .edys-search-input {
+    width: 128px;
+    padding: 7px 10px;
+    font-family: inherit;
+    font-size: 14px;
+    @include border(all, 1px, solid, $grey-1);
+    border-radius: 3px;
+  }
+}
+
+.search-right {
+  .search-submit {
+    vertical-align: middle;
+  }
+}
