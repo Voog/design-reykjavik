@@ -1,10 +1,66 @@
 /* CONTENT */
 // Styling rules for the site's main content area. These rules affect the entire site.
 .content {
-  margin-top: 70px;
+  margin-top: 40px;
+  overflow: auto;
 
   @include query($tablet-2) {
     margin-top: 20px;
+  }
+
+  .content-left {
+    float: left;
+
+    &.last {
+      clear: left;
+    }
+  }
+
+  .content-right {
+    float: right;
+  }
+
+  .content-right,
+  .content-left {
+    @include query($tablet-2) {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .no-flexbox &,
+  .flexbox & {
+    @include query($tablet-1) {
+      width: 100%;
+    }
+
+    @include query($tablet-2) {
+      display: block;
+    }
+  }
+
+  .no-flexbox & {
+    display: table;
+    vertical-align: top;
+    width: 100%;
+  }
+}
+
+.content-right .content-body {
+
+  h1 {
+    font-size: 175%;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 150%;
+    margin-bottom: 15px;
+  }
+
+  h3 {
+    font-size: 125%;
+    margin-bottom: 15px;
   }
 }
 
@@ -15,28 +71,28 @@
     @include color($secondary-color);
 
     h1 {
-      font-size: 100px;
+      font-size: 268%;
     }
 
     h2 {
-      font-size: 50px;
+      font-size: 125%;
     }
 
     h3 {
-      font-size: 30px;
+      font-size: 115%;
     }
 
     @include query($mobile-1) {
       h1 {
-        font-size: 50px;
+        font-size: 135%;
       }
 
       h2 {
-        font-size: 30px;
+        font-size: 125%;
       }
 
       h3 {
-        font-size: 20px;
+        font-size: 115%;
       }
     }
   }
@@ -45,7 +101,6 @@
 .content-title {
   &.content-formatted {
     font-weight: 700;
-    font-size: 100px;
 
     @include query($mobile-1) {
       font-size: 50px;
@@ -55,8 +110,9 @@
 
 .content-header {
   &.content-formatted {
-    font-weight: 400;
-    font-size: 50px;
+    font-weight: 300;
+    line-height: 1.2em;
+    font-size: 268%;
 
     .edy-texteditor-view {
       min-height: 18px;
@@ -66,7 +122,7 @@
 
 .content-body {
   .front-page & {
-    margin-top: 90px;
+    margin-top: 10px;
 
     @include query($tablet-2) {
       margin-top: 35px;

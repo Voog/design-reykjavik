@@ -17,16 +17,20 @@
 
   <div class="container">
     {% include "header" %}
-    {% include "menu-level-2" %}
 
-    <main class="content" role="main">
-      <header class="content-header content-formatted">{% content name="slogan" %}</header>
-      <section class="content-body content-formatted">{% content %}</section>
-    </main>
+    <div class="content" role="main">
+      <aside class="content-left">
+        {% include "menu-level-2" %}
+      </aside>
 
-    {% include "footer" %}
-
+      <article class="content-right">
+        <h1 class="content-header content-formatted">{% content name="slogan" %}</h1>
+        <section class="content-body content-formatted">{% content %}</section>
+      </article>
+    </div>
   </div>
+
+  {% include "footer" %}
 
   {% include "javascripts" %}
   {% include "bg-picker" %}

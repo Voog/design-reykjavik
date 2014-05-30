@@ -1,9 +1,8 @@
 {% for item in site.visible_menuitems %}
   {% if item.selected? and item.children? or editmode %}
-    <nav class="menu-sub">
+    <nav class="menu-sub" id="sidebar">
       <ul class="menu">
         {% if editmode or item.children? %}
-          <li class="menu-item"><a class="menu-link{% if item.current? %} active{% endif %}{% unless item.translated? %} fci-editor-menuadd{% endunless %}" href="{{ item.url }}">{{ item.title }}</a></li>
           {% for subitem in item.visible_children %}
             <li class="menu-item"><a class="menu-link{% if subitem.selected? %} active{% endif %}{% unless item.translated? %} untranslated fci-editor-menuadd{% endunless %}" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
           {% endfor %}

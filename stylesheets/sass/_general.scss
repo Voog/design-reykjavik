@@ -15,11 +15,44 @@ body {
 }
  // Layout specific body classes
  .front-page {
+    .content-left {
+      width: 43%;
+    }
 
+    .content-header {
+      padding: 0 0 40px;
+      font-size: 320%;
+      line-height: 1.2em;
+    }
+
+    .content-right {
+      width: 48%;
+    }
  }
 
  .common-page {
+    .content-left {
+      width: 170px;
+      min-height: 10px;
+    }
 
+    .content-right {
+      max-width: 670px;
+      padding: 0 35px 0 45px;
+
+      @include query($tablet-2) {
+        padding: 0;
+      }
+    }
+
+    .content-header {
+      margin-bottom: 18px;
+      margin-top: 2px;
+    }
+
+    .content-body {
+      margin-top: 0;
+    }
  }
 
  .blog-page,
@@ -75,7 +108,7 @@ body {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0 20px;
   @include bg($white);
 
   @include query($tablet-2) {

@@ -185,7 +185,7 @@
     }
   }
   display: inline-block;
-  padding: 6px 0;
+  padding: 7px 0;
 
   .menu {
     float: right;
@@ -193,6 +193,10 @@
     .edit-btn {
       margin-right: 30px;
       line-height: 1.3em;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
 
     .menu-link {
@@ -228,29 +232,29 @@
 
 // Styling rules for the site's sub menu.
 .menu-sub {
-  margin-top: 30px;
 
   .menu {
-    text-align: center;
+    text-align: left;
 
     .menu-item {
-      margin-left: 15px;
-      font-size: 14px;
+      margin: 0;
+      width: 100%;
+      border-bottom: 1px solid $grey-2;
+      font-size: 15px;
+      line-height: 1.05em;
 
-      &:first-child {
-        margin-left: 0;
+      &:last-child {
+        border-bottom: none;
       }
 
       .menu-link {
-        @include color($blue-1);
-
-        &.active {
-          @include color($primary-color);
-          font-weight: 700;
-        }
+        @include color($primary-color);
+        display: block;
+        padding: 10px 0;
+        width: 100%;
 
         &:hover {
-          @include color($blue-1, 0.8);
+          @include color($secondary-color);
         }
       }
     }
@@ -413,7 +417,8 @@
 // Styling rules for the site's language menu.
 .menu-lang {
   @extend %inline-block;
-  padding: 6px 0;
+  padding: 7px 0;
+  margin-left: 26px;
 
   .menu {
     vertical-align: middle;
