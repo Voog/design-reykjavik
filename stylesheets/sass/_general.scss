@@ -1,20 +1,26 @@
 /* GENERAL */
 // Styling rules for the basic parts of the page. These rules affect the entire site.
 body {
+  @include color($primary-color);
+  @include bg($grey-4);
   position: relative;
   margin: 0;
   padding: 0;
-  font-family: 'Open Sans', Arial, Verdana, sans-serif;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
   font-weight: 400;
   font-size: 15px;
+  font-family: 'Open Sans', Arial, Verdana, sans-serif;
   line-height: 1.7;
-  @include color($primary-color);
-  background-position: center;
-  background-attachment: fixed;
-  background-size: cover;
 }
  // Layout specific body classes
  .front-page {
+    .content {
+      @include query($tablet-2) {
+        margin-top: 20px;
+      }
+    }
     .content-left {
       width: 43%;
     }
@@ -28,26 +34,56 @@ body {
     .content-right {
       width: 48%;
     }
+
+    .content-right,
+    .content-left {
+      @include query($tablet-2) {
+        display: block;
+        width: 100%;
+      }
+    }
  }
 
  .common-page {
+    .content {
+      @include query($tablet-2) {
+        padding: 30px 20px;
+      }
+    }
     .content-left {
-      width: 170px;
+      @include query($tablet-2) {
+        display: none;
+      }
+      float: left;
+      clear: left;
       min-height: 10px;
+      width: 170px;
     }
 
     .content-right {
-      max-width: 670px;
-      padding: 0 35px 0 45px;
 
       @include query($tablet-2) {
         padding: 0;
       }
+      float: none;
+      overflow: hidden;
+      padding: 0 35px 0 45px;
+      width: auto;
+    }
+
+    .content-centered {
+      @include query($tablet-2) {
+        padding: 0;
+      }
+      padding: 0 12%;
     }
 
     .content-header {
-      margin-bottom: 18px;
+      @include query($tablet-2) {
+        margin-top: 0;
+      }
       margin-top: 2px;
+      margin-bottom: 18px;
     }
 
     .content-body {
@@ -57,7 +93,10 @@ body {
 
  .blog-page,
  .post-page {
-
+    .content {
+      padding-right: 12%;
+      padding-left: 12%;
+    }
  }
 
  .blog-page {
@@ -70,50 +109,27 @@ body {
 
 // Pseudo classes for declaring commonly used styling rules for different elements.
 %clearfix:after {
-  content: "";
   display: table;
   clear: both;
+  content: "";
 }
 
 %stretch {
   top: 0;
-  left: 0;
   right: 0;
   bottom: 0;
+  left: 0;
 }
 
 %inline-block {
   display: inline-block;
 }
 
-// Styling rules for the independent elements that can be located everywhere in the DOM and always have the same styling rules.
-.bgpicker-btn {
-  position: absolute;
-  background: none;
-  border: none;
-  cursor: pointer;
-
-  &:focus {
-    outline: none;
-  }
-}
-
-.background-color {
-  @extend %stretch;
-  position: fixed;
-  z-index: -2;
-}
-
 // Styling rules for the main container that affects the entire site's other elements.
 .container {
-  max-width: 960px;
+  @include bg(white);
   margin: 0 auto;
-  padding: 0 20px;
-  @include bg($white);
-
-  @include query($tablet-2) {
-    padding: 20px
-  }
+  max-width: 100%;
 
   a {
     text-decoration: none;

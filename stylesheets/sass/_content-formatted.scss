@@ -7,11 +7,11 @@
 
   // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
   h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, img, table form, .edy-partial-view {
-    &:first-child {
+    .content-formatted > &:first-child {
       margin-top: 0;
     }
 
-    &:last-child {
+    .content-formatted > &:last-child {
       margin-bottom: 0;
     }
   }

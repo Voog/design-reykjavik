@@ -37,12 +37,10 @@
         {% include "comment-form" %}
       </section>
     </main>
-
-    {% include "footer" %}
-
   </div>
 
+  {% include "footer" %}
+
   {% include "javascripts" %}
-  {% include "bg-picker" %}
 </body>
 </html>

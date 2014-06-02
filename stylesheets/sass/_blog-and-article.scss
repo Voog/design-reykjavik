@@ -4,13 +4,18 @@
   .post-header {
   }
 
+  .post-meta {
+    line-height: 1.85em;
+  }
+
   .post-title {
-    margin-top: 0;
+    margin-top: 6px;
     margin-bottom: 0;
-    line-height: 1.1;
+    line-height: 1.2em;
 
     &, a {
-      font-size: 50px;
+      font-size: 40px;
+      font-weight: 300;
       @include color($secondary-color);
     }
 
@@ -22,12 +27,12 @@
   }
 
   .post-date {
-    font-size: 14px;
-    @include color($secondary-color);
+    font-size: 15px;
+    @include color($grey-5);
   }
 
   .post-content {
-    margin-top: 20px;
+    margin-top: 18px;
 
     .post-excerpt {
     }
@@ -35,6 +40,10 @@
     .post-body {
       margin-top: 20px;
     }
+  }
+
+  .read-more {
+    display: inline;
   }
 
   .post-footer {
@@ -58,9 +67,15 @@
 // Style rules for the blog listing view only
 .blog-page {
   .post {
+    padding-left: 15px;
+    padding-right: 15px;
     margin-bottom: 50px;
-    padding-bottom: 50px;
-    @include border(bottom, 1px, solid, $primary-color, 0.3);
+
+    &:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
   }
 }
 

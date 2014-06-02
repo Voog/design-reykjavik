@@ -1,17 +1,23 @@
 /* FOOTER */
 // Styling rules for the site's footer. These rules affect the entire site.
 .footer {
-  clear: both;
-
   @include query($tablet-2) {
-    margin-top: 35px;
+    padding: 30px 20px;
   }
-  margin-top: 60px;
+  clear: both;
+  margin-top: 0;
   padding: 40px 20px;
   background: $grey-4;
+  text-align: left;
+
+  .footer-inner {
+    margin: auto;
+    max-width: 960px;
+  }
 
   .content-formatted {
     @include color($third-color);
+    max-width: 700px;
     font-size: 13px;
     line-height: 1.7em;
 
@@ -25,8 +31,8 @@
 
     a {
       @include color($black);
-      border-bottom: 1px solid $grey-1;
       display: inline-block;
+      border-bottom: 1px solid $grey-1;
       text-decoration: none;
       line-height: 1.4;
     }

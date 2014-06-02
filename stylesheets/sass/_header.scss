@@ -1,26 +1,32 @@
 /* HEADER */
 // Styling rules for the site's header. These rules affect the entire site.
 .header {
-  padding: 63px 0 27px;
-  min-height: 55px;
+  @include bg(white);
+  margin: auto;
+  padding: 63px 20px 0;
+  max-width: 960px;
+  text-align: right;
+}
+
+.header-inner {
+  min-height: 50px;
+  width: 100%;
   border-bottom: 1px solid $grey-2;
   text-align: right;
+  padding-bottom: 32px;
+  justify-content: space-between;
   .no-flexbox &,
   .flexbox & {
-    justify-content: space-between;
-    @include query($tablet-1) {
-      width: 100%;
-    }
-
     @include query($tablet-2) {
       display: block;
+      padding-bottom: 3px;
     }
   }
 
   .no-flexbox & {
     display: table;
-    vertical-align: top;
     width: 100%;
+    vertical-align: top;
   }
 
   .flexbox & {
@@ -47,12 +53,12 @@
       }
 
       &, & a {
-        font-size: 23px;
+        @include color($secondary-color);
+        text-transform: uppercase;
         font-weight: 300;
         font-style: normal;
         font-variant: normal;
-        text-transform: uppercase;
-        @include color($primary-color);
+        font-size: 23px;
 
         &:hover {
           @include color($primary-color, 0.8);
@@ -62,8 +68,6 @@
   }
 
   .header-right {
-    width: auto;
-    text-align: right;
 
     @include query($tablet-2) {
       .no-flexbox &,
@@ -71,6 +75,8 @@
         display: none;
       }
     }
+    width: auto;
+    text-align: right;
   }
 
   .flexbox & {

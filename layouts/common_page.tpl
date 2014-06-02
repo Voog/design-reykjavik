@@ -11,7 +11,7 @@
   {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endif %}
 </head>
 
-<body class="common-page blog-page js-bgpicker-body-image" {% if site.data.body_image %}style="background-image: url('{{ site.data.body_image}}');"{% endif %}>
+<body class="common-page js-bgpicker-body-image" {% if site.data.body_image %}style="background-image: url('{{ site.data.body_image}}');"{% endif %}>
   {% if editmode %}<button class="bgpicker-btn js-bgpicker-body-settings" data-bg-image="{{ site.data.body_image }}" data-bg-color="{{ site.data.body_color }}"></button>{% endif %}
   <div class="background-color js-bgpicker-body-color"{% if site.data.body_color %} style="background-color: {{ site.data.body_color }};{% if site.data.body_image %} opacity: 0.5;{% endif %}"{% endif %}></div>
 
@@ -19,20 +19,34 @@
     {% include "header" %}
 
     <div class="content" role="main">
-      <aside class="content-left">
-        {% include "menu-level-2" %}
-      </aside>
+      {% comment %} Show sidebar only if current page has children or is child page {% endcomment %}
+      {% assign centered = false %}
+      {% for item in site.menuitems_with_hidden %}
+        {% if item.selected? and item.visible_children.size == 0 %}
+          {% assign centered = true %}
+        {% endif %}
+      {% endfor %}
 
-      <article class="content-right">
-        <h1 class="content-header content-formatted">{% content name="slogan" %}</h1>
-        <section class="content-body content-formatted">{% content %}</section>
-      </article>
+      {% if centered %}
+        <article class="content-centered">
+          <h1 class="content-header content-formatted">{% content name="slogan" %}</h1>
+          <section class="content-body content-formatted">{% content %}</section>
+        </article>
+      {% else %}
+        <aside class="content-left">
+          {% include "sidebar" %}
+        </aside>
+
+        <article class="content-right">
+          <h1 class="content-header content-formatted">{% content name="slogan" %}</h1>
+          <section class="content-body content-formatted">{% content %}</section>
+        </article>
+      {% endif%}
     </div>
   </div>
 
   {% include "footer" %}
 
   {% include "javascripts" %}
-  {% include "bg-picker" %}
 </body>
 </html>

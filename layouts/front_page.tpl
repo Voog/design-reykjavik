@@ -34,10 +34,7 @@
 
     </div>
   </div>
-
   {% include "footer" %}
-
   {% include "javascripts" %}
-  {% include "bg-picker" %}
 </body>
 </html>

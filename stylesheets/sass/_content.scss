@@ -1,12 +1,12 @@
 /* CONTENT */
 // Styling rules for the site's main content area. These rules affect the entire site.
 .content {
-  margin-top: 40px;
+  @include bg(white);
+  @include clearfix;
   overflow: auto;
-
-  @include query($tablet-2) {
-    margin-top: 20px;
-  }
+  margin: auto;
+  padding: 40px 20px 60px;
+  max-width: 960px;
 
   .content-left {
     float: left;
@@ -20,20 +20,8 @@
     float: right;
   }
 
-  .content-right,
-  .content-left {
-    @include query($tablet-2) {
-      display: block;
-      width: 100%;
-    }
-  }
-
   .no-flexbox &,
   .flexbox & {
-    @include query($tablet-1) {
-      width: 100%;
-    }
-
     @include query($tablet-2) {
       display: block;
     }
@@ -41,48 +29,40 @@
 
   .no-flexbox & {
     display: table;
-    vertical-align: top;
     width: 100%;
+    vertical-align: top;
   }
 }
 
 .content-right .content-body {
 
   h1 {
-    font-size: 175%;
     margin-bottom: 15px;
+    font-size: 175%;
+    line-height: 1;
   }
 
   h2 {
-    font-size: 150%;
+    margin-top: 15px;
     margin-bottom: 15px;
+    font-size: 150%;
   }
 
-  h3 {
-    font-size: 125%;
+  h3, h4, h5, h6 {
     margin-bottom: 15px;
+    margin-top: 0;
+    font-weight: 600;
+    font-size: 125%;
+    line-height: 1.2em;
   }
 }
 
 .content-title,
 .content-header {
   &.content-formatted {
-    line-height: 1;
+
     @include color($secondary-color);
-
-    h1 {
-      font-size: 268%;
-    }
-
-    h2 {
-      font-size: 125%;
-    }
-
-    h3 {
-      font-size: 115%;
-    }
-
-    @include query($mobile-1) {
+    @include query($tablet-2) {
       h1 {
         font-size: 135%;
       }
@@ -100,19 +80,22 @@
 
 .content-title {
   &.content-formatted {
-    font-weight: 700;
 
     @include query($mobile-1) {
       font-size: 50px;
     }
+    font-weight: 700;
   }
 }
 
 .content-header {
   &.content-formatted {
+    @include query($tablet-2) {
+      font-size: 200%;
+    }
     font-weight: 300;
-    line-height: 1.2em;
     font-size: 268%;
+    line-height: 1.2em;
 
     .edy-texteditor-view {
       min-height: 18px;
@@ -122,20 +105,20 @@
 
 .content-body {
   .front-page & {
-    margin-top: 10px;
 
     @include query($tablet-2) {
       margin-top: 35px;
     }
+    margin-top: 10px;
 
     p {
-      margin-top: 10px;
-      font-size: 25px;
-      line-height: 1.5;
 
       @include query($tablet-2) {
         font-size: 18px;
       }
+      margin-top: 10px;
+      font-size: 25px;
+      line-height: 1.5;
     }
   }
 

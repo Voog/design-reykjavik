@@ -19,22 +19,21 @@
     {% include "header" %}
     {% include "menu-level-2" %}
 
-    <main class="content" role="main">
-      {% include "tags-blog" %}
+    <div class="content" role="main">
+      <section class="content-center">
+        {% include "tags-blog" %}
 
-      {% addbutton %}
-      {% for article in articles %}
-        {% include "post-box" %}
-      {% endfor %}
-    </main>
-
-    {% include "footer" %}
-
+        {% addbutton %}
+        {% for article in articles %}
+          {% include "post-box" %}
+        {% endfor %}
+      </section>
+    </div>
   </div>
 
-  {% include "javascripts" %}
-  {% include "bg-picker" %}
+  {% include "footer" %}
 
+  {% include "javascripts" %}
   <script>
     $(document).ready(function() {
       currentUrl = window.location.href;
