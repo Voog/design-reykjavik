@@ -1,6 +1,9 @@
 /* HEADER */
 // Styling rules for the site's header. These rules affect the entire site.
 .header {
+  @include query($tablet-2) {
+    padding-top: 23px;
+  }
   @include bg(white);
   margin: auto;
   padding: 63px 20px 0;

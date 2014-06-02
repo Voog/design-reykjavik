@@ -18,7 +18,8 @@ body {
  .front-page {
     .content {
       @include query($tablet-2) {
-        margin-top: 20px;
+        margin-top: 30px;
+        padding: 0 20px;
       }
     }
     .content-left {
@@ -29,10 +30,17 @@ body {
       padding: 0 0 40px;
       font-size: 320%;
       line-height: 1.2em;
+      @include query($tablet-2) {
+        font-size: 200%;
+        padding-bottom: 30px;
+      }
     }
 
     .content-right {
       width: 48%;
+      @include query($tablet-2) {
+        border-top: 1px solid $grey-2;
+      }
     }
 
     .content-right,

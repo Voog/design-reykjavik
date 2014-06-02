@@ -106,9 +106,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/news.tpl",
-      "layout_name": "news",
-      "title": "news"
+      "file": "components/menu-mobile.tpl",
+      "layout_name": "",
+      "title": "Menu-mobile"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/blog___news.tpl",
+      "layout_name": "page_default",
+      "title": "Blog & News"
     },
     {
       "content_type": "component",

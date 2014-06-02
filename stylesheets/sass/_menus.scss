@@ -6,20 +6,14 @@
 
   @include query($tablet-2) {
     position: absolute;
-    top: 28px;
-    right: 20px;
+    top: 12px;
+    left: 20px;
     display: inline-block;
     margin: 0;
     padding: 0;
     border: none;
     background: none;
     cursor: pointer;
-
-    &.open {
-      .menu-stripe {
-        @include bg($secondary-color, 0.47);
-      }
-    }
 
     &:focus {
       outline: none;
@@ -31,11 +25,11 @@
     }
 
     .menu-stripe {
-      @include bg($secondary-color, 0.67);
+      @include bg($white);
       display: block;
       margin: 4px 0;
-      width: 23px;
-      height: 4px;
+      width: 30px;
+      height: 3px;
       border-radius: 5px;
 
       &:first-child,
@@ -46,6 +40,138 @@
   }
   display: none;
 }
+
+.mobile-menu-wrapper {
+  @include bg($black);
+  @include query($tablet-2) {
+    display: block;
+  }
+  display: none;
+  min-height: 41px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+
+  .mobile-menu-header {
+    height: 41px;
+  }
+  .mobile-menu-main  {
+    display: none;
+    width: 100%;
+    &.expanded {
+      display: block;
+    }
+    & > ul {
+      padding: 0 20px 10px;
+      & > li:last-child {
+        border-bottom: none;
+      }
+    }
+    ul {
+      @include bg($black);
+      margin: 0;
+      list-style: none;
+      a {
+        display: block;
+        width: 100%;
+        color: $grey-7;
+        text-decoration: none;
+        font-weight: 400;
+        line-height: 40px;
+        &:hover {
+          @include color($white);
+        }
+        &.active {
+          @include color($white);
+          font-weight: 700;
+        }
+      }
+      ul li a {
+        padding-left: 20px;
+      }
+      ul ul li a {
+        padding-left: 40px;
+      }
+      li {
+        min-height: 40px;
+        border-bottom: 1px solid $grey-6;
+        line-height: 100%;
+        &.open {
+          border-bottom-color: transparent;
+        }
+        &.open > ul {
+          display: block;
+        }
+      }
+      ul {
+        display: none;
+        padding: 0;
+        border-top: 1px solid $grey-6;
+      }
+    }
+  }
+
+  .menu-lang {
+    @include query($tablet-2) {
+      display: block;
+    }
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 5;
+    display: none;
+    margin-right: 20px;
+    padding-right: 22px;
+    width: auto;
+    color: $white;
+    font-size: 11px;
+    line-height: 2.3em;
+
+    &:after {
+      position: absolute;
+      top: 17px;
+      right: 7px;
+      display: block;
+      overflow: hidden;
+      width: 0;
+      height: 0;
+      border-width: 5px;
+      border-style: solid;
+      border-color: none;
+      border-color: transparent;
+      border-color: rgba(255,255,255,0.01);
+      border-top-color: $white;
+      -webkit-border-image: none;
+      -moz-border-image: none;
+      content: '';
+    }
+
+    select {
+      position: absolute;
+      top: 12px;
+      right: 0;
+      z-index: 10;
+      opacity: 0;
+      cursor: pointer;
+    }
+  }
+}
+
+.mobile-menu-arr {
+  top: 14px;
+  right: 20px;
+  float: right;
+  width: 30px;
+  height: 40px;
+  background: url("../images/arr-bottom.png") no-repeat right center;
+  background-size: 18px 18px;
+  opacity: 0.5;
+  cursor: pointer;
+
+  .svg & { background-image: url("../assets/arr-bottom.svg"); }
+  .open > & { background-image: url("../images/arr-top.png"); opacity: 1; }
+  .svg .open > & { background-image: url("../assets/arr-top.svg"); }
+ }
 
 // Wrapper for the CMS adminmode on-page buttons. For example "hidden menu items" or "add-page" buttons.
 .edit-btn {
@@ -239,12 +365,12 @@
     .menu-item {
       margin: 0;
       width: 100%;
-      border-bottom: 1px solid $grey-2;
+      border-top: 1px solid $grey-2;
       font-size: 15px;
       line-height: 1.05em;
 
-      &:last-child {
-        border-bottom: none;
+      &:first-child {
+        border-top: none;
       }
 
       .menu-link {
@@ -253,10 +379,28 @@
         padding: 10px 0;
         width: 100%;
 
+        &.active {
+          @include color($black);
+          font-weight: 700;
+        }
+
         &:hover {
           @include color($secondary-color);
         }
       }
+    }
+  }
+
+  .submenu {
+    @include bg(#f7f7f7);
+    margin: 0;
+    padding: 12px 0;
+    border-top: 1px solid $grey-2;
+    background: #f7f7f7;
+    list-style-type: none;
+
+    li {
+      padding: 0 10px;
     }
   }
 }
@@ -417,8 +561,8 @@
 // Styling rules for the site's language menu.
 .menu-lang {
   @extend %inline-block;
-  padding: 7px 0;
   margin-left: 26px;
+  padding: 7px 0;
 
   .menu {
     vertical-align: middle;

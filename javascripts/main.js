@@ -1,25 +1,57 @@
 ;(function($) {
+  $('.langmenu-with-popup').each(function() {
+    var $popup = $(this).find('.langmenu-popup');
+    $(this).find('.langmenu-content').click(function() {
+        $popup.show();
+        $(document).bind('click', function(event) {
+            if (!$.contains($popup.get(0), event.target)) {
+                $popup.hide();
+                $(this).unbind('click', arguments.callee);
+            }
+        });
+        return false;
+    });
+  });
+
+  $('.mobile-menu-btn').click(function() {
+    $('.mobile-menu-inner').toggle();
+    return false;
+  });
+
+  $('a.news-older-show').click(function() { $(this).addClass('no-bg'); $('.news-older-hidden').show(); return false; });
+
+  if ($('.form_error, .form_notice, .comment-errors').length > 0) {
+    var top = $('.form_error, .form_notice, .comment-errors').eq(0).offset().top - 50;
+    if (top < 0) { top = 0; }
+    $('html, body').scrollTop(top);
+  }
+
+  $('.mobile-menu-arr').click(function(event) {
+    $(event.target).closest('li').toggleClass('open');
+  });
+
   // SWITCHES THE SITE LANGUAGE TO THE SELECTED VALUE FROM THE LANGUAGE MENU
   var handleLanguageSwitch = function() {
     $('.menu-lang').find('.menu').change(function() {
-      console.log('changed');
-      window.location = $(this).find(':selected').val();
+      var language = $(this).find(':selected');
+      window.location = language.val();
+      $(this).prev().text(language.text());
     });
   };
 
   // SHOWS/HIDES THE POPOVER MAIN MENU (VISIBLE ON SMALLES SCREENS)
   var toggleMainMenu = function() {
-    $('.js-menu-btn').click(function() {
+    $('.mobile-menu-btn').click(function() {
       $(this).toggleClass('open');
-      $('.js-menu-main').toggleClass('expanded');
+      $('.mobile-menu-main').toggleClass('expanded');
     });
   };
 
   // HIDES THE POPOVER MAIN MENU IF CICKED ANYWHERE ELSE THAN THE MENU ITSELF (VISIBLE ON SMALLES SCREENS)
   var handlePopoverMenuHide = function() {
     $('html').click(function() {
-      if ($('.js-lang-menu-popover').hasClass('expanded')) {
-        $('.js-lang-menu-popover').removeClass('expanded');
+      if ($('.mobile-lang-menu-popover').hasClass('expanded')) {
+        $('.mobile-lang-menu-popover').removeClass('expanded');
       }
     });
   };

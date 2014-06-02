@@ -11,12 +11,3 @@
     </ul>
   </div>
 </div>
-
-<div class="langmenu popup">
-  <div class="popup-content">{% for language in site.languages %}{% if language.selected? %}{{language.title}}{% endif %}{% endfor %}</div>
-  <select>
-    {% for language in site.languages %}
-      <option value="{{language.url}}"{% if language.selected? %} selected="selected"{% endif %}>{{language.title}}</option>
-    {% endfor %}
-  </select>
-</div>

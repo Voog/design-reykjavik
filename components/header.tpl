@@ -9,7 +9,7 @@
     </div>
 
     <div class="header-right">
-      <nav class="menu-main js-menu-main">
+      <nav class="menu-main">
         {% include "menu-level-1" %}
       </nav>
 
@@ -18,12 +18,6 @@
         {% include "menu-lang" %}
       </nav>
       {% endif %}
-
-      <button class="menu-btn js-menu-btn">
-        <span class="menu-stripe"></span>
-        <span class="menu-stripe"></span>
-        <span class="menu-stripe"></span>
-      </button>
     </div>
   </div>
 </header>
