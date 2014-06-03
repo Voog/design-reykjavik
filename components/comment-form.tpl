@@ -15,18 +15,30 @@
     <div class="form_area">
       <div class="form_fields">
         <div class="form_field{% if comment_name_error %} form_field_with_errors{% endif %}">
-          <label for="comment-form-name">{{ "name" | lc }}{% if comment_name_error %}<span class="form_field_error"> — {{ "comment_author_blank" | lc }}</span>{% endif %}</label>
+          {% if comment_name_error %}
+            <label class="form_field_error" for="comment-form-name">{{ "comment_author_blank" | lc }}</label>
+          {% else %}
+            <label for="comment-form-name">{{ "name" | lc }}</label>
+          {% endif %}
           <input id="comment-form-name" class="form_field_textfield form_field_size_small" name="comment[author]" value="{{ comment.author }}">
         </div>
 
         <div class="form_field{% if comment_email_error %} form_field_with_errors{% endif %}">
-          <label for="comment-form-email">{{ "email" | lc }}{% if comment_email_error %}<span class="form_field_error"> — {{ "comment_email_blank" | lc }}</span>{% endif %}</label>
+          {% if comment_email_error %}
+            <label class="form_field_error" for="comment-form-name">{{ "comment_email_blank" | lc }}</label>
+          {% else %}
+            <label for="comment-form-name">{{ "email" | lc }}</label>
+          {% endif %}
           <input id="comment-form-email" class="form_field_textfield form_field_size_small" name="comment[author_email]" value="{{ comment.author_email }}">
         </div>
 
         <div class="form_field{% if comment_body_error %} form_field_with_errors{% endif %}">
-          <label for="comment-form-body">{{ "comment" | lc }}{% if comment_body_error %}<span class="form_field_error"> — {{ "comment_body_blank" | lc }}</span>{% endif %}</label>
-          <textarea id="comment-form-body" class="form_field_textarea form_field_size_medium" name="comment[body]" rows="5">{{ comment.body }}</textarea>
+          {% if comment_body_error %}
+            <label class="form_field_error" for="comment-form-name">{{ "comment_body_blank" | lc }}</label>
+          {% else %}
+            <label for="comment-form-name">{{ "comment" | lc }}</label>
+          {% endif %}
+          <textarea id="comment-form-body" class="form_field_textarea form_field_size_medium" name="comment[body]" rows="4">{{ comment.body }}</textarea>
         </div>
       </div>
 

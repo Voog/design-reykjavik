@@ -17,13 +17,12 @@
 
   <div class="container">
     {% include "header" %}
-    {% include "menu-level-2" %}
-
+    {% include "tags-blog" %}
     <div class="content" role="main">
-      <section class="content-center">
-        {% include "tags-blog" %}
+      <section class="content-centered">
 
-        {% addbutton %}
+        {% if editmode %}<div style="padding-bottom: 30px">{% addbutton %}</div>{% endif %}
+
         {% for article in articles %}
           {% include "post-box" %}
         {% endfor %}

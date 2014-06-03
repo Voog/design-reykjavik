@@ -165,6 +165,13 @@
       "file": "components/topbar.tpl",
       "layout_name": "topbar",
       "title": "topbar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/comments.tpl",
+      "layout_name": "",
+      "title": "Comments"
     }
   ],
   "assets": [
@@ -218,12 +225,6 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/header-tag2.png",
-      "kind": "images",
-      "filename": "header-tag2.png"
-    },
-    {
-      "content_type": "image/png",
       "file": "images/ico-flags.png",
       "kind": "images",
       "filename": "ico-flags.png"
@@ -269,6 +270,12 @@
       "file": "images/tag.png",
       "kind": "images",
       "filename": "tag.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/tag2.png",
+      "kind": "images",
+      "filename": "tag2.png"
     },
     {
       "content_type": "application/javascript",
