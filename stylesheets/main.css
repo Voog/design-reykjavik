@@ -18,6 +18,18 @@
 .post .post-date {
   color: #a7a7a7;
   font-size: 15px; }
+.post .comments-count {
+  color: #333333;
+  display: inline-block;
+  padding: 4px 3px 2px;
+  min-width: 14px;
+  min-height: 14px;
+  border: 1px solid #d2d2d2;
+  border-radius: 50%;
+  vertical-align: 1px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 1em; }
 .post .post-content {
   margin-top: 18px; }
   .post .post-content .post-body {
