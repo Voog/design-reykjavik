@@ -289,7 +289,8 @@
     padding: 10px; }
   .content-formatted pre, .content-formatted code {
     margin: 0 0 20px;
-    font-size: 14px; }
+    font-size: 14px;
+    white-space: pre-wrap; }
   .content-formatted b, .content-formatted strong {
     color: #222222; }
   .content-formatted .table-container {
