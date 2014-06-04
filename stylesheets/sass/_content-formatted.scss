@@ -23,42 +23,65 @@
   }
 
   h1 {
+    margin: 0;
+    padding-bottom: 18px;
+    font-weight: 300;
     font-size: 268%;
     line-height: 1.2em;
-    font-weight: 300;
-    margin-top: 0;
-    margin-bottom: 18px;
   }
 
   h2 {
-    margin-top: 15px;
-    font-size: 125%;
-  }
-
-  h3, h4, h5, h6 {
-    font-size: 115%;
+    margin: 0;
+    padding-bottom: 15px;
+    text-transform: uppercase;
     font-weight: 600;
+    font-size: 125%;
     line-height: 1.2em;
   }
 
+  h3, h4, h5, h6 {
+    margin: 0;
+    padding-bottom: 15px;
+    font-weight: 600;
+    font-size: 115%;
+    line-height: 1.2em;
+  }
+  h4 { font-size: 105%; }
+  h5 { font-size: 95%; }
+  h6 { font-size: 85%; }
+
   // Styling rules for the editable content area paragraphs, lists and links.
   p {
-    margin-top: 20px;
+    margin: 0;
+    padding-bottom: 30px;
   }
 
   ul {
-    padding: 0 0 20px 10px;
     margin: 0;
-    list-style-type: none;
+    padding: 0 0 20px 5px;
+    list-style: none;
 
     li {
-      padding-left: 20px;
-      background: url(../images/list_dot.gif) no-repeat 0 10px;
+      padding: 0;
+      list-style: none;
+      line-height: 1.7em;
+      &:before {
+        @include color($black);
+        display: inline-block;
+        padding: 0 11px 0 2px;
+        content: "·";
+        vertical-align: -11px;
+        font-size: 45px;
+        line-height: 15px;
+      }
     }
   }
 
   ol {
+    margin: 0;
+    padding: 0 0 20px 5px;
     li {
+      margin-left: 25px;
     }
   }
 
@@ -80,24 +103,28 @@
   }
 
   img, iframe, pre {
+    margin-bottom: 20px;
+  }
+
+  .embed-container {
+    margin-bottom: 20px;
   }
 
   pre {
-    margin-bottom: 0;
     overflow: auto;
-    white-space: nowrap;
+    margin: 0;
+  }
 
-    &, code {
-      padding: 10px;
-      font-size: 14px;
-      @include bg($grey-3);
-    }
+  code {
+    @include bg($grey-4);
+    display: block;
+    margin-top: 0;
+    padding: 10px;
+  }
 
-    code {
-      display: block;
-      margin-top: 0;
-      padding: 0;
-    }
+  pre, code {
+    margin: 0 0 20px;
+    font-size: 14px;
   }
 
   b, strong {
@@ -126,15 +153,15 @@
   }
 
   table {
+    margin-bottom: 20px;
     width: 100%;
-    margin-top: 20px;
-    font-size: 16px;
     border-collapse: collapse;
+    font-size: 16px;
 
     td {
-      padding: 10px;
       @include border(top, 1px, solid, $third-color);
       @include border(bottom, 1px, solid, $third-color);
+      padding: 10px;
     }
   }
 
