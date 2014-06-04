@@ -160,7 +160,6 @@
   margin-bottom: 15px;
   font-size: 150%; }
 .content-right .content-body h3, .content-right .content-body h4, .content-right .content-body h5, .content-right .content-body h6 {
-  margin-bottom: 15px;
   margin-top: 10px;
   font-weight: 600;
   font-size: 125%;
@@ -470,7 +469,7 @@ body {
 .front-page .content-left {
   width: 43%; }
 .front-page .content-header {
-  padding: 0 0 40px; }
+  padding: 0 0 22px; }
   .front-page .content-header h1 {
     font-size: 320%;
     line-height: 1.2em;
@@ -544,7 +543,7 @@ body {
   clear: both;
   content: ""; }
 
-.menu .menu-item, .langmenu, .menu-lang, .search,
+ul.menu .menu-item, .langmenu, .menu-lang, .search,
 .search-left,
 .search-right {
   display: inline-block; }
@@ -705,10 +704,13 @@ body {
         .mobile-menu-wrapper .mobile-menu-main ul li.open > ul {
           display: block;
           border-top-color: transparent; }
+        .mobile-menu-wrapper .mobile-menu-main ul li:first-child {
+          border-top: 1px solid #444444; }
+        .mobile-menu-wrapper .mobile-menu-main ul li:last-child {
+          border-bottom: none; }
       .mobile-menu-wrapper .mobile-menu-main ul ul {
         display: none;
-        padding: 0;
-        border-top: 1px solid #444444; }
+        padding: 0; }
   .mobile-menu-wrapper .menu-lang {
     position: absolute;
     top: 0;
@@ -772,12 +774,17 @@ body {
   vertical-align: middle;
   line-height: 0.8; }
 
-.menu {
+ul.menu {
   margin: 0;
   padding: 0;
   list-style: none; }
-  .menu .menu-item {
+  ul.menu .menu-item {
     list-style: none; }
+    ul.menu .menu-item:before {
+      display: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      content: '' !important; }
 
 .menu-main {
   display: inline-block;
@@ -861,8 +868,10 @@ body {
   border-top: 1px solid #d2d2d2;
   background: #f7f7f7;
   list-style-type: none; }
-  #sidebar .submenu li {
+  #sidebar .submenu .menu-item {
     padding: 0 10px; }
+    #sidebar .submenu .menu-item .menu-link {
+      padding: 7px 0; }
 
 .langmenu {
   position: relative;
@@ -920,8 +929,8 @@ body {
     margin-left: -50px;
     width: 100px; }
     .langmenu .langmenu-popup ul li {
-      background: none;
-      padding: 0; }
+      padding: 0;
+      background: none; }
   .langmenu .langmenu-arrow {
     position: absolute;
     top: -23px;
@@ -1151,13 +1160,16 @@ body {
       margin-bottom: 12px; }
   .news ul {
     list-style: none;
-    padding: 0;
-    margin-top: 12px; }
+    padding: 0; }
     .news ul .news-item {
       line-height: 1.6em;
-      background: none;
       padding-left: 0;
       padding-bottom: 18px; }
+      .news ul .news-item:before {
+        content: '';
+        padding: 0;
+        margin: 0;
+        display: none; }
   .news .author,
   .news .date {
     color: #a7a7a7; }

@@ -100,11 +100,16 @@
           display: block;
           border-top-color: transparent;
         }
+        &:first-child {
+          border-top: 1px solid $grey-6;  
+        }
+        &:last-child {
+          border-bottom: none;
+        }
       }
       ul {
         display: none;
         padding: 0;
-        border-top: 1px solid $grey-6;
       }
     }
   }
@@ -179,7 +184,7 @@
 }
 
 // General rules for the menus. These rules affect all menus on the site.
-.menu {
+ul.menu {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -187,6 +192,12 @@
   .menu-item {
     @extend %inline-block;
     list-style: none;
+    &:before {
+      display: none !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      content: '' !important;
+    }
   }
 }
 
@@ -305,8 +316,11 @@
     background: #f7f7f7;
     list-style-type: none;
 
-    li {
+    .menu-item {
       padding: 0 10px;
+      .menu-link {
+        padding: 7px 0;
+      }
     }
   }
 }
@@ -375,8 +389,8 @@
     margin-left: -50px;
     width: 100px;
     ul li {
-      background: none;
       padding: 0;
+      background: none;
     }
   }
 
