@@ -160,10 +160,11 @@
   font-size: 150%; }
 .content-right .content-body h3, .content-right .content-body h4, .content-right .content-body h5, .content-right .content-body h6 {
   margin-bottom: 15px;
-  margin-top: 0;
+  margin-top: 10px;
   font-weight: 600;
   font-size: 125%;
-  line-height: 1.2em; }
+  line-height: 1.2em;
+  text-transform: uppercase; }
 
 .content-title.content-formatted,
 .content-header.content-formatted {
@@ -195,18 +196,16 @@
   .content-header.content-formatted .edy-texteditor-view {
     min-height: 18px; }
 
-.front-page .content-body {
-  margin-top: 10px; }
+@media screen and (max-width: 752px) {
+  .front-page .content-body {
+    margin-top: 35px; } }
+.front-page .content-body p {
+  margin-top: 10px;
+  font-size: 25px;
+  line-height: 1.5; }
   @media screen and (max-width: 752px) {
-    .front-page .content-body {
-      margin-top: 35px; } }
-  .front-page .content-body p {
-    margin-top: 10px;
-    font-size: 25px;
-    line-height: 1.5; }
-    @media screen and (max-width: 752px) {
-      .front-page .content-body p {
-        font-size: 18px; } }
+    .front-page .content-body p {
+      font-size: 18px; } }
 .common-page .content-body {
   margin-top: 35px; }
 
@@ -222,7 +221,10 @@
     word-wrap: break-word; }
   .content-formatted h1 {
     font-size: 268%;
-    line-height: 1; }
+    line-height: 1.2em;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 18px; }
   .content-formatted h2 {
     margin-top: 15px;
     font-size: 125%; }
@@ -247,8 +249,6 @@
     max-width: 100%; }
   .content-formatted img {
     height: auto; }
-  .content-formatted img, .content-formatted iframe, .content-formatted pre {
-    margin-top: 25px; }
   .content-formatted pre {
     margin-bottom: 0;
     overflow: auto;
@@ -440,13 +440,15 @@ body {
 .front-page .content-left {
   width: 43%; }
 .front-page .content-header {
-  padding: 0 0 40px;
-  font-size: 320%;
-  line-height: 1.2em; }
-  @media screen and (max-width: 752px) {
-    .front-page .content-header {
-      font-size: 200%;
-      padding-bottom: 30px; } }
+  padding: 0 0 40px; }
+  .front-page .content-header h1 {
+    font-size: 320%;
+    line-height: 1.2em;
+    margin-bottom: 0; }
+    @media screen and (max-width: 752px) {
+      .front-page .content-header h1 {
+        padding-bottom: 30px;
+        font-size: 200%; } }
 .front-page .content-right {
   width: 48%; }
   @media screen and (max-width: 752px) {
@@ -670,10 +672,9 @@ body {
         min-height: 40px;
         border-bottom: 1px solid #444444;
         line-height: 100%; }
-        .mobile-menu-wrapper .mobile-menu-main ul li.open {
-          border-bottom-color: transparent; }
         .mobile-menu-wrapper .mobile-menu-main ul li.open > ul {
-          display: block; }
+          display: block;
+          border-top-color: transparent; }
       .mobile-menu-wrapper .mobile-menu-main ul ul {
         display: none;
         padding: 0;
@@ -745,79 +746,15 @@ body {
   margin: 0;
   padding: 0;
   list-style: none; }
+  .menu .menu-item {
+    list-style: none; }
 
 .menu-main {
   display: inline-block;
   padding: 7px 0; }
   @media screen and (max-width: 752px) {
     .menu-main {
-      display: none; }
-      .menu-main.expanded {
-        background-color: white;
-        -webkit-box-shadow: 0 0 5px rgba(34, 34, 34, 0.3) ;
-        -moz-box-shadow: 0 0 5px rgba(34, 34, 34, 0.3) ;
-        box-shadow: 0 0 5px rgba(34, 34, 34, 0.3) ;
-        position: absolute;
-        top: 75px;
-        right: 20px;
-        z-index: 1;
-        display: block;
-        margin-bottom: 60px;
-        padding: 0;
-        min-width: 350px;
-        text-align: left; }
-        .menu-main.expanded .menu .menu-item {
-          border-top: 1px solid #5e5e5e;
-          border-top: 1px solid rgba(94, 94, 94, 0.2);
-          display: block;
-          margin-right: 0; }
-          .menu-main.expanded .menu .menu-item:first-child {
-            border-top: none; }
-          .menu-main.expanded .menu .menu-item .menu-link {
-            display: block;
-            padding: 11px 20px;
-            font-size: 20px; }
-            .menu-main.expanded .menu .menu-item .menu-link:hover {
-              background-color: #c7e5ff;
-              background-color: rgba(199, 229, 255, 0.5); }
-            .menu-main.expanded .menu .menu-item .menu-link.active {
-              background-color: #c7e5ff; }
-        .menu-main.expanded .menu-lang {
-          border-top: 1px solid #5e5e5e;
-          border-top: 1px solid rgba(94, 94, 94, 0.2);
-          display: block;
-          margin-top: 0; }
-          .menu-main.expanded .menu-lang .menu-item .menu-link {
-            color: #333333;
-            position: relative;
-            padding: 14px 20px 14px 50px;
-            font-size: 12px; }
-            .menu-main.expanded .menu-lang .menu-item .menu-link:hover, .menu-main.expanded .menu-lang .menu-item .menu-link.active:hover {
-              background-color: #d2d2d2;
-              background-color: rgba(210, 210, 210, 0.1); }
-            .menu-main.expanded .menu-lang .menu-item .menu-link.active {
-              color: #d2d2d2;
-              background: none; }
-            .menu-main.expanded .menu-lang .menu-item .menu-link.lang-flag:before, .menu-main.expanded .menu-lang .menu-item .menu-link.lang-flag:after {
-              position: absolute;
-              top: 14px;
-              left: 20px;
-              display: block;
-              width: 20px;
-              height: 13px;
-              content: ''; }
-            .menu-main.expanded .menu-lang .menu-item .menu-link.lang-flag:before {
-              background-color: #222222; }
-            .menu-main.expanded .menu-lang .menu-item .menu-link.lang-flag:after {
-              background-size: 200px;
-              background-repeat: no-repeat;
-              opacity: 0.95; }
-              .no-svg .menu-main.expanded .menu-lang .menu-item .menu-link.lang-flag:after {
-                background-image: url("../images/ico-flags.png"); }
-              .svg .menu-main.expanded .menu-lang .menu-item .menu-link.lang-flag:after {
-                background-image: url("../assets/ico-flags.svg"); }
-            .menu-main.expanded .menu-lang .menu-item .menu-link.edy-menu-langadd {
-              padding-left: 20px; } }
+      display: none; } }
   @media screen and (max-width: 480px) {
     .menu-main.expanded {
       border-top: 1px solid #5e5e5e;
@@ -832,14 +769,20 @@ body {
       margin: 0 0 60px;
       min-width: 100%; } }
   .menu-main .menu {
-    float: right; }
+    float: right;
+    padding: 0;
+    list-style: none; }
     .menu-main .menu .menu-item,
     .menu-main .menu .edit-btn {
       margin-right: 30px;
+      padding: 0;
+      background: none;
       line-height: 1.3em; }
       .menu-main .menu .menu-item:last-child,
       .menu-main .menu .edit-btn:last-child {
         margin-right: 0; }
+    .menu-main .menu .edit-btn {
+      vertical-align: 1px; }
     .menu-main .menu .menu-link {
       color: #5e5e5e;
       display: block;
@@ -879,7 +822,8 @@ body {
         color: #222222;
         font-weight: 700; }
       #sidebar .menu .menu-item .menu-link:hover {
-        color: #333333; }
+        color: #333333;
+        text-decoration: none; }
 #sidebar .submenu {
   background-color: #f7f7f7;
   margin: 0;
@@ -945,6 +889,9 @@ body {
     display: none;
     margin-left: -50px;
     width: 100px; }
+    .langmenu .langmenu-popup ul li {
+      background: none;
+      padding: 0; }
   .langmenu .langmenu-arrow {
     position: absolute;
     top: -23px;
@@ -1174,10 +1121,13 @@ body {
       margin-bottom: 12px; }
   .news ul {
     list-style: none;
-    padding: 0; }
+    padding: 0;
+    margin-top: 12px; }
     .news ul .news-item {
       line-height: 1.6em;
-      padding-bottom: 15px; }
+      background: none;
+      padding-left: 0;
+      padding-bottom: 18px; }
   .news .author,
   .news .date {
     color: #a7a7a7; }

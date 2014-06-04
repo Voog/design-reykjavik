@@ -9,15 +9,15 @@
   {% unless article.data.fb_image == nil or article.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fb_image }}">{% endunless %}{% comment %}<!-- TODO: Add image location data tag -->{% endcomment %}
 </head>
 
-<body class="post-page js-bgpicker-body-image" {% if site.data.body_image %}style="background-image: url('{{ site.data.body_image}}');"{% endif %}>
+<body class="post-page">
 
   {% include "menu-mobile" %}
 
   <div class="container">
     {% include "header" %}
 
-    <main class="content" role="main">
-      <div class="content-centered">
+    <main class="content content-formatted" role="main">
+      <article class="content-centered">
         {% include "post-box" with "article" %}
 
         <section id="comments" class="comments content-formatted">
@@ -25,7 +25,7 @@
           {% include "comment-form" %}
         </section>
 
-      </div>
+      </article>
     </main>
   </div>
 

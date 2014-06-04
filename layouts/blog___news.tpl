@@ -11,14 +11,14 @@
   {{ blog.rss_link }}
 </head>
 
-<body class="blog-page js-bgpicker-body-image" {% if site.data.body_image %}style="background-image: url('{{ site.data.body_image}}');{% if site.data.body_color %} position: relative;{% endif %}"{% endif %}>
+<body class="blog-page">
 
   {% include "menu-mobile" %}
 
   <div class="container">
     {% include "header" %}
     {% include "tags-blog" %}
-    <div class="content" role="main">
+    <main class="content content-formatted" role="main">
       <section class="content-centered">
 
         {% if editmode %}<div style="padding-bottom: 30px">{% addbutton %}</div>{% endif %}
@@ -27,7 +27,7 @@
           {% include "post-box" %}
         {% endfor %}
       </section>
-    </div>
+    </main>
   </div>
 
   {% include "footer" %}

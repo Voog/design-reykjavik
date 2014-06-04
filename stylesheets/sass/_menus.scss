@@ -96,11 +96,9 @@
         min-height: 40px;
         border-bottom: 1px solid $grey-6;
         line-height: 100%;
-        &.open {
-          border-bottom-color: transparent;
-        }
         &.open > ul {
           display: block;
+          border-top-color: transparent;
         }
       }
       ul {
@@ -188,115 +186,14 @@
 
   .menu-item {
     @extend %inline-block;
+    list-style: none;
   }
 }
 
 // Styling rules for the site's main menu. Usually the first level menu but can have the sub menu in it aswell.
 .menu-main {
-
   @include query($tablet-2) {
     display: none;
-
-    &.expanded {
-      @include bg($white);
-      @include box-shadow(0, 0, 5px, rgba($black, 0.3));
-      position: absolute;
-      top: 75px;
-      right: 20px;
-      z-index: 1;
-      display: block;
-      margin-bottom: 60px;
-      padding: 0;
-      min-width: 350px;
-      text-align: left;
-
-      .menu {
-        .menu-item {
-          @include border(top, 1px, solid, $primary-color, 0.2);
-          display: block;
-          margin-right: 0;
-
-          &:first-child {
-            border-top: none;
-          }
-
-          .menu-link {
-            display: block;
-            padding: 11px 20px;
-            font-size: 20px;
-
-            &:hover {
-              @include bg($blue-2, 0.5);
-            }
-
-            &.active {
-              @include bg($blue-2);
-            }
-          }
-        }
-      }
-
-      // Styling rules for the language menu in the site's main menu. Only visible on smaller screens.
-      .menu-lang {
-        @include border(top, 1px, solid, $primary-color, 0.2);
-        display: block;
-        margin-top: 0;
-
-        .menu-item {
-          .menu-link {
-            @include color($secondary-color);
-            position: relative;
-            padding: 14px 20px 14px 50px;
-            font-size: 12px;
-
-            &, &.active {
-              &:hover {
-                @include bg($grey-2, 0.1);
-              }
-            }
-
-            &.active {
-              @include color($grey-2);
-              background: none;
-            }
-
-            &.lang-flag:before,
-            &.lang-flag:after {
-              position: absolute;
-              top: 14px;
-              left: 20px;
-              display: block;
-              width: 20px;
-              height: 13px;
-              content: '';
-            }
-
-            &.lang-flag:before {
-              @include bg($black);
-            }
-
-            &.lang-flag:after {
-              background-size: 200px;
-              background-repeat: no-repeat;
-              opacity: 0.95;
-
-              .no-svg & {
-                background-image: url('../images/ico-flags.png');
-              }
-
-              .svg & {
-                background-image: url('../assets/ico-flags.svg');
-              }
-            }
-
-            &.edy-menu-langadd {
-              padding-left: 20px;
-            }
-          }
-
-        }
-      }
-    }
   }
 
   @include query($mobile-1) {
@@ -315,14 +212,22 @@
 
   .menu {
     float: right;
+    padding: 0;
+    list-style: none;
     .menu-item,
     .edit-btn {
       margin-right: 30px;
+      padding: 0;
+      background: none;
       line-height: 1.3em;
 
       &:last-child {
         margin-right: 0;
       }
+    }
+
+    .edit-btn {
+      vertical-align: 1px;
     }
 
     .menu-link {
@@ -386,6 +291,7 @@
 
         &:hover {
           @include color($secondary-color);
+          text-decoration: none;
         }
       }
     }
@@ -468,6 +374,10 @@
     display: none;
     margin-left: -50px;
     width: 100px;
+    ul li {
+      background: none;
+      padding: 0;
+    }
   }
 
   .langmenu-arrow {

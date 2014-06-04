@@ -50,10 +50,11 @@
 
   h3, h4, h5, h6 {
     margin-bottom: 15px;
-    margin-top: 0;
+    margin-top: 10px;
     font-weight: 600;
     font-size: 125%;
     line-height: 1.2em;
+    text-transform: uppercase;
   }
 }
 
@@ -109,7 +110,6 @@
     @include query($tablet-2) {
       margin-top: 35px;
     }
-    margin-top: 10px;
 
     p {
 
