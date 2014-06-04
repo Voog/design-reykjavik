@@ -35,7 +35,6 @@
 }
 
 .content-right .content-body {
-
   h1 {
     margin-bottom: 15px;
     font-size: 175%;
@@ -57,23 +56,20 @@
   }
 }
 
-.content-title,
-.content-header {
-  &.content-formatted {
+.content-formatted {
 
-    @include color($secondary-color);
-    @include query($tablet-2) {
-      h1 {
-        font-size: 135%;
-      }
+  @include color($secondary-color);
+  @include query($tablet-2) {
+    h1 {
+      font-size: 135%;
+    }
 
-      h2 {
-        font-size: 125%;
-      }
+    h2 {
+      font-size: 125%;
+    }
 
-      h3 {
-        font-size: 115%;
-      }
+    h3 {
+      font-size: 115%;
     }
   }
 }

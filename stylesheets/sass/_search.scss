@@ -7,21 +7,31 @@
 }
 
 .search {
+  float: right;
 }
 
 .search-left {
   .edys-search-input {
-    width: 128px;
-    padding: 7px 10px;
-    font-family: inherit;
+    @include border(all, 1px, solid, $grey-2);
+    @include bg(#e1e1e1);
+    @include color($primary-color);
+    padding: 7px 30px 7px 15px;
+    width: 200px;
+    border-radius: 35px;
     font-size: 14px;
-    @include border(all, 1px, solid, $grey-1);
-    border-radius: 3px;
+    font-family: inherit;
+    &:focus {
+      outline: none;
+    }
   }
 }
 
 .search-right {
+  margin-left: -35px;
+  background: transparent url('/images/search.gif') center center no-repeat;
+  cursor: pointer; 
   .search-submit {
+    visibility: hidden;
     vertical-align: middle;
   }
 }
