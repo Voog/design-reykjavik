@@ -28,7 +28,7 @@
         <section class="content-body">{% content %}</section>
       </article>
 
-      <aside class="content-left content-left-last">
+      <aside class="content-left last">
         {% include "news" %}
       </aside>
 
