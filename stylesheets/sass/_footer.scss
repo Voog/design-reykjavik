@@ -1,14 +1,11 @@
 /* FOOTER */
 // Styling rules for the site's footer. These rules affect the entire site.
 .footer {
-  @include query($tablet-2) {
-    padding: 30px 20px;
-  }
   clear: both;
   margin-top: 0;
-  padding: 40px 20px;
-  background: $grey-4;
+  padding: 25px 20px;
   text-align: left;
+  position: relative;
 
   .footer-inner {
     margin: auto;
@@ -16,8 +13,13 @@
   }
 
   .content-formatted {
+    @include query($tablet-3) {
+      margin-top: 15px;
+      width: 100%;
+    }
     @include color($third-color);
-    max-width: 700px;
+    margin-right: 235px;
+    width: auto;
     font-size: 13px;
     line-height: 1.7em;
 
@@ -32,14 +34,11 @@
     a {
       @include color($black);
       display: inline-block;
-      border-bottom: 1px solid $grey-1;
       text-decoration: none;
       line-height: 1.4;
+      &:hover {
+        @include color($black, 0.85);
+      }
     }
-  }
-
-  .voog-reference {
-    margin-top: 30px;
-    text-align: center;
   }
 }

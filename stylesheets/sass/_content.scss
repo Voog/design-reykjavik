@@ -5,7 +5,7 @@
   @include clearfix;
   overflow: auto;
   margin: auto;
-  padding: 40px 20px 60px;
+  padding: 0 25px 40px;
   max-width: 960px;
 
   .content-left {
@@ -52,7 +52,6 @@
     font-weight: 600;
     font-size: 125%;
     line-height: 1.2em;
-    text-transform: uppercase;
   }
 }
 

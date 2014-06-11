@@ -3,7 +3,6 @@
 <script src="{{ javascripts_path }}/main.js?2"></script>
 <script src="{{ javascripts_path }}/retina.js?2"></script>
 <script src="{{ javascripts_path }}/overthrow.js?2"></script>
-<script src="{{ javascripts_path }}/scripts.js?2"></script>
 
 {% if site.search.enabled %}
   <script src="http://static.edicy.com/assets/site_search/3.0/site_search.js?2"></script>

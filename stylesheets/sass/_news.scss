@@ -1,48 +1,65 @@
 .news {
-  margin-top: 0 !important;
+  @include query($tablet-2) {
+    padding: 0;
+  }
   display: block;
+  margin-top: 0 !important;
 
   .news-header {
-    font-size: 125%;
-    text-transform: uppercase;
-    font-weight: 600;
-    margin: 0;
-    line-height: 1.2em;
     @include color($secondary-color);
-
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 150%;
+    line-height: 1.2em;
     .content-body & {
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
   }
 
   ul {
-    list-style: none;
     padding: 0;
+    list-style: none;
     .news-item {
-      line-height: 1.6em;
-      padding-left: 0;
-      padding-bottom: 18px;
+      padding: 0 0 10px;
+      max-width: 100%;
+      line-height: 1.3em;
       &:before {
-        content: '';
-        padding: 0;
-        margin: 0;
         display: none;
+        margin: 0;
+        padding: 0;
+        content: '';
       }
     }
   }
 
-  .author,
-  .date {
+  .date,
+  .author {
     @include color($grey-5);
+    white-space: nowrap;
+    font-size: 120%;
+    line-height: 1.2em;
+  }
+
+  .date {
+    margin-left: 10px;
   }
 
   .link {
     @include color($black);
+    display: inline;
     text-decoration: none;
+    font-size: 120%;
+    line-height: 1.2em;
 
     &:hover {
       @include color($primary-color);
       text-decoration: underline;
     }
+  }
+
+  .more-news {
+    display: inline-block;
+    margin-top: 10px;
   }
 }

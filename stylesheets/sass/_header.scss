@@ -1,10 +1,10 @@
 /* HEADER */
 // Styling rules for the site's header. These rules affect the entire site.
 .header {
+  @include bg(white);
   @include query($tablet-2) {
     padding-top: 23px;
   }
-  @include bg(white);
   margin: auto;
   padding: 63px 20px 0;
   max-width: 960px;
@@ -12,11 +12,10 @@
 }
 
 .header-inner {
+  padding-bottom: 36px;
   min-height: 50px;
   width: 100%;
-  border-bottom: 1px solid $grey-2;
   text-align: right;
-  padding-bottom: 32px;
   justify-content: space-between;
   .no-flexbox &,
   .flexbox & {
@@ -54,17 +53,20 @@
       @include query($tablet-2) {
         display: block;
       }
-
+      padding: 5px 0;
       &, & a {
         @include color($secondary-color);
-        text-transform: uppercase;
-        font-weight: 300;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 500;
         font-style: normal;
         font-variant: normal;
-        font-size: 23px;
+        font-size: 24px;
+        line-height: 1em;
 
         &:hover {
-          @include color($primary-color, 0.8);
+          @include color($secondary-color, 0.8);
+          text-decoration: none;
         }
       }
     }

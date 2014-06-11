@@ -7,18 +7,34 @@
 }
 
 .search {
-  float: right;
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  @include query($tablet-3) {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 100%;
+    text-align: left;
+  }
 }
 
 .search-left {
+  @include query($tablet-3) {
+    width: 88%;
+  }
   .edys-search-input {
     @include border(all, 1px, solid, $grey-2);
-    @include bg(#e1e1e1);
+    @include bg($white);
     @include color($primary-color);
+    @include query($tablet-3) {
+      width: 100%
+    }
     padding: 7px 30px 7px 15px;
-    width: 200px;
+    width: 180px;
+    height: 22px;
     border-radius: 35px;
-    font-size: 14px;
+    font-size: 18px;
     font-family: inherit;
     &:focus {
       outline: none;
@@ -28,6 +44,10 @@
 
 .search-right {
   margin-left: -35px;
+  @include query($tablet-3) {
+    margin-left: 10px;
+  }
+  opacity: 0.5;
   background: transparent url('/images/search.gif') center center no-repeat;
   cursor: pointer; 
   .search-submit {

@@ -127,6 +127,25 @@
       focusCommentsWithErrors();
     };
 
+    var resizeTimeout;
+    var resizeContentRight = function() {
+      clearTimeout(resizeTimeout);
+      resizeTimeout = setTimeout(function() {
+        console.log("resizeContentRight");
+        var height = parseInt($('.content-left .content-header').parent().css('height')),
+            padding = parseFloat($('.content-right').css('padding'));
+        height += parseInt($('.content-left .news').parent().css('height'));
+        $('.content-right').css('min-height', height - 2 * padding);
+      }, 200);
+    };
+
+    var calculateFrontPageImageHeight = function() {
+      if ($('body.front-page').length > 0) {
+        $(window).load(resizeContentRight);
+        $(window).on('resize', resizeContentRight);
+      }
+    };
+
     var init = function() {
       // ADD SITE WIDE FUNCTIONS HERE
       handleLanguageSwitch();
@@ -134,6 +153,7 @@
       handlePopoverMenuHide();
       handleGalleryHover();
       handleWindowResize();
+      calculateFrontPageImageHeight();
       wrapTables();
       if ($('.table-container').length > 0) {
         checkScrollBar();

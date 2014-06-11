@@ -1,341 +1,324 @@
 {
-  "description": "New design",
-  "name": "New design",
-  "preview_medium": "",
-  "preview_small": "",
-  "author": "",
   "layouts": [
     {
+      "title": "Front page",
+      "layout_name": "front_page",
       "content_type": "page",
       "component": false,
-      "file": "layouts/blog___news.tpl",
-      "layout_name": "page_default",
-      "title": "Blog & news"
+      "file": "layouts/front_page.tpl"
     },
     {
+      "title": "Common page",
+      "layout_name": "common_page",
       "content_type": "page",
       "component": false,
-      "file": "layouts/blog_article.tpl",
-      "layout_name": "page_default",
-      "title": "Blog article"
+      "file": "layouts/common_page.tpl"
     },
     {
-      "content_type": "page",
+      "title": "Blog & News",
+      "layout_name": "blog___news",
+      "content_type": "blog",
       "component": false,
-      "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
-      "title": "Common page"
+      "file": "layouts/blog___news.tpl"
     },
     {
-      "content_type": "page",
+      "title": "Blog article",
+      "layout_name": "blog_article",
+      "content_type": "blog_article",
       "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_default",
-      "title": "Front page"
+      "file": "layouts/blog_article.tpl"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/bg-picker.tpl",
+      "title": "bg-picker",
       "layout_name": "bg-picker",
-      "title": "bg-picker"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/comment-form.tpl",
+      "file": "components/bg-picker.tpl"
+    },
+    {
+      "title": "comment-form",
       "layout_name": "comment-form",
-      "title": "comment-form"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/comments.tpl",
+      "file": "components/comment-form.tpl"
+    },
+    {
+      "title": "comments",
       "layout_name": "comments",
-      "title": "comments"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/footer.tpl",
+      "file": "components/comments.tpl"
+    },
+    {
+      "title": "footer",
       "layout_name": "footer",
-      "title": "footer"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/header.tpl",
+      "file": "components/footer.tpl"
+    },
+    {
+      "title": "header",
       "layout_name": "header",
-      "title": "header"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/html-head.tpl",
+      "file": "components/header.tpl"
+    },
+    {
+      "title": "html-head",
       "layout_name": "html-head",
-      "title": "html-head"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/javascripts.tpl",
+      "file": "components/html-head.tpl"
+    },
+    {
+      "title": "javascripts",
       "layout_name": "javascripts",
-      "title": "javascripts"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-lang-mobile.tpl",
+      "file": "components/javascripts.tpl"
+    },
+    {
+      "title": "menu-lang-mobile",
       "layout_name": "menu-lang-mobile",
-      "title": "menu-lang-mobile"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-lang.tpl",
+      "file": "components/menu-lang-mobile.tpl"
+    },
+    {
+      "title": "menu-lang",
       "layout_name": "menu-lang",
-      "title": "menu-lang"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-level-1.tpl",
+      "file": "components/menu-lang.tpl"
+    },
+    {
+      "title": "menu-level-1",
       "layout_name": "menu-level-1",
-      "title": "menu-level-1"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-level-2.tpl",
+      "file": "components/menu-level-1.tpl"
+    },
+    {
+      "title": "menu-level-2",
       "layout_name": "menu-level-2",
-      "title": "menu-level-2"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-mobile.tpl",
+      "file": "components/menu-level-2.tpl"
+    },
+    {
+      "title": "menu-mobile",
       "layout_name": "menu-mobile",
-      "title": "menu-mobile"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/news.tpl",
+      "file": "components/menu-mobile.tpl"
+    },
+    {
+      "title": "news",
       "layout_name": "news",
-      "title": "news"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/post-box.tpl",
+      "file": "components/news.tpl"
+    },
+    {
+      "title": "post-box",
       "layout_name": "post-box",
-      "title": "post-box"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/search.tpl",
+      "file": "components/post-box.tpl"
+    },
+    {
+      "title": "search",
       "layout_name": "search",
-      "title": "search"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/sidebar.tpl",
+      "file": "components/search.tpl"
+    },
+    {
+      "title": "sidebar",
       "layout_name": "sidebar",
-      "title": "sidebar"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/tags-blog.tpl",
+      "file": "components/sidebar.tpl"
+    },
+    {
+      "title": "tags-blog",
       "layout_name": "tags-blog",
-      "title": "tags-blog"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/tags-post.tpl",
+      "file": "components/tags-blog.tpl"
+    },
+    {
+      "title": "tags-post",
       "layout_name": "tags-post",
-      "title": "tags-post"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/tags-translations.tpl",
+      "file": "components/tags-post.tpl"
+    },
+    {
+      "title": "tags-translations",
       "layout_name": "tags-translations",
-      "title": "tags-translations"
-    },
-    {
       "content_type": "component",
       "component": true,
-      "file": "components/topbar.tpl",
+      "file": "components/tags-translations.tpl"
+    },
+    {
+      "title": "topbar",
       "layout_name": "topbar",
-      "title": "topbar"
+      "content_type": "component",
+      "component": true,
+      "file": "components/topbar.tpl"
     }
   ],
   "assets": [
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/arr-bottom.svg",
-      "kind": "assets",
-      "filename": "arr-bottom.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/arr-top.svg",
-      "kind": "assets",
-      "filename": "arr-top.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/header-tag.svg",
-      "kind": "assets",
-      "filename": "header-tag.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-flags.svg",
-      "kind": "assets",
-      "filename": "ico-flags.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/tag.svg",
-      "kind": "assets",
-      "filename": "tag.svg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/arr-bottom.png",
-      "kind": "images",
-      "filename": "arr-bottom.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/arr-top.png",
-      "kind": "images",
-      "filename": "arr-top.png"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/arr_down.gif",
-      "kind": "images",
-      "filename": "arr_down.gif"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-flags.png",
-      "kind": "images",
-      "filename": "ico-flags.png"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/list_dot.gif",
-      "kind": "images",
-      "filename": "list_dot.gif"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/list_dot_2x.gif",
-      "kind": "images",
-      "filename": "list_dot_2x.gif"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/photo01.jpg",
-      "kind": "images",
-      "filename": "photo01.jpg"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/reykjavik_photo01.jpg",
-      "kind": "images",
-      "filename": "reykjavik_photo01.jpg"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/search.gif",
-      "kind": "images",
-      "filename": "search.gif"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/search_2x.gif",
-      "kind": "images",
-      "filename": "search_2x.gif"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/tag.png",
-      "kind": "images",
-      "filename": "tag.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/tag2.png",
-      "kind": "images",
-      "filename": "tag2.png"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/autogrow.js",
-      "kind": "javascripts",
-      "filename": "autogrow.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/jquery.js",
-      "kind": "javascripts",
-      "filename": "jquery.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/main.js",
-      "kind": "javascripts",
-      "filename": "main.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/modernizr.js",
-      "kind": "javascripts",
-      "filename": "modernizr.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/overthrow.js",
-      "kind": "javascripts",
-      "filename": "overthrow.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/retina.js",
-      "kind": "javascripts",
-      "filename": "retina.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/scripts.js",
-      "kind": "javascripts",
-      "filename": "scripts.js"
-    },
-    {
-      "content_type": "text/css",
+      "kind": "stylesheet",
+      "filename": "ie8.css",
       "file": "stylesheets/ie8.css",
-      "kind": "stylesheets",
-      "filename": "ie8.css"
+      "content_type": "text/css"
     },
     {
-      "content_type": "text/css",
+      "kind": "stylesheet",
+      "filename": "main.css",
       "file": "stylesheets/main.css",
-      "kind": "stylesheets",
-      "filename": "main.css"
+      "content_type": "text/css"
     },
     {
-      "content_type": "text/unknown",
-      "file": "stylesheets/sass",
-      "kind": "stylesheets",
-      "filename": "sass"
+      "kind": "javascript",
+      "filename": "autogrow.js",
+      "file": "javascripts/autogrow.js",
+      "content_type": "text/javascript"
+    },
+    {
+      "kind": "javascript",
+      "filename": "jquery.js",
+      "file": "javascripts/jquery.js",
+      "content_type": "text/javascript"
+    },
+    {
+      "kind": "javascript",
+      "filename": "main.js",
+      "file": "javascripts/main.js",
+      "content_type": "text/javascript"
+    },
+    {
+      "kind": "javascript",
+      "filename": "modernizr.js",
+      "file": "javascripts/modernizr.js",
+      "content_type": "text/javascript"
+    },
+    {
+      "kind": "javascript",
+      "filename": "overthrow.js",
+      "file": "javascripts/overthrow.js",
+      "content_type": "text/javascript"
+    },
+    {
+      "kind": "javascript",
+      "filename": "retina.js",
+      "file": "javascripts/retina.js",
+      "content_type": "text/javascript"
+    },
+    {
+      "kind": "image",
+      "filename": "arr-bottom.png",
+      "file": "images/arr-bottom.png",
+      "content_type": "image/png"
+    },
+    {
+      "kind": "image",
+      "filename": "arr-top.png",
+      "file": "images/arr-top.png",
+      "content_type": "image/png"
+    },
+    {
+      "kind": "image",
+      "filename": "arr_down.gif",
+      "file": "images/arr_down.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "kind": "image",
+      "filename": "ico-flags.png",
+      "file": "images/ico-flags.png",
+      "content_type": "image/png"
+    },
+    {
+      "kind": "image",
+      "filename": "list_dot.gif",
+      "file": "images/list_dot.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "kind": "image",
+      "filename": "list_dot_2x.gif",
+      "file": "images/list_dot_2x.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "kind": "image",
+      "filename": "photo01.jpg",
+      "file": "images/photo01.jpg",
+      "content_type": "image/jpg"
+    },
+    {
+      "kind": "image",
+      "filename": "reykjavik_photo01.jpg",
+      "file": "images/reykjavik_photo01.jpg",
+      "content_type": "image/jpg"
+    },
+    {
+      "kind": "image",
+      "filename": "search.gif",
+      "file": "images/search.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "kind": "image",
+      "filename": "search_2x.gif",
+      "file": "images/search_2x.gif",
+      "content_type": "image/gif"
+    },
+    {
+      "kind": "image",
+      "filename": "tag.png",
+      "file": "images/tag.png",
+      "content_type": "image/png"
+    },
+    {
+      "kind": "image",
+      "filename": "tag2.png",
+      "file": "images/tag2.png",
+      "content_type": "image/png"
+    },
+    {
+      "kind": "unknown",
+      "filename": "arr-bottom.svg",
+      "file": "assets/arr-bottom.svg",
+      "content_type": "unknown/unknown"
+    },
+    {
+      "kind": "unknown",
+      "filename": "arr-top.svg",
+      "file": "assets/arr-top.svg",
+      "content_type": "unknown/unknown"
+    },
+    {
+      "kind": "unknown",
+      "filename": "header-tag.svg",
+      "file": "assets/header-tag.svg",
+      "content_type": "unknown/unknown"
+    },
+    {
+      "kind": "unknown",
+      "filename": "ico-flags.svg",
+      "file": "assets/ico-flags.svg",
+      "content_type": "unknown/unknown"
+    },
+    {
+      "kind": "unknown",
+      "filename": "tag.svg",
+      "file": "assets/tag.svg",
+      "content_type": "unknown/unknown"
     }
   ]
 }
