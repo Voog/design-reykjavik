@@ -19,10 +19,9 @@
 
   <div class="container">
     {% include "header" %}
-    {% include "tags-blog" %}
     <main class="content content-formatted" role="main">
       <section class="content-centered">
-
+        {% include "tags-blog" %}
         {% if editmode %}<div style="padding-bottom: 30px">{% addbutton %}</div>{% endif %}
 
         {% for article in articles %}
@@ -30,7 +29,7 @@
         {% endfor %}
       </section>
     </main>
-    {% include "footer" %
+    {% include "footer" %}
   </div>
   {% include "javascripts" %}
   {% include "bg-picker" %}

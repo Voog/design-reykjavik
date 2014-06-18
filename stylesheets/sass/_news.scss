@@ -35,7 +35,6 @@
 
   .date,
   .author {
-    color: $bgrey-5;
     white-space: nowrap;
     line-height: 1.2em;
   }
@@ -45,14 +44,12 @@
   }
 
   .link {
-    color: $black;
     display: inline;
     text-decoration: none;
     line-height: 1.2em;
 
     &:hover {
-      color: $primary-color;
-      text-decoration: underline;
+      text-decoration: none;
     }
   }
 

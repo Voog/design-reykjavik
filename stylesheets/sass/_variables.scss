@@ -7,28 +7,21 @@ $third-color: rgba(0,0,0,0.44);
 $black: rgba(0,0,0,0.88);
 $white: rgba(255,255,255,0.95);
 
+$dark-primary: rgba(0,0,0,.8);
+$dark-secondary: rgba(0,0,0,.6);
+$dark-tertiary: rgba(0,0,0,.3);
+$dark-hover: rgba(0,0,0,1);
+$dark-hover2: rgba(0,0,0,.7);
+
+$light-primary: rgba(255,255,255,.8);
+$light-secondary: rgba(255,255,255,.6);
+$light-tertiary: rgba(255,255,255,.3);
+$light-hover: rgba(255,255,255,1);
+$light-hover2: rgba(255,255,255,.7);
+
+// form error/success colors
 $red: #cc0000;
 $green: #60a740;
-$blue-1: #0066bb;
-$blue-2: #c7e5ff;
-
-// black-based
-$bgrey-4: rgba(0,0,0,0.07);
-$bgrey-2: rgba(0,0,0,0.18);
-$bgrey-1: rgba(0,0,0,0.25);
-$bgrey-5: rgba(0,0,0,0.33);
-$bgrey-7: rgba(0,0,0,0.38);
-$bgrey-3: rgba(0,0,0,0.47);
-$bgrey-6: rgba(0,0,0,0.73);
-
-//white-based
-$wgrey-4: rgba(255,255,255,0.93);
-$wgrey-2: rgba(255,255,255,0.89);
-$wgrey-1: rgba(255,255,255,0.75);
-$wgrey-5: rgba(255,255,255,0.67);
-$wgrey-7: rgba(255,255,255,0.62);
-$wgrey-3: rgba(255,255,255,0.53);
-$wgrey-6: rgba(255,255,255,0.27);
 
 // Media queries
 $tablet-1: 900px;

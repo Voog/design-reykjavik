@@ -53,6 +53,7 @@
   }
 
   .header-title {
+    z-index: 10;
     text-align: left;
     max-width: 33%;
     .flexbox & {
