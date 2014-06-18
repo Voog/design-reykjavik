@@ -179,15 +179,10 @@
       "file": "components/topbar.tpl",
       "layout_name": "topbar",
       "title": "topbar"
-    }
+    },
+    null
   ],
   "assets": [
-    {
-      "content_type": "text/unknown",
-      "file": "assets/.DS_Store",
-      "kind": "assets",
-      "filename": ".DS_Store"
-    },
     {
       "content_type": "image/svg+xml",
       "file": "assets/arr-bottom.svg",
@@ -241,12 +236,6 @@
       "file": "assets/tag2.svg",
       "kind": "assets",
       "filename": "tag2.svg"
-    },
-    {
-      "content_type": "text/unknown",
-      "file": "assets/.DS_Store",
-      "kind": "assets",
-      "filename": ".DS_Store"
     },
     {
       "content_type": "image/png",
