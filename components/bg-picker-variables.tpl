@@ -1,7 +1,7 @@
 {% capture dont_render %}
   <!-- Sets the "front page" cover image and color values -->
-  {% if page.data.cover_image == nil %}
-    {% assign cover_image = '/images/tree.jpg' %}
+  {% if page.data.cover_image == 'none' %}
+    {% assign cover_image = images_path | append: '/tree.jpg' %}
   {% else %}
     {% assign cover_image = page.data.cover_image %}
   {% endif %}
