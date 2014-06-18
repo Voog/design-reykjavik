@@ -128,7 +128,7 @@
       "content_type": "component",
       "component": true,
       "file": "components/news.tpl",
-      "layout_name": "page_default",
+      "layout_name": "news",
       "title": "news"
     },
     {
@@ -231,22 +231,10 @@
       "filename": "ico-search.svg"
     },
     {
-      "content_type": "application/json",
-      "file": "assets/page1.json",
-      "kind": "assets",
-      "filename": "page1.json"
-    },
-    {
-      "content_type": "application/json",
-      "file": "assets/page2.json",
-      "kind": "assets",
-      "filename": "page2.json"
-    },
-    {
       "content_type": "image/svg+xml",
-      "file": "assets/header-tag.svg",
+      "file": "assets/tag.svg",
       "kind": "assets",
-      "filename": "header-tag.svg"
+      "filename": "tag.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -367,12 +355,6 @@
       "file": "javascripts/retina.js",
       "kind": "javascripts",
       "filename": "retina.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/search.js",
-      "kind": "javascripts",
-      "filename": "search.js"
     },
     {
       "content_type": "text/css",
