@@ -1007,7 +1007,7 @@ ul.menu .menu-item {
       cursor: pointer;
       float: right;
       height: 41px;
-      padding-right: 20px; }
+      padding-right: 13px; }
       .menu-btn:focus {
         outline: none; }
       .menu-btn:hover {
@@ -1412,8 +1412,8 @@ ul.menu {
         display: block;
         margin: 0;
         padding: 0;
-        height: 100%;
-        width: 100%; } }
+        width: 100%;
+        height: 100%; } }
 
 .search-inner {
   -webkit-box-sizing: border-box;
@@ -1470,16 +1470,14 @@ ul.menu {
     outline: none; }
 
 .search-clear {
-  top: 0;
-  right: 35px !important;
+  top: 1px !important;
   display: none;
   background-position: 5px 7px;
   background-size: 25px;
   opacity: 0.75; }
   @media screen and (max-width: 752px) {
     .search-clear {
-      right: 40px !important;
-      background-position: 5px 5px;
+      background-position: 4px 3px;
       background-size: 40px !important; } }
   .search-clear:hover {
     opacity: 0.5; }
@@ -1494,15 +1492,6 @@ ul.menu {
   font-size: 1em;
   font-family: inherit;
   line-height: 1; }
-  @media screen and (max-width: 752px) {
-    .search-input {
-      padding-right: 60px;
-      padding-left: 20px;
-      width: 77%;
-      height: 40px;
-      font-size: 24px; } }
-  .search-input::-ms-clear {
-    display: none; }
   .search-input::-webkit-input-placeholder {
     padding: 3px 0 4px 0;
     line-height: 1; }
@@ -1515,6 +1504,15 @@ ul.menu {
   .search-input:-ms-input-placeholder {
     padding: 3px 0 4px 0;
     line-height: 1; }
+  @media screen and (max-width: 752px) {
+    .search-input {
+      padding-right: 50px;
+      padding-left: 10px;
+      width: 85%;
+      height: 40px;
+      font-size: 24px; } }
+  .search-input::-ms-clear {
+    display: none; }
 
 .search-submit,
 .search-clear {
@@ -1525,6 +1523,7 @@ ul.menu {
   @media screen and (max-width: 752px) {
     .search-submit,
     .search-clear {
+      right: 0;
       width: 41px;
       height: 40px;
       background-size: 32px; } }
@@ -1536,6 +1535,12 @@ ul.menu {
     .search-btn {
       position: absolute;
       top: 0;
-      right: -8px;
+      right: 0;
       display: block;
-      margin-right: 50px; } }
+      margin-right: 40px; } }
+
+.js-modal-overlay .search-inner form {
+  background: white; }
+
+.voog-search-modal {
+  z-index: 30; }

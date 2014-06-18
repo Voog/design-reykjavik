@@ -198,9 +198,9 @@
     });
 
     // Prevents modal closing
-    // $('.js-modal-overlay').click(function(event) {
-    //   event.stopPropagation();
-    // });
+    $('.js-modal-overlay').on('click', 'form', function(event) {
+      event.stopPropagation();
+    });
 
 
     // Adds/removes active class to search box if input is focused.
@@ -214,8 +214,15 @@
     };
 
     var initSearchCancel = function() {
-      $('.search-clear').on('click', function(e) {
+      $('.search-form').on('keyup', '.search-input', function(e) {
+        $input = $(e.target);
+        if ($input.val()) {
+          $input.parent().find('.search-submit').removeClass('search-submit').addClass('search-clear')
+        }
+      });
+      $('.search-form').on('click', '.search-clear', function(e) {
         $(e.target).closest('.search-form').removeClass('not-empty').find('.search-input').focus().val('');
+        $(e.target).removeClass('search-clear').addClass('search-submit');
       });
     };
 

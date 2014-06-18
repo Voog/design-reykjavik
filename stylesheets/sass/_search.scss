@@ -26,8 +26,8 @@
       display: block;
       margin: 0;
       padding: 0;
-      height: 100%;
       width: 100%;
+      height: 100%;
     }
   }
   position: absolute;
@@ -67,7 +67,6 @@
   border-radius: 30px;
 
   &.active {
-    // @include border(all, 1px, solid, $black, 0.3);
   }
 }
 
@@ -105,12 +104,10 @@
 
   .search-clear {
     @include query($tablet-2) {
-      right: 40px !important;
-      background-position: 5px 5px;
+      background-position: 4px 3px;
       background-size: 40px !important;
     }
-    top: 0;
-    right: 35px !important;
+    top: 1px !important;
     display: none;
     background-position: 5px 7px;
     background-size: 25px;
@@ -121,6 +118,11 @@
   }
 
 .search-input {
+
+  @include placeholder {
+    padding: 3px 0 4px 0;
+    line-height: 1;
+  }
   margin: 0;
   padding: 0 50px 0 15px;
   height: 35px;
@@ -133,9 +135,9 @@
   // @include box-sizing(border-box);
 
   @include query($tablet-2) {
-    padding-right: 60px;
-    padding-left: 20px;
-    width: 77%;
+    padding-right: 50px;
+    padding-left: 10px;
+    width: 85%;
     height: 40px;
     font-size: 24px;
   }
@@ -144,17 +146,13 @@
   &::-ms-clear {
     display: none;
   }
-
-  @include placeholder {
-    padding: 3px 0 4px 0;
-    line-height: 1;
-  }
 }
 
 .search-submit,
 .search-clear {
 
   @include query($tablet-2) {
+    right: 0;
     width: 41px;
     height: 40px;
     background-size: 32px;
@@ -171,11 +169,22 @@
   @include query($tablet-2) {
     position: absolute;
     top: 0;
-    right: -8px;
+    right: 0;
     display: block;
-    margin-right: 50px;
+    margin-right: 40px;
   }
   display: none;
   font-size: 0;
+}
 
+.js-modal-overlay {
+  .search-inner {
+    form {
+      background: white;
+    }
+  }
+}
+
+.voog-search-modal {
+  z-index: 30;
 }
