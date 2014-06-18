@@ -337,12 +337,6 @@
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
-    },
-    {
-      "content_type": "text/unknown",
-      "file": "stylesheets/sass",
-      "kind": "stylesheets",
-      "filename": "sass"
     }
   ]
 }
