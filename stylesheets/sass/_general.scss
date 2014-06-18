@@ -58,8 +58,8 @@ body {
 
     .content-right {
       @include query($tablet-2) {
-        margin: 30px -20px;
-        padding: 50px 50px;
+        margin: 20px -20px 20px;
+        padding: 40px;
         .content-body {
           margin: 0;
         }

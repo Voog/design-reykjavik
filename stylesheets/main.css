@@ -79,9 +79,9 @@ body.dark-background {
   color: rgba(255, 255, 255, 0.95); }
 @media screen and (max-width: 752px) {
   .header .header-title, .header .header-title a {
-    color: rgba(255, 255, 255, 0.9); }
+    color: rgba(255, 255, 255, 0.9) !important; }
     .header .header-title:hover, .header .header-title a:hover {
-      color: rgba(255, 255, 255, 0.95); } }
+      color: rgba(255, 255, 255, 0.95) !important; } }
 .header .menu-link, .light-background .header .menu-link {
   color: rgba(0, 0, 0, 0.9); }
 .dark-background .header .menu-link {
@@ -762,8 +762,8 @@ body {
   width: 32.5%; }
   @media screen and (max-width: 752px) {
     .front-page .content-right {
-      margin: 30px -20px;
-      padding: 50px 50px; }
+      margin: 20px -20px 20px;
+      padding: 40px; }
       .front-page .content-right .content-body {
         margin: 0; } }
 .front-page .content-body {
@@ -880,7 +880,7 @@ ul.menu .menu-item {
   text-align: right; }
   @media screen and (max-width: 752px) {
     .header {
-      padding-top: 23px;
+      padding-top: 20px;
       height: 0; } }
 
 .header-inner {

@@ -102,9 +102,9 @@ body {
       @include color-set(bgrey(0.95), wgrey(0.95));
     }
     @include query($tablet-2) {
-      color: wgrey(0.9);
+      color: wgrey(0.9) !important;
       &:hover {
-        color: wgrey(0.95);
+        color: wgrey(0.95) !important;
       }
     }
   }
