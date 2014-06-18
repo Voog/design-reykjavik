@@ -101,6 +101,12 @@ body {
     &:hover {
       @include color-set(bgrey(0.95), wgrey(0.95));
     }
+    @include query($tablet-2) {
+      color: wgrey(0.9);
+      &:hover {
+        color: wgrey(0.95);
+      }
+    }
   }
   .menu-link {
     @include color-set(bgrey(0.9), wgrey(0.9));
@@ -299,9 +305,9 @@ body {
   }
 }
 .voog-search-modal {
+  @include color-set(bgrey(0.9), wgrey(0.9));
   .light-background &, & {
   }
-  @include color-set(bgrey(0.9), wgrey(0.9));
   a {
     @include color-set(bgrey(0.9), wgrey(0.9));
     &:hover,
@@ -311,19 +317,26 @@ body {
   }
 }
 
-// @include color-set(bgrey(), wgrey())
+.mobile-menu-wrapper {
+  color: wgrey(0.9);
+  a {
+    color: wgrey(0.9);
+    &:hover,
+    &:active {
+      color: wgrey(0.95);
+    }
+  }
+  ul li {
+    border-bottom: 1px solid wgrey(0.33); 
 
-// .SELECTOR {
-//   .dark-background & {
-
-//   }
-//   &,
-//   .light-background {
-
-//   }
-// }
-
-
+  }
+  ul ul li {
+    border-bottom: 1px solid wgrey(0.33); 
+    &:first-child {
+      border-top: 1px solid wgrey(0.33);
+    }
+  }
+}
 
 .news {
   .date,

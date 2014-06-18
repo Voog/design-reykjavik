@@ -35,8 +35,10 @@
   }
 
   .voog-reference {
+    margin: auto;
+    max-width: 960px;
     margin-top: 15px;
-    text-align: center;
+    text-align: left;
     a {
       display: inline-block;
       padding: 7px 9px;

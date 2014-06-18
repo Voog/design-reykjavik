@@ -77,6 +77,11 @@ body.dark-background {
   color: rgba(0, 0, 0, 0.95); }
 .dark-background .header .header-title:hover, .dark-background .header .header-title a:hover {
   color: rgba(255, 255, 255, 0.95); }
+@media screen and (max-width: 752px) {
+  .header .header-title, .header .header-title a {
+    color: rgba(255, 255, 255, 0.9); }
+    .header .header-title:hover, .header .header-title a:hover {
+      color: rgba(255, 255, 255, 0.95); } }
 .header .menu-link, .light-background .header .menu-link {
   color: rgba(0, 0, 0, 0.9); }
 .dark-background .header .menu-link {
@@ -242,6 +247,19 @@ body.dark-background {
   color: rgba(0, 0, 0, 0.95); }
 .dark-background .voog-search-modal a:hover, .dark-background .voog-search-modal a:active {
   color: rgba(255, 255, 255, 0.95); }
+
+.mobile-menu-wrapper {
+  color: rgba(255, 255, 255, 0.9); }
+  .mobile-menu-wrapper a {
+    color: rgba(255, 255, 255, 0.9); }
+    .mobile-menu-wrapper a:hover, .mobile-menu-wrapper a:active {
+      color: rgba(255, 255, 255, 0.95); }
+  .mobile-menu-wrapper ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.33); }
+  .mobile-menu-wrapper ul ul li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.33); }
+    .mobile-menu-wrapper ul ul li:first-child {
+      border-top: 1px solid rgba(255, 255, 255, 0.33); }
 
 .news .date, .light-background .news .date,
 .news .author, .light-background
@@ -590,8 +608,10 @@ body.dark-background {
       text-decoration: none;
       line-height: 1.4; }
   .footer .voog-reference {
+    margin: auto;
+    max-width: 960px;
     margin-top: 15px;
-    text-align: center; }
+    text-align: left; }
     .footer .voog-reference a {
       display: inline-block;
       padding: 7px 9px;
@@ -1000,7 +1020,7 @@ ul.menu .menu-item {
     .mobile-menu-wrapper .mobile-menu-main > ul {
       padding: 0 20px 10px; }
       .mobile-menu-wrapper .mobile-menu-main > ul > li:last-child {
-        border-bottom: none; }
+        border-top: none; }
     .mobile-menu-wrapper .mobile-menu-main ul {
       background-color: black;
       margin: 0;
@@ -1019,13 +1039,10 @@ ul.menu .menu-item {
         padding-left: 40px; }
       .mobile-menu-wrapper .mobile-menu-main ul li {
         min-height: 40px;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.73);
         line-height: 100%; }
         .mobile-menu-wrapper .mobile-menu-main ul li.open > ul {
           display: block;
           border-top-color: transparent; }
-        .mobile-menu-wrapper .mobile-menu-main ul li:first-child {
-          border-top: 1px solid rgba(0, 0, 0, 0.73); }
         .mobile-menu-wrapper .mobile-menu-main ul li:last-child {
           border-bottom: none; }
       .mobile-menu-wrapper .mobile-menu-main ul ul {
@@ -1036,8 +1053,7 @@ ul.menu .menu-item {
         .mobile-menu-wrapper .mobile-menu-main ul.languages li,
         .mobile-menu-wrapper .mobile-menu-main ul.languages li a {
           min-height: 35px;
-          line-height: 35px; }
-        .mobile-menu-wrapper .mobile-menu-main ul.languages > li {
+          line-height: 35px;
           border-top: none; }
         .mobile-menu-wrapper .mobile-menu-main ul.languages li > div {
           height: 35px;
