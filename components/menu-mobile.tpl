@@ -1,5 +1,6 @@
 <div class="mobile-menu-wrapper" id="mobile-menu">
   <div class="mobile-menu-header">
+    <button class="search-btn js-search-btn"></button>
     <button class="menu-btn mobile-menu-btn">
       <span class="menu-stripe"></span>
       <span class="menu-stripe"></span>
@@ -7,7 +8,7 @@
     </button>
   </div>
 
-  <div class="mobile-menu-main">
+  <nav class="mobile-menu-main">
     <ul>
       {% unless site.root_item.hidden? %}<li><a href="{{site.root_item.url}}"{% if site.root_item.selected? %} class="active"{% endif %}>{{site.root_item.title}}</a></li>{% endunless %}
       {% for item in site.visible_menuitems %}
@@ -49,5 +50,5 @@
         </ul>
       </li>
     </ul>
-  </div>
+  </nav>
 </div>

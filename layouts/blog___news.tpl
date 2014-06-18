@@ -7,7 +7,6 @@
   <meta property="og:title" content="{{ site.name }}">
   {% unless page.description == nil or page.description == "" %}<meta property="og:description" content="{{ page.description }}">{% endunless %}
   {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endif %}
-  <link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css">
   {% include "bg-picker-variables" %}
   {{ blog.rss_link }}
 </head>

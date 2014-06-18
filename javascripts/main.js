@@ -191,12 +191,17 @@
       event.stopPropagation();
       $(this).toggleClass('open');
       $('.js-search').toggleClass('active');
+
+      if ($('.js-modal-overlay').hasClass('active')) {
+        $('.js-search-input').focus();
+      }
     });
 
     // Prevents modal closing
-    $('.js-modal').click(function(event) {
+    $('.js-modal-overlay').click(function(event) {
       event.stopPropagation();
     });
+
 
     // Adds/removes active class to search box if input is focused.
     var handleSearchFocus = function() {
