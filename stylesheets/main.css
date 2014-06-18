@@ -299,6 +299,11 @@ c
     border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
     .mobile-menu-wrapper ul ul li:first-child {
       border-top: 1px solid rgba(255, 255, 255, 0.3); }
+  .no-svg .mobile-menu-wrapper .search-btn {
+    background-image: url("../images/ico-search.png");
+    background-size: 20px; }
+  .svg .mobile-menu-wrapper .search-btn {
+    background-image: url("../assets/ico-search.svg"); }
 
 .news .date, .light-background .news .date,
 .news .author, .light-background
@@ -1403,11 +1408,12 @@ ul.menu {
         right: 0;
         bottom: 0;
         left: 0;
-        z-index: 20;
+        z-index: 10;
         display: block;
         margin: 0;
         padding: 0;
-        height: 100%; } }
+        height: 100%;
+        width: 100%; } }
 
 .search-inner {
   -webkit-box-sizing: border-box;
@@ -1530,6 +1536,6 @@ ul.menu {
     .search-btn {
       position: absolute;
       top: 0;
-      right: 0;
+      right: -8px;
       display: block;
       margin-right: 50px; } }

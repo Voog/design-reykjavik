@@ -198,9 +198,9 @@
     });
 
     // Prevents modal closing
-    $('.js-modal-overlay').click(function(event) {
-      event.stopPropagation();
-    });
+    // $('.js-modal-overlay').click(function(event) {
+    //   event.stopPropagation();
+    // });
 
 
     // Adds/removes active class to search box if input is focused.
