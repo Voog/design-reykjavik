@@ -5,18 +5,25 @@
 .menu-btn {
 
   @include query($tablet-2) {
-    position: absolute;
-    top: 12px;
-    left: 20px;
+    // position: absolute;
+    // top: 12px;
+    // left: 20px;
     display: inline-block;
     margin: 0;
     padding: 0;
     border: none;
     background: none;
     cursor: pointer;
+    float: right;
+    height: 41px;
+    padding-right: 20px;
 
     &:focus {
       outline: none;
+    }
+
+    &:hover {
+      opacity: 0.9;
     }
 
     &::-moz-focus-inner {
@@ -28,7 +35,7 @@
       @include bg($white);
       display: block;
       margin: 4px 0;
-      width: 30px;
+      width: 22px;
       height: 3px;
       border-radius: 5px;
 
@@ -54,6 +61,7 @@
 
   .mobile-menu-header {
     height: 41px;
+    position: relative;
   }
   .mobile-menu-main  {
     display: none;
@@ -74,15 +82,10 @@
       a {
         display: block;
         width: 100%;
-        color: $grey-7;
         text-decoration: none;
         font-weight: 400;
         line-height: 40px;
-        &:hover {
-          @include color($white);
-        }
         &.active {
-          @include color($white);
           font-weight: 700;
         }
       }
@@ -94,14 +97,14 @@
       }
       li {
         min-height: 40px;
-        border-bottom: 1px solid $grey-6;
+        border-bottom: 1px solid $bgrey-6;
         line-height: 100%;
         &.open > ul {
           display: block;
           border-top-color: transparent;
         }
         &:first-child {
-          border-top: 1px solid $grey-6;  
+          border-top: 1px solid $bgrey-6;  
         }
         &:last-child {
           border-bottom: none;
@@ -110,6 +113,22 @@
       ul {
         display: none;
         padding: 0;
+      }
+      &.languages {
+        li,
+        li a {
+          min-height: 35px;
+          line-height: 35px;
+        }
+        font-size: 0.8em;
+        & > li {
+          border-top: none;
+        }
+        li > div {
+          height: 35px;
+          line-height: 35px;
+          display: inline-block;
+        }
       }
     }
   }
@@ -120,15 +139,14 @@
     }
     position: absolute;
     top: 0;
-    right: 0;
+    right: 22px;
     z-index: 5;
     display: none;
     margin-right: 20px;
     padding-right: 22px;
     width: auto;
     color: $white;
-    font-size: 14px;
-    line-height: 2.3em;
+    font-size: 0.8em;
 
     &:after {
       position: absolute;
@@ -181,6 +199,9 @@
   display: inline-block;
   vertical-align: middle;
   line-height: 0.8;
+  &:before {
+    display: none !important;
+  }
 }
 
 // General rules for the menus. These rules affect all menus on the site.
@@ -220,6 +241,7 @@ ul.menu {
   }
   display: inline-block;
   padding: 7px 0;
+  max-width: 75%;
 
   .menu {
     float: right;
@@ -227,14 +249,10 @@ ul.menu {
     list-style: none;
     .menu-item,
     .edit-btn {
-      margin-right: 20px;
+      margin-left: 20px;
       padding: 0;
       background: none;
       line-height: 1.3em;
-
-      &:last-child {
-        margin-right: 0;
-      }
     }
 
     .edit-btn {
@@ -242,26 +260,17 @@ ul.menu {
     }
 
     .menu-link {
-      @include color($primary-color);
       display: block;
       text-transform: uppercase;
       font-weight: 400;
       font-size: 18px;
 
       &.untranslated {
-        @include color($red, 0.5);
-      }
-
-      &:hover {
-        @include color($secondary-color);
+        color: $red;
       }
 
       &.active {
-        @include color($secondary-color);
         font-weight: 700;
-        &:hover {
-          @include color($secondary-color);
-        }
       }
     }
   }
@@ -276,12 +285,12 @@ ul.menu {
 
   .menu {
     text-align: left;
-
+    
     .menu-item {
       margin: 0;
       width: 100%;
-      border-top: 1px solid $grey-2;
-      font-size: 15px;
+      border-top: 1px solid $bgrey-2;
+      font-size: 1em;
       line-height: 1.05em;
 
       &:first-child {
@@ -289,37 +298,44 @@ ul.menu {
       }
 
       .menu-link {
-        @include color($primary-color);
+        color: $primary-color;
         display: block;
-        padding: 10px 0;
+        padding: 16px 0;
         width: 100%;
 
         &.active {
-          @include color($black);
+          color: $black;
           font-weight: 700;
         }
 
         &:hover {
-          @include color($secondary-color);
+          color: $secondary-color;
           text-decoration: none;
         }
       }
+    }
+    .edit-btn {
+      padding-left: 5px;
     }
   }
 
   .submenu {
     @include bg(#f7f7f7);
     margin: 0;
-    padding: 12px 0;
-    border-top: 1px solid $grey-2;
+    padding: 7px 0;
+    border-top: 1px solid $bgrey-2;
     background: #f7f7f7;
     list-style-type: none;
-
     .menu-item {
-      padding: 0 10px;
+      padding-left: 20px;
+      width: 150px;
+      border: none;
       .menu-link {
         padding: 7px 0;
       }
+    }
+    .edit-btn {
+      padding-left: 15px;
     }
   }
 }
@@ -327,7 +343,6 @@ ul.menu {
 .menu-lang {
   display: inline-block;
   padding: 6px 0;
-  margin-left: 17px;
   width: auto;
 
   .menu {
@@ -340,11 +355,9 @@ ul.menu {
     float: right;
     margin-top: 1px;
     height: 24px;
-    border: 1px solid $grey-2;
     border-radius: 20px;
 
     .langmenu-content {
-      @include color($third-color);
       padding: 4px 22px 0 10px;
       height: 14px;
       font-size: 14px;
@@ -363,8 +376,6 @@ ul.menu {
         border-style: solid;
         border-color: none;
         border-color: transparent;
-        border-color: rgba(255,255,255,0.01);
-        border-top-color: $grey-2;
         content: '';
       }
     }
@@ -379,7 +390,6 @@ ul.menu {
       outline: 0;
       border: none;
       background: none;
-      background: white;
       color: #8f8f8f;
       font-size: 11px;
       line-height: 1.1em;
@@ -414,8 +424,6 @@ ul.menu {
       border-style: solid;
       border-color: none;
       border-color: transparent;
-      border-color: rgba(255,255,255,0.01);
-      border-bottom-color: #d6d6d6;
     }
 
     .langmenu-arrow2 {
@@ -431,30 +439,21 @@ ul.menu {
       border-style: solid;
       border-color: none;
       border-color: transparent;
-      border-color: rgba(255,255,255,0.01);
-      border-bottom-color: #f7f7f7;
     }
 
     ul {
       margin: 0;
-      padding: 4px 0;
-      border: 1px solid #d6d6d6;
-      -webkit-border-radius: 2px;
-      -moz-border-radius: 2px;
-      border-radius: 2px;
+      padding: 10px 0;
       background: #f7f7f7;
-      box-shadow: 0 0 4px rgba(0,0,0,0.15);
       list-style-type: none;
 
       a {
-        @include color($secondary-color);
         display: block;
-        padding: 3px 0;
+        padding: 4px 0;
         border-bottom: none;
 
         &.active {
-          @include color($secondary-color);
-          font-weight: bold;
+          font-weight: 600;
         }
       }
     }
@@ -462,106 +461,8 @@ ul.menu {
     li {
       margin: 0;
       text-align: center;
-      font-size: 13px;
+      font-size: 0.9em;
       line-height: 1.1em;
-    }
-  }
-
-  .popup {
-    position: absolute !important;
-    top: 7px !important;
-    right: 20px !important;
-    float: none !important;
-    border: none !important;
-    background: none !important;
-
-    .popup-content:before {
-      border-top-color: white !important;
-    }
-
-    .popup-content {
-      overflow: hidden;
-      color: #8f8f8f;
-      color: white !important;
-      text-transform: uppercase;
-      white-space: nowrap;
-      font-size: 11px ;
-      line-height: 1.1em;
-    }
-  }
-}
-
-// Language flag icons positioning in the spritemap.
-$flags:
-(sq,   0        0),
-(hy,  -20px     0),
-(bn,  -40px     0),
-(pt,  -60px     0),
-(bg,  -80px     0),
-(zh, -100px     0),
-(hr, -120px     0),
-(da, -140px     0),
-(cs, -160px     0),
-(et, -180px     0),
-
-(fi,    0px -14px),
-(fr,  -20px -14px),
-(ka,  -40px -14px),
-(de,  -60px -14px),
-(el,  -80px -14px),
-(hu, -100px -14px),
-(is, -120px -14px),
-(hi, -140px -14px),
-(id, -160px -14px),
-(fa, -180px -14px),
-
-(he,    0px -28px),
-(it,  -20px -28px),
-(ja,  -40px -28px),
-(ko,  -60px -28px),
-(lv,  -80px -28px),
-(lt, -100px -28px),
-(ms, -120px -28px),
-(nl, -140px -28px),
-(no, -160px -28px),
-(ur, -180px -28px),
-
-(fil,   0px -42px),
-(pl,  -20px -42px),
-(ro,  -40px -42px),
-(ru,  -60px -42px),
-(ar,  -80px -42px),
-(lt, -100px -42px),
-(sk, -120px -42px),
-(es, -140px -42px),
-(sv, -160px -42px),
-(tr, -180px -42px),
-(uk,    0px -56px),
-(en,  -20px -56px);
-
-@each $flag, $pos in $flags {
-  .lang-flag-#{$flag}:after { background-position: $pos; }
-}
-
-// Styling rules for the site's blog article tags menu. These rules affects both - the blog article listing view and the single blog article view.
-.menu-tags {
-  margin-bottom: 20px;
-
-  .menu {
-    .menu-item {
-      margin-right: 15px;
-
-      .menu-link {
-        @include color($blue-1);
-
-        &:hover {
-          @include color($blue-1, 0.8);
-        }
-
-        &.active {
-          font-weight: 700;
-        }
-      }
     }
   }
 }

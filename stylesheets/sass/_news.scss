@@ -6,11 +6,11 @@
   margin-top: 0 !important;
 
   .news-header {
-    @include color($secondary-color);
+    color: $secondary-color;
     margin: 0;
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 150%;
+    font-size: 1.35em;
     line-height: 1.2em;
     .content-body & {
       margin-bottom: 10px;
@@ -21,7 +21,7 @@
     padding: 0;
     list-style: none;
     .news-item {
-      padding: 0 0 10px;
+      padding: 0 0 5px;
       max-width: 100%;
       line-height: 1.3em;
       &:before {
@@ -35,9 +35,8 @@
 
   .date,
   .author {
-    @include color($grey-5);
+    color: $bgrey-5;
     white-space: nowrap;
-    font-size: 120%;
     line-height: 1.2em;
   }
 
@@ -46,14 +45,13 @@
   }
 
   .link {
-    @include color($black);
+    color: $black;
     display: inline;
     text-decoration: none;
-    font-size: 120%;
     line-height: 1.2em;
 
     &:hover {
-      @include color($primary-color);
+      color: $primary-color;
       text-decoration: underline;
     }
   }

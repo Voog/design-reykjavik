@@ -1,11 +1,10 @@
 /* CONTENT */
 // Styling rules for the site's main content area. These rules affect the entire site.
 .content {
-  @include bg(white);
   @include clearfix;
   overflow: auto;
   margin: auto;
-  padding: 0 25px 40px;
+  padding: 35px 25px 40px;
   max-width: 960px;
 
   .content-left {
@@ -17,6 +16,7 @@
   }
 
   .content-right {
+    position: relative;
     float: right;
   }
 
@@ -34,30 +34,8 @@
   }
 }
 
-.content-right .content-body {
-  h1 {
-    margin-bottom: 15px;
-    font-size: 175%;
-    line-height: 1;
-  }
-
-  h2 {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 150%;
-  }
-
-  h3, h4, h5, h6 {
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 125%;
-    line-height: 1.2em;
-  }
-}
-
 .content-formatted {
 
-  @include color($secondary-color);
   @include query($tablet-2) {
     h1 {
       font-size: 135%;
@@ -73,27 +51,17 @@
   }
 }
 
-.content-title {
-  &.content-formatted {
-
-    @include query($mobile-1) {
-      font-size: 50px;
-    }
-    font-weight: 700;
-  }
-}
-
 .content-header {
-  &.content-formatted {
+  width: 100%;
+  .content-formatted & {
     @include query($tablet-2) {
       font-size: 200%;
     }
-    font-weight: 300;
-    font-size: 268%;
-    line-height: 1.2em;
+    font-size: 4em;
+    line-height: 1em;
 
     .edy-texteditor-view {
-      min-height: 18px;
+      min-height: 1.2em;
     }
   }
 }

@@ -2,13 +2,13 @@
 <section class="news">
   <h2 class="news-header">{{ "latest_news"|lc }}</h2>
   <ul>
-  {% for article in site.latest_3_articles %}
+  {% for article in site.latest_5_articles %}
     <li class="news-item">
-      <a class="link" href="{{article.url}}">{{article.title}}</a><span class="date">{{article.created_at | format_date:"long"}},&nbsp;</span><span class="author">{{article.author.firstname}}</span>
+      <a class="link" href="{{article.url}}">{{article.title}}</a><span class="date">{{article.created_at | format_date:"long"}}</span>{% if article.author.firstname %}<span class="author">,&nbsp;{{article.author.firstname}}</span>{% endif %}
     </li>
   {% endfor %}
   </ul>
-  {% if site.latest_2_articles.size == 2 %}
+  {% if site.latest_3_articles.size > 2 %}
   <a href="/blog" class="link more-news">More news</a>
   {% endif %}
 </section>

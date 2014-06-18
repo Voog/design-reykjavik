@@ -18,37 +18,36 @@
 
   // Styling rules for the editable content area headings.
   h1, h2, h3, h4, h5, h6 {
-    @include color($secondary-color);
     word-wrap: break-word;
   }
 
   h1 {
     margin: 0;
-    padding-bottom: 18px;
-    font-weight: 300;
-    font-size: 268%;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 2em;
     line-height: 1.2em;
   }
 
   h2 {
     margin: 0;
-    padding-bottom: 15px;
+    padding-bottom: 20px;
     text-transform: uppercase;
-    font-weight: 600;
-    font-size: 125%;
+    font-weight: 400;
+    font-size: 1.5em;
     line-height: 1.2em;
   }
 
   h3, h4, h5, h6 {
     margin: 0;
-    padding-bottom: 15px;
-    font-weight: 600;
-    font-size: 115%;
+    padding-bottom: 20px;
+    font-weight: 400;
+    font-size: 1.25em;
     line-height: 1.2em;
   }
-  h4 { font-size: 105%; }
-  h5 { font-size: 95%; }
-  h6 { font-size: 85%; }
+  h4 { font-size: 115%; }
+  h5 { font-size: 105%; }
+  h6 { font-size: 95%; }
 
   // Styling rules for the editable content area paragraphs, lists and links.
   p {
@@ -58,7 +57,7 @@
 
   ul {
     margin: 0;
-    padding: 0 0 20px 5px;
+    padding: 0 0 20px 10px;
     list-style: none;
 
     li {
@@ -66,13 +65,12 @@
       list-style: none;
       line-height: 1.7em;
       &:before {
-        @include color($black);
         display: inline-block;
-        padding: 0 11px 0 2px;
+        padding: 0 10px 0 2px;
         content: "·";
-        vertical-align: -11px;
-        font-size: 45px;
-        line-height: 15px;
+        vertical-align: -15px;
+        font-size: 65px;
+        line-height: 12px;
       }
     }
   }
@@ -86,7 +84,7 @@
   }
 
   a {
-    @include color($secondary-color);
+    font-weight: 500;
 
     &:hover {
       text-decoration: underline;
@@ -116,20 +114,21 @@
   }
 
   code {
-    @include bg($grey-4);
     display: block;
     margin-top: 0;
     padding: 10px;
+    white-space: pre-wrap;
+    font-size: 14px;
   }
 
-  pre, code {
+  pre, pre code {
     margin: 0 0 20px;
-    font-size: 14px;
     white-space: pre-wrap;
+    font-size: 14px;
   }
 
   b, strong {
-    @include color($black);
+    font-weight: 600;
   }
 
   /* TABLES */
@@ -147,22 +146,19 @@
     -webkit-overflow-scrolling: touch;
   }
 
-  // Adds dashed border to indicate that the table is too wide and can be scrolled horizontally.
-  .horizontal-scroll {
-    @include border(left, 1px, dashed, $third-color);
-    @include border(right, 1px, dashed, $third-color);
-  }
-
   table {
     margin-bottom: 20px;
     width: 100%;
     border-collapse: collapse;
-    font-size: 16px;
+    text-align: left;
+
+    th {
+      font-weight: 600;
+      color: $black;
+    }
 
     td {
-      @include border(top, 1px, solid, $third-color);
-      @include border(bottom, 1px, solid, $third-color);
-      padding: 10px;
+      padding: 5px 0;
     }
   }
 

@@ -3,22 +3,22 @@
 .footer {
   clear: both;
   margin-top: 0;
-  padding: 25px 20px;
+  padding: 0 20px 25px;
   text-align: left;
-  position: relative;
 
   .footer-inner {
     margin: auto;
     max-width: 960px;
+    position: relative;
   }
 
   .content-formatted {
-    @include query($tablet-3) {
-      margin-top: 15px;
+    @include query($tablet-2) {
+      margin-top: 20px;
       width: 100%;
     }
-    @include color($third-color);
-    margin-right: 235px;
+    // leave room for search form
+    // margin-right: 235px;
     width: auto;
     font-size: 13px;
     line-height: 1.7em;
@@ -27,18 +27,22 @@
       min-height: 18px;
     }
 
-    b {
-      @include color($black);
-    }
-
     a {
-      @include color($black);
       display: inline-block;
       text-decoration: none;
       line-height: 1.4;
-      &:hover {
-        @include color($black, 0.85);
-      }
+    }
+  }
+
+  .voog-reference {
+    margin-top: 15px;
+    text-align: center;
+    a {
+      display: inline-block;
+      padding: 7px 9px;
+      font-size: 0.55em;
+      line-height: 1;
+      text-decoration: none;
     }
   }
 }

@@ -1,24 +1,34 @@
 // General colors
-$primary-color: #5e5e5e;
-$secondary-color: #333333;
-$third-color: #8f8f8f;
+$primary-color: rgba(0,0,0,0.64);
+$secondary-color: rgba(0,0,0,0.82);
+$third-color: rgba(0,0,0,0.44);
 
 // Specific colors
-$black: #222222;
-$white: #ffffff;
+$black: rgba(0,0,0,0.88);
+$white: rgba(255,255,255,0.95);
 
 $red: #cc0000;
 $green: #60a740;
 $blue-1: #0066bb;
 $blue-2: #c7e5ff;
 
-$grey-1: #bebebe;
-$grey-2: #d2d2d2;
-$grey-3: #898989;
-$grey-4: #efefef;
-$grey-5: #a7a7a7;
-$grey-6: #444444;
-$grey-7: #9da0a4;
+// black-based
+$bgrey-4: rgba(0,0,0,0.07);
+$bgrey-2: rgba(0,0,0,0.18);
+$bgrey-1: rgba(0,0,0,0.25);
+$bgrey-5: rgba(0,0,0,0.33);
+$bgrey-7: rgba(0,0,0,0.38);
+$bgrey-3: rgba(0,0,0,0.47);
+$bgrey-6: rgba(0,0,0,0.73);
+
+//white-based
+$wgrey-4: rgba(255,255,255,0.93);
+$wgrey-2: rgba(255,255,255,0.89);
+$wgrey-1: rgba(255,255,255,0.75);
+$wgrey-5: rgba(255,255,255,0.67);
+$wgrey-7: rgba(255,255,255,0.62);
+$wgrey-3: rgba(255,255,255,0.53);
+$wgrey-6: rgba(255,255,255,0.27);
 
 // Media queries
 $tablet-1: 900px;

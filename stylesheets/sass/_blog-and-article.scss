@@ -1,66 +1,70 @@
 /* BLOG & BLOG ARTICLE */
 // Styling rules for both - the blog listing view and the blog single article view
 .post {
+  margin-bottom: 30px;
   .post-header {
   }
 
   .post-meta {
-    line-height: 1.85em;
+    margin-bottom: 5px;
+    line-height: 1.2em;
   }
 
   .post-title {
-    margin-top: 6px;
-    margin-bottom: 0;
+    margin-bottom: 5px;
+    padding-bottom: 0;
     line-height: 1.2em;
 
     &, a {
-      @include color($secondary-color);
       @include query($tablet-2) {
         font-size: 30px;
       }
-      font-weight: 300;
+      font-weight: 700;
       font-size: 40px;
     }
 
     a {
       &:hover {
-        @include color($secondary-color, 0.8);
+        text-decoration: none;
       }
     }
   }
 
   .post-date {
-    @include color($grey-5);
     font-size: 15px;
   }
 
   .comments-count {
-    @include color($secondary-color);
     display: inline-block;
     padding: 4px 3px 2px;
     min-width: 14px;
     min-height: 14px;
-    border: 1px solid $grey-2;
     border-radius: 50%;
     vertical-align: 1px;
     text-align: center;
     font-size: 12px;
     line-height: 1em;
+    &:hover { 
+      text-decoration: none;
+    }
   }
 
   .post-content {
-    margin-top: 18px;
-
     .post-excerpt {
+      .post-page & {
+        margin-bottom: 10px;
+      }
     }
-
     .post-body {
-      margin-top: 20px;
+      .post-page & {
+        margin-bottom: 15px;
+      }
     }
   }
 
   .read-more {
-    display: inline;
+    display: block;
+    margin-top: 5px;
   }
 
   .post-footer {
@@ -69,50 +73,31 @@
     }
   }
 
-  .post-comments-count {
-    a {
-      @include color($blue-1);
-      font-size: 14px;
-
-      &:hover {
-        @include color($blue-1, 0.8);
-      }
-    }
-  }
-
   .tags {
     position: relative;
-    margin-top: 30px;
+    margin-top: 5px;
     padding: 15px 0;
     padding-left: 25px;
-    border-top: 1px solid $grey-2;
-    border-bottom: 1px solid $grey-2;
-    font-size: 12px;
+    font-size: 0.9em;
+    line-height: 1.2em;
 
     .tag-icon {
       position: absolute;
       left: 0;
-      margin-top: 2px;
+      margin-top: 4px;
       margin-right: 7px;
       width: 16px;
       height: 16px;
       background: url('../images/tag.png') no-repeat center center;
       opacity: 0.5;
-      filter: alpha(opacity=50);
-    }
-    .svg & {
-      background: url('../images/tag.svg') no-repeat center center;
-    }
-
-    .tags-list {
-      line-height: 1em;
+      .svg & {
+        background: url('../assets/tag.svg') no-repeat center center;
+      }
     }
 
     .tag-link {
-      @include color($secondary-color);
       text-decoration: none;
       &:hover {
-        @include color($secondary-color);
         text-decoration: underline;
       }
     }
@@ -122,8 +107,6 @@
 // Style rules for the blog listing view only
 .blog-page {
   .post {
-    margin-bottom: 30px;
-
     &:last-child {
       margin-bottom: 0;
       padding-bottom: 0;
@@ -131,28 +114,25 @@
     }
   }
   .tagged-list-header {
-    @include color($black);
     @include query($tablet-2) {
       padding-right: 0;
       padding-left: 38px;
     }
     position: relative;
-    margin: 0 20px;
-    padding: 17px 11.5%;
-    border-bottom: 1px solid $grey-2;
+    margin: auto;
+    max-width: 960px;
     font-size: 24px;
     .tag-icon {
       position: absolute;
-      margin-top: 6px;
+      margin-top: 0;
       margin-left: -42px;
       width: 32px;
       height: 32px;
       background: url('../images/tag2.png') no-repeat center center;
       opacity: 0.5;
-      filter: alpha(opacity=50);
-    }
-    .svg & {
-      background: url('../images/tag.svg') no-repeat center center;
+      .svg & {
+        background: url('../assets/tag2.svg') no-repeat center center;
+      }
     }
   }
 

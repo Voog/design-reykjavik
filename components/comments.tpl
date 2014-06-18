@@ -1,18 +1,24 @@
 {% if article.comments_count > 0 %}
-<h2 class="comments-title">{{ "comments" | lc }}</h2>
+<h2 class="comment-title">{{ "comments" | lc }}</h2>
 
 <ul class="comment-messages content-formatted">
-  {% for comment in article.comments reversed %}
+  {% for comment in article.comments %}
     <li class="comment edy-site-blog-comment">
-      <header class="comment-header">
-        <span class="comment-author">{{ comment.author }}</span>
-        &nbsp;&nbsp;•&nbsp;&nbsp;
-        <span class="comment-date">{{ comment.created_at | format_date: "long" }}</span>
-        {% if editmode %}<span class="comment-delete">{% removebutton %}</span>{% endif %}
-      </header>
-      <section>
-        <span class="comment-body">{{ comment.body_html }}</span>
-      </section>
+      <div class="comment-inner">
+        <header class="comment-header">
+          {% if comment.author_email %}
+            <a href="mailto:{{ comment.author_email }}" class="comment-author">{{ comment.author }}</a>
+          {% else %}
+            <span class="comment-author">{{ comment.author }}</span>
+          {% endif %}
+          &nbsp;•&nbsp;
+          <span class="comment-date">{{ comment.created_at | format_date: "long" }}</span>
+          {% if editmode %}<span class="comment-delete">{% removebutton %}</span>{% endif %}
+        </header>
+        <section>
+          <span class="comment-body">{{ comment.body_html }}</span>
+        </section>
+      </div>
     </li>
   {% endfor %}
 </ul>

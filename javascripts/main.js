@@ -111,6 +111,47 @@
     });
   };
 
+  var handleColorScheme = function() {
+    color = $('.global-background-color').css('background-color');
+
+    if (color) {
+      var getRGBA = function(colorStr) {
+        if (!colorStr || typeof colorStr !== 'string') {
+          return;
+        }
+
+        var arr = colorStr.match(/(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,?\s*([\d\.]+)?\s*)/);
+        if (arr) {
+          return {
+            r: +arr[2],
+            g: +arr[3],
+            b: +arr[4],
+            a: (arr[5]) ? +arr[5] : 1
+          };
+        }
+      };
+
+      var parsedColor = getRGBA(color),
+      rgbLightness = (parsedColor.r * 0.2126 + parsedColor.g * 0.7152 + parsedColor.b * 0.0722) / 255;
+
+      if (rgbLightness > 0.6) {
+        $('body').addClass('light-background').removeClass('dark-background');
+      } else {
+        $('body').addClass('dark-background').removeClass('light-background');
+      }
+    }
+  };
+
+  $('html').click(function() {
+    if ($('.js-popover').hasClass('expanded')) {
+      $('.js-popover').removeClass('expanded');
+    }
+
+    if ($('.js-modal-overlay').hasClass('active')) {
+      $('.js-modal-overlay').removeClass('active');
+    }
+  });
+
     // Initiations
     var initBlogPage = function() {
       // ADD BLOG LISTING VIEW SPECIFIC FUNCTIONS HERE
@@ -131,7 +172,6 @@
     var resizeContentRight = function() {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(function() {
-        console.log("resizeContentRight");
         var height = parseInt($('.content-left .content-header').parent().css('height')),
             padding = parseFloat($('.content-right').css('padding'));
         height += parseInt($('.content-left .news').parent().css('height'));
@@ -139,22 +179,53 @@
       }, 200);
     };
 
-    var calculateFrontPageImageHeight = function() {
+    var initContentResizer = function() {
       if ($('body.front-page').length > 0) {
         $(window).load(resizeContentRight);
         $(window).on('resize', resizeContentRight);
       }
     };
 
+    // Toggles the mobile search modal.
+    $('.js-search-btn').click(function(event) {
+      event.stopPropagation();
+      $(this).toggleClass('open');
+      $('.js-search').toggleClass('active');
+    });
+
+    // Prevents modal closing
+    $('.js-modal').click(function(event) {
+      event.stopPropagation();
+    });
+
+    // Adds/removes active class to search box if input is focused.
+    var handleSearchFocus = function() {
+      searchForm = $('.js-search-form');
+      $('.js-search-input').focus(function() {
+        searchForm.addClass('active');
+      }).blur(function() {
+        searchForm.removeClass('active');
+      });
+    };
+
+    var initSearchCancel = function() {
+      $('.search-clear').on('click', function(e) {
+        $(e.target).closest('.search-form').removeClass('not-empty').find('.search-input').focus().val('');
+      });
+    };
+
     var init = function() {
       // ADD SITE WIDE FUNCTIONS HERE
       handleLanguageSwitch();
       toggleMainMenu();
+      handleColorScheme();
       handlePopoverMenuHide();
       handleGalleryHover();
       handleWindowResize();
-      calculateFrontPageImageHeight();
+      initContentResizer();
       wrapTables();
+      handleSearchFocus();
+      initSearchCancel();
       if ($('.table-container').length > 0) {
         checkScrollBar();
         handleTableHorizontalScrolling();
@@ -165,7 +236,8 @@
     window.site = $.extend(window.site || {}, {
       initBlogPage: initBlogPage,
       initArticlePage: initArticlePage,
-      initCommonPage: initCommonPage
+      initCommonPage: initCommonPage,
+      handleColorScheme: handleColorScheme
     });
 
     init();

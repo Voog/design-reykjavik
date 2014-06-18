@@ -1,6 +1,6 @@
 <footer class="footer">
   <div class="footer-inner">
-    {% include "search" %}
     <div class="content-formatted">{% xcontent name="footer" %}</div>
   </div>
+  <div class="voog-reference"><a href="http://www.voog.com">VOOG.&nbsp;Make a website.</a></div>
 </footer>

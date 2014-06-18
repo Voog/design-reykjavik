@@ -8,10 +8,14 @@
   <meta property="og:url" content="{{ site.url }}">
   <meta property="og:title" content="{{ site.name }}">
   {% unless page.description == nil or page.description == "" %}<meta property="og:description" content="{{ page.description }}">{% endunless %}
-  {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endif %}
+  {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% endif %}
+  <link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css">
+  {% include "bg-picker-variables" %}
 </head>
 
-<body class="common-page">
+<body class="common-page js-body global-background-color" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
+  {% if editmode %}<button class="bgpicker-toggle-button global-background-settings" data-bg-color="{{ background_color }}"></button>{% endif %}
+  {% if background_color != '' or editmode %}<div class="background-color global-background-color"{{ background_color_style }}></div>{% endif %}
 
   {% include "menu-mobile" %}
 
@@ -27,12 +31,7 @@
         {% endif %}
       {% endfor %}
 
-      {% if centered %}
-        <article class="content-centered">
-          <h1 class="content-header">{% content name="slogan" %}</h1>
-          <section class="content-body">{% content %}</section>
-        </article>
-      {% else %}
+      {% if editmode or centered == false %}
         <aside class="content-left">
           {% include "sidebar" %}
         </aside>
@@ -40,12 +39,18 @@
           <h1 class="content-header">{% content name="slogan" %}</h1>
           <section class="content-body">{% content %}</section>
         </article>
+      {% else %}
+        <article class="content-centered">
+          <h1 class="content-header">{% content name="slogan" %}</h1>
+          <section class="content-body">{% content %}</section>
+        </article>
       {% endif %}
     </main>
+    {% include "footer" %}
   </div>
 
-  {% include "footer" %}
 
   {% include "javascripts" %}
+  {% include "bg-picker" %}
 </body>
 </html>

@@ -1,3 +1,4 @@
+{% if article.tags.size > 0 or editmode %}
 <div class="tags">
   <div class="tag-icon"></div>
   {% if editmode %}
@@ -10,3 +11,4 @@
     </div>
   {% endif %}
 </div>
+{% endif %}

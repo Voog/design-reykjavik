@@ -1,0 +1,397 @@
+// BLOG POST
+.post {
+  // TITLE
+  .post-title {
+    &,
+    .light-background & {
+      &, a {
+        @include color($black, 0.88);
+      } 
+      a:hover {
+        @include color($black, 0.88);
+      }
+    }
+    .dark-background & {
+      &, a {
+        @include color($white, 0.72);
+      }
+      a:hover {
+        @include color($white, 0.88);
+      }
+    }
+  }
+  // DATE
+  .post-date {
+    @include color-set(bgrey(0.33), wgrey(0.66));
+  }
+  // COMMENTS COUNT
+  .comments-count {
+    @include color-set(bgrey(0.25), wgrey(0.75));
+    &,
+    .light-background & {
+      border: 1px solid bgrey(0.15);
+    }    
+    .dark-background & {
+      border: 1px solid wgrey(0.55);
+    }
+    &:hover {
+      @include color-set(bgrey(0.15), wgrey(0.95));
+      &,
+      .light-background & {
+        border: 1px solid bgrey(0.10);
+      }    
+      .dark-background & {
+        border: 1px solid wgrey(0.65);
+      }
+    }
+  }
+  // TAGS
+  .tags {
+    &,
+    .light-background & {
+      border-top: 1px solid bgrey(0.15);
+      border-bottom: 1px solid bgrey(0.15);
+    }    
+    .dark-background & {
+      border-top: 1px solid wgrey(0.55);
+      border-bottom: 1px solid wgrey(0.55);
+    }
+    .tag-link {
+      @include color-set(bgrey(0.75), wgrey(0.45));
+      &:hover {
+        @include color-set(bgrey(0.65), wgrey(0.55));
+      }
+    }
+  }
+}
+.blog-page .tagged-list-header {
+  @include color-set(wgrey(0.25), bgrey(0.75));
+}
+
+// COMMENTS
+.comments {
+  .comment-date {
+    @include color-set(bgrey(0.33), wgrey(0.66));
+  }
+  .comment-body {
+    @include color-set(bgrey(0.5), wgrey(0.5));
+  }
+}
+
+// GLOBAL
+body {
+  &.light-background {
+    color: bgrey(0.88);
+    .background-color {
+      background-color: bgrey(0.1);
+    }
+  }
+  &.dark-background {
+    color: wgrey(0.75);
+    .background-color {
+      background-color: wgrey(0.33);
+    }
+  }
+}
+
+// HEADER
+.header {
+  .header-title, .header-title a {
+    @include color-set(bgrey(0.9), wgrey(0.9));
+    &:hover {
+      @include color-set(bgrey(0.95), wgrey(0.95));
+    }
+  }
+  .menu-link {
+    @include color-set(bgrey(0.9), wgrey(0.9));
+    &.active, &:hover {
+      @include color-set(bgrey(0.95), wgrey(0.95));
+    }
+  }
+  .langmenu {
+    @include color-set(bgrey(0.9), wgrey(0.9));
+    .light-background &, & {
+      border: 1px solid bgrey(0.1);
+    }
+    .dark-background & {
+      border: 1px solid wgrey(0.33);
+    }
+    .langmenu-content {
+      @include color-set(bgrey(0.75), wgrey(0.75));
+      &:before {
+        .light-background &, & {
+          border-color: wgrey(0.01);
+          border-top-color: bgrey(0.1);
+        }
+        .dark-background & {
+          border-color: bgrey(0.01);
+          border-top-color: wgrey(0.33);
+        }
+      }
+    }
+    .langmenu-arrow,
+    .langmenu-arrow2 {
+      .light-background &, & {
+        border-color: wgrey(0.01);
+        border-bottom-color: #f7f7f7;
+      }
+      .dark-background & {
+        border-color: bgrey(0.01);
+        border-bottom-color: #444444;
+      }
+    }
+    ul {
+      .light-background &, & {
+        background-color: #f7f7f7;
+      }
+      .dark-background & {
+        background-color: #444444;
+      }
+      a {
+        @include color-set(bgrey(0.9), wgrey(0.9));
+        &:hover,
+        &:active {
+          @include color-set(bgrey(0.95), wgrey(0.95));
+        }
+      }
+    }
+  }
+}
+
+// FORMATTED CONTENT
+.content-formatted {
+  h1,h2,h3,h4,h5,h6,
+  li:before,
+  a {
+    @include color-set(bgrey(0.95), wgrey(0.95)); 
+  }
+  pre,
+  pre code {
+    .light-background &, & {
+      background-color: bgrey(0.04);
+    }
+    .dark-background & {
+      background-color: wgrey(0.2);
+    }
+  }
+  b,
+  strong {
+    @include color-set(bgrey(0.95), wgrey(0.95));
+  }
+  .horizontal-scroll {
+    .light-background &, & {
+      @include border(left, 1px, dashed, bgrey(0.44));
+    }
+    .dark-background & {
+      @include border(right, 1px, dashed, wgrey(0.55));
+    }
+  }
+  // TABLES
+  table {
+    th {
+      @include color-set(bgrey(0.95), wgrey(0.95));
+    }
+    tr {
+      .light-background &, & {
+        border-top: 1px solid bgrey(0.1);
+        &:first-child {
+          border-top: none;
+        }
+      }
+      .dark-background & {
+        border-top: 1px solid wgrey(0.1);
+        &:first-child {
+          border-top: none;
+        }
+      }
+    }
+  }
+
+  //FORMS
+  .form_field_textfield,
+  .form_field_textarea {
+    &, .light-background & {
+      border: 1px solid bgrey(0.25);
+    }
+    .dark-background {
+      border: 1px solid wgrey(0.45);
+    }
+  }
+  .form_submit input {
+    @include color-set(bgrey(0.88), wgrey(0.88));
+    .light-background &, & {
+      @include background(linear-gradient(to bottom, #f4f4f4 0%, #eaeaea 100%));
+      border: 1px solid bgrey(0.1);
+    }
+    .dark-background & {
+      @include background(linear-gradient(to bottom, bgrey(0.95) 0%, bgrey(0.9) 100%));
+      border: 1px solid wgrey(0.33);
+    }
+  }
+  .form_error,
+  .form_field_error {
+    color: $red;
+  }
+  .form_field_with_errors {
+    .form_field_textfield,
+    .form_field_textarea {
+      @include border(all, 1px, solid, $red);
+    }
+  }
+  .form_notice {
+    color: $green;
+  }
+}
+
+.search {
+  input {
+    @include color-set(bgrey(0.5), wgrey(0.5));
+    &::-webkit-input-placeholder {
+      @include color-set(bgrey(0.5), wgrey(0.5));
+    }
+  }
+  form {
+    &, .light-background & {
+      border: 1px solid bgrey(0.1);
+    }
+    .dark-background & {
+      border: 1px solid wgrey(0.33);
+    }
+  }
+  .search-submit,
+  .search-btn {
+    .light-background &, & {
+      .no-svg & {
+        background-image: url("../images/ico-search.png");
+      }
+      .svg & {
+        background-image: url("../assets/ico-search-dark.svg");
+      }
+    }
+    .dark-background & {
+      .no-svg & {
+        background-image: url("../images/ico-search.png");
+        background-size: 20px;
+      }
+      .svg & {
+        background-image: url("../assets/ico-search.svg");
+      }
+    }
+  }
+  .search-clear {
+    .light-background &, & {
+      .no-svg & {
+        background-image: url("../images/close-round.png");
+      }
+      .svg & {
+        background-image: url("../assets/close-round-dark.svg");
+      }
+    }
+    .dark-background & {
+      .no-svg & {
+        background-image: url("../images/close-round.png");
+        background-size: 20px;
+      }
+      .svg & {
+        background-image: url("../assets/close-round.svg");
+      }
+    }
+  }
+}
+.voog-search-modal {
+  .light-background &, & {
+  }
+  @include color-set(bgrey(0.9), wgrey(0.9));
+  a {
+    @include color-set(bgrey(0.9), wgrey(0.9));
+    &:hover,
+    &:active {
+      @include color-set(bgrey(0.95), wgrey(0.95));
+    }
+  }
+}
+
+// @include color-set(bgrey(), wgrey())
+
+// .SELECTOR {
+//   .dark-background & {
+
+//   }
+//   &,
+//   .light-background {
+
+//   }
+// }
+
+
+
+.news {
+  .date,
+  .author {
+    @include color-set(bgrey(0.3), wgrey(0.5));
+  }
+  a {
+    @include color-set(bgrey(0.9), wgrey(0.9));
+    &:hover,
+    &:active {
+      @include color-set(bgrey(0.95), wgrey(0.95));
+    }
+  }
+}
+
+// FOOTER
+.footer {
+  .content-formatted {
+    &,
+    .light-background & {
+      @include color($black, 0.5);
+
+      a {
+        @include color($black, 0.88);
+
+        &:hover {
+          @include color($black);
+        }
+      }
+    }
+    .dark-background & {
+      @include color($white, 0.5);
+
+      a {
+        @include color($white, 0.66);
+
+        &:hover {
+          @include color($white);
+        }
+      }
+    }
+  }
+}
+
+.voog-reference {
+  &,
+  .light-background & {
+    @include color($black, 0.66);
+    a {
+      @include color($black, 0.88);
+      border: 1px solid bgrey(0.1);
+
+      &:hover {
+        @include color($black);
+        border: 1px solid bgrey(0.33);
+      }
+    }
+  }
+  .dark-background & {
+    @include color($white, 0.33);
+    a {
+      @include color($white, 0.66);
+      border: 1px solid wgrey(0.33);
+
+      &:hover {
+        @include color($white);
+        border: 1px solid wgrey(0.45);
+      }
+    }
+  }
+}

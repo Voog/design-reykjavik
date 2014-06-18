@@ -7,11 +7,14 @@
   <meta property="og:title" content="{{ site.name }}">
   {% unless page.description == nil or page.description == "" %}<meta property="og:description" content="{{ page.description }}">{% endunless %}
   {% if page.data.fb_image %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ page.data.fb_image }}">{% comment %}<!-- TODO: Add functionality -->{% endcomment %}{% endif %}
-
+  <link rel="stylesheet" href="/assets/admin/tools/0.1.1/edicy-tools.css">
+  {% include "bg-picker-variables" %}
   {{ blog.rss_link }}
 </head>
 
-<body class="blog-page">
+<body class="blog-page js-body global-background-color" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
+  {% if editmode %}<button class="bgpicker-toggle-button global-background-settings" data-bg-color="{{ background_color }}"></button>{% endif %}
+  {% if background_color != '' or editmode %}<div class="background-color global-background-color"{{ background_color_style }}></div>{% endif %}
 
   {% include "menu-mobile" %}
 
@@ -28,11 +31,10 @@
         {% endfor %}
       </section>
     </main>
+    {% include "footer" %
   </div>
-
-  {% include "footer" %}
-
   {% include "javascripts" %}
+  {% include "bg-picker" %}
   <script>
     $(document).ready(function() {
       currentUrl = window.location.href;

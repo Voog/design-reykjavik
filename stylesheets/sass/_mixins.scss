@@ -38,6 +38,17 @@
   }
 }
 
+// CUSTOM MIXIN FOR LIGHT AND DARK COLORS AT ONCE
+@mixin color-set($lightColor, $darkColor) {
+  &,
+  .light-background & {
+    color: $lightColor;
+  }
+  .dark-background & {
+    color: $darkColor;
+  }
+}
+
 // BORDERS
 @mixin border($side, $width, $style, $color, $opacity: 1) {
   @if $side == 'all' {
@@ -83,4 +94,12 @@
   @media screen and (max-width: $value) {
     @content;
   }
+}
+
+@function wgrey($opacity) {
+  @return rgba(255,255,255,$opacity);
+}
+
+@function bgrey($opacity) {
+  @return rgba(0,0,0,$opacity);
 }

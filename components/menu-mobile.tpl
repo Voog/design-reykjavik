@@ -5,15 +5,6 @@
       <span class="menu-stripe"></span>
       <span class="menu-stripe"></span>
     </button>
-
-    <nav class="menu-lang">
-      <div class="popup-content">{% for language in site.languages %}{% if language.selected? %}{{language.title}}{% endif %}{% endfor %}</div>
-      <select class="menu">
-        {% for language in site.languages %}
-          <option value="{{language.url}}"{% if language.selected? %} selected="selected"{% endif %}>{{language.title}}</option>
-        {% endfor %}
-      </select>
-    </nav>
   </div>
 
   <div class="mobile-menu-main">
@@ -44,6 +35,19 @@
           {% endif %}
         </li>
       {% endfor %}
+    </ul>
+    <ul class="languages">
+      <li>
+        <div>Languages</div>
+        <div class="mobile-menu-arr"></div>
+        <ul>
+        {% for language in site.languages %}
+          <li class="{% if forloop.last%}last{% endif %} {% if language.selected? %}open{% endif %}">
+            <a href="{{language.url}}" {% if language.selected? %} class="active"{% endif %}>{{language.title}}</a>
+          </li>
+        {% endfor %}
+        </ul>
+      </li>
     </ul>
   </div>
 </div>
