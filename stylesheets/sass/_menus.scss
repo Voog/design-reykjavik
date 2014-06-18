@@ -135,7 +135,6 @@
     top: 0;
     right: 22px;
     z-index: 5;
-    display: none;
     margin-right: 20px;
     padding-right: 22px;
     width: auto;
@@ -233,12 +232,12 @@ ul.menu {
       min-width: 100%;
     }
   }
-  display: inline-block;
+  display: inline;
   padding: 7px 0;
   max-width: 75%;
 
   .menu {
-    float: right;
+    display: inline;
     padding: 0;
     list-style: none;
     .menu-item,
@@ -267,10 +266,6 @@ ul.menu {
         font-weight: 700;
       }
     }
-  }
-
-  .menu-lang {
-    display: none;
   }
 }
 
@@ -335,7 +330,7 @@ ul.menu {
 }
 
 .menu-lang {
-  display: inline-block;
+  display: inline;
   padding: 6px 0;
   width: auto;
 
@@ -350,6 +345,7 @@ ul.menu {
     margin-top: 1px;
     height: 24px;
     border-radius: 20px;
+    margin-left: 20px;
 
     .langmenu-content {
       padding: 4px 22px 0 10px;

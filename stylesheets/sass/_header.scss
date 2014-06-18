@@ -41,7 +41,7 @@
   .flexbox & {
     @include flexbox;
     @include align-items(flex-start);
-    justify-content: space-between;
+    @include justify-content(space-between);
   }
 
   .header-title,
