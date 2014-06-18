@@ -594,6 +594,7 @@ body.dark-background {
     max-width: 960px;
     position: relative; }
   .footer .content-formatted {
+    margin-right: 235px;
     width: auto;
     font-size: 13px;
     line-height: 1.7em; }
@@ -733,7 +734,7 @@ body {
   z-index: -1; }
 
 .background-image {
-  background-position: top;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
 
@@ -1398,6 +1399,7 @@ ul.menu {
         display: block;
         margin: 0;
         padding: 0;
+        width: 100%;
         height: 100%; } }
 
 .search-inner {
@@ -1456,18 +1458,18 @@ ul.menu {
 
 .search-clear {
   top: 0;
-  right: 35px !important;
+  right: 30px !important;
   display: none;
-  background-position: 5px 7px;
+  background-position: 5px 8px;
   background-size: 25px;
-  opacity: 0.75; }
+  opacity: 0.5; }
   @media screen and (max-width: 752px) {
     .search-clear {
       right: 40px !important;
-      background-position: 5px 5px;
+      background-position: 5px 4px;
       background-size: 40px !important; } }
   .search-clear:hover {
-    opacity: 0.5; }
+    opacity: 0.3; }
 
 .search-input {
   margin: 0;
@@ -1479,15 +1481,6 @@ ul.menu {
   font-size: 1em;
   font-family: inherit;
   line-height: 1; }
-  @media screen and (max-width: 752px) {
-    .search-input {
-      padding-right: 60px;
-      padding-left: 20px;
-      width: 77%;
-      height: 40px;
-      font-size: 24px; } }
-  .search-input::-ms-clear {
-    display: none; }
   .search-input::-webkit-input-placeholder {
     padding: 3px 0 4px 0;
     line-height: 1; }
@@ -1500,6 +1493,17 @@ ul.menu {
   .search-input:-ms-input-placeholder {
     padding: 3px 0 4px 0;
     line-height: 1; }
+  .search-input::-moz-placeholder {
+    line-height: 2; }
+  @media screen and (max-width: 752px) {
+    .search-input {
+      padding-right: 60px;
+      padding-left: 20px;
+      width: 77%;
+      height: 40px;
+      font-size: 24px; } }
+  .search-input::-ms-clear {
+    display: none; }
 
 .search-submit,
 .search-clear {
@@ -1524,28 +1528,41 @@ ul.menu {
       right: 0;
       display: block;
       margin-right: 50px; } }
+  .svg .search-btn.open, .no-svg .search-btn.open {
+    background-image: none; }
+  .no-svg .search-btn {
+    background-image: url("../images/ico-search.png"); }
+  .svg .search-btn {
+    background-image: url("../assets/ico-search.svg"); }
+
+.js-modal-overlay.active .search-input {
+  background: white; }
+.js-modal-overlay.active form {
+  border: none; }
 
 .voog-search-modal {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   background-color: white;
   -webkit-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5) ;
   -moz-box-shadow: 0 0 30px rgba(0, 0, 0, 0.5) ;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.5) ;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
   position: absolute;
   z-index: 20;
   overflow-x: hidden;
   overflow-y: auto;
-  margin-top: -20px;
-  padding: 20px;
-  max-width: 600px;
+  margin-top: 20px;
+  padding: 20px 27px;
+  max-width: 346px;
   max-height: 300px;
   width: 100%; }
   @media screen and (max-width: 752px) {
     .voog-search-modal {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
       margin-top: 0;
-      padding-top: 0;
       max-width: 400px;
       max-height: 300px;
       box-shadow: none; } }
@@ -1553,8 +1570,7 @@ ul.menu {
     padding-bottom: 24px;
     text-align: center; }
   .voog-search-modal em {
-    background-color: rgba(0, 0, 0, 0.33);
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: black;
     border-radius: 2px;
     font-weight: 600;
     font-style: normal; }
@@ -1569,18 +1585,16 @@ ul.menu {
   text-align: center; }
 
 .voog-search-modal-result {
-  margin-top: 18px;
-  font-size: 0.9em; }
+  margin-top: 18px; }
   .voog-search-modal-result:first-child {
     margin-top: 0; }
-
-.voog-search-title {
-  margin: 0;
-  font-size: 16px; }
-
-.voog-search-link {
-  text-decoration: none;
-  font-weight: 600; }
-
-.voog-search-content {
-  margin: 5px 0 0; }
+  .voog-search-modal-result h3 {
+    margin: 0;
+    font-size: 16px; }
+  .voog-search-modal-result a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600; }
+  .voog-search-modal-result p {
+    margin: 5px 0 0;
+    font-size: 14px; }
