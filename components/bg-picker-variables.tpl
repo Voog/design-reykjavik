@@ -7,7 +7,7 @@
   {% endif %}
 
   {% if page.data.cover_color == nil %}
-    {% assign cover_color = 'rgb(0, 102, 187)' %}
+    {% assign cover_color = 'rgb(255,255,255)' %}
   {% else %}
     {% assign cover_color = page.data.cover_color %}
   {% endif %}
