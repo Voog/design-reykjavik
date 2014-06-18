@@ -255,28 +255,10 @@
       "filename": "arr_down.gif"
     },
     {
-      "content_type": "image/jpeg",
-      "file": "images/forest.jpg",
-      "kind": "images",
-      "filename": "forest.jpg"
-    },
-    {
       "content_type": "image/png",
       "file": "images/ico-search.png",
       "kind": "images",
       "filename": "ico-search.png"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/night.jpg",
-      "kind": "images",
-      "filename": "night.jpg"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/sea.jpg",
-      "kind": "images",
-      "filename": "sea.jpg"
     },
     {
       "content_type": "image/gif",
