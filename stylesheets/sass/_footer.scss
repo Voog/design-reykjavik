@@ -3,7 +3,7 @@
 .footer {
   clear: both;
   margin-top: 0;
-  padding: 0 20px 25px;
+  padding: 0 20px;
   text-align: left;
 
   .footer-inner {
@@ -33,18 +33,18 @@
       line-height: 1.4;
     }
   }
+}
 
-  .voog-reference {
-    margin: auto;
-    max-width: 960px;
-    margin-top: 15px;
-    text-align: left;
-    a {
-      display: inline-block;
-      padding: 7px 9px;
-      font-size: 0.55em;
-      line-height: 1;
-      text-decoration: none;
-    }
+.voog-reference {
+  margin: auto;
+  max-width: 960px;
+  margin-top: 20px;
+  text-align: left;
+  a {
+    display: inline-block;
+    padding: 7px 9px;
+    font-size: 0.55em;
+    line-height: 1;
+    text-decoration: none;
   }
 }

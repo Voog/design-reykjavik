@@ -179,6 +179,13 @@
       "file": "components/topbar.tpl",
       "layout_name": "topbar",
       "title": "topbar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/voog-ref.tpl",
+      "layout_name": "",
+      "title": "Voog-ref"
     }
   ],
   "assets": [

@@ -46,6 +46,7 @@
 
     </main>
     {% include "footer" %}
+    {% include "voog-ref" %}
   </div>
   {% include "javascripts" %}
   {% include "bg-picker" %}

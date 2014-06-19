@@ -585,7 +585,7 @@ body.dark-background {
 .footer {
   clear: both;
   margin-top: 0;
-  padding: 0 20px 25px;
+  padding: 0 20px;
   text-align: left; }
   .footer .footer-inner {
     margin: auto;
@@ -605,17 +605,18 @@ body.dark-background {
       display: inline-block;
       text-decoration: none;
       line-height: 1.4; }
-  .footer .voog-reference {
-    margin: auto;
-    max-width: 960px;
-    margin-top: 15px;
-    text-align: left; }
-    .footer .voog-reference a {
-      display: inline-block;
-      padding: 7px 9px;
-      font-size: 0.55em;
-      line-height: 1;
-      text-decoration: none; }
+
+.voog-reference {
+  margin: auto;
+  max-width: 960px;
+  margin-top: 20px;
+  text-align: left; }
+  .voog-reference a {
+    display: inline-block;
+    padding: 7px 9px;
+    font-size: 0.55em;
+    line-height: 1;
+    text-decoration: none; }
 
 /* FORMS */
 .content-formatted form {
