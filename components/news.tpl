@@ -1,4 +1,3 @@
-{% for a in site.latest_1_articles %}
 <section class="news">
   <h2 class="news-header">{{ "latest_news"|lc }}</h2>
   <ul>
@@ -8,8 +7,7 @@
     </li>
   {% endfor %}
   </ul>
-  {% if site.latest_3_articles.size > 2 %}
+  {% if site.latest_6_articles.size > 5 %}
   <a href="/blog" class="link more-news">More news</a>
   {% endif %}
 </section>
-{% endfor %}

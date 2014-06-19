@@ -82,7 +82,7 @@ body {
 }
 
 c// BLOG POST
-.post {
+.post,  {
   // TITLE
   .post-title {
     &,
@@ -335,7 +335,18 @@ c// BLOG POST
 // MOBILE MENU
 .mobile-menu-wrapper {
   color: $light-primary;
-  background-color: rgba(0,0,0,0.8) !important;
+  .light-background &, & {
+    background-color: rgba(0,0,0,.8) !important;
+  }
+  .dark-background & {
+    background-color: rgba(255,255,255,.2) !important;
+  }
+  .mobile-menu-main {
+    background-color: rgba(255,255,255,.15) !important;
+    .pages {
+      border-bottom: 1px solid rgba(255,255,255,.45);
+    }
+  }
   a {
     color: $light-primary;
     &:hover,
@@ -344,13 +355,13 @@ c// BLOG POST
     }
   }
   ul li {
-    border-bottom: 1px solid $light-tertiary; 
+    border-bottom: 1px solid rgba(255,255,255,.15); 
 
   }
   ul ul li {
-    border-bottom: 1px solid $light-tertiary; 
+    border-bottom: 1px solid rgba(255,255,255,.15); 
     &:first-child {
-      border-top: 1px solid $light-tertiary;
+      border-top: 1px solid rgba(255,255,255,.15);
     }
   }
   .search-btn {    

@@ -12,12 +12,6 @@ body {
   font-family: 'Source Sans Pro', Arial, Verdana, sans-serif;
   line-height: 1.45em;
 }
-
-  @include query($tablet-2) {
-    .bgpicker-toggle-button {
-      z-index: -1;
-    }
-  }
  // Layout specific body classes
 
   .background-image,
@@ -42,6 +36,13 @@ body {
       }
     }
     .content-left {
+      @include query($tablet-2) {
+        margin-bottom: 20px;
+        width: 100%;
+        &.last {
+          margin-top: 20px;
+        }
+      }
       width: 50%;
     }
 
@@ -63,8 +64,9 @@ body {
 
     .content-right {
       @include query($tablet-2) {
-        margin: 25px -20px;
+        @include box-sizing(border-box);
         padding: 40px;
+        width: 100%;
         .content-body {
           margin: 0;
         }
@@ -86,7 +88,6 @@ body {
     .content-left {
       @include query($tablet-2) {
         display: block;
-        width: auto;
       }
     }
  }
@@ -94,7 +95,7 @@ body {
  .common-page {
     .content {
       @include query($tablet-2) {
-        padding: 30px 20px;
+        padding: 0 20px;
       }
     }
     .content-left {
@@ -109,11 +110,11 @@ body {
 
     .content-right {
       @include query($tablet-2) {
-        padding: 0;
         margin-left: 0;
+        padding: 0;
       }
-      margin-left: 200px;
       float: none;
+      margin-left: 200px;
       padding: 0 35px 0 15px;
       width: auto;
       h1 {
@@ -131,10 +132,10 @@ body {
     }
 
     .content-header {
-      display: inline-block;
       @include query($tablet-2) {
         margin-top: 0;
       }
+      display: inline-block;
       margin-top: 2px;
     }
 
@@ -189,8 +190,8 @@ body {
 
 %button {
   margin: 0;
-  background: none;
   border: none;
+  background: none;
   cursor: pointer;
 
   &, &::-moz-focus-inner {
@@ -223,5 +224,21 @@ body {
     img {
       border: none;
     }
+  }
+}
+
+// override BGpicker default styles to move and
+// position them more conveniently on mobile devices
+@include query($tablet-2) {
+  body > .bgpicker-toggle-button {
+    bottom: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    left: auto !important;
+    margin-bottom: 45px !important;
+    margin-right: 5px !important;
+  }
+  .bgpicker-toggle-button {
+    margin: 0 !important;
   }
 }

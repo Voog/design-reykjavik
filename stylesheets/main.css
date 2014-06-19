@@ -287,18 +287,25 @@ c
   color: white; }
 
 .mobile-menu-wrapper {
-  color: rgba(255, 255, 255, 0.8);
-  background-color: rgba(0, 0, 0, 0.8) !important; }
+  color: rgba(255, 255, 255, 0.8); }
+  .light-background .mobile-menu-wrapper, .mobile-menu-wrapper {
+    background-color: rgba(0, 0, 0, 0.8) !important; }
+  .dark-background .mobile-menu-wrapper {
+    background-color: rgba(255, 255, 255, 0.2) !important; }
+  .mobile-menu-wrapper .mobile-menu-main {
+    background-color: rgba(255, 255, 255, 0.15) !important; }
+    .mobile-menu-wrapper .mobile-menu-main .pages {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.45); }
   .mobile-menu-wrapper a {
     color: rgba(255, 255, 255, 0.8); }
     .mobile-menu-wrapper a:hover, .mobile-menu-wrapper a:active {
       color: white; }
   .mobile-menu-wrapper ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
   .mobile-menu-wrapper ul ul li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); }
     .mobile-menu-wrapper ul ul li:first-child {
-      border-top: 1px solid rgba(255, 255, 255, 0.3); }
+      border-top: 1px solid rgba(255, 255, 255, 0.15); }
   .no-svg .mobile-menu-wrapper .search-btn {
     background-image: url("../images/ico-search.png");
     background-size: 20px; }
@@ -746,9 +753,6 @@ body {
   font-family: 'Source Sans Pro', Arial, Verdana, sans-serif;
   line-height: 1.45em; }
 
-@media screen and (max-width: 752px) {
-  .bgpicker-toggle-button {
-    z-index: -1; } }
 .background-image,
 .background-color {
   z-index: -1; }
@@ -766,6 +770,12 @@ body {
     padding: 0 20px; } }
 .front-page .content-left {
   width: 50%; }
+  @media screen and (max-width: 752px) {
+    .front-page .content-left {
+      margin-bottom: 20px;
+      width: 100%; }
+      .front-page .content-left.last {
+        margin-top: 20px; } }
 .front-page .content-header {
   padding: 0 0 60px; }
   @media screen and (max-width: 752px) {
@@ -783,8 +793,11 @@ body {
   width: 32.5%; }
   @media screen and (max-width: 752px) {
     .front-page .content-right {
-      margin: 25px -20px;
-      padding: 40px; }
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 40px;
+      width: 100%; }
       .front-page .content-right .content-body {
         margin: 0; } }
 .front-page .content-body {
@@ -797,12 +810,11 @@ body {
 @media screen and (max-width: 752px) {
   .front-page .content-right,
   .front-page .content-left {
-    display: block;
-    width: auto; } }
+    display: block; } }
 
 @media screen and (max-width: 752px) {
   .common-page .content {
-    padding: 30px 20px; } }
+    padding: 0 20px; } }
 .common-page .content-left {
   float: left;
   clear: left;
@@ -812,14 +824,14 @@ body {
     .common-page .content-left {
       display: none; } }
 .common-page .content-right {
-  margin-left: 200px;
   float: none;
+  margin-left: 200px;
   padding: 0 35px 0 15px;
   width: auto; }
   @media screen and (max-width: 752px) {
     .common-page .content-right {
-      padding: 0;
-      margin-left: 0; } }
+      margin-left: 0;
+      padding: 0; } }
   @media screen and (max-width: 752px) {
     .common-page .content-right h1 {
       font-size: 200%; } }
@@ -871,8 +883,8 @@ ul.menu .menu-item {
 
 .search-btn {
   margin: 0;
-  background: none;
   border: none;
+  background: none;
   cursor: pointer; }
   .search-btn, .search-btn::-moz-focus-inner {
     padding: 0; }
@@ -893,6 +905,17 @@ ul.menu .menu-item {
     .container a img {
       border: none; }
 
+@media screen and (max-width: 752px) {
+  body > .bgpicker-toggle-button {
+    bottom: 0 !important;
+    right: 0 !important;
+    top: auto !important;
+    left: auto !important;
+    margin-bottom: 45px !important;
+    margin-right: 5px !important; }
+
+  .bgpicker-toggle-button {
+    margin: 0 !important; } }
 /* HEADER */
 .header {
   margin: auto;
@@ -1042,6 +1065,8 @@ ul.menu .menu-item {
   .mobile-menu-wrapper .mobile-menu-main {
     display: none;
     width: 100%; }
+    .mobile-menu-wrapper .mobile-menu-main .pages {
+      padding-bottom: 0; }
     .mobile-menu-wrapper .mobile-menu-main.expanded {
       display: block; }
     .mobile-menu-wrapper .mobile-menu-main > ul {

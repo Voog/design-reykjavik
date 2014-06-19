@@ -37,10 +37,12 @@
           {% content %}
         </section>
       </article>
-
+  
+      {% for a in site.latest_1_articles %}
       <aside class="content-left last">
         {% include "news" %}
       </aside>
+      {% endfor %}
 
     </main>
     {% include "footer" %}

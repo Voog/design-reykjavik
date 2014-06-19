@@ -66,6 +66,9 @@
   .mobile-menu-main  {
     display: none;
     width: 100%;
+    .pages {
+      padding-bottom: 0;
+    }
     &.expanded {
       display: block;
     }
