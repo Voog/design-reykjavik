@@ -6,7 +6,7 @@
     {% assign cover_image = page.data.cover_image %}
   {% endif %}
 
-  {% if page.data.cover_color == nil %}
+  {% if page.data.cover_color == nil or page.data.cover_color == '' %}
     {% assign cover_color = 'rgb(255,255,255)' %}
   {% else %}
     {% assign cover_color = page.data.cover_color %}
