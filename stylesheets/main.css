@@ -42,19 +42,25 @@ body.dark-background {
   border-top-color: rgba(0, 0, 0, 0.1); }
 .dark-background .header .langmenu .langmenu-content:before {
   border-color: rgba(0, 0, 0, 0.01);
-  border-top-color: rgba(0, 0, 0, 0.3); }
+  border-top-color: rgba(255, 255, 255, 0.3); }
 .light-background .header .langmenu .langmenu-arrow, .header .langmenu .langmenu-arrow, .light-background
 .header .langmenu .langmenu-arrow2,
 .header .langmenu .langmenu-arrow2 {
-  border-color: rgba(255, 255, 255, 0.01);
+  border-color: rgba(0, 0, 0, 0.01);
   border-bottom-color: #f7f7f7; }
 .dark-background .header .langmenu .langmenu-arrow, .dark-background
 .header .langmenu .langmenu-arrow2 {
-  border-color: rgba(0, 0, 0, 0.01);
+  border-color: rgba(255, 255, 255, 0.01);
   border-bottom-color: #444444; }
 .light-background .header .langmenu ul, .header .langmenu ul {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
+  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
   background-color: #f7f7f7; }
 .dark-background .header .langmenu ul {
+  -webkit-box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15) ;
+  -moz-box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15) ;
+  box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15) ;
   background-color: #444444; }
 .header .langmenu ul a, .light-background .header .langmenu ul a {
   color: rgba(0, 0, 0, 0.8); }
@@ -207,10 +213,8 @@ body.dark-background {
   color: rgba(0, 0, 0, 0.5); }
 .dark-background .search input {
   color: rgba(255, 255, 255, 0.5); }
-.search input::-webkit-input-placeholder, .light-background .search input::-webkit-input-placeholder {
+.search input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.5); }
-.dark-background .search input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5); }
 .search form, .light-background .search form {
   border: 1px solid rgba(0, 0, 0, 0.1); }
 .dark-background .search form {
@@ -218,7 +222,8 @@ body.dark-background {
 .no-svg .light-background .search .search-submit, .no-svg .search .search-submit, .no-svg .light-background
 .search .search-btn, .no-svg
 .search .search-btn {
-  background-image: url("../images/ico-search.png"); }
+  background-image: url("../images/ico-search.png");
+  background-size: 20px; }
 .svg .light-background .search .search-submit, .svg .search .search-submit, .svg .light-background
 .search .search-btn, .svg
 .search .search-btn {
@@ -229,7 +234,7 @@ body.dark-background {
   background-size: 20px; }
 .svg .dark-background .search .search-submit, .svg .dark-background
 .search .search-btn {
-  background-image: url("../assets/ico-search.svg"); }
+  background-image: url("../assets/ico-search-dark.svg"); }
 .no-svg .light-background .search .search-clear, .no-svg .search .search-clear {
   background-image: url("../images/close-round.png"); }
 .svg .light-background .search .search-clear, .svg .search .search-clear {
@@ -1250,7 +1255,7 @@ ul.menu {
       cursor: pointer; }
       .menu-lang .langmenu .langmenu-content:before {
         position: absolute;
-        top: 9px;
+        top: 10px;
         right: 9px;
         display: block;
         overflow: hidden;
@@ -1298,7 +1303,6 @@ ul.menu {
       height: 0;
       border-width: 12px;
       border-style: solid;
-      border-color: none;
       border-color: transparent; }
     .menu-lang .langmenu .langmenu-arrow2 {
       position: absolute;
@@ -1311,7 +1315,6 @@ ul.menu {
       height: 0;
       border-width: 10px;
       border-style: solid;
-      border-color: none;
       border-color: transparent; }
     .menu-lang .langmenu ul {
       margin: 0;

@@ -357,7 +357,7 @@ ul.menu {
 
       &:before {
         position: absolute;
-        top: 9px;
+        top: 10px;
         right: 9px;
         display: block;
         overflow: hidden;
@@ -413,7 +413,6 @@ ul.menu {
       height: 0;
       border-width: 12px;
       border-style: solid;
-      border-color: none;
       border-color: transparent;
     }
 
@@ -428,7 +427,6 @@ ul.menu {
       height: 0;
       border-width: 10px;
       border-style: solid;
-      border-color: none;
       border-color: transparent;
     }
 
