@@ -1,1 +1,1 @@
-<div class="voog-reference"><a href="http://www.voog.com">VOOG.&nbsp;Make a website.</a></div>
+<div class="voog-reference">{% loginblock %}{{ "footer_login_link" | lc }}{% endloginblock %}</div>
