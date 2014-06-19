@@ -1090,7 +1090,8 @@ ul.menu .menu-item {
         padding-left: 40px; }
       .mobile-menu-wrapper .mobile-menu-main ul li {
         min-height: 40px;
-        line-height: 100%; }
+        line-height: 100%;
+        width: 100%; }
         .mobile-menu-wrapper .mobile-menu-main ul li.open > ul {
           display: block;
           border-top-color: transparent; }
