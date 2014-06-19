@@ -986,14 +986,14 @@ ul.menu .menu-item {
   @media screen and (max-width: 752px) {
     .menu-btn {
       display: inline-block;
+      float: right;
       margin: 0;
       padding: 0;
+      padding-right: 13px;
+      height: 41px;
       border: none;
       background: none;
-      cursor: pointer;
-      float: right;
-      height: 41px;
-      padding-right: 13px; }
+      cursor: pointer; }
       .menu-btn:focus {
         outline: none; }
       .menu-btn:hover {
@@ -1023,8 +1023,8 @@ ul.menu .menu-item {
     .mobile-menu-wrapper {
       display: block; } }
   .mobile-menu-wrapper .mobile-menu-header {
-    height: 41px;
-    position: relative; }
+    position: relative;
+    height: 41px; }
   .mobile-menu-wrapper .mobile-menu-main {
     display: none;
     width: 100%; }
@@ -1040,11 +1040,14 @@ ul.menu .menu-item {
       margin: 0;
       list-style: none; }
       .mobile-menu-wrapper .mobile-menu-main ul a {
-        display: block;
+        display: inline-block;
         width: 100%;
+        width: 80%;
         text-decoration: none;
+        word-break: break-word;
         font-weight: 400;
-        line-height: 40px; }
+        line-height: 40px;
+        line-height: 1em; }
         .mobile-menu-wrapper .mobile-menu-main ul a.active {
           font-weight: 700; }
       .mobile-menu-wrapper .mobile-menu-main ul ul li a {
@@ -1053,8 +1056,8 @@ ul.menu .menu-item {
         padding-left: 40px; }
       .mobile-menu-wrapper .mobile-menu-main ul li {
         min-height: 40px;
-        line-height: 100%;
-        width: 100%; }
+        width: 100%;
+        line-height: 40px; }
         .mobile-menu-wrapper .mobile-menu-main ul li.open > ul {
           display: block;
           border-top-color: transparent; }
@@ -1068,12 +1071,12 @@ ul.menu .menu-item {
         .mobile-menu-wrapper .mobile-menu-main ul.languages li,
         .mobile-menu-wrapper .mobile-menu-main ul.languages li a {
           min-height: 35px;
-          line-height: 35px;
-          border-top: none; }
+          border-top: none;
+          line-height: 35px; }
         .mobile-menu-wrapper .mobile-menu-main ul.languages li > div {
+          display: inline-block;
           height: 35px;
-          line-height: 35px;
-          display: inline-block; }
+          line-height: 35px; }
   .mobile-menu-wrapper .menu-lang {
     position: absolute;
     top: 0;
@@ -1236,9 +1239,9 @@ ul.menu {
     z-index: 100;
     float: right;
     margin-top: 1px;
+    margin-left: 20px;
     height: 24px;
-    border-radius: 20px;
-    margin-left: 20px; }
+    border-radius: 20px; }
     .menu-lang .langmenu .langmenu-content {
       padding: 4px 22px 0 10px;
       height: 14px;
