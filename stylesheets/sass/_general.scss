@@ -231,12 +231,8 @@ body {
 // position them more conveniently on mobile devices
 @include query($tablet-2) {
   body > .bgpicker-toggle-button {
-    bottom: 0 !important;
-    right: 0 !important;
-    top: auto !important;
-    left: auto !important;
-    margin-bottom: 45px !important;
-    margin-right: 5px !important;
+    margin-top: 45px !important;
+    margin-left: 5px !important;
   }
   .bgpicker-toggle-button {
     margin: 0 !important;

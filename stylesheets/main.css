@@ -65,80 +65,47 @@ body.dark-background {
 .dark-background .header .langmenu ul a:hover, .dark-background .header .langmenu ul a:active {
   color: white; }
 
-c
-.post .post-title, c
-.post .post-title a, .light-background c
-.post .post-title, .light-background c
-.post .post-title a {
+.post .post-title, .post .post-title a, .light-background .post .post-title, .light-background .post .post-title a {
   color: rgba(0, 0, 0, 0.8); }
-c
-.post .post-title a:hover, .light-background c
-.post .post-title a:hover {
+.post .post-title a:hover, .light-background .post .post-title a:hover {
   color: black; }
-.dark-background c
-.post .post-title, .dark-background c
-.post .post-title a {
+.dark-background .post .post-title, .dark-background .post .post-title a {
   color: rgba(255, 255, 255, 0.8); }
-.dark-background c
-.post .post-title a:hover {
+.dark-background .post .post-title a:hover {
   color: white; }
-c
-.post .post-date, .light-background c
-.post .post-date {
+.post .post-date, .light-background .post .post-date {
   color: rgba(0, 0, 0, 0.3); }
-.dark-background c
-.post .post-date {
+.dark-background .post .post-date {
   color: rgba(255, 255, 255, 0.3); }
-c
-.post .comments-count, .light-background c
-.post .comments-count {
+.post .comments-count, .light-background .post .comments-count {
   color: rgba(0, 0, 0, 0.3); }
-.dark-background c
-.post .comments-count {
+.dark-background .post .comments-count {
   color: rgba(255, 255, 255, 0.3); }
-c
-.post .comments-count, .light-background c
-.post .comments-count {
+.post .comments-count, .light-background .post .comments-count {
   border: 1px solid rgba(0, 0, 0, 0.3); }
-.dark-background c
-.post .comments-count {
+.dark-background .post .comments-count {
   border: 1px solid rgba(255, 255, 255, 0.3); }
-c
-.post .comments-count:hover, .light-background c
-.post .comments-count:hover {
+.post .comments-count:hover, .light-background .post .comments-count:hover {
   color: rgba(0, 0, 0, 0.7); }
-.dark-background c
-.post .comments-count:hover {
+.dark-background .post .comments-count:hover {
   color: rgba(255, 255, 255, 0.7); }
-c
-.post .comments-count:hover, .light-background c
-.post .comments-count:hover {
+.post .comments-count:hover, .light-background .post .comments-count:hover {
   border: 1px solid rgba(0, 0, 0, 0.7); }
-.dark-background c
-.post .comments-count:hover {
+.dark-background .post .comments-count:hover {
   border: 1px solid rgba(255, 255, 255, 0.7); }
-c
-.post .tags, .light-background c
-.post .tags {
+.post .tags, .light-background .post .tags {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
-.dark-background c
-.post .tags {
+.dark-background .post .tags {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
-c
-.post .tags .tag-link, .light-background c
-.post .tags .tag-link {
+.post .tags .tag-link, .light-background .post .tags .tag-link {
   color: rgba(0, 0, 0, 0.8); }
-.dark-background c
-.post .tags .tag-link {
+.dark-background .post .tags .tag-link {
   color: rgba(255, 255, 255, 0.8); }
-c
-.post .tags .tag-link:hover, .light-background c
-.post .tags .tag-link:hover {
+.post .tags .tag-link:hover, .light-background .post .tags .tag-link:hover {
   color: black; }
-.dark-background c
-.post .tags .tag-link:hover {
+.dark-background .post .tags .tag-link:hover {
   color: white; }
 
 .blog-page .tagged-list-header, .light-background .blog-page .tagged-list-header {
@@ -907,12 +874,8 @@ ul.menu .menu-item {
 
 @media screen and (max-width: 752px) {
   body > .bgpicker-toggle-button {
-    bottom: 0 !important;
-    right: 0 !important;
-    top: auto !important;
-    left: auto !important;
-    margin-bottom: 45px !important;
-    margin-right: 5px !important; }
+    margin-top: 45px !important;
+    margin-left: 5px !important; }
 
   .bgpicker-toggle-button {
     margin: 0 !important; } }
