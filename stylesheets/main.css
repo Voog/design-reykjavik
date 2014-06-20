@@ -736,6 +736,9 @@ body.dark-background {
       width: 100%; } }
 .content-formatted .form_field_size_small {
   width: 30%; }
+  @media screen and (max-width: 420px) {
+    .content-formatted .form_field_size_small {
+      width: 100%; } }
 .content-formatted .form_field_size_medium {
   width: 70%; }
   @media screen and (max-width: 420px) {
