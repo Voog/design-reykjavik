@@ -5,7 +5,7 @@
   font-size: 0.9em;
   .comment-inner {
     display: inline-block;
-    width: 95%;
+    width: 90%;
   }
   .comment-title {
     text-transform: uppercase;
@@ -21,6 +21,10 @@
   .comment {
     margin-bottom: 20px;
     line-height: 1.45em;
+    &:before {
+      vertical-align: top;
+      margin-top: 7px;
+    }
   }
   .comment-form {
     margin-top: 30px;

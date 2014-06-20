@@ -413,7 +413,7 @@ body.dark-background {
     font-size: 12px; }
   .post .tags {
     position: relative;
-    margin-top: 5px;
+    margin: 20px 0;
     padding: 15px 0;
     padding-left: 25px;
     font-size: 0.9em;
@@ -447,12 +447,15 @@ body.dark-background {
   .blog-page .tagged-list-header .menu-item {
     margin-right: 10px; }
 
+.post-page .post {
+  padding: 0; }
+
 /* COMMENTS */
 .comments {
   font-size: 0.9em; }
   .comments .comment-inner {
     display: inline-block;
-    width: 95%; }
+    width: 90%; }
   .comments .comment-title {
     text-transform: uppercase;
     line-height: 1.2em;
@@ -464,6 +467,9 @@ body.dark-background {
   .comments .comment {
     margin-bottom: 20px;
     line-height: 1.45em; }
+    .comments .comment:before {
+      vertical-align: top;
+      margin-top: 7px; }
   .comments .comment-form {
     margin-top: 30px; }
 
