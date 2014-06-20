@@ -202,27 +202,19 @@
       event.stopPropagation();
     });
 
-
-    // Adds/removes active class to search box if input is focused.
-    var handleSearchFocus = function() {
-      searchForm = $('.js-search-form');
-      $('.js-search-input').focus(function() {
-        searchForm.addClass('active');
-      }).blur(function() {
-        searchForm.removeClass('active');
-      });
-    };
-
     var initSearchCancel = function() {
-      $('.search-form').on('keyup', '.search-input', function(e) {
+      $('.search-input').on('keyup', function(e) {
         $input = $(e.target);
-        if ($input.val()) {
-          $input.parent().find('.search-submit').removeClass('search-submit').addClass('search-clear')
+        if (e.keyCode != 27 && $input.val()) {
+          $input.parent().find('.search-submit').hide();
+          $input.parent().find('.search-clear').show();
         }
       });
       $('.search-form').on('click', '.search-clear', function(e) {
         $(e.target).closest('.search-form').removeClass('not-empty').find('.search-input').focus().val('');
-        $(e.target).removeClass('search-clear').addClass('search-submit');
+        $(e.target).hide();
+        $('.voog-search-modal').hide();
+        $(e.target).closest('.search-form').find('.search-submit').show();
       });
     };
 
@@ -236,7 +228,6 @@
       handleWindowResize();
       initContentResizer();
       wrapTables();
-      handleSearchFocus();
       initSearchCancel();
       if ($('.table-container').length > 0) {
         checkScrollBar();

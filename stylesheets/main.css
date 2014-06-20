@@ -210,53 +210,79 @@ body.dark-background {
   color: #60a740; }
 
 .search input, .light-background .search input {
-  color: rgba(0, 0, 0, 0.5); }
+  color: rgba(0, 0, 0, 0.6); }
 .dark-background .search input {
-  color: rgba(255, 255, 255, 0.5); }
-.search input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+.search input::-webkit-input-placeholder, .light-background .search input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.5); }
-.search form, .light-background .search form {
+.dark-background .search input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+.search input::-moz-placeholder, .light-background .search input::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5); }
+.dark-background .search input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+.search input:-moz-placeholder, .light-background .search input:-moz-placeholder {
+  color: rgba(0, 0, 0, 0.5); }
+.dark-background .search input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+.search input:-ms-input-placeholder, .light-background .search input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5); }
+.dark-background .search input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5); }
+.dark-background .js-modal-overlay.active .search input {
+  color: rgba(0, 0, 0, 0.6); }
+  .dark-background .js-modal-overlay.active .search input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6); }
+  .dark-background .js-modal-overlay.active .search input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.6); }
+  .dark-background .js-modal-overlay.active .search input:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.6); }
+  .dark-background .js-modal-overlay.active .search input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6); }
+.search form, .light-background .search form, .dark-background .js-modal-overlay .search form {
   border: 1px solid rgba(0, 0, 0, 0.1); }
-.dark-background .search form {
+.dark-background :not(.active) .search form {
   border: 1px solid rgba(255, 255, 255, 0.3); }
-.no-svg .light-background .search .search-submit, .no-svg .search .search-submit, .no-svg .light-background
+.search form,
+.search .search-input {
+  background: none; }
+.no-svg .light-background .search .search-submit, .no-svg .search .search-submit, .no-svg .dark-background .js-modal-overlay .search .search-submit, .no-svg .light-background
 .search .search-btn, .no-svg
+.search .search-btn, .no-svg .dark-background .js-modal-overlay
 .search .search-btn {
   background-image: url("../images/ico-search.png");
   background-size: 20px; }
-.svg .light-background .search .search-submit, .svg .search .search-submit, .svg .light-background
+.svg .light-background .search .search-submit, .svg .search .search-submit, .svg .dark-background .js-modal-overlay .search .search-submit, .svg .light-background
 .search .search-btn, .svg
+.search .search-btn, .svg .dark-background .js-modal-overlay
 .search .search-btn {
   background-image: url("../assets/ico-search-dark.svg"); }
-.no-svg .dark-background .search .search-submit, .no-svg .dark-background
+.no-svg .dark-background :not(.active) .search .search-submit, .no-svg .dark-background :not(.active)
 .search .search-btn {
   background-image: url("../images/ico-search.png");
   background-size: 20px; }
-.svg .dark-background .search .search-submit, .svg .dark-background
+.svg .dark-background :not(.active) .search .search-submit, .svg .dark-background :not(.active)
 .search .search-btn {
-  background-image: url("../assets/ico-search-dark.svg"); }
-.no-svg .light-background .search .search-clear, .no-svg .search .search-clear {
+  background-image: url("../assets/ico-search.svg"); }
+.no-svg .light-background .search .search-clear, .no-svg .search .search-clear, .no-svg .dark-background .js-modal-overlay .search .search-clear {
   background-image: url("../images/close-round.png"); }
-.svg .light-background .search .search-clear, .svg .search .search-clear {
+.svg .light-background .search .search-clear, .svg .search .search-clear, .svg .dark-background .js-modal-overlay .search .search-clear {
   background-image: url("../assets/close-round-dark.svg"); }
-.no-svg .dark-background .search .search-clear {
+.no-svg .dark-background :not(.active) .search .search-clear {
   background-image: url("../images/close-round.png");
   background-size: 20px; }
-.svg .dark-background .search .search-clear {
+.svg .dark-background :not(.active) .search .search-clear {
   background-image: url("../assets/close-round.svg"); }
 
-.voog-search-modal, .light-background .voog-search-modal {
-  color: rgba(0, 0, 0, 0.8); }
-.dark-background .voog-search-modal {
-  color: rgba(255, 255, 255, 0.8); }
-.voog-search-modal a, .light-background .voog-search-modal a {
-  color: rgba(0, 0, 0, 0.8); }
-.dark-background .voog-search-modal a {
-  color: rgba(255, 255, 255, 0.8); }
-.voog-search-modal a:hover, .light-background .voog-search-modal a:hover, .voog-search-modal a:active, .light-background .voog-search-modal a:active {
-  color: black; }
-.dark-background .voog-search-modal a:hover, .dark-background .voog-search-modal a:active {
-  color: white; }
+.voog-search-modal {
+  color: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ;
+  -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ; }
+  .voog-search-modal a {
+    color: rgba(0, 0, 0, 0.8); }
+    .voog-search-modal a:hover, .voog-search-modal a:active {
+      color: black; }
 
 .mobile-menu-wrapper {
   color: rgba(255, 255, 255, 0.8); }
@@ -310,6 +336,12 @@ body.dark-background {
   border: 1px solid rgba(0, 0, 0, 0.3);
   opacity: 0.7; }
 .light-background .voog-reference a:hover, .voog-reference a:hover {
+  opacity: 1.0; }
+.dark-background .voog-reference a {
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  opacity: 0.7; }
+.dark-background .voog-reference a:hover {
   opacity: 1.0; }
 
 /* BLOG & BLOG ARTICLE */
@@ -588,10 +620,11 @@ body.dark-background {
   padding: 0 20px;
   text-align: left; }
   .footer .footer-inner {
+    position: relative;
     margin: auto;
-    max-width: 960px;
-    position: relative; }
+    max-width: 960px; }
   .footer .content-formatted {
+    margin-right: 235px;
     width: auto;
     font-size: 13px;
     line-height: 1.7em; }
@@ -607,16 +640,18 @@ body.dark-background {
       line-height: 1.4; }
 
 .voog-reference {
+  clear: both;
   margin: auto;
-  max-width: 960px;
   margin-top: 20px;
+  padding: 0 20px;
+  max-width: 960px;
   text-align: left; }
   .voog-reference a {
     display: inline-block;
     padding: 7px 9px;
+    text-decoration: none;
     font-size: 0.55em;
-    line-height: 1;
-    text-decoration: none; }
+    line-height: 1; }
 
 /* FORMS */
 .content-formatted form {
@@ -1446,6 +1481,7 @@ ul.menu {
 .search-submit,
 .search-btn,
 .search-clear {
+  opacity: 0.5;
   display: inline-block;
   padding: 0;
   width: 30px;
@@ -1459,7 +1495,7 @@ ul.menu {
   .search-submit:hover,
   .search-btn:hover,
   .search-clear:hover {
-    opacity: 0.9; }
+    opacity: 0.25; }
   .search-submit:focus,
   .search-btn:focus,
   .search-clear:focus {
@@ -1469,14 +1505,13 @@ ul.menu {
   top: 1px !important;
   display: none;
   background-position: 5px 7px;
-  background-size: 25px;
-  opacity: 0.75; }
+  background-size: 25px; }
   @media screen and (max-width: 752px) {
     .search-clear {
       background-position: 4px 3px;
       background-size: 40px !important; } }
   .search-clear:hover {
-    opacity: 0.5; }
+    opacity: 0.25; }
 
 .search-input {
   margin: 0;
@@ -1489,16 +1524,16 @@ ul.menu {
   font-family: inherit;
   line-height: 1; }
   .search-input::-webkit-input-placeholder {
-    padding: 3px 0 4px 0;
+    padding: 4px 0 4px 0;
     line-height: 1; }
   .search-input::-moz-placeholder {
-    padding: 3px 0 4px 0;
+    padding: 4px 0 4px 0;
     line-height: 1; }
   .search-input:-moz-placeholder {
-    padding: 3px 0 4px 0;
+    padding: 4px 0 4px 0;
     line-height: 1; }
   .search-input:-ms-input-placeholder {
-    padding: 3px 0 4px 0;
+    padding: 4px 0 4px 0;
     line-height: 1; }
   @media screen and (max-width: 752px) {
     .search-input {
@@ -1535,7 +1570,7 @@ ul.menu {
       display: block;
       margin-right: 40px; } }
 
-.js-modal-overlay .search-inner form {
+.js-modal-overlay.active .search-inner form {
   background: white; }
 
 .voog-search-modal {

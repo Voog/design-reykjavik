@@ -270,22 +270,32 @@ body {
 
 .search {
   input {
-    @include color-set(bgrey(0.5), wgrey(0.5));
-    &::-webkit-input-placeholder {
-      color: bgrey(0.5);
+    @include color-set($dark-secondary, $light-secondary);
+    @include placeholder {
+      @include color-set(bgrey(0.5), wgrey(0.5));
+    }
+    .dark-background .js-modal-overlay.active & {
+      color: $dark-secondary;
+      @include placeholder {
+        color: $dark-secondary;
+      }
     }
   }
   form {
-    &, .light-background & {
+    &, .light-background &, .dark-background .js-modal-overlay & {
       border: 1px solid bgrey(0.1);
     }
-    .dark-background & {
+    .dark-background :not(.active) & {
       border: 1px solid $light-tertiary;
     }
   }
+  form,
+  .search-input {
+    background: none;
+  }
   .search-submit,
   .search-btn {
-    .light-background &, & {
+    .light-background &, &, .dark-background .js-modal-overlay & {
       .no-svg & {
         background-image: url("../images/ico-search.png");
         background-size: 20px;
@@ -294,18 +304,18 @@ body {
         background-image: url("../assets/ico-search-dark.svg");
       }
     }
-    .dark-background & {
+    .dark-background :not(.active) & {
       .no-svg & {
         background-image: url("../images/ico-search.png");
         background-size: 20px;
       }
       .svg & {
-        background-image: url("../assets/ico-search-dark.svg");
+        background-image: url("../assets/ico-search.svg");
       }
     }
   }
   .search-clear {
-    .light-background &, & {
+    .light-background &, &, .dark-background .js-modal-overlay & {
       .no-svg & {
         background-image: url("../images/close-round.png");
       }
@@ -313,7 +323,7 @@ body {
         background-image: url("../assets/close-round-dark.svg");
       }
     }
-    .dark-background & {
+    .dark-background :not(.active) & {
       .no-svg & {
         background-image: url("../images/close-round.png");
         background-size: 20px;
@@ -324,13 +334,15 @@ body {
     }
   }
 }
+
 .voog-search-modal {
-  @include color-set($dark-primary, $light-primary);
+  color: $dark-primary;
+  @include box-shadow(0, 15px, 30px, rgba(0,0,0,.5));
   a {
-    @include color-set($dark-primary, $light-primary);
+    color: $dark-primary;
     &:hover,
     &:active {
-      @include color-set($dark-hover, $light-hover);
+      color: $dark-hover;
     }
   }
 }
@@ -405,6 +417,16 @@ body {
     a {
       color: $dark-secondary;
       border: 1px solid $dark-tertiary;
+      opacity: 0.7;
+    }
+    a:hover {
+      opacity: 1.0;
+    }
+  }
+  .dark-background & {
+    a {
+      color: $light-secondary;
+      border: 1px solid $light-tertiary;
       opacity: 0.7;
     }
     a:hover {
