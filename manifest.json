@@ -1,5 +1,5 @@
 {
-  "description": "Reykjavik",
+  "description": "Pure text-oriented minimalism",
   "name": "Reykjavik",
   "preview_medium": "",
   "preview_small": "",
@@ -230,18 +230,6 @@
       "file": "assets/ico-search.svg",
       "kind": "assets",
       "filename": "ico-search.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/tag.svg",
-      "kind": "assets",
-      "filename": "tag.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/tag2.svg",
-      "kind": "assets",
-      "filename": "tag2.svg"
     },
     {
       "content_type": "image/png",
