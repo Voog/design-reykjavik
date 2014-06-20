@@ -1,6 +1,6 @@
 <div class="mobile-menu-wrapper" id="mobile-menu">
   <div class="mobile-menu-header">
-    <button class="search-btn js-search-btn"></button>
+    {% if site.search_enabled %}<button class="search-btn js-search-btn"></button>{% endif %}
     <button class="menu-btn mobile-menu-btn">
       <span class="menu-stripe"></span>
       <span class="menu-stripe"></span>
