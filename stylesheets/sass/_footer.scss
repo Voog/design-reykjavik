@@ -4,6 +4,9 @@
   clear: both;
   margin-top: 0;
   padding: 0 20px;
+  body:not(.front-page) & {
+    padding-bottom: 30px;
+  }
   text-align: left;
 
   .footer-inner {

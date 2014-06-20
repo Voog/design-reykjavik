@@ -130,6 +130,12 @@ body {
       }
     }
   }
+  .read-more {
+    @include color-set($dark-tertiary, $light-tertiary);
+    &:hover {
+      @include color-set($dark-hover2, $dark-hover2);
+    }
+  }
   // TAGS
   .tags {
     &,
@@ -150,7 +156,24 @@ body {
   }
 }
 .blog-page .tagged-list-header {
-  @include color-set($dark-secondary, $light-secondary);
+  @include color-set($dark-tertiary, $light-tertiary);
+  .light-background &, & {
+    border-top: 1px solid rgba(0,0,0,.1);
+    border-bottom: 1px solid rgba(0,0,0,.1);
+  }
+  .dark-background & {
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+  }
+  .menu-link {
+    @include color-set($dark-tertiary, $light-tertiary);
+    &:hover {
+      @include color-set($dark-hover2, $light-hover2);
+    }
+    &.active {
+      @include color-set($dark-primary, $light-primary);
+    }
+  }
 }
 
 // COMMENTS
@@ -167,7 +190,7 @@ body {
 
 .content-left .menu {
   .menu-item, .submenu {
-    border-top: 1px solid rgba(0,0,0,0.15);
+    border-top: 1px solid rgba(0,0,0,.1);
     .menu-link {
       color: $dark-secondary;
       &.active {

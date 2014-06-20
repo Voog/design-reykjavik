@@ -99,6 +99,14 @@ body.dark-background {
   border: 1px solid rgba(0, 0, 0, 0.7); }
 .dark-background .post .comments-count:hover {
   border: 1px solid rgba(255, 255, 255, 0.7); }
+.post .read-more, .light-background .post .read-more {
+  color: rgba(0, 0, 0, 0.3); }
+.dark-background .post .read-more {
+  color: rgba(255, 255, 255, 0.3); }
+.post .read-more:hover, .light-background .post .read-more:hover {
+  color: rgba(0, 0, 0, 0.7); }
+.dark-background .post .read-more:hover {
+  color: rgba(0, 0, 0, 0.7); }
 .post .tags, .light-background .post .tags {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
@@ -115,9 +123,27 @@ body.dark-background {
   color: white; }
 
 .blog-page .tagged-list-header, .light-background .blog-page .tagged-list-header {
-  color: rgba(0, 0, 0, 0.6); }
+  color: rgba(0, 0, 0, 0.3); }
 .dark-background .blog-page .tagged-list-header {
-  color: rgba(255, 255, 255, 0.6); }
+  color: rgba(255, 255, 255, 0.3); }
+.light-background .blog-page .tagged-list-header, .blog-page .tagged-list-header {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+.dark-background .blog-page .tagged-list-header {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+.blog-page .tagged-list-header .menu-link, .light-background .blog-page .tagged-list-header .menu-link {
+  color: rgba(0, 0, 0, 0.3); }
+.dark-background .blog-page .tagged-list-header .menu-link {
+  color: rgba(255, 255, 255, 0.3); }
+.blog-page .tagged-list-header .menu-link:hover, .light-background .blog-page .tagged-list-header .menu-link:hover {
+  color: rgba(0, 0, 0, 0.7); }
+.dark-background .blog-page .tagged-list-header .menu-link:hover {
+  color: rgba(255, 255, 255, 0.7); }
+.blog-page .tagged-list-header .menu-link.active, .light-background .blog-page .tagged-list-header .menu-link.active {
+  color: rgba(0, 0, 0, 0.8); }
+.dark-background .blog-page .tagged-list-header .menu-link.active {
+  color: rgba(255, 255, 255, 0.8); }
 
 .comments .comment-date, .light-background .comments .comment-date {
   color: rgba(0, 0, 0, 0.3); }
@@ -129,7 +155,7 @@ body.dark-background {
   color: rgba(255, 255, 255, 0.6); }
 
 .content-left .menu .menu-item, .content-left .menu .submenu {
-  border-top: 1px solid rgba(0, 0, 0, 0.15); }
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
   .content-left .menu .menu-item .menu-link, .content-left .menu .submenu .menu-link {
     color: rgba(0, 0, 0, 0.6); }
     .content-left .menu .menu-item .menu-link.active, .content-left .menu .submenu .menu-link.active {
@@ -346,7 +372,7 @@ body.dark-background {
 
 /* BLOG & BLOG ARTICLE */
 .post {
-  margin-bottom: 30px; }
+  padding-top: 30px; }
   .post .post-meta {
     margin-bottom: 5px;
     line-height: 1.2em; }
@@ -413,25 +439,13 @@ body.dark-background {
   padding-bottom: 0;
   border-bottom: none; }
 .blog-page .tagged-list-header {
-  position: relative;
   margin: auto;
   max-width: 960px;
-  font-size: 24px;
-  padding-bottom: 30px; }
-  @media screen and (max-width: 752px) {
-    .blog-page .tagged-list-header {
-      padding-right: 0;
-      padding-left: 38px; } }
-  .blog-page .tagged-list-header .tag-icon {
-    position: absolute;
-    margin-top: 0;
-    margin-left: -35px;
-    width: 32px;
-    height: 32px;
-    background: url("../images/tag2.png") no-repeat center center;
-    opacity: 0.5; }
-    .svg .blog-page .tagged-list-header .tag-icon {
-      background: url("../assets/tag2.svg") no-repeat center center; }
+  font-size: 0.9em;
+  line-height: 50px;
+  margin-bottom: 30px; }
+  .blog-page .tagged-list-header .menu-item {
+    margin-right: 10px; }
 
 /* COMMENTS */
 .comments {
@@ -450,9 +464,6 @@ body.dark-background {
   .comments .comment {
     margin-bottom: 20px;
     line-height: 1.45em; }
-    .comments .comment:before {
-      vertical-align: top;
-      line-height: 0.5em; }
   .comments .comment-form {
     margin-top: 30px; }
 
@@ -563,6 +574,8 @@ body.dark-background {
         vertical-align: -15px;
         font-size: 65px;
         line-height: 12px; }
+    .content-formatted ul ul {
+      padding-bottom: 0; }
   .content-formatted ol {
     margin: 0;
     padding: 0 0 20px 5px; }
@@ -619,6 +632,8 @@ body.dark-background {
   margin-top: 0;
   padding: 0 20px;
   text-align: left; }
+  body:not(.front-page) .footer {
+    padding-bottom: 30px; }
   .footer .footer-inner {
     position: relative;
     margin: auto;

@@ -22,7 +22,7 @@
     <main class="content content-formatted" role="main">
       <section class="content-centered">
         {% include "tags-blog" %}
-        {% if editmode %}<div style="padding-bottom: 30px">{% addbutton %}</div>{% endif %}
+        {% if editmode %}<div>{% addbutton %}</div>{% endif %}
 
         {% for article in articles %}
           {% include "post-box" %}

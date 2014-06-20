@@ -1,10 +1,7 @@
 /* BLOG & BLOG ARTICLE */
 // Styling rules for both - the blog listing view and the blog single article view
 .post {
-  margin-bottom: 30px;
-  .post-header {
-  }
-
+  padding-top: 30px;
   .post-meta {
     margin-bottom: 5px;
     line-height: 1.2em;
@@ -114,34 +111,13 @@
     }
   }
   .tagged-list-header {
-    @include query($tablet-2) {
-      padding-right: 0;
-      padding-left: 38px;
-    }
-    position: relative;
     margin: auto;
     max-width: 960px;
-    font-size: 24px;
-    padding-bottom: 30px;
-    .tag-icon {
-      position: absolute;
-      margin-top: 0;
-      margin-left: -35px;
-      width: 32px;
-      height: 32px;
-      background: url('../images/tag2.png') no-repeat center center;
-      opacity: 0.5;
-      .svg & {
-        background: url('../assets/tag2.svg') no-repeat center center;
-      }
+    font-size: 0.9em;
+    line-height: 50px;
+    margin-bottom: 30px;
+    .menu-item {
+      margin-right: 10px;
     }
-  }
-
-
-}
-
-// Style rules for the blog single article view only
-.post-page {
-  .post {
   }
 }

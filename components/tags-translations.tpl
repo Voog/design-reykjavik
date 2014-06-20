@@ -1,5 +1,3 @@
-<!-- TODO: Add proper translations -->
-<!-- Add languages and translations in alphabetical order -->
 {% case page.language_code %}
   {% when "da" %}
     {% assign tags_all = "Alle indlæg" %}
