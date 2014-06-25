@@ -567,19 +567,22 @@ body.dark-background {
     padding-bottom: 30px; }
   .content-formatted ul {
     margin: 0;
-    padding: 0 0 20px 10px;
+    padding: 0 0 20px 12px;
     list-style: none; }
     .content-formatted ul li {
+      position: relative;
       padding: 0;
+      padding-left: 23px;
       list-style: none;
       line-height: 1.7em; }
       .content-formatted ul li:before {
+        position: absolute;
+        top: 1px;
+        left: 0;
         display: inline-block;
-        padding: 0 10px 0 2px;
         content: "·";
-        vertical-align: -15px;
         font-size: 65px;
-        line-height: 12px; }
+        line-height: 26px; }
     .content-formatted ul ul {
       padding-bottom: 0; }
   .content-formatted ol {
@@ -625,8 +628,8 @@ body.dark-background {
     border-collapse: collapse;
     text-align: left; }
     .content-formatted table th {
-      font-weight: 600;
-      color: rgba(0, 0, 0, 0.88); }
+      color: rgba(0, 0, 0, 0.88);
+      font-weight: 600; }
     .content-formatted table td {
       padding: 5px 0; }
   .content-formatted .edy-texteditor-view {
