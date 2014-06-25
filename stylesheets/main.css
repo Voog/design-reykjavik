@@ -1213,7 +1213,8 @@ ul.menu {
   padding: 0;
   list-style: none; }
   ul.menu .menu-item {
-    list-style: none; }
+    list-style: none;
+    padding-left: 0; }
     ul.menu .menu-item:before {
       display: none !important;
       margin: 0 !important;
