@@ -55,11 +55,11 @@ body {
     .langmenu-arrow,
     .langmenu-arrow2 {
       .light-background &, & {
-        border-color: rgba(0,0,0,.01);
+        border-color: transparent;
         border-bottom-color: #f7f7f7;
       }
       .dark-background & {
-        border-color: rgba(255,255,255,.01);
+        border-color: transparent;
         border-bottom-color: #444444;
       }
     }
@@ -85,6 +85,10 @@ body {
 
 // BLOG POST
 .post,  {
+  .post-title a, .comments-count {
+    box-shadow: none !important;
+    border: none !important;
+  }
   // TITLE
   .post-title {
     &,
@@ -114,26 +118,26 @@ body {
     @include color-set($dark-tertiary, $light-tertiary);
     &,
     .light-background & {
-      border: 1px solid $dark-tertiary;
+      border: 1px solid $dark-tertiary !important;
     }    
     .dark-background & {
-      border: 1px solid $light-tertiary;
+      border: 1px solid $light-tertiary !important;
     }
     &:hover {
       @include color-set($dark-hover2, $light-hover2);
       &,
       .light-background & {
-        border: 1px solid $dark-hover2;
+        border: 1px solid $dark-hover2 !important;
       }    
       .dark-background & {
-        border: 1px solid $light-hover2;
+        border: 1px solid $light-hover2 !important;
       }
     }
   }
   .read-more {
     @include color-set($dark-tertiary, $light-tertiary);
     &:hover {
-      @include color-set($dark-hover2, $dark-hover2);
+      @include color-set($dark-hover, $light-hover);
     }
   }
   // TAGS
@@ -155,23 +159,35 @@ body {
     }
   }
 }
-.blog-page .tagged-list-header {
-  @include color-set($dark-tertiary, $light-tertiary);
-  .light-background &, & {
+.blog-page.light-background, .blog-page {
+  .tagged-list-header {
+    color: $dark-tertiary;
     border-top: 1px solid rgba(0,0,0,.1);
     border-bottom: 1px solid rgba(0,0,0,.1);
+    .menu-link {
+      color: $dark-tertiary;
+      &:hover {
+        color: $dark-hover2;
+      }
+      &.active {
+        color: $dark-primary;
+      }
+    }
   }
-  .dark-background & {
+}
+.blog-page.dark-background {
+  .tagged-list-header {
+    color: $light-tertiary;
     border-top: 1px solid rgba(255,255,255,.1);
     border-bottom: 1px solid rgba(255,255,255,.1);
-  }
-  .menu-link {
-    @include color-set($dark-tertiary, $light-tertiary);
-    &:hover {
-      @include color-set($dark-hover2, $light-hover2);
-    }
-    &.active {
-      @include color-set($dark-primary, $light-primary);
+    .menu-link {
+      color: $light-tertiary;
+      &:hover {
+        color: $light-hover2;
+      }
+      &.active {
+        color: $light-primary;
+      }
     }
   }
 }
@@ -189,20 +205,85 @@ body {
 // SIDEBAR MENU
 
 .content-left .menu {
-  .menu-item, .submenu {
-    border-top: 1px solid rgba(0,0,0,.1);
-    .menu-link {
-      color: $dark-secondary;
-      &.active {
-        color: $dark-primary;
-      }
+  .submenu, .menu-item {
+
+  }
+  & > li {
+    .light-background &, & {
+      border-top: 1px solid rgba(0,0,0,.1);
+    }
+    .dark-background & {
+      border-top: 1px solid rgba(255,255,255,.15);
+    }
+  }
+  & > ul {
+    .light-background &, & {
+      border-top: 1px solid rgba(0,0,0,.1);
+    }
+    .dark-background & {
+      border-top: 1px solid rgba(255,255,255,.15);
+    }
+  }
+  .menu-link {
+    @include color-set($dark-secondary, $light-secondary);
+    &.active {
+      @include color-set($dark-primary, $light-primary);
     }
   }
   .submenu {
-    background: rgba(0,0,0,.02);
+    .light-background &, & {
+      background: rgba(0,0,0,.02);
+    }
+    .dark-background & {
+      background: rgba(255,255,255,.1);
+    }
   }
 }
+a {
+  text-decoration: none;
+}
 
+.content-formatted,
+.voog-search-modal {
+  .light-background &, & {
+    a {
+      border-bottom: 1px solid #CBE9FE;
+      border-bottom: 1px solid rgba(0,150,255,.2);
+      box-shadow: inset 0 -4px 0 #CBE9FE;
+      box-shadow: inset 0 -4px 0 rgba(0,150,255,.2);
+      &:hover {
+        border-bottom: 1px solid #CBE9FE;
+        border-bottom: 1px solid rgba(0,150,255,.3);
+        box-shadow: inset 0 -4px 0 #CBE9FE;
+        box-shadow: inset 0 -4px 0 rgba(0,150,255,.3);
+      }
+    }
+  }
+  .dark-background & {
+    a {
+      border-bottom: 1px solid #CBE9FE;
+      border-bottom: 1px solid rgba(0,150,255,.4);
+      box-shadow: inset 0 -4px 0 #CBE9FE;
+      box-shadow: inset 0 -4px 0 rgba(0,150,255,.4);
+      &:hover {
+        border-bottom: 1px solid #CBE9FE;
+        border-bottom: 1px solid rgba(0,150,255,.6);
+        box-shadow: inset 0 -4px 0 #CBE9FE;
+        box-shadow: inset 0 -4px 0 rgba(0,150,255,.6);
+      }
+    }
+  }
+  h1,h2,h3,h4,h5,h6 {
+    a {
+      border: none;
+      box-shadow: none;
+    }
+  }
+}
+nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round {
+  border: none !important;
+  box-shadow: none !important;
+}
 // FORMATTED CONTENT
 .content-formatted {
   h1,h2,h3,h4,h5,h6,

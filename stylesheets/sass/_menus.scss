@@ -198,6 +198,9 @@
   display: inline-block;
   vertical-align: middle;
   line-height: 0.8;
+  a {
+    text-indent: 10px;
+  }
   &:before {
     display: none !important;
   }
@@ -307,22 +310,26 @@ ul.menu {
       }
     }
     .edit-btn {
-      padding-left: 5px;
+      padding-left: 0;
+      width: 100%;
+      a {
+        margin-left: 5px;
+        margin: 10px 0;
+        display: block;
+      }
     }
   }
 
   .submenu {
-    @include bg(#f7f7f7);
     margin: 0;
-    padding: 7px 0;
-    background: #f7f7f7;
     list-style-type: none;
+    padding-left: 0;
     .menu-item {
       padding-left: 20px;
       width: 150px;
       border: none;
       .menu-link {
-        padding: 7px 0;
+        padding: 16px 0;
       }
     }
     .edit-btn {
@@ -434,7 +441,6 @@ ul.menu {
     ul {
       margin: 0;
       padding: 10px 0;
-      background: #f7f7f7;
       list-style-type: none;
 
       a {
