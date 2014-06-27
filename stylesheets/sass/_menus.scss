@@ -31,7 +31,6 @@
     }
 
     .menu-stripe {
-      @include bg($white);
       display: block;
       margin: 4px 0;
       width: 22px;
@@ -144,7 +143,6 @@
     margin-right: 20px;
     padding-right: 22px;
     width: auto;
-    color: $white;
     font-size: 0.8em;
 
     &:after {
@@ -160,7 +158,6 @@
       border-color: none;
       border-color: transparent;
       border-color: rgba(255,255,255,0.01);
-      border-top-color: $white;
       -webkit-border-image: none;
       -moz-border-image: none;
       content: '';
@@ -233,9 +230,6 @@ ul.menu {
 
   @include query($mobile-1) {
     &.expanded {
-      @include border(top, 1px, solid, $primary-color, 0.2);
-      @include border(bottom, 1px, solid, $primary-color, 0.2);
-      @include no-box-shadow;
       right: 0;
       left: 0;
       margin: 0 0 60px;

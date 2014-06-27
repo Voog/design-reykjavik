@@ -16,7 +16,6 @@
     display: none;
 
     &.active {
-      @include bg($black, 0.5);
       position: fixed;
       top: 0;
       right: 0;
@@ -53,7 +52,6 @@
 }
 
 .search-form {
-  @include border(all, 1px, solid, $black, 0.1);
   @include query($tablet-2) {
     border-radius: 0;
     &, &.active {

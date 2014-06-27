@@ -1,12 +1,4 @@
 // General colors
-$primary-color: rgba(0,0,0,0.64);
-$secondary-color: rgba(0,0,0,0.82);
-$third-color: rgba(0,0,0,0.44);
-
-// Specific colors
-$black: rgba(0,0,0,0.88);
-$white: rgba(255,255,255,0.95);
-
 $dark-primary: rgba(0,0,0,.8);
 $dark-secondary: rgba(0,0,0,.6);
 $dark-tertiary: rgba(0,0,0,.3);
@@ -22,6 +14,15 @@ $light-hover2: rgba(255,255,255,.7);
 // form error/success colors
 $red: #cc0000;
 $green: #60a740;
+
+// link underline colors
+$link-rgba-light: rgba(0,150,255,.2);
+$link-rgba-hover-light: rgba(0,150,255,.3);
+$link-rgba-dark: rgba(0,150,255,.4);
+$link-rgba-hover-dark: rgba(0,150,255,.6);
+
+$link-solid: #CBE9FE;
+$link-solid-hover: #B0DEFD;
 
 // Media queries
 $tablet-1: 900px;

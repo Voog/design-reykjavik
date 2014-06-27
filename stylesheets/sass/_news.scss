@@ -6,7 +6,6 @@
   margin-top: 0 !important;
 
   .news-header {
-    color: $secondary-color;
     margin: 0;
     text-transform: uppercase;
     font-weight: 400;
@@ -47,6 +46,8 @@
     display: inline;
     text-decoration: none;
     line-height: 1.2em;
+    border: none !important;
+    box-shadow: none !important;
 
     &:hover {
       text-decoration: none;

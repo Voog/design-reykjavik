@@ -183,28 +183,28 @@ a {
 .light-background .content-formatted a, .content-formatted a, .light-background
 .voog-search-modal a,
 .voog-search-modal a {
-  border-bottom: 1px solid #CBE9FE;
+  border-bottom: 1px solid #cbe9fe;
   border-bottom: 1px solid rgba(0, 150, 255, 0.2);
-  box-shadow: inset 0 -4px 0 #CBE9FE;
+  box-shadow: inset 0 -4px 0 #cbe9fe;
   box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.2); }
   .light-background .content-formatted a:hover, .content-formatted a:hover, .light-background
   .voog-search-modal a:hover,
   .voog-search-modal a:hover {
-    border-bottom: 1px solid #CBE9FE;
+    border-bottom: 1px solid #b0defd;
     border-bottom: 1px solid rgba(0, 150, 255, 0.3);
-    box-shadow: inset 0 -4px 0 #CBE9FE;
+    box-shadow: inset 0 -4px 0 #b0defd;
     box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.3); }
 .dark-background .content-formatted a, .dark-background
 .voog-search-modal a {
-  border-bottom: 1px solid #CBE9FE;
+  border-bottom: 1px solid #cbe9fe;
   border-bottom: 1px solid rgba(0, 150, 255, 0.4);
-  box-shadow: inset 0 -4px 0 #CBE9FE;
+  box-shadow: inset 0 -4px 0 #cbe9fe;
   box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.4); }
   .dark-background .content-formatted a:hover, .dark-background
   .voog-search-modal a:hover {
-    border-bottom: 1px solid #CBE9FE;
+    border-bottom: 1px solid #b0defd;
     border-bottom: 1px solid rgba(0, 150, 255, 0.6);
-    box-shadow: inset 0 -4px 0 #CBE9FE;
+    box-shadow: inset 0 -4px 0 #b0defd;
     box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.6); }
 .content-formatted h1 a, .content-formatted h2 a, .content-formatted h3 a, .content-formatted h4 a, .content-formatted h5 a, .content-formatted h6 a,
 .voog-search-modal h1 a,
@@ -216,7 +216,7 @@ a {
   border: none;
   box-shadow: none; }
 
-nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round {
+nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item {
   border: none !important;
   box-shadow: none !important; }
 
@@ -654,8 +654,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round {
   .content-formatted img, .content-formatted iframe {
     max-width: 100%; }
   .content-formatted img {
-    height: auto; }
-  .content-formatted img, .content-formatted iframe, .content-formatted pre {
+    height: auto;
+    margin-bottom: -2px; }
+  .content-formatted iframe, .content-formatted pre {
     margin-bottom: 20px; }
   .content-formatted .embed-container {
     margin-bottom: 20px; }
@@ -685,12 +686,19 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round {
     border-collapse: collapse;
     text-align: left; }
     .content-formatted table th {
-      color: rgba(0, 0, 0, 0.88);
       font-weight: 600; }
     .content-formatted table td {
       padding: 5px 0; }
   .content-formatted .edy-texteditor-view {
     min-height: 32px; }
+  .content-formatted .edys-gallery-area {
+    margin-top: 20px; }
+    .content-formatted .edys-gallery-area:first-child {
+      margin-top: 0; }
+  .content-formatted .edy-partial-view {
+    margin-bottom: 20px; }
+    .content-formatted .edy-partial-view:last-child {
+      margin-bottom: 0; }
 
 /* FOOTER */
 .footer {
@@ -834,6 +842,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round {
 
 /* GENERAL */
 body {
+  background-color: white;
   background-color: white;
   margin: 0;
   padding: 0;
@@ -1076,7 +1085,6 @@ ul.menu .menu-item {
           overflow: hidden;
           line-height: 1.1em !important; } }
     .header-inner .header-title, .header-inner .header-title a {
-      color: rgba(0, 0, 0, 0.82);
       display: inline-block;
       text-decoration: none;
       font-weight: 500;
@@ -1085,7 +1093,6 @@ ul.menu .menu-item {
       font-size: 24px;
       line-height: 1em; }
       .header-inner .header-title:hover, .header-inner .header-title a:hover {
-        color: rgba(0, 0, 0, 0.82);
         text-decoration: none; }
   .flexbox .header-inner .menu-main {
     flex-grow: 3; }
@@ -1127,7 +1134,6 @@ ul.menu .menu-item {
         padding: 0;
         border: 0; }
       .menu-btn .menu-stripe {
-        background-color: white;
         display: block;
         margin: 4px 0;
         width: 22px;
@@ -1210,7 +1216,6 @@ ul.menu .menu-item {
     margin-right: 20px;
     padding-right: 22px;
     width: auto;
-    color: rgba(255, 255, 255, 0.95);
     font-size: 0.8em; }
     @media screen and (max-width: 752px) {
       .mobile-menu-wrapper .menu-lang {
@@ -1228,7 +1233,6 @@ ul.menu .menu-item {
       border-color: none;
       border-color: transparent;
       border-color: rgba(255, 255, 255, 0.01);
-      border-top-color: rgba(255, 255, 255, 0.95);
       -webkit-border-image: none;
       -moz-border-image: none;
       content: ''; }
@@ -1289,13 +1293,6 @@ ul.menu {
       display: none; } }
   @media screen and (max-width: 480px) {
     .menu-main.expanded {
-      border-top: 1px solid rgba(0, 0, 0, 0.64);
-      border-top: 1px solid rgba(0, 0, 0, 0.2);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.64);
-      border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-      -webkit-box-shadow: none;
-      -moz-box-shadow: none;
-      box-shadow: none;
       right: 0;
       left: 0;
       margin: 0 0 60px;
@@ -1465,7 +1462,6 @@ ul.menu {
     .news {
       padding: 0; } }
   .news .news-header {
-    color: rgba(0, 0, 0, 0.82);
     margin: 0;
     text-transform: uppercase;
     font-weight: 400;
@@ -1494,7 +1490,9 @@ ul.menu {
   .news .link {
     display: inline;
     text-decoration: none;
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    border: none !important;
+    box-shadow: none !important; }
     .news .link:hover {
       text-decoration: none; }
   .news .more-news {
@@ -1521,8 +1519,6 @@ ul.menu {
     .search {
       display: none; }
       .search.active {
-        background-color: rgba(0, 0, 0, 0.88);
-        background-color: rgba(0, 0, 0, 0.5);
         position: fixed;
         top: 0;
         right: 0;
@@ -1547,8 +1543,6 @@ ul.menu {
       width: 100%; } }
 
 .search-form {
-  border: 1px solid rgba(0, 0, 0, 0.88);
-  border: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
   z-index: 20;
   border-radius: 30px; }
