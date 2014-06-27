@@ -216,7 +216,7 @@ a {
   border: none;
   box-shadow: none; }
 
-nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item {
+nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .edy-btn-removecomment, .tag-link {
   border: none !important;
   box-shadow: none !important; }
 
@@ -462,7 +462,8 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item {
     margin-bottom: 15px; }
   .post .read-more {
     display: inline-block;
-    margin-top: 5px; }
+    margin-top: 5px;
+    margin-left: 5px; }
   .post .post-footer .post-author {
     font-size: 12px; }
   .post .tags {
@@ -475,7 +476,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item {
     .post .tags .tag-icon {
       position: absolute;
       left: 0;
-      margin-top: 4px;
+      margin-top: 2px;
       margin-right: 7px;
       width: 16px;
       height: 16px;
@@ -485,8 +486,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item {
         background: url("../assets/tag.svg") no-repeat center center; }
     .post .tags .tag-link {
       text-decoration: none; }
-      .post .tags .tag-link:hover {
-        text-decoration: underline; }
 
 .blog-page .post:last-child {
   margin-bottom: 0;
@@ -506,6 +505,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item {
 /* COMMENTS */
 .comments {
   font-size: 0.9em; }
+  .comments .comment-author {
+    border: none !important;
+    box-shadow: none !important; }
   .comments .comment-inner {
     display: inline-block;
     width: 90%; }
@@ -520,9 +522,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item {
   .comments .comment {
     margin-bottom: 20px;
     line-height: 1.45em; }
-    .comments .comment:before {
-      vertical-align: top;
-      margin-top: 7px; }
   .comments .comment-form {
     margin-top: 30px; }
 
@@ -636,7 +635,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item {
       line-height: 1.7em; }
       .content-formatted ul li:before {
         position: absolute;
-        top: 1px;
+        top: 0;
         left: 0;
         display: inline-block;
         content: "·";

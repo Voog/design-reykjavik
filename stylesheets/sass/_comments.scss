@@ -3,6 +3,10 @@
 // Comment form is styled using the form fields styles located in the "_forms.scss" partial.
 .comments {
   font-size: 0.9em;
+  .comment-author {
+    border: none !important;
+    box-shadow: none !important;
+  }
   .comment-inner {
     display: inline-block;
     width: 90%;
@@ -21,10 +25,6 @@
   .comment {
     margin-bottom: 20px;
     line-height: 1.45em;
-    &:before {
-      vertical-align: top;
-      margin-top: 7px;
-    }
   }
   .comment-form {
     margin-top: 30px;

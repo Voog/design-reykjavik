@@ -62,6 +62,7 @@
   .read-more {
     display: inline-block;
     margin-top: 5px;
+    margin-left: 5px;
   }
 
   .post-footer {
@@ -81,7 +82,7 @@
     .tag-icon {
       position: absolute;
       left: 0;
-      margin-top: 4px;
+      margin-top: 2px;
       margin-right: 7px;
       width: 16px;
       height: 16px;
@@ -94,9 +95,6 @@
 
     .tag-link {
       text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 }
