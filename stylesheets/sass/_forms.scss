@@ -61,6 +61,7 @@
   .form_field_select,
   .form_field_file {
     max-width: 100%;
+    @include no-box-shadow;
   }
   .form_field_textfield,
   .form_field_textarea {

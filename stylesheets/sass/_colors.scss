@@ -294,8 +294,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item {
   a:hover {
     @include color-set($dark-hover, $light-hover);
   }
-  pre,
-  pre code {
+  code {
     .light-background &, & {
       background-color: rgba(0,0,0,0.04);
     }

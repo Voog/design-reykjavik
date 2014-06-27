@@ -35,12 +35,12 @@
           {% include "sidebar" %}
         </aside>
         <article class="content-right">
-          <h1 class="content-header">{% content name="slogan" %}</h1>
+          <section class="content-header">{% content name="slogan" %}</section>
           <section class="content-body">{% content %}</section>
         </article>
       {% else %}
         <article class="content-centered">
-          <h1 class="content-header">{% content name="slogan" %}</h1>
+          <section class="content-header">{% content name="slogan" %}</section>
           <section class="content-body">{% content %}</section>
         </article>
       {% endif %}

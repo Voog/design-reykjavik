@@ -57,8 +57,11 @@
     @include query($tablet-2) {
       font-size: 200%;
     }
-    font-size: 4em;
-    line-height: 1em;
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 70px;
+    margin: 0;
+    line-height: 1.2em;
 
     .edy-texteditor-view {
       min-height: 1.2em;
