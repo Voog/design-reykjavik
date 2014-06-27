@@ -1661,7 +1661,6 @@ ul.menu {
 body .voog-search-modal {
   z-index: 30;
   padding: 20px;
-  margin: 10px;
   max-height: 75%;
   background: white;
   text-align: left;
@@ -1669,7 +1668,7 @@ body .voog-search-modal {
   line-height: 1.5; }
   @media screen and (max-width: 752px) {
     body .voog-search-modal {
-      top: 84px !important;
+      top: 83px !important;
       right: 0 !important;
       left: 0 !important;
       max-height: 100%;
