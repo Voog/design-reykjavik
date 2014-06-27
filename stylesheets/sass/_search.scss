@@ -81,7 +81,6 @@
 .search-submit,
 .search-btn,
 .search-clear {
-  opacity: 0.5;
   display: inline-block;
   padding: 0;
   width: 30px;
@@ -91,6 +90,7 @@
   background-repeat: no-repeat;
   vertical-align: top;
   line-height: 41px;
+  opacity: 0.5;
   cursor: pointer;
   &:hover {
     opacity: 0.25;
@@ -120,9 +120,6 @@
     padding: 4px 0 4px 0;
     line-height: 1;
   }
-  &::-moz-placeholder {
-    line-height: 2;
-  }
 
   margin: 0;
   padding: 0 50px 0 15px;
@@ -133,6 +130,9 @@
   font-size: 1em;
   font-family: inherit;
   line-height: 1;
+  &::-moz-placeholder {
+    line-height: 2;
+  }
   // @include box-sizing(border-box);
 
   @include query($tablet-2) {
@@ -158,10 +158,10 @@
     height: 40px;
     background-size: 32px;
   }
-  background-color: transparent;
   position: absolute;
   top: 0;
   right: 5px;
+  background-color: transparent;
 }
 
 .search-btn {
@@ -187,24 +187,30 @@
 
 body .voog-search-modal {
   @include query($tablet-2) {
-    width: 100%;
     top: 84px !important;
-    left: 0 !important;
     right: 0 !important;
+    left: 0 !important;
     max-height: 100%;
+    width: 100%;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-  }
-  z-index: 30;
-  max-height: 75%;
-  padding: 20px;
-  text-align: left;
-  font-size: 0.8em;
-  line-height: 1.5;
-  background: white;
-  &.search-results-active {
-    display: block;
   }
   @include query($tablet-2) {
     top: 45px;
+  }
+  z-index: 30;
+  padding: 20px;
+  margin: 10px;
+  max-height: 75%;
+  background: white;
+  text-align: left;
+  font-size: 0.8em;
+  line-height: 1.5;
+  &.search-results-active {
+    display: block;
+  }
+  &.no-content {
+    font-size: 18px;
+    font-weight: 600px;
+
   }
 }
