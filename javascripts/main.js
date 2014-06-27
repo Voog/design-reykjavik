@@ -142,6 +142,10 @@
     }
   };
 
+  $('html').on('click', '.voog-search-modal', function(e) {
+    e.stopPropagation();
+  });
+
   $('html').click(function() {
     if ($('.js-popover').hasClass('expanded')) {
       $('.js-popover').removeClass('expanded');
@@ -213,7 +217,7 @@
       $('.search-form').on('click', '.search-clear', function(e) {
         $(e.target).closest('.search-form').removeClass('not-empty').find('.search-input').focus().val('');
         $(e.target).hide();
-        $('.voog-search-modal').hide();
+        $('.voog-search-modal').remove();
         $(e.target).closest('.search-form').find('.search-submit').show();
       });
     };
