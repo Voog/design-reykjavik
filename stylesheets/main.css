@@ -1314,7 +1314,7 @@ ul.menu {
       font-weight: 400;
       font-size: 18px; }
       .menu-main .menu .menu-link.untranslated {
-        color: #cc0000; }
+        color: #cc0000 !important; }
       .menu-main .menu .menu-link.active {
         font-weight: 700; }
 
@@ -1333,6 +1333,8 @@ ul.menu {
       width: 100%; }
       #sidebar .menu .menu-item .menu-link.active {
         font-weight: 700; }
+      #sidebar .menu .menu-item .menu-link.untranslated {
+        color: #cc0000 !important; }
       #sidebar .menu .menu-item .menu-link:hover {
         text-decoration: none; }
   #sidebar .menu .edit-btn {

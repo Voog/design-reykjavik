@@ -4,12 +4,12 @@
       <ul class="menu">
         {% if editmode or item.children? %}
           {% for subitem in item.visible_children %}
-            <li class="menu-item"><a class="menu-link{% if subitem.selected? %} active{% endif %}{% unless item.translated? %} untranslated fci-editor-menuadd{% endunless %}" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
+            <li class="menu-item"><a class="menu-link{% if subitem.selected? %} active{% endif %}{% unless subitem.translated? %} untranslated fci-editor-menuadd{% endunless %}" href="{{ subitem.url }}">{{ subitem.title }}</a></li>
             {% if subitem.selected? and subitem.children? or editmode %}
               <ul class="submenu">
                 {% if editmode or subitem.children? %}
                   {% for level3 in subitem.visible_children %}
-                    <li class="menu-item"><a class="menu-link{% if level3.selected? %} active{% endif %}{% unless subitem.translated? %} untranslated fci-editor-menuadd{% endunless %}" href="{{ level3.url }}">{{ level3.title }}</a></li>
+                    <li class="menu-item"><a class="menu-link{% if level3.selected? %} active{% endif %}{% unless level3.translated? %} untranslated fci-editor-menuadd{% endunless %}" href="{{ level3.url }}">{{ level3.title }}</a></li>
                   {% endfor %}
                 {% endif %}
                 {% if subitem.hidden_children.size > 0 %}<li class="edit-btn">{% menubtn subitem.hidden_children %}</li>{% endif %}

@@ -264,7 +264,7 @@ ul.menu {
       font-size: 18px;
 
       &.untranslated {
-        color: $red;
+        color: $red !important;
       }
 
       &.active {
@@ -299,6 +299,10 @@ ul.menu {
           font-weight: 700;
         }
 
+        &.untranslated {
+          color: $red !important;
+        }
+        
         &:hover {
           text-decoration: none;
         }
