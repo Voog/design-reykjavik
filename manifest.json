@@ -125,11 +125,11 @@
       "title": "menu-mobile"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/news.tpl",
-      "layout_name": "news",
-      "title": "news"
+      "content_type": "blog",
+      "component": false,
+      "file": "layouts/blog___news.tpl",
+      "layout_name": "blog",
+      "title": "Blog & News"
     },
     {
       "content_type": "component",
@@ -186,20 +186,15 @@
       "file": "components/voog-ref.tpl",
       "layout_name": "",
       "title": "Voog-ref"
-    }
+    },
+    null
   ],
   "assets": [
     {
-      "content_type": "image/svg+xml",
-      "file": "assets/arr-bottom.svg",
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
       "kind": "assets",
-      "filename": "arr-bottom.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/arr-top.svg",
-      "kind": "assets",
-      "filename": "arr-top.svg"
+      "filename": ".DS_Store"
     },
     {
       "content_type": "image/svg+xml",
@@ -232,22 +227,28 @@
       "filename": "ico-search.svg"
     },
     {
-      "content_type": "image/png",
-      "file": "images/arr-bottom.png",
-      "kind": "images",
-      "filename": "arr-bottom.png"
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-tag-dark.svg",
+      "kind": "assets",
+      "filename": "ico-tag-dark.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-tag.svg",
+      "kind": "assets",
+      "filename": "ico-tag.svg"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
     },
     {
       "content_type": "image/png",
-      "file": "images/arr-top.png",
+      "file": "images/ico-search-dark.png",
       "kind": "images",
-      "filename": "arr-top.png"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/arr_down.gif",
-      "kind": "images",
-      "filename": "arr_down.gif"
+      "filename": "ico-search-dark.png"
     },
     {
       "content_type": "image/png",
@@ -256,34 +257,16 @@
       "filename": "ico-search.png"
     },
     {
-      "content_type": "image/gif",
-      "file": "images/search.gif",
+      "content_type": "image/png",
+      "file": "images/ico-tag-dark.png",
       "kind": "images",
-      "filename": "search.gif"
-    },
-    {
-      "content_type": "image/gif",
-      "file": "images/search_2x.gif",
-      "kind": "images",
-      "filename": "search_2x.gif"
+      "filename": "ico-tag-dark.png"
     },
     {
       "content_type": "image/png",
-      "file": "images/tag.png",
+      "file": "images/ico-tag.png",
       "kind": "images",
-      "filename": "tag.png"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/tag2.png",
-      "kind": "images",
-      "filename": "tag2.png"
-    },
-    {
-      "content_type": "image/jpeg",
-      "file": "images/tree.jpg",
-      "kind": "images",
-      "filename": "tree.jpg"
+      "filename": "ico-tag.png"
     },
     {
       "content_type": "application/javascript",
@@ -332,6 +315,12 @@
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "text/unknown",
+      "file": "stylesheets/sass",
+      "kind": "stylesheets",
+      "filename": "sass"
     }
   ]
 }

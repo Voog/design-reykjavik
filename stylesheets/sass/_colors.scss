@@ -146,10 +146,24 @@ body {
     .light-background & {
       border-top: 1px solid $dark-tertiary;
       border-bottom: 1px solid $dark-tertiary;
+      .tag-icon {
+        background: url('../images/ico-tag-dark.png') no-repeat center center;
+        background-size: 16px;
+        .svg & {
+          background: url('../assets/ico-tag-dark.svg') no-repeat center center;
+        }
+      }
     }    
     .dark-background & {
       border-top: 1px solid $light-tertiary;
       border-bottom: 1px solid $light-tertiary;
+      .tag-icon {
+        background: url('../images/ico-tag.png') no-repeat center center;
+        background-size: 16px;
+        .svg & {
+          background: url('../assets/ico-tag.svg') no-repeat center center;
+        }
+      }
     }
     .tag-link {
       @include color-set($dark-primary, $light-primary);
@@ -280,7 +294,8 @@ a {
     }
   }
 }
-nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .edy-btn-removecomment, .tag-link, .read-more {
+nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, 
+.edy-btn-removecomment, .tag-link, .read-more, .edy-tag-suggestion {
   border: none !important;
   box-shadow: none !important;
 }
@@ -553,4 +568,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
       outline: 1px solid rgba(255,255,255,.6);
     }
   }
+}
+.dark-background .edy-tag-suggestion {
+  background: #f7f7f7;
 }

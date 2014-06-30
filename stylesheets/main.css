@@ -113,9 +113,19 @@ body.dark-background {
 .post .tags, .light-background .post .tags {
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   border-bottom: 1px solid rgba(0, 0, 0, 0.3); }
+  .post .tags .tag-icon, .light-background .post .tags .tag-icon {
+    background: url("../images/ico-tag-dark.png") no-repeat center center;
+    background-size: 16px; }
+    .svg .post .tags .tag-icon, .svg .light-background .post .tags .tag-icon {
+      background: url("../assets/ico-tag-dark.svg") no-repeat center center; }
 .dark-background .post .tags {
   border-top: 1px solid rgba(255, 255, 255, 0.3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.3); }
+  .dark-background .post .tags .tag-icon {
+    background: url("../images/ico-tag.png") no-repeat center center;
+    background-size: 16px; }
+    .svg .dark-background .post .tags .tag-icon {
+      background: url("../assets/ico-tag.svg") no-repeat center center; }
 .post .tags .tag-link, .light-background .post .tags .tag-link {
   color: rgba(0, 0, 0, 0.8); }
 .dark-background .post .tags .tag-link {
@@ -216,7 +226,8 @@ a {
   border: none;
   box-shadow: none; }
 
-nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .edy-btn-removecomment, .tag-link, .read-more {
+nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
+.edy-btn-removecomment, .tag-link, .read-more, .edy-tag-suggestion {
   border: none !important;
   box-shadow: none !important; }
 
@@ -436,6 +447,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   .dark-background .edy-texteditor-active:hover, .dark-background .edy-texteditor-active:hover:hover {
     outline: 1px solid rgba(255, 255, 255, 0.6); }
 
+.dark-background .edy-tag-suggestion {
+  background: #f7f7f7; }
+
 /* BLOG & BLOG ARTICLE */
 .post {
   padding-top: 40px; }
@@ -494,8 +508,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
       height: 16px;
       background: url("../images/tag.png") no-repeat center center;
       opacity: 0.5; }
-      .svg .post .tags .tag-icon {
-        background: url("../assets/tag.svg") no-repeat center center; }
     .post .tags .tag-link {
       text-decoration: none; }
 
