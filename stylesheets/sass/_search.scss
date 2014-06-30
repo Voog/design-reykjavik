@@ -131,6 +131,9 @@
   font-family: inherit;
   line-height: 1;
   &::-moz-placeholder {
+    @include query($tablet-2) {
+      line-height: 1.6;
+    }
     line-height: 2;
   }
   // @include box-sizing(border-box);
@@ -154,7 +157,7 @@
 
   @include query($tablet-2) {
     right: 0;
-    width: 41px;
+    width: 40px;
     height: 40px;
     background-size: 32px;
   }
@@ -208,8 +211,8 @@ body .voog-search-modal {
     display: block;
   }
   &.no-content {
-    font-size: 18px;
     font-weight: 600px;
+    font-size: 18px;
 
   }
 }

@@ -1620,6 +1620,9 @@ ul.menu {
     line-height: 1; }
   .search-input::-moz-placeholder {
     line-height: 2; }
+    @media screen and (max-width: 752px) {
+      .search-input::-moz-placeholder {
+        line-height: 1.6; } }
   @media screen and (max-width: 752px) {
     .search-input {
       padding-right: 50px;
@@ -1640,7 +1643,7 @@ ul.menu {
     .search-submit,
     .search-clear {
       right: 0;
-      width: 41px;
+      width: 40px;
       height: 40px;
       background-size: 32px; } }
 
@@ -1680,5 +1683,5 @@ body .voog-search-modal {
   body .voog-search-modal.search-results-active {
     display: block; }
   body .voog-search-modal.no-content {
-    font-size: 18px;
-    font-weight: 600px; }
+    font-weight: 600px;
+    font-size: 18px; }
