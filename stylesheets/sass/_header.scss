@@ -61,19 +61,25 @@
       flex-grow: 1;
     }
     @include query($tablet-2) {
+      line-height: 1.5;
       display: block;
-      max-width: 100%;
       position: absolute;
       left: 0;
-      top: 2px;
+      top: -2px;
       padding-left: 20px;
       vertical-align: -3px;
-      max-width: 88%;
+      max-width: 85%;
+      overflow: hidden;
+      height: 30px;
       a {
+        margin: 0;
+        padding: 0;
+      }
+      p {
         white-space: nowrap;
-        width: 100%;
         overflow: hidden;
-        line-height: 1.1em !important;
+        line-height: 1.5em !important;
+        padding-bottom: 0 !important;
       }
     }
     padding: 5px 0;

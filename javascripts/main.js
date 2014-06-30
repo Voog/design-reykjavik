@@ -172,6 +172,11 @@
       focusCommentsWithErrors();
     };
 
+    var initFrontPage = function() {
+      $(window).load(resizeContentRight);
+      $(window).on('resize', resizeContentRight);
+    };
+
     var resizeTimeout;
     var resizeContentRight = function() {
       clearTimeout(resizeTimeout);
@@ -181,13 +186,6 @@
         height += parseInt($('.content-left .news').parent().css('height'));
         $('.content-right').css('min-height', height - 2 * padding);
       }, 200);
-    };
-
-    var initContentResizer = function() {
-      if ($('body.front-page').length > 0) {
-        $(window).load(resizeContentRight);
-        $(window).on('resize', resizeContentRight);
-      }
     };
 
     // Toggles the mobile search modal.
@@ -230,7 +228,7 @@
       handlePopoverMenuHide();
       handleGalleryHover();
       handleWindowResize();
-      initContentResizer();
+      initFrontPage();
       wrapTables();
       initSearchCancel();
       if ($('.table-container').length > 0) {
@@ -244,6 +242,7 @@
       initBlogPage: initBlogPage,
       initArticlePage: initArticlePage,
       initCommonPage: initCommonPage,
+      initFrontPage: initFrontPage,
       handleColorScheme: handleColorScheme
     });
 

@@ -50,6 +50,7 @@
     {% include "voog-ref" %}
   </div>
   {% include "javascripts" %}
+  <script type="text/javascript">site.initFrontPage();</script>
   {% include "bg-picker" %}
 </body>
 </html>

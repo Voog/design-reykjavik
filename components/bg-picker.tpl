@@ -10,6 +10,7 @@
     var frontPageCover = new Edicy.BgPicker($('.frontpage-cover-settings').eq(0), {
       picture: true,
       color: true,
+      showAlpha: true,
 
       preview: function(data) {
         var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',

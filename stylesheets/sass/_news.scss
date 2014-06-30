@@ -23,6 +23,9 @@
       padding: 0 0 5px;
       max-width: 100%;
       line-height: 1.3em;
+      &:last-child {
+        padding-bottom: 0;
+      }
       &:before {
         display: none;
         margin: 0;

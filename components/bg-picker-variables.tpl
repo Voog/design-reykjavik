@@ -32,11 +32,6 @@
       {% assign cover_color_style = cover_color_style | append: 'none' %}
     {% else %}
       {% assign cover_color_style = cover_color_style | append: page.data.cover_color %}
-      {% if page.data.cover_image == '' %}
-        {% assign cover_color_style = cover_color_style | append: '; opacity: 1' %}
-      {% else %}
-        {% assign cover_color_style = cover_color_style | append: '; opacity: 0.25' %}
-      {% endif %}
     {% endif %}
     {% assign cover_color_style = cover_color_style | append: ';"' %}
   {% endunless %}

@@ -86,8 +86,8 @@ body {
 // BLOG POST
 .post,  {
   .post-title a, .comments-count {
-    box-shadow: none !important;
     border: none !important;
+    box-shadow: none !important;
   }
   // TITLE
   .post-title {
@@ -161,9 +161,9 @@ body {
 }
 .blog-page.light-background, .blog-page {
   .tagged-list-header {
-    color: $dark-tertiary;
     border-top: 1px solid rgba(0,0,0,.1);
     border-bottom: 1px solid rgba(0,0,0,.1);
+    color: $dark-tertiary;
     .menu-link {
       color: $dark-tertiary;
       &:hover {
@@ -177,9 +177,9 @@ body {
 }
 .blog-page.dark-background {
   .tagged-list-header {
-    color: $light-tertiary;
     border-top: 1px solid rgba(255,255,255,.1);
     border-bottom: 1px solid rgba(255,255,255,.1);
+    color: $light-tertiary;
     .menu-link {
       color: $light-tertiary;
       &:hover {
@@ -378,10 +378,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
       @include color-set(bgrey(0.5), wgrey(0.5));
     }
     .dark-background .js-modal-overlay.active & {
-      color: $dark-secondary;
       @include placeholder {
         color: $dark-secondary;
       }
+      color: $dark-secondary;
     }
   }
   form {
@@ -439,8 +439,8 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 
 .voog-search-modal {
-  color: $dark-primary;
   @include box-shadow(0, 15px, 30px, rgba(0,0,0,.5));
+  color: $dark-primary;
   a {
     color: $dark-primary;
     &:hover,
@@ -518,8 +518,8 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .voog-reference {
   .light-background &, & {
     a {
-      color: $dark-secondary;
       border: 1px solid $dark-tertiary;
+      color: $dark-secondary;
       opacity: 0.7;
     }
     a:hover {
@@ -528,12 +528,24 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   }
   .dark-background & {
     a {
-      color: $light-secondary;
       border: 1px solid $light-tertiary;
+      color: $light-secondary;
       opacity: 0.7;
     }
     a:hover {
       opacity: 1.0;
     }
+  }
+}
+
+// ADMIN UI
+.edy-empty-bordered {
+  .light-background &, & {
+    border-color: rgba(27,33,36,0.33);
+    color: rgba(27,33,36,0.33);
+  }
+  .dark-background & {
+    border-color: rgba(228,222,219,0.33);
+    color: rgba(228,222,219,0.33);
   }
 }

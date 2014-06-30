@@ -72,8 +72,8 @@ body.dark-background {
   color: white; }
 
 .post .post-title a, .post .comments-count {
-  box-shadow: none !important;
-  border: none !important; }
+  border: none !important;
+  box-shadow: none !important; }
 .post .post-title, .post .post-title a, .light-background .post .post-title, .light-background .post .post-title a {
   color: rgba(0, 0, 0, 0.8); }
 .post .post-title a:hover, .light-background .post .post-title a:hover {
@@ -126,9 +126,9 @@ body.dark-background {
   color: white; }
 
 .blog-page.light-background .tagged-list-header, .blog-page .tagged-list-header {
-  color: rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0, 0, 0, 0.3); }
   .blog-page.light-background .tagged-list-header .menu-link, .blog-page .tagged-list-header .menu-link {
     color: rgba(0, 0, 0, 0.3); }
     .blog-page.light-background .tagged-list-header .menu-link:hover, .blog-page .tagged-list-header .menu-link:hover {
@@ -137,9 +137,9 @@ body.dark-background {
       color: rgba(0, 0, 0, 0.8); }
 
 .blog-page.dark-background .tagged-list-header {
-  color: rgba(255, 255, 255, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1); }
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.3); }
   .blog-page.dark-background .tagged-list-header .menu-link {
     color: rgba(255, 255, 255, 0.3); }
     .blog-page.dark-background .tagged-list-header .menu-link:hover {
@@ -355,10 +355,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   background-image: url("../assets/close-round.svg"); }
 
 .voog-search-modal {
-  color: rgba(0, 0, 0, 0.8);
   -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ;
   -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ;
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ; }
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ;
+  color: rgba(0, 0, 0, 0.8); }
   .voog-search-modal a {
     color: rgba(0, 0, 0, 0.8); }
     .voog-search-modal a:hover, .voog-search-modal a:active {
@@ -412,17 +412,24 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   color: rgba(255, 255, 255, 0.6); }
 
 .light-background .voog-reference a, .voog-reference a {
-  color: rgba(0, 0, 0, 0.6);
   border: 1px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.6);
   opacity: 0.7; }
 .light-background .voog-reference a:hover, .voog-reference a:hover {
   opacity: 1.0; }
 .dark-background .voog-reference a {
-  color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.6);
   opacity: 0.7; }
 .dark-background .voog-reference a:hover {
   opacity: 1.0; }
+
+.light-background .edy-empty-bordered, .edy-empty-bordered {
+  border-color: rgba(27, 33, 36, 0.33);
+  color: rgba(27, 33, 36, 0.33); }
+.dark-background .edy-empty-bordered {
+  border-color: rgba(228, 222, 219, 0.33);
+  color: rgba(228, 222, 219, 0.33); }
 
 /* BLOG & BLOG ARTICLE */
 .post {
@@ -870,7 +877,7 @@ body {
   background-repeat: no-repeat; }
 
 .background-color {
-  opacity: 0.5; }
+  opacity: 1.0; }
 
 @media screen and (max-width: 752px) {
   .front-page .content {
@@ -889,8 +896,8 @@ body {
     .front-page .content-header h1 {
       font-size: 30px !important; } }
 .front-page .content-right {
-  padding: 8%;
-  width: 32.5%; }
+  padding: 6%;
+  width: 37%; }
   @media screen and (max-width: 752px) {
     .front-page .content-right {
       -webkit-box-sizing: border-box;
@@ -1069,19 +1076,24 @@ ul.menu .menu-item {
       flex-grow: 1; }
     @media screen and (max-width: 752px) {
       .header-inner .header-title {
+        line-height: 1.5;
         display: block;
-        max-width: 100%;
         position: absolute;
         left: 0;
-        top: 2px;
+        top: -2px;
         padding-left: 20px;
         vertical-align: -3px;
-        max-width: 88%; }
+        max-width: 85%;
+        overflow: hidden;
+        height: 30px; }
         .header-inner .header-title a {
+          margin: 0;
+          padding: 0; }
+        .header-inner .header-title p {
           white-space: nowrap;
-          width: 100%;
           overflow: hidden;
-          line-height: 1.1em !important; } }
+          line-height: 1.5em !important;
+          padding-bottom: 0 !important; } }
     .header-inner .header-title, .header-inner .header-title a {
       display: inline-block;
       text-decoration: none;
@@ -1477,6 +1489,8 @@ ul.menu {
       padding: 0 0 5px;
       max-width: 100%;
       line-height: 1.3em; }
+      .news ul .news-item:last-child {
+        padding-bottom: 0; }
       .news ul .news-item:before {
         display: none;
         margin: 0;
