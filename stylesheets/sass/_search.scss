@@ -193,12 +193,10 @@ body .voog-search-modal {
     top: 83px !important;
     right: 0 !important;
     left: 0 !important;
+    bottom: 0 !important;
     max-height: 100%;
     width: 100%;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
-  }
-  @include query($tablet-2) {
-    top: 45px;
   }
   z-index: 30;
   padding: 20px;

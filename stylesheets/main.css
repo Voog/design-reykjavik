@@ -234,9 +234,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   color: black; }
 .dark-background .content-formatted a:hover {
   color: white; }
-.light-background .content-formatted code, .content-formatted code {
+.light-background .content-formatted pre, .content-formatted pre {
   background-color: rgba(0, 0, 0, 0.04); }
-.dark-background .content-formatted code {
+.dark-background .content-formatted pre {
   background-color: rgba(255, 255, 255, 0.2); }
 .content-formatted b, .light-background .content-formatted b,
 .content-formatted strong, .light-background
@@ -662,13 +662,13 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   .content-formatted .embed-container {
     margin-bottom: 20px; }
   .content-formatted pre {
+    padding: 10px;
     margin-bottom: 0;
     overflow: auto;
     white-space: pre-wrap; }
   .content-formatted code, .content-formatted pre, .content-formatted pre code {
     font-size: 14px; }
   .content-formatted pre code {
-    padding: 10px;
     display: block;
     margin-top: 0;
     padding: 0; }
@@ -1674,12 +1674,10 @@ body .voog-search-modal {
       top: 83px !important;
       right: 0 !important;
       left: 0 !important;
+      bottom: 0 !important;
       max-height: 100%;
       width: 100%;
       box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); } }
-  @media screen and (max-width: 752px) {
-    body .voog-search-modal {
-      top: 45px; } }
   body .voog-search-modal.search-results-active {
     display: block; }
   body .voog-search-modal.no-content {
