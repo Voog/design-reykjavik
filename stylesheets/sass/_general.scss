@@ -73,6 +73,9 @@ body {
       @include query($tablet-2) {
         padding: 15px 20px;
       }
+      &:empty {
+        padding: 0;
+      }
       position: relative;
       padding: 25px 30px;
       line-height: 1.45em;

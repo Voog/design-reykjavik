@@ -919,6 +919,8 @@ body {
   @media screen and (max-width: 752px) {
     .front-page .content-body {
       padding: 15px 20px; } }
+  .front-page .content-body:empty {
+    padding: 0; }
 @media screen and (max-width: 752px) {
   .front-page .content-right,
   .front-page .content-left {

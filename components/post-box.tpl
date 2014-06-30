@@ -15,7 +15,7 @@
       {% else %}
         {{ article.excerpt }}
       {% endif %}
-      {% unless post-box == "article" %}<a href="{{ article.url }}"class="read-more">{{ "read_more" | lc }}</a>{% endunless %}
+      {% unless post-box == "article" %}<a href="{{ article.url }}" class="read-more">{{ "read_more" | lc }}</a>{% endunless %}
     </div>
     {% if post-box == "article" %}
       <div class="post-body content-formatted">{% editable article.body %}</div>

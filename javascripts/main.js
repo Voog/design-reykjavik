@@ -173,7 +173,12 @@
     };
 
     var initFrontPage = function() {
-      $(window).load(resizeContentRight);
+      $(window).load(function() {
+        resizeContentRight();
+        if (($('.content-body').children().length < 1) && ($('.content-body').text().trim().length == 0)) {
+          $('.content-body').hide();
+        }
+      });
       $(window).on('resize', resizeContentRight);
     };
 
