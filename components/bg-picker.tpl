@@ -1,5 +1,5 @@
 {% editorjsblock %}
-  <script src='/assets/admin/tools/0.1.2/edicy-tools.js'></script>
+  <script src='/assets/admin/tools/0.1.3/edicy-tools.js'></script>
   <script>
     // Front page .content-right cover image/color
     var pageData = new Edicy.CustomData({
@@ -34,7 +34,7 @@
       type: 'site'
     });
 
-    var frontPageCover = new Edicy.BgPicker($('.global-background-settings').eq(0), {
+    var globalBackground = new Edicy.BgPicker($('.global-background-settings').eq(0), {
       picture: false,
       color: true,
 
@@ -46,7 +46,9 @@
       },
 
       commit: function(data) {
-        siteData.set({'background_color': data.color || ''
+        siteData.set({
+          'background_color': data.color || '',
+          'background_type': data.colorData !== null ? (data.colorData.lightness > 0.6 ? 'light' : 'dark') : 'light'
         });
       }
     });

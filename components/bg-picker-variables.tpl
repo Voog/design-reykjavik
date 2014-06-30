@@ -41,14 +41,20 @@
     {% assign cover_color_style = cover_color_style | append: ';"' %}
   {% endunless %}
 
-  <!-- Sets the "front page" cover image and color values -->
+  <!-- Sets the global background color and type -->
   {% if site.data.background_color == nil %}
     {% assign background_color = 'white' %}
   {% else %}
     {% assign background_color = site.data.background_color %}
   {% endif %}
 
-  <!-- Builds style tag for background color -->
+  {% if site.data.background_type == nil %}
+    {% assign background_type = 'light' %}
+  {% else %}
+    {% assign background_type = site.data.background_type %}
+  {% endif %}
+
+  <!-- Builds style tag for global background color -->
   {% assign background_color_style = "" %}
   {% unless site.data.background_color == nil %}
     {% assign background_color_style = ' style="background: ' %}
