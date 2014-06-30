@@ -424,12 +424,17 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .dark-background .voog-reference a:hover {
   opacity: 1.0; }
 
-.light-background .edy-empty-bordered, .edy-empty-bordered {
-  border-color: rgba(27, 33, 36, 0.33);
-  color: rgba(27, 33, 36, 0.33); }
 .dark-background .edy-empty-bordered {
   border-color: rgba(228, 222, 219, 0.33);
   color: rgba(228, 222, 219, 0.33); }
+
+.dark-background .edy-content-element-hover {
+  border: 1px solid rgba(255, 255, 255, 0.2); }
+
+.dark-background .edy-texteditor-active, .dark-background .edy-texteditor-active:hover {
+  outline: 1px solid rgba(255, 255, 255, 0.4); }
+  .dark-background .edy-texteditor-active:hover, .dark-background .edy-texteditor-active:hover:hover {
+    outline: 1px solid rgba(255, 255, 255, 0.6); }
 
 /* BLOG & BLOG ARTICLE */
 .post {

@@ -539,13 +539,18 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 
 // ADMIN UI
-.edy-empty-bordered {
-  .light-background &, & {
-    border-color: rgba(27,33,36,0.33);
-    color: rgba(27,33,36,0.33);
-  }
-  .dark-background & {
-    border-color: rgba(228,222,219,0.33);
-    color: rgba(228,222,219,0.33);
+.dark-background .edy-empty-bordered {
+  border-color: rgba(228,222,219,0.33);
+  color: rgba(228,222,219,0.33);
+}
+.dark-background .edy-content-element-hover {
+  border: 1px solid rgba(255,255,255,.2);
+}
+.dark-background {
+   .edy-texteditor-active, .edy-texteditor-active:hover {
+    outline: 1px solid rgba(255,255,255,.4);
+    &:hover {
+      outline: 1px solid rgba(255,255,255,.6);
+    }
   }
 }
