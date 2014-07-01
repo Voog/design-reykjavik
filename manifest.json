@@ -125,11 +125,11 @@
       "title": "menu-mobile"
     },
     {
-      "content_type": "blog",
-      "component": false,
-      "file": "layouts/blog___news.tpl",
-      "layout_name": "blog",
-      "title": "Blog & News"
+      "content_type": "component",
+      "component": true,
+      "file": "layouts/news.tpl",
+      "layout_name": "news",
+      "title": "news"
     },
     {
       "content_type": "component",
@@ -186,8 +186,7 @@
       "file": "components/voog-ref.tpl",
       "layout_name": "",
       "title": "Voog-ref"
-    },
-    null
+    }
   ],
   "assets": [
     {
@@ -315,12 +314,6 @@
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
-    },
-    {
-      "content_type": "text/unknown",
-      "file": "stylesheets/sass",
-      "kind": "stylesheets",
-      "filename": "sass"
     }
   ]
 }
