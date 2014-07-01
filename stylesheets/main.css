@@ -551,7 +551,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 
 /* CONTENT */
 .content {
-  overflow: auto;
   margin: auto;
   padding: 35px 0 40px;
   max-width: 960px; }
