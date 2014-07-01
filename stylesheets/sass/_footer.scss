@@ -1,13 +1,17 @@
 /* FOOTER */
 // Styling rules for the site's footer. These rules affect the entire site.
 .footer {
+  @include query($tablet-1) {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   clear: both;
   margin-top: 0;
-  padding: 0 20px;
+  padding: 0;
+  text-align: left;
   body:not(.front-page) & {
     padding-bottom: 30px;
   }
-  text-align: left;
 
   .footer-inner {
     position: relative;
@@ -39,13 +43,16 @@
 }
 
 .voog-reference {
+  @include query($tablet-1) {
+    padding-left: 20px;
+  }
   clear: both;
   margin: auto;
   margin-top: 20px;
-  padding: 0 20px;
+  margin-bottom: 20px;
+  padding: 0;
   max-width: 960px;
   text-align: left;
-  margin-bottom: 20px;
   a {
     display: inline-block;
     padding: 7px 9px;
