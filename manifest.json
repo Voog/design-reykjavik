@@ -185,16 +185,10 @@
       "component": true,
       "file": "components/voog-ref.tpl",
       "layout_name": "",
-      "title": "Voog-ref"
+      "title": "voog-ref"
     }
   ],
   "assets": [
-    {
-      "content_type": "text/unknown",
-      "file": "assets/.DS_Store",
-      "kind": "assets",
-      "filename": ".DS_Store"
-    },
     {
       "content_type": "image/svg+xml",
       "file": "assets/close-round-dark.svg",
@@ -236,12 +230,6 @@
       "file": "assets/ico-tag.svg",
       "kind": "assets",
       "filename": "ico-tag.svg"
-    },
-    {
-      "content_type": "text/unknown",
-      "file": "assets/.DS_Store",
-      "kind": "assets",
-      "filename": ".DS_Store"
     },
     {
       "content_type": "image/png",
