@@ -127,7 +127,7 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "layouts/news.tpl",
+      "file": "components/news.tpl",
       "layout_name": "news",
       "title": "news"
     },
