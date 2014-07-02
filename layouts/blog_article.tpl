@@ -2,11 +2,6 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head>
   {% include "html-head" %}
-
-  <meta property="og:url" content="{{ site.url }}">
-  <meta property="og:title" content="{{ site.name }}">
-  <meta property="og:description" content="{{ page.description }}">{% comment %}<!-- TODO: Add correct value -->{% endcomment %}
-  {% unless article.data.fb_image == nil or article.data.fb_image == "" %}<meta property="og:image" content="{{ site.url }}{{ photos_path }}/{{ article.data.fb_image }}">{% endunless %}{% comment %}<!-- TODO: Add image location data tag -->{% endcomment %}
   {% include "bg-picker-variables" %}
   {{ site.stats_header }}
 </head>
