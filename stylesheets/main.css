@@ -320,16 +320,16 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   color: rgba(0, 0, 0, 0.5); }
 .dark-background .search input:-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5); }
-.dark-background .js-modal-overlay.active .search input {
-  color: rgba(0, 0, 0, 0.6); }
-  .dark-background .js-modal-overlay.active .search input::-webkit-input-placeholder {
-    color: rgba(0, 0, 0, 0.6); }
-  .dark-background .js-modal-overlay.active .search input::-moz-placeholder {
-    color: rgba(0, 0, 0, 0.6); }
-  .dark-background .js-modal-overlay.active .search input:-moz-placeholder {
-    color: rgba(0, 0, 0, 0.6); }
-  .dark-background .js-modal-overlay.active .search input:-ms-input-placeholder {
-    color: rgba(0, 0, 0, 0.6); }
+.dark-background .search input {
+  color: rgba(255, 255, 255, 0.6); }
+  .dark-background .search input::-webkit-input-placeholder {
+    color: rgba(255, 255, 255, 0.6); }
+  .dark-background .search input::-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6); }
+  .dark-background .search input:-moz-placeholder {
+    color: rgba(255, 255, 255, 0.6); }
+  .dark-background .search input:-ms-input-placeholder {
+    color: rgba(255, 255, 255, 0.6); }
 .search form, .light-background .search form, .dark-background .js-modal-overlay .search form {
   border: 1px solid rgba(0, 0, 0, 0.1); }
 .dark-background :not(.active) .search form {
@@ -337,15 +337,13 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .search form,
 .search .search-input {
   background: none; }
-.no-svg .light-background .search .search-submit, .no-svg .search .search-submit, .no-svg .dark-background .js-modal-overlay .search .search-submit, .no-svg .light-background
+.no-svg .light-background .search .search-submit, .no-svg .search .search-submit, .no-svg .light-background
 .search .search-btn, .no-svg
-.search .search-btn, .no-svg .dark-background .js-modal-overlay
 .search .search-btn {
   background-image: url("../images/ico-search.png");
   background-size: 20px; }
-.svg .light-background .search .search-submit, .svg .search .search-submit, .svg .dark-background .js-modal-overlay .search .search-submit, .svg .light-background
+.svg .light-background .search .search-submit, .svg .search .search-submit, .svg .light-background
 .search .search-btn, .svg
-.search .search-btn, .svg .dark-background .js-modal-overlay
 .search .search-btn {
   background-image: url("../assets/ico-search-dark.svg"); }
 .no-svg .dark-background :not(.active) .search .search-submit, .no-svg .dark-background :not(.active)
@@ -355,15 +353,37 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .svg .dark-background :not(.active) .search .search-submit, .svg .dark-background :not(.active)
 .search .search-btn {
   background-image: url("../assets/ico-search.svg"); }
-.no-svg .light-background .search .search-clear, .no-svg .search .search-clear, .no-svg .dark-background .js-modal-overlay .search .search-clear {
-  background-image: url("../images/close-round.png"); }
-.svg .light-background .search .search-clear, .svg .search .search-clear, .svg .dark-background .js-modal-overlay .search .search-clear {
+.no-svg .light-background .search .search-clear, .no-svg .search .search-clear {
+  background-image: url("../images/close-round-dark.png"); }
+.svg .light-background .search .search-clear, .svg .search .search-clear {
   background-image: url("../assets/close-round-dark.svg"); }
 .no-svg .dark-background :not(.active) .search .search-clear {
   background-image: url("../images/close-round.png");
   background-size: 20px; }
 .svg .dark-background :not(.active) .search .search-clear {
   background-image: url("../assets/close-round.svg"); }
+
+.search.js-modal-overlay.active input {
+  color: rgba(0, 0, 0, 0.6); }
+  .search.js-modal-overlay.active input::-webkit-input-placeholder {
+    color: rgba(0, 0, 0, 0.6); }
+  .search.js-modal-overlay.active input::-moz-placeholder {
+    color: rgba(0, 0, 0, 0.6); }
+  .search.js-modal-overlay.active input:-moz-placeholder {
+    color: rgba(0, 0, 0, 0.6); }
+  .search.js-modal-overlay.active input:-ms-input-placeholder {
+    color: rgba(0, 0, 0, 0.6); }
+.no-svg .search.js-modal-overlay.active .search-clear {
+  background-image: url("../images/close-round-dark.png"); }
+.svg .search.js-modal-overlay.active .search-clear {
+  background-image: url("../assets/close-round-dark.svg"); }
+.no-svg .search.js-modal-overlay.active .search-submit, .no-svg
+.search.js-modal-overlay.active .search-btn {
+  background-image: url("../images/ico-search-dark.png");
+  background-size: 20px; }
+.svg .search.js-modal-overlay.active .search-submit, .svg
+.search.js-modal-overlay.active .search-btn {
+  background-image: url("../assets/ico-search-dark.svg"); }
 
 .voog-search-modal {
   -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ;
