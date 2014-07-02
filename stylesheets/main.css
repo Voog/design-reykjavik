@@ -744,6 +744,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
     margin-bottom: 20px; }
     .content-formatted .edy-partial-view:last-child {
       margin-bottom: 0; }
+  .content-formatted .edy-positionable-container-left {
+    margin: 0 30px 20px 0; }
+  .content-formatted .edy-positionable-container-right {
+    margin: 0 0 20px 30px; }
 
 /* FOOTER */
 .footer {
