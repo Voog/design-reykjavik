@@ -233,6 +233,18 @@
     },
     {
       "content_type": "image/png",
+      "file": "images/close-round-dark.png",
+      "kind": "images",
+      "filename": "close-round-dark.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/close-round.png",
+      "kind": "images",
+      "filename": "close-round.png"
+    },
+    {
+      "content_type": "image/png",
       "file": "images/ico-search-dark.png",
       "kind": "images",
       "filename": "ico-search-dark.png"
