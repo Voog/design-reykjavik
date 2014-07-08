@@ -275,12 +275,6 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/jquery.js",
-      "kind": "javascripts",
-      "filename": "jquery.js"
-    },
-    {
-      "content_type": "application/javascript",
       "file": "javascripts/main.js",
       "kind": "javascripts",
       "filename": "main.js"
@@ -314,6 +308,12 @@
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "application/javascript",
+      "kind": "javascripts",
+      "file": "javascripts/jquery.min.js",
+      "filename": "jquery.min.js"
     }
   ]
 }

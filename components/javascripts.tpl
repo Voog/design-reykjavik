@@ -1,5 +1,5 @@
 <script src="{{ javascripts_path }}/modernizr.js?21"></script>
-<script src="{{ javascripts_path }}/jquery.js?2"></script>
+<script src="{{ javascripts_path }}/jquery.min.js?2"></script>
 <script src="{{ javascripts_path }}/retina.js?2"></script>
 <script src="{{ javascripts_path }}/overthrow.js?2"></script>
 <script src="{{ javascripts_path }}/main.js?2"></script>
