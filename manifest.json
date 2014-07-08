@@ -127,13 +127,6 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/news.tpl",
-      "layout_name": "news",
-      "title": "news"
-    },
-    {
-      "content_type": "component",
-      "component": true,
       "file": "components/post-box.tpl",
       "layout_name": "post-box",
       "title": "post-box"
@@ -189,6 +182,12 @@
     }
   ],
   "assets": [
+    {
+      "content_type": "text/unknown",
+      "file": "assets/.DS_Store",
+      "kind": "assets",
+      "filename": ".DS_Store"
+    },
     {
       "content_type": "image/svg+xml",
       "file": "assets/close-round-dark.svg",
@@ -268,10 +267,28 @@
       "filename": "ico-tag.png"
     },
     {
+      "content_type": "image/jpeg",
+      "file": "images/tree.jpg",
+      "kind": "images",
+      "filename": "tree.jpg"
+    },
+    {
       "content_type": "application/javascript",
       "file": "javascripts/autogrow.js",
       "kind": "javascripts",
       "filename": "autogrow.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/autogrow.min.js",
+      "kind": "javascripts",
+      "filename": "autogrow.min.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/jquery.min.js",
+      "kind": "javascripts",
+      "filename": "jquery.min.js"
     },
     {
       "content_type": "application/javascript",
@@ -281,9 +298,21 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/main.min.js",
+      "kind": "javascripts",
+      "filename": "main.min.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/modernizr.js",
       "kind": "javascripts",
       "filename": "modernizr.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/modernizr.min.js",
+      "kind": "javascripts",
+      "filename": "modernizr.min.js"
     },
     {
       "content_type": "application/javascript",
@@ -293,9 +322,21 @@
     },
     {
       "content_type": "application/javascript",
+      "file": "javascripts/overthrow.min.js",
+      "kind": "javascripts",
+      "filename": "overthrow.min.js"
+    },
+    {
+      "content_type": "application/javascript",
       "file": "javascripts/retina.js",
       "kind": "javascripts",
       "filename": "retina.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/retina.min.js",
+      "kind": "javascripts",
+      "filename": "retina.min.js"
     },
     {
       "content_type": "text/css",
@@ -310,10 +351,10 @@
       "filename": "main.css"
     },
     {
-      "content_type": "application/javascript",
-      "kind": "javascripts",
-      "file": "javascripts/jquery.min.js",
-      "filename": "jquery.min.js"
+      "content_type": "text/css",
+      "file": "stylesheets/main.min.css",
+      "kind": "stylesheets",
+      "filename": "main.min.css"
     }
   ]
 }
