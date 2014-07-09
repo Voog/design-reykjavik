@@ -1,7 +1,3 @@
-<script src="{{ javascripts_path }}/modernizr.min.js?21"></script>
-<script src="{{ javascripts_path }}/jquery.min.js?2"></script>
-<script src="{{ javascripts_path }}/retina.min.js?2"></script>
-<script src="{{ javascripts_path }}/overthrow.min.js?2"></script>
 <script src="{{ javascripts_path }}/main.min.js?2"></script>
 <script src="{{ site.static_asset_host }}/libs/picturefill/1.0.0/picturefill.min.js"></script>
 {% if site.search.enabled %}

@@ -1,12 +1,20 @@
 module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
+    concat: {
+      js: {
+        files: [{
+          src: ['javascripts/*.js', '!javascripts/*.min.js', '!javascripts/main.js'],
+          dest: 'javascripts/main.js'
+        }]
+      }
+    },
     uglify: {
       build: {
         files: [{
           expand: true,
           cwd: 'javascripts/',
-          src: ['*.js', '!*.min.js'],
+          src: ['main.js'],
           dest: 'javascripts/',
           ext: '.min.js'
         }]
@@ -22,21 +30,28 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      css: {
+      concat: {
+        files: ['javascripts/*.js', '!javascripts/*.min.js', '!javascripts/main.js'],
+        tasks: ['concat', 'uglify'],
+        options: {
+          spawn: false
+        }
+      },
+      cssmin: {
         files: ['stylesheets/*.css', '!stylesheets/*.min.css'],
         tasks: ['cssmin'],
         options: {
           spawn: false
         }
       },
-      js: {
-        files: ['javascripts/*.js', '!javascripts/*.min.js'],
+      uglify: {
+        files: ['javascripts/main.js'],
         tasks: ['uglify'],
         options: {
           spawn: false
         }
       },
-      scss: {
+      sass: {
         files: ['stylesheets/**/*.scss'],
         tasks: ['sass'],
         options: {
@@ -69,7 +84,8 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-concat');
 
-  grunt.registerTask('default', ['sass', 'uglify', 'cssmin']);
+  grunt.registerTask('default', ['sass', 'cssmin', 'concat', 'uglify']);
 
 };
