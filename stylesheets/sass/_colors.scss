@@ -3,13 +3,13 @@ body {
   &.light-background {
     color: $dark-primary;
     .background-color {
-      background-color: none;
+      background-color: transparent;
     }
   }
   &.dark-background {
     color: $light-primary;
     .background-color {
-      background-color: none;
+      background-color: transparent;
     }
   }
 }

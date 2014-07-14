@@ -226,6 +226,7 @@ ul.menu {
 
 // Styling rules for the site's main menu. Usually the first level menu but can have the sub menu in it aswell.
 .menu-main {
+  z-index: 1;
   @include query($tablet-2) {
     display: none;
   }

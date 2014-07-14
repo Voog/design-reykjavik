@@ -29,7 +29,7 @@
   {% unless page.data.cover_color == nil %}
     {% assign cover_color_style = ' style="background: ' %}
     {% if page.data.cover_color == '' %}
-      {% assign cover_color_style = cover_color_style | append: 'none' %}
+      {% assign cover_color_style = cover_color_style | append: 'transparent' %}
     {% else %}
       {% assign cover_color_style = cover_color_style | append: page.data.cover_color %}
     {% endif %}

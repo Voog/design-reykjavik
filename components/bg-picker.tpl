@@ -43,7 +43,7 @@
         var col = (data.color && data.color !== '') ? data.color : 'white';
 
         $('.global-background-color').css({'background' : col});
-        {% if editmode %}site.handleColorScheme();{% endif %}
+        {% if editmode %}site.handleColorScheme(data.colorData.lightness);{% endif %}
       },
 
       commit: function(data) {
