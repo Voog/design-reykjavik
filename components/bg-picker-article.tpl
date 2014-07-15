@@ -25,14 +25,14 @@
               } 
             } else {
               $('.article-cover-image').css({'background-image' : 'none'});
-              articleCover.bgColor = [255,255,255,1];
+              articleCover.bgColor = [255,255,255,0];
             }
             if (data.color && data.color !== '') {
               articleCover.fgColor = data.color;
               site.handleHeaderColorScheme(site.getCombinedLightness(articleCover.bgColor, articleCover.fgColor));
               $('.article-cover-color').css({'background' : data.color});
             } else {
-              articleCover.fgColor = [255,255,255,1];
+              articleCover.fgColor = [255,255,255,0];
               $('.article-cover-color').css({'background' : 'transparent'});
             }
           },

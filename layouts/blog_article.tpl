@@ -14,19 +14,20 @@
     {% if editmode %}
       <button class="bgpicker-toggle-button article-cover-settings" style="display:none;" data-bg-color="{{ article_cover_color }}" data-bg-image="{{ article_cover_image }}"></button>
     {% endif %}
-    {% if article_cover_image != '' or editmode %}<div class="background-image cover article-cover-image"{{ article_cover_image_style }}></div>{% endif %}
-    {% if article_cover_color != '' or editmode %}<div class="background-color cover article-cover-color"{{ article_cover_color_style }}></div>{% endif %}
     {% include "header" %}
-
-    <header class="post-header content-formatted">
-      <h1 class="post-title">
-        {% editable article.title %}
-      </h1>
-      <section class="post-meta">
-        <span class="post-author">{{ article.author.name }}</span><span class="separator"> &nbsp;•&nbsp;</span>
-        <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | format_date : "long" }}</time>
-      </section>
-    </header>
+    <div class="post-header-wrapper">
+      {% if article_cover_image != '' or editmode %}<div class="background-image cover article-cover-image"{{ article_cover_image_style }}></div>{% endif %}
+      {% if article_cover_color != '' or editmode %}<div class="background-color cover article-cover-color"{{ article_cover_color_style }}></div>{% endif %}
+      <header class="post-header content-formatted">
+        <h1 class="post-title">
+          {% editable article.title %}
+        </h1>
+        <section class="post-meta">
+          <span class="post-author">{{ article.author.name }}</span><span class="separator"> &nbsp;•&nbsp;</span>
+          <time class="post-date" datetime="{{ article.created_at | date : "%Y-%m-%d" }}">{{ article.created_at | format_date : "long" }}</time>
+        </section>
+      </header>
+    </div>
   </div>
 
   <div class="container">

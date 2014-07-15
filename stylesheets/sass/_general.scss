@@ -100,9 +100,9 @@ body {
         display: block;
       }
     }
- }
+  }
 
- .common-page {
+  .common-page {
     .content {
       @include query($tablet-2) {
         padding: 0 20px;
@@ -153,8 +153,8 @@ body {
     }
  }
 
- .blog-page,
- .post-page {
+  .blog-page,
+  .post-page {
     .content {
       @include query($tablet-2) {
         padding-top: 29px;
@@ -169,15 +169,15 @@ body {
       }
       padding: 0 12%;
     }
- }
+  }
 
- .blog-page {
+  .blog-page {
 
- }
+  }
 
- .post-page {
-
- }
+  .post-page {
+    position: relative;
+  }
 
 // Pseudo classes for declaring commonly used styling rules for different elements.
 %clearfix:after {
@@ -242,7 +242,8 @@ body {
 // override BGpicker default styles to move and
 // position them more conveniently on mobile devices
 @include query($tablet-2) {
-  body > .bgpicker-toggle-button {
+  body > .bgpicker-toggle-button,
+  body .header-wrapper .bgpicker-toggle-button {
     margin-top: 45px !important;
     margin-left: 5px !important;
   }

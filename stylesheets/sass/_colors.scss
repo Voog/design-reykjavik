@@ -173,6 +173,42 @@ body {
     }
   }
 }
+.header-wrapper.light {
+  .header {
+    .header-title a,
+    .menu-link,
+    .langmenu {
+      color: $dark-primary;
+    }
+    .langmenu {
+      border: 1px solid rgba(0,0,0,.3)
+    }
+  }
+  .post-header {
+    .post-title,
+    .post-meta {
+      color: $dark-primary;
+    }
+  }
+}
+.header-wrapper.dark {
+  .header {
+    .header-title a,
+    .menu-link,
+    .langmenu .langmenu-content {
+      color: $light-primary;
+    }
+    .langmenu {
+      border: 1px solid rgba(255,255,255,.3)
+    }
+  }
+  .post-header {
+    .post-title,
+    .post-meta {
+      color: $light-primary;
+    }
+  }
+}
 .blog-page.light-background, .blog-page {
   .tagged-list-header {
     border-top: 1px solid rgba(0,0,0,.1);
