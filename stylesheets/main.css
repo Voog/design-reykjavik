@@ -540,7 +540,8 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
     .post .tags .tag-link {
       margin-right: 20px;
       text-decoration: none;
-      font-weight: bold; }
+      font-weight: bold;
+      display: inline-block; }
 
 .blog-page .post:last-child {
   margin-bottom: 0;
