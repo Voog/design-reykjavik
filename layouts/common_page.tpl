@@ -3,7 +3,6 @@
 <head prefix="og: http://ogp.me/ns#">
   {% include "html-head" %}
   {% include "bg-picker-variables" %}
-  {{ site.stats_header }}
 </head>
 
 <body class="common-page js-body global-background-color {{ background_type }}-background" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
