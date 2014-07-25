@@ -36,6 +36,20 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/bg-picker-article-variables.tpl",
+      "layout_name": "bg-picker-article-variables",
+      "title": "bg-picker-article-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/bg-picker-article.tpl",
+      "layout_name": "bg-picker-article",
+      "title": "bg-picker-article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/bg-picker-variables.tpl",
       "layout_name": "bg-picker-variables",
       "title": "bg-picker-variables"
@@ -125,11 +139,11 @@
       "title": "menu-mobile"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/news.tpl",
-      "layout_name": "news",
-      "title": "news"
+      "content_type": "blog",
+      "component": false,
+      "file": "layouts/blog___news.tpl",
+      "layout_name": "blog",
+      "title": "Blog & News"
     },
     {
       "content_type": "component",
@@ -186,20 +200,6 @@
       "file": "components/voog-ref.tpl",
       "layout_name": "",
       "title": "voog-ref"
-    },
-    {
-      "title": "bg-picker-article",
-      "layout_name": "bg-picker-article",
-      "content_type": "component",
-      "component": true,
-      "file": "components/bg-picker-article.tpl"
-    },
-    {
-      "title": "bg-picker-article-variables",
-      "layout_name": "bg-picker-article-variables",
-      "content_type": "component",
-      "component": true,
-      "file": "components/bg-picker-article-variables.tpl"
     }
   ],
   "assets": [
@@ -289,15 +289,15 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/main.js",
+      "file": "javascripts/application.js",
       "kind": "javascripts",
-      "filename": "main.js"
+      "filename": "application.js"
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/main.min.js",
+      "file": "javascripts/application.min.js",
       "kind": "javascripts",
-      "filename": "main.min.js"
+      "filename": "application.min.js"
     },
     {
       "content_type": "application/javascript",
@@ -307,21 +307,9 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/overthrow.js",
+      "file": "javascripts/modernizr.min.js",
       "kind": "javascripts",
-      "filename": "overthrow.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/retina.js",
-      "kind": "javascripts",
-      "filename": "retina.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "file": "javascripts/reykjavik.js",
-      "kind": "javascripts",
-      "filename": "reykjavik.js"
+      "filename": "modernizr.min.js"
     },
     {
       "content_type": "text/css",
@@ -334,30 +322,6 @@
       "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
       "filename": "main.min.css"
-    },
-    {
-      "content_type": "application/javascript",
-      "kind": "javascripts",
-      "file": "javascripts/jquery-autogrow.js",
-      "filename": "jquery-autogrow.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "kind": "javascripts",
-      "file": "javascripts/jquery-1.11.0.js",
-      "filename": "jquery-1.11.0.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "kind": "javascripts",
-      "file": "javascripts/color-thief.js",
-      "filename": "color-thief.js"
-    },
-    {
-      "content_type": "application/javascript",
-      "kind": "javascripts",
-      "file": "javascripts/colorextract.js",
-      "filename": "colorextract.js"
     }
   ]
 }
