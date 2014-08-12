@@ -155,12 +155,10 @@
   };
 
   var handleHeaderColorScheme = function(lightness) {
-    console.log("handleHeaderColorScheme with", lightness, "lightness.");
     if (typeof lightness != 'undefined') {
       if (lightness > 0.6) {
         $('.header-wrapper').addClass('light').removeClass('dark');
       } else {
-        console.log("!");
         $('.header-wrapper').addClass('dark').removeClass('light');
       }
     }
