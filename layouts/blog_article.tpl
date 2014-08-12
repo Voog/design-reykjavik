@@ -29,7 +29,6 @@
       </header>
     </div>
   </div>
-  {{ article_cover_type }}
   <div class="container">
   {% if background_color != '' or editmode %}<div class="background-color global-background-color"{{ background_color_style }}></div>{% endif %}
 
