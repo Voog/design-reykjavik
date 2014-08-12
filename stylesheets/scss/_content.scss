@@ -56,12 +56,13 @@
     @include query($tablet-2) {
       font-size: 200%;
     }
-    padding-bottom: 20px;
     font-weight: 700;
     font-size: 70px;
-    margin: 0;
     line-height: 1.2em;
 
+    &:not(:empty) {
+      padding-bottom: 20px;
+    }
     .edy-texteditor-view {
       min-height: 1.2em;
     }
@@ -82,9 +83,5 @@
       }
       line-height: 1.5;
     }
-  }
-
-  .common-page  & {
-    margin-top: 35px;
   }
 }

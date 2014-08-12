@@ -926,16 +926,17 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   width: 100%;
 }
 .content-formatted .content-header {
-  padding-bottom: 20px;
   font-weight: 700;
   font-size: 70px;
-  margin: 0;
   line-height: 1.2em;
 }
 @media screen and (max-width: 752px) {
   .content-formatted .content-header {
     font-size: 200%;
   }
+}
+.content-formatted .content-header:not(:empty) {
+  padding-bottom: 20px;
 }
 .content-formatted .content-header .edy-texteditor-view {
   min-height: 1.2em;
@@ -953,9 +954,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   .front-page .content-body p {
     font-size: 18px;
   }
-}
-.common-page .content-body {
-  margin-top: 35px;
 }
 
 .content-formatted {
@@ -1466,9 +1464,6 @@ body {
     padding: 0;
   }
 }
-.common-page .content-header {
-  display: inline-block;
-}
 @media screen and (max-width: 752px) {
   .common-page .content-header {
     margin-top: 0;
@@ -1952,6 +1947,11 @@ ul.menu .menu-item:before {
   font-weight: 700;
 }
 
+@media screen and (max-width: 980px) {
+  #sidebar {
+    margin-left: 20px;
+  }
+}
 #sidebar .menu {
   text-align: left;
 }

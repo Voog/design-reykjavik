@@ -278,7 +278,9 @@ ul.menu {
 
 // Styling rules for the site's sub menu.
 #sidebar {
-
+  @include query($tablet-1) {
+    margin-left: 20px;
+  }
   .menu {
     text-align: left;
     
