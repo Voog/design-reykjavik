@@ -11608,19 +11608,23 @@ MMCQ = (function() {
   };
 
   var getCombinedColor = function(bgColor, fgColor) {
-    return colorSum(bgColor || [255,255,255,1], fgColor || [255,255,255,1]);
+    var sum = colorSum(bgColor || [255,255,255,1], fgColor || [255,255,255,1]);
+    return sum;
   };
 
   var getCombinedLightness = function(bgColor, fgColor) {
     var combinedColor = getCombinedColor(bgColor, fgColor);
-    return Math.round(((+combinedColor[0]) * 0.2126 + (+combinedColor[1]) * 0.7152 + (+combinedColor[2]) * 0.0722) / 2.55) / 100;
+    var color = Math.round(((+combinedColor[0]) * 0.2126 + (+combinedColor[1]) * 0.7152 + (+combinedColor[2]) * 0.0722) / 2.55) / 100;
+    return color;
   };
 
   var handleHeaderColorScheme = function(lightness) {
-    if (lightness) {
+    console.log("handleHeaderColorScheme with", lightness, "lightness.");
+    if (typeof lightness != 'undefined') {
       if (lightness > 0.6) {
         $('.header-wrapper').addClass('light').removeClass('dark');
       } else {
+        console.log("!");
         $('.header-wrapper').addClass('dark').removeClass('light');
       }
     }

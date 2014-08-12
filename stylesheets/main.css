@@ -193,27 +193,11 @@ body.dark-background .background-color {
   color: white;
 }
 
-.header-wrapper.light .header .header-title a,
-.header-wrapper.light .header .menu-link,
-.header-wrapper.light .header .langmenu {
-  color: rgba(0, 0, 0, 0.8);
-}
-.header-wrapper.light .header .langmenu {
-  border: 1px solid rgba(0, 0, 0, 0.3);
-}
 .header-wrapper.light .post-header .post-title,
 .header-wrapper.light .post-header .post-meta {
   color: rgba(0, 0, 0, 0.8);
 }
 
-.header-wrapper.dark .header .header-title a,
-.header-wrapper.dark .header .menu-link,
-.header-wrapper.dark .header .langmenu .langmenu-content {
-  color: rgba(255, 255, 255, 0.8);
-}
-.header-wrapper.dark .header .langmenu {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-}
 .header-wrapper.dark .post-header .post-title,
 .header-wrapper.dark .post-header .post-meta {
   color: rgba(255, 255, 255, 0.8);
