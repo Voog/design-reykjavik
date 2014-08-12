@@ -13,7 +13,11 @@
   {% endif %}
 
   {% if article.data.cover_type == nil or article.data.cover_type == '' %}
-    {% assign article_cover_type = 'light' %}
+    {% if site.data.background_type == nil %}
+      {% assign article_cover_type = 'light' %}
+    {% else %}
+      {% assign article_cover_type = site.data.background_type %}
+    {% endif %}
   {% else %}
     {% assign article_cover_type = article.data.cover_type %}
   {% endif %}
@@ -32,13 +36,11 @@
 
   <!-- Builds style tag for article background color -->
   {% assign article_cover_color_style = "" %}
-  {% unless article.data.cover_color == nil %}
     {% assign article_cover_color_style = ' style="background: ' %}
-    {% if article.data.cover_color == "" %}
+    {% if article.data.cover_color == "" or article.data.cover_color == nil %}
       {% assign article_cover_color_style = article_cover_color_style | append: 'transparent' %}
     {% else %}
       {% assign article_cover_color_style = article_cover_color_style | append: article.data.cover_color %}
     {% endif %}
     {% assign article_cover_color_style = article_cover_color_style | append: ';"' %}
-  {% endunless %}
 {% endcapture %}

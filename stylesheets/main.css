@@ -146,6 +146,15 @@ body.dark-background .background-color {
 .dark-background .post .comments-count:hover {
   border: 1px solid rgba(255, 255, 255, 0.7) !important;
 }
+.post .post-excerpt .placeholder, .light-background .post .post-excerpt .placeholder,
+.post .post-body .placeholder, .light-background
+.post .post-body .placeholder {
+  color: rgba(0, 0, 0, 0.8);
+}
+.dark-background .post .post-excerpt .placeholder, .dark-background
+.post .post-body .placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
 .post .read-more, .light-background .post .read-more {
   color: rgba(0, 0, 0, 0.3);
 }
@@ -964,6 +973,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 }
 .content-formatted .content-header h1 {
   font-size: 1em;
+  line-height: 1em;
   padding-bottom: 0;
 }
 .content-formatted h1 {

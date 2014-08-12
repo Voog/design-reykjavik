@@ -134,6 +134,10 @@ body {
       }
     }
   }
+  .post-excerpt .placeholder,
+  .post-body .placeholder {
+    @include color-set($dark-primary, $light-primary);
+  }
   .read-more {
     @include color-set($dark-tertiary, $light-tertiary);
     &:hover {

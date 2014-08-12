@@ -38,16 +38,12 @@
           },
 
           commit: function(data) {
+            var cover_type = (site.getCombinedLightness(articleCover.bgColor, articleCover.fgColor) > 0.6) ? 'light' : 'dark';
             Edicy.articles.currentArticle.setData({
               'cover_image': data.image || '',
-              'cover_color': data.color || ''
+              'cover_color': data.color || '',
+              'cover_type': cover_type
             });
-            if (data.image && data.image !== '') {
-              var cover_type = (site.getCombinedLightness(articleCover.bgColor, articleCover.fgColor) > 0.6) ? 'light' : 'dark';
-              Edicy.articles.currentArticle.setData({
-                'cover_type': cover_type
-              });
-            }
           }
         });
         $('.article-cover-settings').css({'left': 0, 'top': 0}).show();
