@@ -1384,6 +1384,7 @@ body {
   padding: 40px;
   padding: 6%;
   width: 37%;
+  min-height: 360px;
 }
 @media screen and (max-width: 980px) {
   .front-page .content-right {

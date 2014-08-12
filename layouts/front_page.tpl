@@ -30,12 +30,11 @@
           {% content %}
         </section>
       </article>
-
-      {% for a in site.latest_1_articles %}
+      {% if site.latest_1_articles.size > 0 %}
       <aside class="content-left last">
         {% include "news" %}
       </aside>
-      {% endfor %}
+      {% endif %}
 
     </main>
     {% include "footer" %}
