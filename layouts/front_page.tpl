@@ -26,7 +26,7 @@
         {% endif %}
         {% if cover_image != '' or editmode %}<div class="background-image cover frontpage-cover-image"{{ cover_image_style }}></div>{% endif %}
         {% if cover_color != '' or editmode %}<div class="background-color cover frontpage-cover-color"{{ cover_color_style }}></div>{% endif %}
-        <section class="content-body global-background-color" {% if background_color != '' or editmode %}{{ background_color_style}}{% else %}style="background:white;"{% endif %}>
+        <section class="content-body global-background-color"{{ background_color_style}}>
           {% content %}
         </section>
       </article>

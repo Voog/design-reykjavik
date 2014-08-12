@@ -51,13 +51,11 @@
 
   <!-- Builds style tag for global background color -->
   {% assign background_color_style = "" %}
-  {% unless site.data.background_color == nil %}
     {% assign background_color_style = ' style="background: ' %}
-    {% if site.data.background_color == '' %}
+    {% if site.data.background_color == '' or site.data.background_color == nil %}
       {% assign background_color_style = background_color_style | append: 'white' %}
     {% else %}
       {% assign background_color_style = background_color_style | append: site.data.background_color %}
     {% endif %}
     {% assign background_color_style = background_color_style | append: ';"' %}
-  {% endunless %}
 {% endcapture %}
