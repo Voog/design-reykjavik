@@ -11629,7 +11629,7 @@ MMCQ = (function() {
   };
 
   var handleColorScheme = function(lightness) {
-    if (lightness) {
+    if (typeof lightness != 'undefined') {
       if (lightness > 0.6) {
         $('body').addClass('light-background').removeClass('dark-background');
       } else {
