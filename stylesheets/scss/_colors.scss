@@ -145,7 +145,6 @@ body {
     &,
     .light-background & {
       border-top: 1px solid $dark-tertiary;
-      border-bottom: 1px solid $dark-tertiary;
       .tag-icon {
         background: url('../images/ico-tag-dark.png') no-repeat center center;
         background-size: 16px;
@@ -156,13 +155,18 @@ body {
     }    
     .dark-background & {
       border-top: 1px solid $light-tertiary;
-      border-bottom: 1px solid $light-tertiary;
       .tag-icon {
         background: url('../images/ico-tag.png') no-repeat center center;
         background-size: 16px;
         .svg & {
           background: url('../assets/ico-tag.svg') no-repeat center center;
         }
+      }
+    }
+    .tags-editor input {
+      @include color-set($dark-primary, $light-primary);
+      @include placeholder {
+        line-height: 1.3;
       }
     }
     .tag-link {
@@ -224,6 +228,16 @@ body {
 
 // COMMENTS
 .comments {
+  .light-background &, & {
+    .comment-title {
+      border-top: 1px solid $dark-tertiary;
+    }
+  }
+  .dark-background & {
+    .comment-title {
+      border-top: 1px solid $light-tertiary;
+    }
+  }
   .comment-date {
     @include color-set($dark-tertiary, $light-tertiary);
   }

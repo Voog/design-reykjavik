@@ -71,8 +71,8 @@
 
   .tags {
     position: relative;
-    margin: 20px 0;
-    padding: 25px 0;
+    margin: 60px 0 -40px;
+    padding: 25px 0 5px;
     font-weight: bold;
     font-size: 0.9em;
     line-height: 1.2em;
@@ -170,5 +170,8 @@
         font-size: 1.25em;
       }
     }
+  }
+  .post .edy-ca {
+    margin-top: 25px;
   }
 }
