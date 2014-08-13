@@ -55,8 +55,7 @@
   }
 
   .header-title,
-  .menu-main,
-  .menu-lang {
+  .menu-main {
     .no-flexbox & {
       display: table-cell;
     }

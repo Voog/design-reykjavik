@@ -905,7 +905,8 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   }
 }
 .no-flexbox .content {
-  display: table;
+  margin: auto;
+  max-width: 960px;
   vertical-align: top;
 }
 
@@ -1632,8 +1633,7 @@ ul.menu .menu-item {
   justify-content: space-between;
 }
 .no-flexbox .header-inner .header-title, .no-flexbox
-.header-inner .menu-main, .no-flexbox
-.header-inner .menu-lang {
+.header-inner .menu-main {
   display: table-cell;
 }
 .header-inner .header-title {
