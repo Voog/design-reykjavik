@@ -2320,6 +2320,10 @@ ul.menu .menu-item:before {
   padding: 4px 0 4px 0;
   line-height: 1;
 }
+.search-input:-ms-input-placeholder {
+  padding: 0 0 0 15px;
+  line-height: 1;
+}
 .search-input::-moz-placeholder {
   line-height: 2;
 }

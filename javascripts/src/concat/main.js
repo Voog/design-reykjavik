@@ -250,10 +250,12 @@
         }
       });
       $('.search-form').on('click', '.search-clear', function(e) {
-        $(e.target).closest('.search-form').removeClass('not-empty').find('.search-input').focus().val('');
+        var form = $(e.target).closest('.search-form');
+        form.removeClass('not-empty').find('.search-input').focus().val('');
         $(e.target).hide();
         $('.voog-search-modal').remove();
-        $(e.target).closest('.search-form').find('.search-submit').show();
+        form.find('.search-submit').show();
+        form.find('input').blur();
       });
     };
 
