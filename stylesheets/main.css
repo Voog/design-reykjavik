@@ -906,7 +906,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 }
 .no-flexbox .content {
   display: table;
-  width: 100%;
   vertical-align: top;
 }
 
