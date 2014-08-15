@@ -1428,32 +1428,32 @@ body {
     padding: 0 20px;
   }
 }
-.common-page .content-left {
+.common-page .content .content-right {
+  float: none;
+  margin-left: 200px;
+  padding-left: 15px;
+  width: auto;
+}
+@media screen and (max-width: 752px) {
+  .common-page .content .content-right {
+    margin-left: 0;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 752px) {
+  .common-page .content .content-right h1 {
+    font-size: 200%;
+  }
+}
+.common-page .content .content-left {
   float: left;
   clear: left;
   min-height: 10px;
   width: 170px;
 }
 @media screen and (max-width: 752px) {
-  .common-page .content-left {
+  .common-page .content .content-left {
     display: none;
-  }
-}
-.common-page .content-right {
-  float: none;
-  margin-left: 200px;
-  padding: 0 35px 0 15px;
-  width: auto;
-}
-@media screen and (max-width: 752px) {
-  .common-page .content-right {
-    margin-left: 0;
-    padding: 0;
-  }
-}
-@media screen and (max-width: 752px) {
-  .common-page .content-right h1 {
-    font-size: 200%;
   }
 }
 .common-page .content-centered {
