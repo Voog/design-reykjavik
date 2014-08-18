@@ -7,9 +7,11 @@
       per_page: 3,
       lang: '{{ page.language_code }}',
       sideclick: true,
-      mobileModeWidth: 480,
-      updateOnKeypress: false
+      mobileModeWidth: 752,
+      updateOnKeypress: false,
+      resultsContainer: $('.voog-search-modal').get(0)
     });
   </script>
+
 {% endif %}
 {% unless editmode %}{{ site.analytics }}{% endunless %}

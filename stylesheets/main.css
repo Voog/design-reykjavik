@@ -2222,7 +2222,6 @@ ul.menu .menu-item:before {
   .search-inner {
     position: absolute;
     top: 41px;
-    padding: 0 20px;
     width: 100%;
   }
 }
@@ -2380,7 +2379,10 @@ ul.menu .menu-item:before {
   background: white;
 }
 
-body .voog-search-modal {
+.voog-search-modal {
+  display: none;
+  right: 0;
+  bottom: 45px;
   z-index: 30;
   padding: 20px;
   max-height: 75%;
@@ -2390,7 +2392,7 @@ body .voog-search-modal {
   line-height: 1.5;
 }
 @media screen and (max-width: 752px) {
-  body .voog-search-modal {
+  .voog-search-modal {
     top: 83px !important;
     right: 0 !important;
     left: 0 !important;
@@ -2400,10 +2402,18 @@ body .voog-search-modal {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   }
 }
-body .voog-search-modal.search-results-active {
+.voog-search-modal.search-results-active {
   display: block;
+  min-width: 375px;
+  max-height: 450px;
 }
-body .voog-search-modal.no-content {
+@media screen and (max-width: 752px) {
+  .voog-search-modal.search-results-active {
+    min-width: 100%;
+    max-height: 100%;
+  }
+}
+.voog-search-modal.no-content {
   font-weight: 600px;
   font-size: 18px;
 }

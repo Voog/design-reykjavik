@@ -46,7 +46,6 @@
   @include query($tablet-2) {
     position: absolute;
     top: 41px;
-    padding: 0 20px;
     width: 100%;
   }
 }
@@ -187,7 +186,9 @@
   }
 }
 
-body .voog-search-modal {
+.voog-search-modal {
+  display: none;
+  right: 0;
   @include query($tablet-2) {
     top: 83px !important;
     right: 0 !important;
@@ -197,6 +198,7 @@ body .voog-search-modal {
     width: 100%;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
   }
+  bottom: 45px;
   z-index: 30;
   padding: 20px;
   max-height: 75%;
@@ -205,7 +207,13 @@ body .voog-search-modal {
   font-size: 0.8em;
   line-height: 1.5;
   &.search-results-active {
+    @include query($tablet-2) {
+      min-width: 100%;
+      max-height: 100%;
+    }
     display: block;
+    min-width: 375px;
+    max-height: 450px;
   }
   &.no-content {
     font-weight: 600px;

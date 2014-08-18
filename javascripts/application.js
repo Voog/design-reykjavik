@@ -11554,7 +11554,7 @@ MMCQ = (function() {
         return this.get(0).scrollWidth > this.innerWidth();
       }
       return false;
-    }
+    };
   };
 
   // ADDS HORIZONTAL SCROLL TO TABLES THAT DON'T FIT INTO THE CONTENT AREA
@@ -11579,31 +11579,25 @@ MMCQ = (function() {
     if (bgColor && fgColor) {
       if (typeof bgColor == 'string') {
         bgColor = bgColor.replace(/rgba?\(/,'').replace(/\)/,'').split(',');
-        $.each(bgColor, function(n, x) {bgColor[n] = +x});
+        $.each(bgColor, function(n, x) {bgColor[n] = +x;});
       }
       if (typeof fgColor == 'string') {
         fgColor = fgColor.replace(/rgba?\(/,'').replace(/\)/,'').split(',');
-        $.each(fgColor, function(n, x) {fgColor[n] = +x});
+        $.each(fgColor, function(n, x) {fgColor[n] = +x;});
       }
       if (typeof bgColor == 'object' && bgColor.hasOwnProperty('length')) {
-        if (bgColor.length == 3) { bgColor.push(1.0)}
+        if (bgColor.length == 3) { bgColor.push(1.0); }
       }
       if (typeof fgColor == 'object' && fgColor.hasOwnProperty('length')) {
-        if (fgColor.length == 3) { fgColor.push(1.0)}
+        if (fgColor.length == 3) { fgColor.push(1.0); }
       }
       var result = [0, 0, 0, 0];
       result[3] = 1 - (1 - fgColor[3]) * (1 - bgColor[3]);
-      if (result[3] == 0) { result[3] = 1e-6; }
+      if (result[3] === 0) { result[3] = 1e-6; }
       result[0] = Math.min(fgColor[0] * fgColor[3] / result[3] + bgColor[0] * bgColor[3] * (1 - fgColor[3]) / result[3], 255);
       result[1] = Math.min(fgColor[1] * fgColor[3] / result[3] + bgColor[1] * bgColor[3] * (1 - fgColor[3]) / result[3], 255);
       result[2] = Math.min(fgColor[2] * fgColor[3] / result[3] + bgColor[2] * bgColor[3] * (1 - fgColor[3]) / result[3], 255);
-      var result = [
-        Math.floor(result[0]),
-        Math.floor(result[1]),
-        Math.floor(result[2]),
-        Math.floor(result[3])
-      ];
-      return result;
+      return $.map(result, function(e) { return Math.floor(e); });
     }
   };
 
@@ -11671,7 +11665,7 @@ MMCQ = (function() {
     var initFrontPage = function() {
       $(window).load(function() {
         resizeContentRight();
-        if (($('.content-body').children().length < 1) && ($('.content-body').text().trim().length == 0)) {
+        if (($('.content-body').children().length < 1) && ($('.content-body').text().trim().length === 0)) {
           $('.content-body').hide();
         }
       });
@@ -11717,7 +11711,7 @@ MMCQ = (function() {
         var form = $(e.target).closest('.search-form');
         form.removeClass('not-empty').find('.search-input').focus().val('');
         $(e.target).hide();
-        $('.voog-search-modal').remove();
+        $('.voog-search-modal').removeClass('search-results-active');
         form.find('.search-submit').show();
         form.find('input').blur();
       });

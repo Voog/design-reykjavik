@@ -247,7 +247,7 @@
         var form = $(e.target).closest('.search-form');
         form.removeClass('not-empty').find('.search-input').focus().val('');
         $(e.target).hide();
-        $('.voog-search-modal').remove();
+        $('.voog-search-modal').removeClass('search-results-active');
         form.find('.search-submit').show();
         form.find('input').blur();
       });
