@@ -22,7 +22,7 @@
                   });
                 });
                 articleCover.prevBgImage = data.image.replace(/.*\/photos/g,'/photos');
-              } 
+              }
             } else {
               $('.article-cover-image').css({'background-image' : 'none'});
               articleCover.bgColor = [255,255,255,0];
