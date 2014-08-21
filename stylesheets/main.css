@@ -940,8 +940,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   box-shadow: none !important;
 }
 .comments .comment-inner {
+  right: 25px;
   display: inline-block;
-  width: 90%;
+  padding-right: 25px;
 }
 .comments .comment-title {
   padding-top: 60px;
@@ -963,6 +964,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   line-height: 1.7em;
 }
 .comments .comment {
+  font-size: 1.1em;
   line-height: 1.45em;
 }
 .comments .comment:not(:last-child) {
@@ -971,6 +973,11 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .comments .comment-form .comment-title {
   padding-top: 30px;
   font-size: 1.2em;
+}
+.comments .comment-form .form_field label,
+.comments .comment-form .form_submit input {
+  color: rgba(0, 0, 0, 0.9);
+  font-weight: 500;
 }
 
 /* CONTENT */

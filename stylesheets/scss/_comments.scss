@@ -12,8 +12,9 @@
     box-shadow: none !important;
   }
   .comment-inner {
+    right: 25px;
     display: inline-block;
-    width: 90%;
+    padding-right: 25px;
   }
   .comment-title {
     @include query($tablet-2) {
@@ -33,6 +34,7 @@
     line-height: 1.7em;
   }
   .comment {
+    font-size: 1.1em;
     line-height: 1.45em;
     &:not(:last-child) {
       margin-bottom: 20px;
@@ -41,5 +43,12 @@
   .comment-form .comment-title {
     padding-top: 30px;
     font-size: 1.2em;
+  }
+  .comment-form {
+    .form_field label,
+    .form_submit input {
+      color: rgba(0,0,0,.9);
+      font-weight: 500;
+    }
   }
 }
