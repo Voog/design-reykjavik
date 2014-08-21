@@ -8,9 +8,8 @@
 </head>
 
 <body class="post-page js-body global-background-color {{ background_type }}-background{% if editmode %} editmode{% endif %}" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
-
-  {% include "menu-mobile" %}
   <div class="header-wrapper {{ article_cover_type }}">
+      {% include "menu-mobile" %}
     {% if editmode %}
       <button class="bgpicker-toggle-button article-cover-settings" style="display:none;" data-bg-color="{{ article_cover_color }}" data-bg-image="{{ article_cover_image }}"></button>
     {% endif %}

@@ -1699,7 +1699,7 @@ ul.menu .menu-item {
   display: table-cell;
 }
 .header-inner .header-title {
-  z-index: 10;
+  z-index: 12;
   padding: 5px 0;
   max-width: 33%;
   text-align: left;
@@ -1748,6 +1748,7 @@ ul.menu .menu-item {
   right: 40px;
   left: 0;
   padding: 0;
+  top: 0;
   max-width: 100%;
 }
 .post-page .header-inner {
@@ -1756,6 +1757,12 @@ ul.menu .menu-item {
 }
 .post-page .header-inner .header-title {
   top: -37px;
+  z-index: 12;
+}
+@media screen and (max-width: 752px) {
+  .post-page .header-inner .header-title {
+    top: 4px;
+  }
 }
 
 /* MENUS */
