@@ -189,7 +189,7 @@ body {
   .post-header {
     .post-title,
     .post-meta {
-      color: $dark-primary;
+      color: black;
     }
   }
   .header {
@@ -198,7 +198,7 @@ body {
     .menu-link,
     .menu-link.active,
     .menu-link:hover {
-      color: $dark-primary;
+      color: black;
     }
     .langmenu {
       border: 1px solid $dark-tertiary;
@@ -228,7 +228,7 @@ body {
   .post-header {
     .post-title,
     .post-meta {
-      color: $light-primary;
+      color: white;
     }
   }
   .header {
@@ -237,7 +237,7 @@ body {
     .menu-link,
     .menu-link.active,
     .menu-link:hover {
-      color: $light-primary;
+      color: white;
     }
     .langmenu {
       border: 1px solid $light-tertiary;

@@ -229,14 +229,14 @@ body.dark-background .background-color {
 
 .header-wrapper.light .post-header .post-title,
 .header-wrapper.light .post-header .post-meta {
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
 }
 .header-wrapper.light .header .header-title,
 .header-wrapper.light .header .header-title a,
 .header-wrapper.light .header .menu-link,
 .header-wrapper.light .header .menu-link.active,
 .header-wrapper.light .header .menu-link:hover {
-  color: rgba(0, 0, 0, 0.8);
+  color: black;
 }
 .header-wrapper.light .header .langmenu {
   border: 1px solid rgba(0, 0, 0, 0.3);
@@ -265,14 +265,14 @@ body.dark-background .background-color {
 
 .header-wrapper.dark .post-header .post-title,
 .header-wrapper.dark .post-header .post-meta {
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
 }
 .header-wrapper.dark .header .header-title,
 .header-wrapper.dark .header .header-title a,
 .header-wrapper.dark .header .menu-link,
 .header-wrapper.dark .header .menu-link.active,
 .header-wrapper.dark .header .menu-link:hover {
-  color: rgba(255, 255, 255, 0.8);
+  color: white;
 }
 .header-wrapper.dark .header .langmenu {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -2328,7 +2328,7 @@ ul.menu .menu-item:before {
   top: 10px;
   right: 0;
   display: inline-block;
-  margin-top: -4px;
+  margin-top: -8px;
   margin-left: 15px;
   width: 225px;
   height: 36px;
