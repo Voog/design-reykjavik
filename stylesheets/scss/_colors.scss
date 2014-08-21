@@ -138,6 +138,10 @@ body {
   .post-body .placeholder {
     @include color-set($dark-primary, $light-primary);
   }
+  .post-excerpt,
+  .post-body {
+    @include color-set($dark-secondary, $light-secondary);
+  }
   .read-more {
     @include color-set($dark-tertiary, $light-tertiary);
     &:hover {

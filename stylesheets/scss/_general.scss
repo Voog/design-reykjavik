@@ -176,6 +176,20 @@ body {
 
   .post-page {
     position: relative;
+    .content {
+      @include query($tablet-2) {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      padding: 60px 20px 60px;
+    }
+
+    .content-centered {
+      @include query($tablet-2) {
+        padding: 0;
+      }
+      padding: 0 12%;
+    }
   }
 
 // Pseudo classes for declaring commonly used styling rules for different elements.
