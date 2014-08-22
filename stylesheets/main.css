@@ -503,13 +503,19 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   color: rgba(255, 255, 255, 0.6);
 }
 .light-background .content-formatted .form_submit input, .content-formatted .form_submit input {
-  background: -webkit-linear-gradient( top , #f4f4f4 0%, #eaeaea 100%);
-  background: linear-gradient(to bottom, #f4f4f4 0%, #eaeaea 100%);
+  background-color: #efefef;
+  background-color: rgba(255, 255, 255, 0.8);
+  background: -webkit-linear-gradient( top , rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .dark-background .content-formatted .form_submit input {
+  background-color: #1f1f1f;
+  background-color: rgba(0, 0, 0, 0.8);
   background: -webkit-linear-gradient( top , rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+  /* ie */
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .content-formatted .form_error,
@@ -741,24 +747,28 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   opacity: 1.0;
 }
 
-.dark-background .edy-empty-bordered {
+.dark-background .edy-empty-bordered,
+.dark-background .edy-tageditor {
   border-color: rgba(228, 222, 219, 0.33);
   color: rgba(228, 222, 219, 0.33);
 }
-
+.dark-background a.edy-tag-suggestion {
+  color: rgba(0, 0, 0, 0.9);
+}
+.dark-background a.edy-tag-suggestion:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+.dark-background .edy-taglist-openarrow:after {
+  border-color: rgba(255, 255, 255, 0.2) transparent transparent;
+}
 .dark-background .edy-content-element-hover {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
-
 .dark-background .edy-texteditor-active, .dark-background .edy-texteditor-active:hover {
   outline: 1px solid rgba(255, 255, 255, 0.4);
 }
 .dark-background .edy-texteditor-active:hover, .dark-background .edy-texteditor-active:hover:hover {
   outline: 1px solid rgba(255, 255, 255, 0.6);
-}
-
-.dark-background .edy-tag-suggestion {
-  background: #f7f7f7;
 }
 
 /* BLOG & BLOG ARTICLE */

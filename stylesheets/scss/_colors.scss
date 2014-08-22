@@ -463,11 +463,16 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   .form_submit input {
     @include color-set($dark-secondary, $light-secondary);
     .light-background &, & {
-      @include background(linear-gradient(to bottom, #f4f4f4 0%, #eaeaea 100%));
+      background-color: #efefef;
+      background-color: $light-primary;
+      @include background(linear-gradient(to bottom, $light-secondary 0%, $light-primary 100%));
       border: 1px solid $dark-tertiary;
     }
     .dark-background & {
+      background-color: #1f1f1f;
+      background-color: $dark-primary;
       @include background(linear-gradient(to bottom, $dark-secondary 0%, $dark-primary 100%));
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* ie */
       border: 1px solid $light-tertiary;
     }
   }
@@ -680,21 +685,28 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 }
 
 // ADMIN UI
-.dark-background .edy-empty-bordered {
-  border-color: rgba(228,222,219,0.33);
-  color: rgba(228,222,219,0.33);
-}
-.dark-background .edy-content-element-hover {
-  border: 1px solid rgba(255,255,255,.2);
-}
 .dark-background {
-   .edy-texteditor-active, .edy-texteditor-active:hover {
+  .edy-empty-bordered,
+  .edy-tageditor {
+    border-color: rgba(228,222,219,0.33);
+    color: rgba(228,222,219,0.33);
+  }
+  a.edy-tag-suggestion {
+    color: rgba(0,0,0,.9);
+    &:hover {
+      color: rgba(0,0,0,.7);
+    }
+  }
+  .edy-taglist-openarrow:after {
+    border-color: rgba(255,255,255,.2) transparent transparent;
+  }
+  .edy-content-element-hover {
+    border: 1px solid rgba(255,255,255,.2);
+  }
+  .edy-texteditor-active, .edy-texteditor-active:hover {
     outline: 1px solid rgba(255,255,255,.4);
     &:hover {
       outline: 1px solid rgba(255,255,255,.6);
     }
   }
-}
-.dark-background .edy-tag-suggestion {
-  background: #f7f7f7;
 }
