@@ -884,8 +884,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   }
 }
 .editmode .post-page .header-wrapper .header .header-title {
-  margin-right: -45px;
-  margin-left: 45px;
+  position: relative;
+  left: 45px;
+  top: 0;
 }
 @media screen and (max-width: 752px) {
   .editmode .post-page .header-wrapper .header .header-title {
@@ -896,6 +897,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   position: absolute;
   top: 50%;
   width: 100%;
+  -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -1110,6 +1112,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .content-formatted p {
   margin: 0;
   padding-bottom: 30px;
+}
+.content-formatted p:last-child {
+  padding-bottom: 0;
 }
 .content-formatted ul {
   margin: 0;
@@ -1674,19 +1679,25 @@ ul.menu .menu-item {
   border: none;
 }
 
+.header-wrapper .edy-bgpicker-toggle-button {
+  z-index: 13;
+}
+
 @media screen and (max-width: 752px) {
   body > .bgpicker-toggle-button,
-  body .header-wrapper .bgpicker-toggle-button {
+  body .header-wrapper .edy-bgpicker-toggle-button {
     margin-top: 45px !important;
     margin-left: 5px !important;
+    z-index: 13;
   }
 
-  .bgpicker-toggle-button {
+  .edy-bgpicker-toggle-button {
     margin: 0 !important;
   }
 }
 /* HEADER */
 .header {
+  z-index: 11;
   margin: auto;
   padding: 63px 0 0;
   max-width: 960px;

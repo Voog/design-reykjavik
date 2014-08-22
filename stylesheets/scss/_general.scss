@@ -254,13 +254,18 @@ body {
 
 // override BGpicker default styles to move and
 // position them more conveniently on mobile devices
+.header-wrapper .edy-bgpicker-toggle-button {
+  z-index: 13;
+}
+
 @include query($tablet-2) {
   body > .bgpicker-toggle-button,
-  body .header-wrapper .bgpicker-toggle-button {
+  body .header-wrapper .edy-bgpicker-toggle-button {
     margin-top: 45px !important;
     margin-left: 5px !important;
+    z-index: 13;
   }
-  .bgpicker-toggle-button {
+  .edy-bgpicker-toggle-button {
     margin: 0 !important;
   }
 }

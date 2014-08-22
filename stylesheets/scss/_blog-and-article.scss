@@ -142,8 +142,9 @@
           @include query($tablet-2) {
             margin: 0;
           }
-          margin-right: -45px;
-          margin-left: 45px;
+          position: relative;
+          left: 45px;
+          top: 0;
         }
       }
     }
@@ -152,6 +153,7 @@
       position: absolute;
       top: 50%;
       width: 100%;
+      -ms-transform: translateY(-50%);
       -webkit-transform: translateY(-50%);
       transform: translateY(-50%);
 
