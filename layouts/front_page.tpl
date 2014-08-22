@@ -17,7 +17,7 @@
     <main class="content content-formatted" role="main">
 
       <aside class="content-left">
-        <section class="content-header"><h1>{% content name="slogan" %}</h1></section>
+        <section class="content-header">{% content name="slogan" %}</section>
       </aside>
 
       <article class="content-right">
