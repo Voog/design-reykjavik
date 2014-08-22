@@ -978,7 +978,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 }
 .comments .comment-form .form_field label,
 .comments .comment-form .form_submit input {
-  color: rgba(0, 0, 0, 0.9);
   font-weight: 500;
 }
 
