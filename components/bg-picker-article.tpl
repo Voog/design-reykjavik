@@ -1,5 +1,5 @@
 {% editorjsblock %}
-  <script src='http://static.voog.construction/libs/edicy-tools/latest/edicy-tools.js'></script>
+  <script src='{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.js'></script>
   <script>
     $(window).load(function(window) {
       setTimeout(function(){
