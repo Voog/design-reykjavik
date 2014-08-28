@@ -9,10 +9,9 @@
   {% if editmode %}<button class="bgpicker-toggle-button global-background-settings" style="display:none;" data-bg-color="{{ background_color }}"></button>{% endif %}
   {% if background_color != '' or editmode %}<div class="background-color global-background-color"{{ background_color_style }}></div>{% endif %}
 
-  {% include "menu-mobile" %}
+  {% include "header" %}
 
   <div class="container">
-    {% include "header" %}
     <main class="content content-formatted" role="main">
       <section class="content-centered">
         {% include "tags-blog" %}

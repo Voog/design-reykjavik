@@ -4,15 +4,15 @@
 // Menu button. Only visible on smaller screens.
 .menu-btn {
   @include query($tablet-2) {
-    // position: absolute;
-    // top: 12px;
-    // left: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
     display: inline-block;
     float: right;
     margin: 0;
     padding: 0;
     padding-right: 13px;
-    height: 41px;
+    min-height: 41px;
     border: none;
     background: none;
     cursor: pointer;
@@ -48,20 +48,20 @@
 }
 
 .mobile-menu-wrapper {
+  margin: auto;
+  max-width: 960px;
   @include query($tablet-2) {
     display: block;
+    position:relative;
+    z-index: 10;
+    min-height: 41px;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    padding: 0;
   }
-  position:relative;
-  z-index: 10;
-  display: none;
-  min-height: 41px;
-  width: 100%;
-  height: auto;
-  text-align: left;
-
   .mobile-menu-header {
     position: relative;
-    height: 41px;
   }
   .mobile-menu-main  {
     display: none;
@@ -226,7 +226,6 @@ ul.menu {
 
 // Styling rules for the site's main menu. Usually the first level menu but can have the sub menu in it aswell.
 .menu-main {
-  z-index: 1;
   @include query($tablet-2) {
     display: none;
   }
@@ -239,12 +238,13 @@ ul.menu {
       min-width: 100%;
     }
   }
-  display: inline;
+  max-width: 80%;
+  display: inline-block;
+  z-index: 1;
   padding: 7px 0;
-  max-width: 75%;
+  vertical-align:top;
 
   .menu {
-    display: inline;
     padding: 0;
     list-style: none;
     .menu-item,
@@ -342,9 +342,13 @@ ul.menu {
 }
 
 .menu-lang {
-  display: inline;
+  @include query($tablet-2) {
+    display: none;
+  }
+  display: inline-block;
   padding: 6px 0;
   width: auto;
+  vertical-align: top;
 
   .menu {
     vertical-align: middle;

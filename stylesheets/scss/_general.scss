@@ -258,14 +258,12 @@ body {
   z-index: 13;
 }
 
-@include query($tablet-2) {
-  body > .bgpicker-toggle-button,
-  body .header-wrapper .edy-bgpicker-toggle-button {
-    margin-top: 45px !important;
-    margin-left: 5px !important;
-    z-index: 13;
-  }
-  .edy-bgpicker-toggle-button {
-    margin: 0 !important;
-  }
+body > .bgpicker-toggle-button,
+body .header-wrapper .edy-bgpicker-toggle-button {
+  margin-top: 10px !important;
+  margin-left: 10px !important;
+  z-index: 13;
+}
+.edy-bgpicker-toggle-button {
+  margin: 0 !important;
 }

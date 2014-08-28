@@ -119,6 +119,7 @@
     line-height: 1.45;
   }
   .header-wrapper {
+    position: relative;
     .post-header-wrapper {
       @include query($tablet-2) {
         min-height: 225px;
@@ -130,23 +131,6 @@
 
     .background-color {
       z-index: 0;
-    }
-
-    .header {
-      @include query($tablet-2) {
-        padding: 0;
-      }
-      padding-top: 15px;
-      .header-title {
-        .editmode & {
-          @include query($tablet-2) {
-            margin: 0;
-          }
-          position: relative;
-          left: 45px;
-          top: 0;
-        }
-      }
     }
 
     .post-header {

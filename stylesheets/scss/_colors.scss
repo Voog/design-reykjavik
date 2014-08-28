@@ -185,7 +185,7 @@ body {
     }
   }
 }
-.header-wrapper.light {
+.light {
   .post-header {
     .post-title,
     .post-meta {
@@ -215,7 +215,7 @@ body {
         color: $dark-primary;
       }
     }
-    .langmenu-content {
+    .langmenu .langmenu-content {
       color: $dark-primary;
     }
     .langmenu-content:before {
@@ -224,7 +224,7 @@ body {
     }
   }
 }
-.header-wrapper.dark {
+.dark {
   .post-header {
     .post-title,
     .post-meta {
@@ -254,7 +254,7 @@ body {
         color: $light-primary;
       }
     }
-    .langmenu-content {
+    .langmenu .langmenu-content {
       color: $light-primary;
     }
     .langmenu-content:before {
@@ -360,7 +360,7 @@ a {
 .content-formatted,
 .voog-search-modal {
   .light-background &, & {
-    a {
+    a:not(.noborder) {
       border-bottom: 1px solid $link-solid;
       border-bottom: 1px solid $link-rgba-light;
       box-shadow: inset 0 -4px 0$link-solid;
@@ -374,7 +374,7 @@ a {
     }
   }
   .dark-background & {
-    a {
+    a:not(.noborder) {
       border-bottom: 1px solid $link-solid;
       border-bottom: 1px solid $link-rgba-dark;
       box-shadow: inset 0 -4px 0 $link-solid;
@@ -403,10 +403,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .content-formatted {
   h1,h2,h3,h4,h5,h6,
   li:before,
-  a {
+  a:not(.noborder) {
     @include color-set($dark-primary, $light-primary);
   }
-  a:hover {
+  a:not(.noborder):hover {
     @include color-set($dark-hover, $light-hover);
   }
   pre {
@@ -599,42 +599,44 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 // MOBILE MENU
 .mobile-menu-wrapper {
   color: $light-primary;
-  .light-background &, & {
-    background-color: rgba(0,0,0,.8) !important;
-  }
-  .dark-background & {
-    background-color: rgba(255,255,255,.2) !important;
-  }
-  .mobile-menu-main {
-    background-color: rgba(255,255,255,.15) !important;
-    .pages {
-      border-bottom: 1px solid rgba(255,255,255,.45);
+  @include query($tablet-2) {
+    .light-background &, & {
+      background-color: rgba(0,0,0,.8) !important;
     }
-  }
-  a {
-    color: $light-primary;
-    &:hover,
-    &:active {
-      color: $light-hover;
+    .dark-background & {
+      background-color: rgba(255,255,255,.2) !important;
     }
-  }
-  ul li {
-    border-bottom: 1px solid rgba(255,255,255,.15); 
+    .mobile-menu-main {
+      background-color: rgba(255,255,255,.15) !important;
+      .pages {
+        border-bottom: 1px solid rgba(255,255,255,.45);
+      }
+    }
+    a {
+      color: $light-primary;
+      &:hover,
+      &:active {
+        color: $light-hover;
+      }
+    }
+    ul li {
+      border-bottom: 1px solid rgba(255,255,255,.15); 
 
-  }
-  ul ul li {
-    border-bottom: 1px solid rgba(255,255,255,.15); 
-    &:first-child {
-      border-top: 1px solid rgba(255,255,255,.15);
     }
-  }
-  .search-btn {    
-    .no-svg & {
-      background-image: url("../images/ico-search.png");
-      background-size: 20px;
+    ul ul li {
+      border-bottom: 1px solid rgba(255,255,255,.15); 
+      &:first-child {
+        border-top: 1px solid rgba(255,255,255,.15);
+      }
     }
-    .svg & {
-      background-image: url("../assets/ico-search.svg");
+    .search-btn {    
+      .no-svg & {
+        background-image: url("../images/ico-search.png");
+        background-size: 20px;
+      }
+      .svg & {
+        background-image: url("../assets/ico-search.svg");
+      }
     }
   }
 }

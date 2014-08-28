@@ -205,6 +205,18 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
+      "file": "assets/arr-top.svg",
+      "kind": "assets",
+      "filename": "arr-top.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/arr-bottom.svg",
+      "kind": "assets",
+      "filename": "arr-bottom.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/close-round-dark.svg",
       "kind": "assets",
       "filename": "close-round-dark.svg"
