@@ -131,6 +131,10 @@
 
     .background-color {
       z-index: 0;
+      &.edy-img-drop-area {
+        position: absolute;
+        background-size: cover;
+      }
     }
 
     .post-header {
@@ -164,5 +168,9 @@
   }
   .post .edy-ca {
     margin-top: 25px;
+  }
+  .edy-img-drop-area-placeholder {
+    position: absolute;
+    left: 45px;
   }
 }

@@ -265,5 +265,12 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   z-index: 13;
 }
 .edy-bgpicker-toggle-button {
-  margin: 0 !important;
+  margin: 10px !important;
+  @include query($tablet-2) {
+    margin: 0 !important;
+    body > & {
+      margin-top: 45px !important;
+      z-index: 10;
+    }
+  }
 }

@@ -1,4 +1,3 @@
-@charset "US-ASCII";
 body.light-background {
   color: rgba(0, 0, 0, 0.8);
 }
@@ -386,31 +385,31 @@ a {
 .light-background .content-formatted a:not(.noborder), .content-formatted a:not(.noborder), .light-background
 .voog-search-modal a:not(.noborder),
 .voog-search-modal a:not(.noborder) {
-  border-bottom: 1px solid #cbe9fe;
+  border-bottom: 1px solid #CBE9FE;
   border-bottom: 1px solid rgba(0, 150, 255, 0.2);
-  box-shadow: inset 0 -4px 0 #cbe9fe;
+  box-shadow: inset 0 -4px 0 #CBE9FE;
   box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.2);
 }
 .light-background .content-formatted a:not(.noborder):hover, .content-formatted a:not(.noborder):hover, .light-background
 .voog-search-modal a:not(.noborder):hover,
 .voog-search-modal a:not(.noborder):hover {
-  border-bottom: 1px solid #b0defd;
+  border-bottom: 1px solid #B0DEFD;
   border-bottom: 1px solid rgba(0, 150, 255, 0.3);
-  box-shadow: inset 0 -4px 0 #b0defd;
+  box-shadow: inset 0 -4px 0 #B0DEFD;
   box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.3);
 }
 .dark-background .content-formatted a:not(.noborder), .dark-background
 .voog-search-modal a:not(.noborder) {
-  border-bottom: 1px solid #cbe9fe;
+  border-bottom: 1px solid #CBE9FE;
   border-bottom: 1px solid rgba(0, 150, 255, 0.4);
-  box-shadow: inset 0 -4px 0 #cbe9fe;
+  box-shadow: inset 0 -4px 0 #CBE9FE;
   box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.4);
 }
 .dark-background .content-formatted a:not(.noborder):hover, .dark-background
 .voog-search-modal a:not(.noborder):hover {
-  border-bottom: 1px solid #b0defd;
+  border-bottom: 1px solid #B0DEFD;
   border-bottom: 1px solid rgba(0, 150, 255, 0.6);
-  box-shadow: inset 0 -4px 0 #b0defd;
+  box-shadow: inset 0 -4px 0 #B0DEFD;
   box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.6);
 }
 .content-formatted h1 a, .content-formatted h2 a, .content-formatted h3 a, .content-formatted h4 a, .content-formatted h5 a, .content-formatted h6 a,
@@ -514,7 +513,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   background-color: rgba(0, 0, 0, 0.8);
   background: -webkit-linear-gradient( top , rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
   /* ie */
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
@@ -890,6 +889,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .post-page .header-wrapper .background-color {
   z-index: 0;
 }
+.post-page .header-wrapper .background-color.edy-img-drop-area {
+  position: absolute;
+  background-size: cover;
+}
 .post-page .header-wrapper .post-header {
   position: absolute;
   top: 50%;
@@ -922,6 +925,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 }
 .post-page .post .edy-ca {
   margin-top: 25px;
+}
+.post-page .edy-img-drop-area-placeholder {
+  position: absolute;
+  left: 45px;
 }
 
 /* COMMENTS */
@@ -1115,27 +1122,17 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 }
 .content-formatted ul {
   margin: 0;
-  padding: 0 0 20px 12px;
-  list-style: none;
+  padding: 0 0 20px 15px;
+  margin-left: 15px;
 }
 .content-formatted ul li {
   position: relative;
   padding: 0;
-  padding-left: 23px;
-  list-style: none;
   line-height: 1.7em;
-}
-.content-formatted ul li:before {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: inline-block;
-  content: "·";
-  font-size: 65px;
-  line-height: 26px;
 }
 .content-formatted ul ul {
   padding-bottom: 0;
+  margin-left: 5px;
 }
 .content-formatted ol {
   margin: 0;
@@ -1688,7 +1685,16 @@ body .header-wrapper .edy-bgpicker-toggle-button {
 }
 
 .edy-bgpicker-toggle-button {
-  margin: 0 !important;
+  margin: 10px !important;
+}
+@media screen and (max-width: 752px) {
+  .edy-bgpicker-toggle-button {
+    margin: 0 !important;
+  }
+  body > .edy-bgpicker-toggle-button {
+    margin-top: 45px !important;
+    z-index: 10;
+  }
 }
 
 /* HEADER */
@@ -2482,6 +2488,7 @@ ul.menu .menu-item:before {
     right: 0;
     display: block;
     margin-right: 40px;
+    height: 41px;
   }
 }
 
@@ -2527,3 +2534,5 @@ ul.menu .menu-item:before {
   font-weight: 600px;
   font-size: 18px;
 }
+
+/*# sourceMappingURL=main.css.map */
