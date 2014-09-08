@@ -42,6 +42,9 @@
 
 
   {% include "javascripts" %}
+  <script type="text/javascript">
+    site.initCommonPage();
+  </script>
   {% include "bg-picker" %}
 </body>
 </html>

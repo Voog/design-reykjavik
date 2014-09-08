@@ -58,6 +58,9 @@
     {% include "footer" %}
   </div>
   {% include "javascripts" %}
+  <script type="text/javascript"> 
+    site.initArticlePage();
+  </script>
   {% include "bg-picker-article" %}
 </body>
 </html>
