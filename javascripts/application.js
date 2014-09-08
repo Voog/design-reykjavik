@@ -11655,7 +11655,6 @@ MMCQ = (function() {
 
     var initCommonPage = function() {
       // ADD COMMON PAGE SPECIFIC FUNCTIONS HERE
-      handleFormFieldClick();
       focusCommentsWithErrors();
     };
 
