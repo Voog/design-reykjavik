@@ -9,6 +9,7 @@
           showAlpha: true,
 
           preview: function(data) {
+            console.log(data);
             if (data.image && data.image !== '') {
               if (data.image.replace(/.*\/photos/g,'/photos') !== articleCover.prevBgImage) {
                 $('.article-cover-image').css({'background-image' : 'url("' + data.image + '")'});
@@ -46,26 +47,6 @@
             });
           }
         });
-
-        $('.article-cover-color').bind('draggable:drop', function(data) {
-          console.log("!");
-        });
-
-        coverImageDrop = new ImgDropArea($('.article-cover-color'), {
-          drop: function(data, obj) {
-            console.log(data, obj);
-          }
-        });
-
-        // var articleCoverDrop = new Edicy.ImgDropArea($('.article-cover-color'), {
-        //   positionable: false,
-        //   change: false,
-        //   changeImage: false
-        // });
-        // articleCoverDrop.$el.on('imagedrop', function(image, data) {
-        //   console.log(image, data);
-        // });
-        
         $('.article-cover-settings').css({'left': 0, 'top': 0}).show();
       }, 500);
     });

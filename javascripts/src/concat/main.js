@@ -67,7 +67,6 @@
       if ($('.comment-form').hasClass('form_with_errors')) {
         $('html, body').scrollTop($('.comment-form').offset().top);
       } else if ($('form').find('.form_error, .form_notice').length > 0) {
-        console.log("!");
         $('html, body').scrollTop($('.form_error, .form_notice').closest('form').offset().top);
       }
     });
