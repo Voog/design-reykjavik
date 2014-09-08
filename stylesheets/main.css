@@ -1685,7 +1685,7 @@ body .header-wrapper .edy-bgpicker-toggle-button {
 }
 
 .edy-bgpicker-toggle-button {
-  margin: 10px !important;
+  margin: 5px !important;
 }
 @media screen and (max-width: 752px) {
   .edy-bgpicker-toggle-button {
@@ -2253,6 +2253,7 @@ ul.menu .menu-item:before {
 }
 .news ul {
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 .news ul .news-item {

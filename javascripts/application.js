@@ -11719,8 +11719,6 @@ MMCQ = (function() {
 
     var addMobileMenuResizeListener = function() {
       $(window).on('resize', function() {
-        console.log("resize");
-        console.log($(window).innerWidth());
         if ($(window).innerWidth() > 752) {
           $('.mobile-menu-btn').removeClass('open');
           $('.mobile-menu-main').removeClass('expanded');
