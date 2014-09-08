@@ -1151,6 +1151,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   max-width: 100%;
 }
 .content-formatted img {
+  border: none;
   height: auto;
   margin-bottom: -2px;
 }
