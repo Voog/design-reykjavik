@@ -334,18 +334,6 @@
       "kind": "assets",
       "file": "assets/arr-top.svg",
       "filename": "arr-top.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "kind": "assets",
-      "file": "assets/src/arr-bottom.svg",
-      "filename": "src/arr-bottom.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "kind": "assets",
-      "file": "assets/src/arr-top.svg",
-      "filename": "src/arr-top.svg"
     }
   ]
 }
