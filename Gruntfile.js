@@ -84,11 +84,11 @@ module.exports = function(grunt) {
 
     // Compiles the stylesheet files.
     sass: {
+      options: {
+        style: 'expanded',
+        sourcemap: 'none'
+      },
       build: {
-        options: {
-          style: 'expanded',
-          sourcemap: false
-        },
         files: [{
           expand: true,
           cwd: 'stylesheets/scss',
