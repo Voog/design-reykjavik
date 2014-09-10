@@ -62,7 +62,7 @@
   };
 
   // SCROLLS TO THE COMMENT-FORM IF COMMENT SUBMIT FAILED (TO SHOW THE ERROR MESSAGES TO THE USER)
-  var focusCommentsWithErrors = function() {
+  var focusFormWithErrors = function() {
     $(document).ready(function() {
       if ($('.comment-form').hasClass('form_with_errors')) {
         $('html, body').scrollTop($('.comment-form').offset().top);
@@ -185,12 +185,12 @@
 
     var initArticlePage = function() {
       // ADD SINGLE POST VIEW SPECIFIC FUNCTIONS HERE
-      focusCommentsWithErrors();
+      focusFormWithErrors();
     };
 
     var initCommonPage = function() {
       // ADD COMMON PAGE SPECIFIC FUNCTIONS HERE
-      focusCommentsWithErrors();
+      focusFormWithErrors();
     };
 
     var initFrontPage = function() {
@@ -201,7 +201,7 @@
         }
       });
       $(window).on('resize', resizeContentRight);
-      focusCommentsWithErrors();
+      focusFormWithErrors();
     };
 
     var resizeTimeout;
