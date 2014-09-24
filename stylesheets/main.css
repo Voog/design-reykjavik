@@ -847,7 +847,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   margin: auto;
   max-width: 960px;
   font-size: 0.9em;
-  line-height: 50px;
+  line-height: 1.2;
+}
+.blog-page .tagged-list-header .menu {
+  padding: 10px 0;
 }
 .blog-page .tagged-list-header .menu-item {
   margin-right: 10px;
