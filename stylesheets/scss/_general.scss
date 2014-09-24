@@ -66,6 +66,7 @@ body {
       @include query($tablet-1) {
         margin-right: 20px;
         width: 35%;
+        min-height: initial;
       }
       @include query($tablet-2) {
         @include box-sizing(border-box);
@@ -75,6 +76,7 @@ body {
         .content-body {
           margin: 0;
         }
+        min-height: initial;
       }
       padding: 40px;
       padding: 6%;

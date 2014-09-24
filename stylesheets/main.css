@@ -462,12 +462,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .content-formatted strong {
   color: white;
 }
-.light-background .content-formatted .horizontal-scroll, .content-formatted .horizontal-scroll {
-  border-left: 1px dashed black;
-}
-.dark-background .content-formatted .horizontal-scroll {
-  border-right: 1px dashed white;
-}
 .content-formatted table th, .light-background .content-formatted table th {
   color: rgba(0, 0, 0, 0.8);
 }
@@ -1490,6 +1484,7 @@ body {
   .front-page .content-right {
     margin-right: 20px;
     width: 35%;
+    min-height: initial;
   }
 }
 @media screen and (max-width: 752px) {
@@ -1500,6 +1495,7 @@ body {
     margin-right: 0;
     padding: 40px;
     width: 100%;
+    min-height: initial;
   }
   .front-page .content-right .content-body {
     margin: 0;

@@ -421,14 +421,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   strong {
     @include color-set($dark-hover, $light-hover);
   }
-  .horizontal-scroll {
-    .light-background &, & {
-      @include border(left, 1px, dashed, $dark-tertiary);
-    }
-    .dark-background & {
-      @include border(right, 1px, dashed, $light-tertiary);
-    }
-  }
   // TABLES
   table {
     th {
