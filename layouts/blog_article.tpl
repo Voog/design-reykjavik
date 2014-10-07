@@ -2,8 +2,8 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "html-head" %}
-  {% include "bg-picker-variables" %}
-  {% include "bg-picker-article-variables" %}
+  {% include "edicy-tools-variables" %}
+  {% include "edicy-tools-article-variables" %}
   {{ site.stats_header }}
 </head>
 
@@ -58,9 +58,9 @@
     {% include "footer" %}
   </div>
   {% include "javascripts" %}
-  <script type="text/javascript"> 
+  <script type="text/javascript">
     site.initArticlePage();
   </script>
-  {% include "bg-picker-article" %}
+  {% include "edicy-tools-article" %}
 </body>
 </html>

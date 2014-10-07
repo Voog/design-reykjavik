@@ -2,7 +2,7 @@
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
   {% include "html-head" %}
-  {% include "bg-picker-variables" %}
+  {% include "edicy-tools-variables" %}
 </head>
 
 <body class="front-page js-body global-background-color {{ background_type }}-background" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
@@ -41,6 +41,6 @@
   </div>
   {% include "javascripts" %}
   <script type="text/javascript">site.initFrontPage();</script>
-  {% include "bg-picker" %}
+  {% include "edicy-tools" %}
 </body>
 </html>
