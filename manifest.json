@@ -139,11 +139,11 @@
       "title": "menu-mobile"
     },
     {
-      "content_type": "component",
-      "component": true,
-      "file": "components/news.tpl",
-      "layout_name": "news",
-      "title": "news"
+      "content_type": "blog",
+      "component": false,
+      "file": "layouts/blog___news.tpl",
+      "layout_name": "blog",
+      "title": "Blog & News"
     },
     {
       "content_type": "component",
@@ -203,6 +203,18 @@
     }
   ],
   "assets": [
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/arr-bottom.svg",
+      "kind": "assets",
+      "filename": "arr-bottom.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/arr-top.svg",
+      "kind": "assets",
+      "filename": "arr-top.svg"
+    },
     {
       "content_type": "image/svg+xml",
       "file": "assets/close-round-dark.svg",
@@ -322,18 +334,6 @@
       "file": "stylesheets/main.min.css",
       "kind": "stylesheets",
       "filename": "main.min.css"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "kind": "assets",
-      "file": "assets/arr-bottom.svg",
-      "filename": "arr-bottom.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "kind": "assets",
-      "file": "assets/arr-top.svg",
-      "filename": "arr-top.svg"
     }
   ]
 }
