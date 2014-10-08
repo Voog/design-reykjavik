@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% include "html-head" %}
+  {% assign front_page = true %}
   {% include "edicy-tools-variables" %}
+  {% include "html-head" %}
 </head>
 
 <body class="front-page js-body global-background-color {{ background_type }}-background" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>

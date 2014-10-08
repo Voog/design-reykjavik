@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
-  {% include "html-head" %}
   {% include "edicy-tools-variables" %}
   {% include "edicy-tools-article-variables" %}
+  {% include "html-head" %}
   {{ site.stats_header }}
 </head>
 
