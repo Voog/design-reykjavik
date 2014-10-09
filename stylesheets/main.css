@@ -1161,14 +1161,12 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .content-formatted pre {
   padding: 10px;
   margin-bottom: 0;
-  overflow: auto;
-  white-space: pre-wrap;
-}
-.content-formatted code, .content-formatted pre, .content-formatted pre code {
   font-size: 14px;
+  overflow: auto;
 }
 .content-formatted pre code {
   display: block;
+  white-space: pre-wrap;
   margin-top: 0;
   padding: 0;
 }

@@ -119,14 +119,12 @@
   pre {
     padding: 10px;
     margin-bottom: 0;
-    overflow: auto;
-    white-space: pre-wrap;
-  }
-  code, pre, pre code {
     font-size: 14px;
+    overflow: auto;
   }
   pre code {
     display: block;
+    white-space: pre-wrap;
     margin-top: 0;
     padding: 0;
   }
