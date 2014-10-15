@@ -20,11 +20,11 @@
   <div class="main-menu-wrapper">
     <nav class="menu-main">
       {% include "menu-level-1" %}
-      {% if editmode or site.has_many_languages? %}
-      {% endif %}
     </nav>
+    {% if editmode or site.has_many_languages? %}
     <nav class="menu-lang">
       {% include "menu-lang" %}
     </nav>
+    {% endif %}
   </div>
 </header>
