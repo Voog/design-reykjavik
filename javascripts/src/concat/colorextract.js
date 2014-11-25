@@ -481,12 +481,10 @@ MMCQ = (function() {
 
     ColorExtract.extract = function(image, canvas, callback) {
       var bgColor, bgColorMap, bgPalette, color, dist, fgColor, fgColor2, fgColorMap, fgPalette, maxDist, rgbToCssString, _i, _j, _len, _len1;
-      image.height = 853;
-      image.width = 1280;
-      canvas.width = image.width;
-      canvas.height = image.height;
-      canvas.getContext("2d").drawImage(image, 0, 0, image.width, image.height);
-      bgColorMap = ColorExtract.getColorMap(canvas, 0, 0, image.width, image.height, 4);
+      canvas.width = 25;
+      canvas.height = 25;
+      canvas.getContext("2d").drawImage(image, 0, 0, canvas.width, canvas.height);
+      bgColorMap = ColorExtract.getColorMap(canvas, 0, 0, canvas.width, canvas.height, 4);
       bgPalette = bgColorMap.cboxes.map(function(cbox) {
         return {
           count: cbox.cbox.count(),
