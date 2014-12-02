@@ -1,37 +1,37 @@
 {% capture dont_render %}
   <!-- Sets the "front page" cover image and color values -->
-  {% if page.data.cover_image == 'none' %}
+  {% if page.data.cover_image == nil %}
     {% assign cover_image = images_path | append: '/tree.jpg' %}
   {% else %}
     {% assign cover_image = page.data.cover_image %}
   {% endif %}
 
-  {% if page.data.cover_color == nil or page.data.cover_color == '' %}
-    {% assign cover_color = 'rgb(255,255,255,0.5)' %}
+  {% if page.data.cover_color == nil %}
+    {% assign cover_color = 'rgba(255,255,255,0.5)' %}
   {% else %}
     {% assign cover_color = page.data.cover_color %}
   {% endif %}
 
   <!-- Builds style tag for background image -->
   {% assign cover_image_style = '' %}
-  {% unless page.data.cover_image == nil %}
+  {% unless cover_image == nil %}
     {% assign cover_image_style = ' style="background-image: ' %}
-    {% if page.data.cover_image == '' %}
+    {% if cover_image == '' %}
       {% assign cover_image_style = cover_image_style | append: 'none' %}
     {% else %}
-      {% assign cover_image_style = cover_image_style | append: "url('" | append: page.data.cover_image | append: "')" %}
+      {% assign cover_image_style = cover_image_style | append: "url('" | append: cover_image | append: "')" %}
     {% endif %}
     {% assign cover_image_style = cover_image_style | append: ';"' %}
   {% endunless %}
 
   <!-- Builds style tag for background color -->
   {% assign cover_color_style = "" %}
-  {% unless page.data.cover_color == nil %}
+  {% unless cover_color == nil %}
     {% assign cover_color_style = ' style="background: ' %}
-    {% if page.data.cover_color == '' %}
+    {% if cover_color == '' %}
       {% assign cover_color_style = cover_color_style | append: 'transparent' %}
     {% else %}
-      {% assign cover_color_style = cover_color_style | append: page.data.cover_color %}
+      {% assign cover_color_style = cover_color_style | append: cover_color %}
     {% endif %}
     {% assign cover_color_style = cover_color_style | append: ';"' %}
   {% endunless %}

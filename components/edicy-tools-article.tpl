@@ -8,7 +8,6 @@
         showAlpha: true,
 
         preview: function(data) {
-          console.log(data);
           if (data.image && data.image !== '') {
             if (data.image.replace(/.*\/photos/g,'/photos') !== articleCover.prevBgImage) {
               $('.article-cover-image').css({'background-image' : 'url("' + data.image + '")'});

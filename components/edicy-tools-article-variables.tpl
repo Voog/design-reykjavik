@@ -1,13 +1,13 @@
 {% capture dont_render %}
 <!-- Sets the article cover image and color values -->
-  {% if article.data.cover_image == 'none' %}
+  {% if article.data.cover_image == nil %}
     {% assign article_cover_image = '' %}
   {% else %}
     {% assign article_cover_image = article.data.cover_image %}
   {% endif %}
 
-  {% if article.data.cover_color == nil or article.data.cover_color == '' %}
-    {% assign article_cover_color = 'rgb(255,255,255,0.25)' %}
+  {% if article.data.cover_color == nil %}
+    {% assign article_cover_color = 'rgba(255,255,255,0.25)' %}
   {% else %}
     {% assign article_cover_color = article.data.cover_color %}
   {% endif %}
@@ -24,12 +24,12 @@
 
   <!-- Builds style tag for article background image -->
   {% assign article_cover_image_style = '' %}
-  {% unless article.data.cover_image == nil %}
+  {% unless article_cover_image == nil %}
     {% assign article_cover_image_style = ' style="background-image: ' %}
-    {% if article.data.cover_image == '' %}
+    {% if article_cover_image == '' %}
       {% assign article_cover_image_style = article_cover_image_style | append: 'none' %}
     {% else %}
-      {% assign article_cover_image_style = article_cover_image_style | append: "url('" | append: article.data.cover_image | append: "')" %}
+      {% assign article_cover_image_style = article_cover_image_style | append: "url('" | append: article_cover_image | append: "')" %}
     {% endif %}
     {% assign article_cover_image_style = article_cover_image_style | append: ';"' %}
   {% endunless %}
@@ -37,10 +37,10 @@
   <!-- Builds style tag for article background color -->
   {% assign article_cover_color_style = "" %}
     {% assign article_cover_color_style = ' style="background: ' %}
-    {% if article.data.cover_color == "" or article.data.cover_color == nil %}
+    {% if article_cover_color == "" %}
       {% assign article_cover_color_style = article_cover_color_style | append: 'transparent' %}
     {% else %}
-      {% assign article_cover_color_style = article_cover_color_style | append: article.data.cover_color %}
+      {% assign article_cover_color_style = article_cover_color_style | append: article_cover_color %}
     {% endif %}
     {% assign article_cover_color_style = article_cover_color_style | append: ';"' %}
 {% endcapture %}
