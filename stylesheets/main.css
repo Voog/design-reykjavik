@@ -1177,6 +1177,13 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .content-formatted b, .content-formatted strong {
   font-weight: 600;
 }
+.content-formatted .edy-image-container-with-title:after {
+  display: block;
+  padding: 4px;
+  font-size: 16px;
+  line-height: 1.3em;
+  content: attr(data-title);
+}
 .content-formatted .table-container {
   margin-top: 20px;
 }

@@ -137,6 +137,17 @@
     font-weight: 600;
   }
 
+  // Content area image title
+  .edy-image-container-with-title {
+    &:after {
+      display: block;
+      padding: 2px;
+      font-size: 12px;
+      line-height: 1.3em;
+      content: attr(data-title);
+    }
+  }
+
   /* TABLES */
   // Styling rules for the site's editable content area tables.
   // NB! Works only if editable content-area - {% content %} -  is wrapped into the element that has the "content-formatted" class.
