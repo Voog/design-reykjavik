@@ -164,6 +164,27 @@
     }
   };
 
+  getPhotoByWidth = function(sizes, targetWidth) {
+    var photo = null,
+        diff, prevDiff;
+
+    for (var i = sizes.length; i--;) {
+      diff = (sizes[i].width - targetWidth);
+      if (
+        (!sizes[i].thumbnail || sizes[i].thumbnail !== "medium") && ( // does not include thumbnail
+          !photo || // adds first found photo if none found yet
+          (prevDiff < 0 && diff >= 0) || // adds thoto if it is bigger than targetWidth and previus best was not
+          ((prevDiff >= 0 && diff >=0 || prevDiff < 0 && diff < 0) && Math.abs(diff) < Math.abs(prevDiff)) // otherwise adds the one with closest size but not smaller than targetWidth if bigger found
+        )
+      ) {
+        photo = sizes[i].url;
+        prevDiff = diff;
+      }
+    }
+
+    return photo;
+  };
+
   $('html').on('click', '.voog-search-modal', function(e) {
     e.stopPropagation();
   });
@@ -284,7 +305,8 @@
       initFrontPage: initFrontPage,
       handleColorScheme: handleColorScheme,
       getCombinedLightness: getCombinedLightness,
-      handleHeaderColorScheme: handleHeaderColorScheme
+      handleHeaderColorScheme: handleHeaderColorScheme,
+      getPhotoByWidth: getPhotoByWidth
     });
 
     init();

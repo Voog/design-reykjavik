@@ -6,11 +6,11 @@
         picture: true,
         color: true,
         showAlpha: true,
+        target_width: $('.post-header-wrapper').width(),
 
         preview: function(data) {
           if (data.image && data.image !== '') {
             if (data.image.replace(/.*\/photos/g,'/photos') !== articleCover.prevBgImage) {
-              $('.article-cover-image').css({'background-image' : 'url("' + data.image + '")'});
               var img = $('<img>'), canvas = $('<canvas>');
               var url = (data.imageSizes ? data.imageSizes[data.imageSizes.length - 1].url : data.image);
               img.attr('src', url.replace(/.*\/photos/g,'/photos'));
@@ -21,11 +21,15 @@
                 });
               });
               articleCover.prevBgImage = data.image.replace(/.*\/photos/g,'/photos');
+
+              var image_url = articleCover.getPhotoByWidth(data.imageSizes, $('.post-header-wrapper').width());
+              $('.article-cover-image').css({'background-image' : 'url("' + image_url + '")'});
             }
           } else {
             $('.article-cover-image').css({'background-image' : 'none'});
             articleCover.bgColor = [255,255,255,0];
           }
+
           if (data.color && data.color !== '') {
             articleCover.fgColor = data.color;
             site.handleHeaderColorScheme(site.getCombinedLightness(articleCover.bgColor, articleCover.fgColor));
@@ -40,6 +44,7 @@
           var cover_type = (site.getCombinedLightness(articleCover.bgColor, articleCover.fgColor) > 0.6) ? 'light' : 'dark';
           Edicy.articles.currentArticle.setData({
             'cover_image': data.image || '',
+            'cover_image_sizes': data.imageSizes || '',
             'cover_color': data.color || '',
             'cover_type': cover_type
           });
@@ -49,3 +54,6 @@
     });
   </script>
 {% endeditorjsblock %}
+<script type="text/javascript">
+  $('.article-cover-image').css({'background-image' : 'url("' + site.getPhotoByWidth(JSON.parse('{{ article_cover_image_sizes }}'), $('.post-header-wrapper').width()) + '")'});
+</script>

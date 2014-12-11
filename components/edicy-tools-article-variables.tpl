@@ -6,6 +6,16 @@
     {% assign article_cover_image = article.data.cover_image %}
   {% endif %}
 
+  {% if article.data.cover_image_sizes == nil or article.data.cover_image_sizes == '' %}
+    {% if article.data.cover_image == nil or article.data.cover_image == '' %}
+      {% assign article_cover_image_sizes = '[]' %}
+    {% else %}
+      {% assign article_cover_image_sizes = '[{"url": "' | append: article.data.cover_image | append: '", "width": 0, "height": 0}]' %}
+    {% endif %}
+  {% else %}
+    {% assign article_cover_image_sizes = article.data.cover_image_sizes | json %}
+  {% endif %}
+
   {% if article.data.cover_color == nil %}
     {% assign article_cover_color = 'rgba(255,255,255,0.25)' %}
   {% else %}
