@@ -1,4 +1,4 @@
-'{% editorjsblock %}
+{% editorjsblock %}
   <script src='{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.js'></script>
   <script>
     // Front page .content-right cover image/color
