@@ -14,12 +14,15 @@
       target_width: $('.frontpage-cover-image').width(),
 
       preview: function(data) {
-        var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
-            col = (data.color && data.color !== '') ? data.color : 'none';
+        var col = (data.color && data.color !== '') ? data.color : 'none';
 
-        var image_url = site.getPhotoByHeight(data.imageSizes, $('.frontpage-cover-image').height());
-        $('.article-cover-image').css({'background-image' : 'url("' + image_url + '")'});
-        $('.frontpage-cover-color').css({'background' : col});
+        if (data.image && data.imageSizes) {
+          var image_url = site.getPhotoByHeight(data.imageSizes, $('.frontpage-cover-image').height());
+          $('.frontpage-cover-image').css({'background-image' : 'url("' + image_url + '")'});
+        } else {
+          $('.frontpage-cover-image').css({'background-image' : 'none'});
+        }
+        $('.frontpage-cover-color').css({'background-color' : col});
       },
 
       commit: function(data) {
@@ -60,6 +63,8 @@
     $('.global-background-settings').css({'left': 0, 'top': 0}).show();
   </script>
 {% endeditorjsblock %}
+{% unless cover_image_sizes == '' or cover_image_sizes == nil %}
 <script type="text/javascript">
   $('.frontpage-cover-image').css({'background-image' : 'url("' + site.getPhotoByHeight(JSON.parse('{{ cover_image_sizes }}'), $('.frontpage-cover-image').height()) + '")'});
 </script>
+{% endunless %}

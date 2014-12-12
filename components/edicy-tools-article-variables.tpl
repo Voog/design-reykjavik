@@ -8,7 +8,7 @@
 
   {% if article.data.cover_image_sizes == nil or article.data.cover_image_sizes == '' %}
     {% if article.data.cover_image == nil or article.data.cover_image == '' %}
-      {% assign article_cover_image_sizes = '[]' %}
+      {% assign article_cover_image_sizes = '' %}
     {% else %}
       {% assign article_cover_image_sizes = '[{"url": "' | append: article.data.cover_image | append: '", "width": 0, "height": 0}]' %}
     {% endif %}

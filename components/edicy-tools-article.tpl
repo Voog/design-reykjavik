@@ -54,6 +54,8 @@
     });
   </script>
 {% endeditorjsblock %}
+{% unless article_cover_image_sizes == '' or article_cover_image_sizes == nil %}
 <script type="text/javascript">
   $('.article-cover-image').css({'background-image' : 'url("' + site.getPhotoByWidth(JSON.parse('{{ article_cover_image_sizes }}'), $('.post-header-wrapper').width()) + '")'});
 </script>
+{% endunless %}
