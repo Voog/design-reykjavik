@@ -24,7 +24,7 @@
         {% if editmode %}
           <button class="bgpicker-toggle-button frontpage-cover-settings" style="display:none;" data-bg-image="{{ cover_image }}" data-bg-color="{{ cover_color }}"></button>
         {% endif %}
-        {% if cover_image != '' or editmode %}<div class="background-image cover frontpage-cover-image"{{ cover_image_style }}></div>{% endif %}
+        {% if cover_image != '' or editmode %}<div class="background-image cover frontpage-cover-image"></div>{% endif %}
         {% if cover_color != '' or editmode %}<div class="background-color cover frontpage-cover-color"{{ cover_color_style }}></div>{% endif %}
         <section class="content-body global-background-color"{{ background_color_style}}>
           {% content %}

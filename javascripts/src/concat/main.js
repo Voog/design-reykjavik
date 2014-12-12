@@ -171,10 +171,31 @@
     for (var i = sizes.length; i--;) {
       diff = (sizes[i].width - targetWidth);
       if (
-        (!sizes[i].thumbnail || sizes[i].thumbnail !== "medium") && ( // does not include thumbnail
-          !photo || // adds first found photo if none found yet
-          (prevDiff < 0 && diff >= 0) || // adds thoto if it is bigger than targetWidth and previus best was not
-          ((prevDiff >= 0 && diff >=0 || prevDiff < 0 && diff < 0) && Math.abs(diff) < Math.abs(prevDiff)) // otherwise adds the one with closest size but not smaller than targetWidth if bigger found
+        (!sizes[i].thumbnail || sizes[i].thumbnail !== "medium") && (
+          !photo ||
+          (prevDiff < 0 && diff >= 0) ||
+          ((prevDiff >= 0 && diff >=0 || prevDiff < 0 && diff < 0) && Math.abs(diff) < Math.abs(prevDiff))
+        )
+      ) {
+        photo = sizes[i].url;
+        prevDiff = diff;
+      }
+    }
+
+    return photo;
+  };
+
+  getPhotoByHeight = function(sizes, targetHeight) {
+    var photo = null,
+        diff, prevDiff;
+
+    for (var i = sizes.length; i--;) {
+      diff = (sizes[i].height - targetHeight);
+      if (
+        (!sizes[i].thumbnail || sizes[i].thumbnail !== "medium") && (
+          !photo ||
+          (prevDiff < 0 && diff >= 0) ||
+          ((prevDiff >= 0 && diff >=0 || prevDiff < 0 && diff < 0) && Math.abs(diff) < Math.abs(prevDiff))
         )
       ) {
         photo = sizes[i].url;
@@ -306,7 +327,8 @@
       handleColorScheme: handleColorScheme,
       getCombinedLightness: getCombinedLightness,
       handleHeaderColorScheme: handleHeaderColorScheme,
-      getPhotoByWidth: getPhotoByWidth
+      getPhotoByWidth: getPhotoByWidth,
+      getPhotoByHeight: getPhotoByHeight
     });
 
     init();

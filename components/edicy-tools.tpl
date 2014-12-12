@@ -1,4 +1,4 @@
-{% editorjsblock %}
+'{% editorjsblock %}
   <script src='{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.js'></script>
   <script>
     // Front page .content-right cover image/color
@@ -11,18 +11,21 @@
       picture: true,
       color: true,
       showAlpha: true,
+      target_width: $('.frontpage-cover-image').width(),
 
       preview: function(data) {
         var img = (data.image && data.image !== '') ? 'url("' + data.image + '")' : 'none',
             col = (data.color && data.color !== '') ? data.color : 'none';
 
-        $('.frontpage-cover-image').css({'background-image' : img});
+        var image_url = site.getPhotoByHeight(data.imageSizes, $('.frontpage-cover-image').height());
+        $('.article-cover-image').css({'background-image' : 'url("' + image_url + '")'});
         $('.frontpage-cover-color').css({'background' : col});
       },
 
       commit: function(data) {
         pageData.set({
           'cover_image': data.image || '',
+          'cover_image_sizes': data.imageSizes || '',
           'cover_color': data.color || ''
         });
       }
@@ -57,3 +60,6 @@
     $('.global-background-settings').css({'left': 0, 'top': 0}).show();
   </script>
 {% endeditorjsblock %}
+<script type="text/javascript">
+  $('.frontpage-cover-image').css({'background-image' : 'url("' + site.getPhotoByHeight(JSON.parse('{{ cover_image_sizes }}'), $('.frontpage-cover-image').height()) + '")'});
+</script>

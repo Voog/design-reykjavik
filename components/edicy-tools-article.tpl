@@ -11,8 +11,8 @@
         preview: function(data) {
           if (data.image && data.image !== '') {
             if (data.image.replace(/.*\/photos/g,'/photos') !== articleCover.prevBgImage) {
-              var img = $('<img>'), canvas = $('<canvas>');
-              var url = (data.imageSizes ? data.imageSizes[data.imageSizes.length - 1].url : data.image);
+              var img = $('<img>'), canvas = $('<canvas>'),
+                  url = (data.imageSizes ? data.imageSizes[data.imageSizes.length - 1].url : data.image);
               img.attr('src', url.replace(/.*\/photos/g,'/photos'));
               img.load(function() {
                 ColorExtract.extract(img[0], canvas[0], function(data) {
@@ -22,7 +22,7 @@
               });
               articleCover.prevBgImage = data.image.replace(/.*\/photos/g,'/photos');
 
-              var image_url = articleCover.getPhotoByWidth(data.imageSizes, $('.post-header-wrapper').width());
+              var image_url = site.getPhotoByWidth(data.imageSizes, $('.post-header-wrapper').width());
               $('.article-cover-image').css({'background-image' : 'url("' + image_url + '")'});
             }
           } else {
