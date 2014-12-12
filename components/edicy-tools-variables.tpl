@@ -7,10 +7,10 @@
   {% endif %}
 
   {% if page.data.cover_image_sizes == nil or page.data.cover_image_sizes == '' %}
-    {% if page.data.cover_image == nil or page.data.cover_image == '' %}
+    {% if cover_image == nil or cover_image == '' %}
       {% assign cover_image_sizes = '' %}
     {% else %}
-      {% assign cover_image_sizes = '[{"url": "' | append: page.data.cover_image | append: '", "width": 0, "height": 0}]' %}
+      {% assign cover_image_sizes = '[{"url": "' | append: cover_image | append: '", "width": 0, "height": 0}]' %}
     {% endif %}
   {% else %}
     {% assign cover_image_sizes = page.data.cover_image_sizes | json %}
