@@ -1,4 +1,6 @@
 ;(function($) {
+  var editmode = $('html').hasClass('editmode');
+
   $('.langmenu-with-popup').each(function() {
     var $popup = $(this).find('.langmenu-popup');
     $(this).find('.langmenu-content').click(function() {
@@ -74,7 +76,9 @@
 
   // TODO: Remove if Edicy is going to wrap table with the container
   var wrapTables = function() {
-    $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
+    if (!editmode) {
+      $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
+    }
   };
 
   // CHECK THE PRESENCE OF THE SCROLLBAR
