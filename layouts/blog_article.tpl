@@ -28,11 +28,11 @@
 
               <h1>{% editable article.title %}</h1>
 
-              <div class="excerpt cfx">
+              <div class="excerpt cfx" data-search-indexing-allowed="true">
                 {% editable article.excerpt %}
               </div>
               
-              <div class="article-body cfx">
+              <div class="article-body cfx" data-search-indexing-allowed="true">
                 {% editable article.body %}
               </div>
               <div class="cfx">

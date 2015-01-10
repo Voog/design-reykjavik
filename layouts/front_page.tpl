@@ -21,15 +21,15 @@
       <div id="container" class="cfx">
         <div id="content" class="cfx">
           <div class="content-left slogan">
-              <div class="cfx">{% content name="slogan" %}</div>
+              <div class="cfx" data-search-indexing-allowed="true">{% content name="slogan" %}</div>
           </div>
 
           <div class="content-right">
-            <div class="cfx">
+            <div class="cfx" data-search-indexing-allowed="true">
             {% content %}
             </div>
             
-            <div class="cfx">
+            <div class="cfx" data-search-indexing-allowed="true">
             {% contentblock name="default-content" %}
               <div>
               <br/>
