@@ -214,9 +214,9 @@ pre { white-space: normal; }
       float: right;
       opacity: 0.5;
    }
-   .svg .mobile-menu-arr { background-image: url("../images/arr-bottom.svg"); }
+   .svg .mobile-menu-arr { background-image: url("../assets/arr-bottom.svg"); }
    .mobile-menu-inner li.open > .mobile-menu-arr { background-image: url("../images/arr-top.png"); opacity: 1; }
-   .svg .mobile-menu-inner li.open > .mobile-menu-arr { background-image: url("../images/arr-top.svg"); }
+   .svg .mobile-menu-inner li.open > .mobile-menu-arr { background-image: url("../assets/arr-top.svg"); }
 
 /* container */
   #container { padding: 40px 0 60px; }
@@ -325,7 +325,7 @@ pre { white-space: normal; }
       margin-top: 2px;
    }
    .svg .article-tag-icon {
-       background: url('../images/tag.svg') no-repeat center center;
+       background: url(assets/tag.svg') no-repeat center center;
    }
    
   .article-tags { border-top: 1px solid #d2d2d2; padding-top:15px; margin-top: 30px; font-size: 12px; }
@@ -349,7 +349,7 @@ pre { white-space: normal; }
       margin-top: 10px;
    }
    .svg .header-tag-icon {
-       background: url('../images/header-tag.svg') no-repeat center center;
+       background: url('../assets/header-tag.svg') no-repeat center center;
    }
    .tagged-list-header  a {border: none; text-decoration: none;}
    .tagged-list-header  a:hover { border-bottom: 1px solid #BEBEBE; }
