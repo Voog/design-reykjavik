@@ -346,7 +346,7 @@ pre { white-space: normal; }
       margin-top: 2px;
    }
    .svg .article-tag-icon {
-       background: url(assets/tag.svg') no-repeat center center;
+       background: url('../assets/tag.svg') no-repeat center center;
    }
    
   .article-tags { border-top: 1px solid #d2d2d2; padding-top:15px; margin-top: 30px; font-size: 12px; }
