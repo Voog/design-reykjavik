@@ -100,14 +100,14 @@
   "assets": [
     {
       "content_type": "image/svg+xml",
-      "file": "images/arr-bottom.svg",
-      "kind": "images",
+      "file": "assets/arr-bottom.svg",
+      "kind": "assets",
       "filename": "arr-bottom.svg"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "images/arr-top.svg",
-      "kind": "images",
+      "file": "assets/arr-top.svg",
+      "kind": "assets",
       "filename": "arr-top.svg"
     },
     {
@@ -166,15 +166,15 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "images/header-tag.svg",
-      "kind": "images",
+      "file": "assets/header-tag.svg",
+      "kind": "assets",
       "filename": "header-tag.svg"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "images/header-tag.svg",
-      "kind": "images",
-      "filename": "header-tag.svg"
+      "file": "assets/tag.svg",
+      "kind": "assets",
+      "filename": "tag.svg"
     },
     {
       "content_type": "image/png",
