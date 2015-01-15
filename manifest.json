@@ -99,12 +99,6 @@
   ],
   "assets": [
     {
-      "content_type": "text/unknown",
-      "file": "assets/.DS_Store",
-      "kind": "assets",
-      "filename": ".DS_Store"
-    },
-    {
       "content_type": "image/svg+xml",
       "file": "images/arr-bottom.svg",
       "kind": "images",
@@ -117,55 +111,55 @@
       "filename": "arr-top.svg"
     },
     {
-      "content_type": "application/vnd.ms-fontobject",
+      "content_type": "font/eot",
       "file": "assets/avenir-light-webfont.eot",
       "kind": "assets",
       "filename": "avenir-light-webfont.eot"
     },
     {
-      "content_type": "application/x-font-truetype",
+      "content_type": "font/ttf",
       "file": "assets/avenir-light-webfont.ttf",
       "kind": "assets",
       "filename": "avenir-light-webfont.ttf"
     },
     {
-      "content_type": "application/font-woff",
+      "content_type": "font/woff",
       "file": "assets/avenir-light-webfont.woff",
       "kind": "assets",
       "filename": "avenir-light-webfont.woff"
     },
     {
-      "content_type": "application/vnd.ms-fontobject",
+      "content_type": "font/eot",
       "file": "assets/avenir-medium-webfont.eot",
       "kind": "assets",
       "filename": "avenir-medium-webfont.eot"
     },
     {
-      "content_type": "application/x-font-truetype",
+      "content_type": "font/ttf",
       "file": "assets/avenir-medium-webfont.ttf",
       "kind": "assets",
       "filename": "avenir-medium-webfont.ttf"
     },
     {
-      "content_type": "application/font-woff",
+      "content_type": "font/woff",
       "file": "assets/avenir-medium-webfont.woff",
       "kind": "assets",
       "filename": "avenir-medium-webfont.woff"
     },
     {
-      "content_type": "application/vnd.ms-fontobject",
+      "content_type": "font/eot",
       "file": "assets/avenir-roman-webfont.eot",
       "kind": "assets",
       "filename": "avenir-roman-webfont.eot"
     },
     {
-      "content_type": "application/x-font-truetype",
+      "content_type": "font/ttf",
       "file": "assets/avenir-roman-webfont.ttf",
       "kind": "assets",
       "filename": "avenir-roman-webfont.ttf"
     },
     {
-      "content_type": "application/font-woff",
+      "content_type": "font/woff",
       "file": "assets/avenir-roman-webfont.woff",
       "kind": "assets",
       "filename": "avenir-roman-webfont.woff"
@@ -181,12 +175,6 @@
       "file": "images/header-tag.svg",
       "kind": "images",
       "filename": "header-tag.svg"
-    },
-    {
-      "content_type": "text/unknown",
-      "file": "assets/.DS_Store",
-      "kind": "assets",
-      "filename": ".DS_Store"
     },
     {
       "content_type": "image/png",
@@ -255,12 +243,6 @@
       "filename": "tag.png"
     },
     {
-      "content_type": "text/unknown",
-      "file": "assets/.DS_Store",
-      "kind": "assets",
-      "filename": ".DS_Store"
-    },
-    {
       "content_type": "application/javascript",
       "file": "javascripts/modernizr.js",
       "kind": "javascripts",
@@ -271,12 +253,6 @@
       "file": "javascripts/scripts.js",
       "kind": "javascripts",
       "filename": "scripts.js"
-    },
-    {
-      "content_type": "text/unknown",
-      "file": "assets/.DS_Store",
-      "kind": "assets",
-      "filename": ".DS_Store"
     },
     {
       "content_type": "text/css",
