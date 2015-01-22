@@ -407,6 +407,13 @@ pre { white-space: normal; }
       }
     }
 
+  .voog-search-modal-result h3 a {
+    border-bottom: none;
+  }
+
+  .voog-search-modal-result p {
+    padding-bottom: 0;
+  }
     
 /* gallery */
   .photo_gallery_area img {
