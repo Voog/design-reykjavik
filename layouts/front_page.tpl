@@ -24,12 +24,12 @@
               <div class="cfx" data-search-indexing-allowed="true">{% content name="slogan" %}</div>
           </div>
 
-          <div class="content-right">
-            <div class="cfx" data-search-indexing-allowed="true">
+          <div class="content-right" data-search-indexing-allowed="true">
+            <div class="cfx">
             {% content %}
             </div>
             
-            <div class="cfx" data-search-indexing-allowed="true">
+            <div class="cfx">
             {% contentblock name="default-content" %}
               <div>
               <br/>
