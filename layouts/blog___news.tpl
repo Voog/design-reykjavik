@@ -38,7 +38,7 @@
           <div class="news-list news-list-all">
             {% for article in articles %}
               {% if forloop.index < 11 %}
-                <div class="news-item{% if forloop.index == 1%} news-item-first{% endif %}">
+                <div class="news-item{% if forloop.index == 1%} news-item-first{% endif %} content-hyphenate">
                   <div class="news-info">
                     {{ article.author.name }} &nbsp;&#149;&nbsp; <span class="date">{{article.created_at | format_date:"short"}}, {{article.created_at | format_date:"%Y"}}</span> {% if article.comments_count > 0 %}&nbsp;<a href="{{article.url}}#comments" class="comments-count">{{article.comments_count}}</a>{% endif %}
                   </div>
@@ -78,7 +78,7 @@
     <div class="wrap cfx">
       
       <div class="inner">
-        <div class="cfx">
+        <div class="cfx content-hyphenate">
           {% xcontent name="footer" %}
         </div>
       </div>

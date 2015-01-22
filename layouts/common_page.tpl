@@ -23,7 +23,7 @@
         {% include "Submenu" %}
         
         <div id="content"{% unless editmode%}{% for item in site.menuitems_with_hidden %}{% if item.selected? and item.visible_children.size == 0 %} class="content-centered"{%endif%}{% endfor%}{% endunless%}>
-          <div class="cfx" data-search-indexing-allowed="true">
+          <div class="cfx content-hyphenate" data-search-indexing-allowed="true">
             <h1>{% contentblock name="slogan" %}{{ "title_goes_here" | lc }}{% endcontentblock %}</h1>
             {% content %}
           </div>
@@ -37,7 +37,7 @@
     <div class="wrap cfx">
       
       <div class="inner">
-        <div class="cfx">
+        <div class="cfx content-hyphenate">
           {% xcontent name="footer" %}
         </div>
       </div>

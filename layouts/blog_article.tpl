@@ -22,17 +22,17 @@
         <div id="content">
           <div class="news-list">
             <div class="news-item news-item-first">
-              <div class="news-info">
+              <div class="news-info content-hyphenate">
                 {{ article.author.name }} &nbsp;&#149;&nbsp; <span class="date">{{article.created_at | format_date:"short"}}, {{article.created_at | format_date:"%Y"}}</span> {% if article.comments_count > 0 %}&nbsp;<a href="{{article.url}}#comments" class="comments-count">{{article.comments_count}}</a>{% endif %}
               </div>
 
               <h1>{% editable article.title %}</h1>
 
-              <div class="excerpt cfx" data-search-indexing-allowed="true">
+              <div class="excerpt cfx content-hyphenate" data-search-indexing-allowed="true">
                 {% editable article.excerpt %}
               </div>
               
-              <div class="article-body cfx" data-search-indexing-allowed="true">
+              <div class="article-body cfx content-hyphenate" data-search-indexing-allowed="true">
                 {% editable article.body %}
               </div>
               <div class="cfx">
@@ -63,7 +63,7 @@
             {% endif %}
             
             {% if article.comments_count > 0 %}
-            <ul class="comments-list">{% for comment in article.comments %}
+            <ul class="comments-list content-hyphenate">{% for comment in article.comments %}
               <li class="edy-site-blog-comment">
                 {{comment.author}} &nbsp;&#149;&nbsp; <span class="date">{{comment.created_at | format_date:"short"}}, {{comment.created_at | format_date:"%Y"}}</span> {% removebutton %}
                 <p class="comment-body">
@@ -115,7 +115,7 @@
   <div id="footer">
     <div class="wrap cfx">
       <div class="inner">
-        <div class="cfx">
+        <div class="cfx content-hyphenate">
           {% xcontent name="footer" %}
         </div>
       </div>

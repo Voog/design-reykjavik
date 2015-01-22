@@ -21,15 +21,15 @@
       <div id="container" class="cfx">
         <div id="content" class="cfx">
           <div class="content-left slogan">
-              <div class="cfx" data-search-indexing-allowed="true">{% content name="slogan" %}</div>
+              <div class="cfx content-hyphenate" data-search-indexing-allowed="true">{% content name="slogan" %}</div>
           </div>
 
           <div class="content-right" data-search-indexing-allowed="true">
-            <div class="cfx">
+            <div class="cfx content-hyphenate">
             {% content %}
             </div>
             
-            <div class="cfx">
+            <div class="cfx content-hyphenate">
             {% contentblock name="default-content" %}
               <div>
               <br/>
@@ -52,7 +52,7 @@
     <div class="wrap cfx">
       
       <div class="inner">
-        <div class="cfx">
+        <div class="cfx content-hyphenate">
           {% xcontent name="footer" %}
         </div>
       </div>
