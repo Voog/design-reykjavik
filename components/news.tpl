@@ -8,6 +8,11 @@
   {% endfor %}
   </ul>
   {% if site.latest_4_articles.size > 3 %}
-    <a href="/blog" class="link more-news">More news</a>
+    {% for item in site.menuitems_with_hidden %}
+      {% if item.blog? %}
+        <a href="{{ item.url }}" class="link more-news">{{ "older_news" | lc }}</a>
+        {% break %}
+      {% endif %}
+    {% endfor %}
   {% endif %}
 </section>
