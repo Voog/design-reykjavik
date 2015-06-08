@@ -988,10 +988,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   padding: 35px 0 40px;
   max-width: 960px;
 }
-.content:after {
+.content::after {
+  clear: both;
   content: "";
   display: table;
-  clear: both;
 }
 .content .content-left {
   float: left;
@@ -1354,8 +1354,6 @@ body:not(.front-page) .footer {
 }
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   margin: 0;
   padding: 5px 5px 4px;
@@ -1497,8 +1495,6 @@ body {
 }
 @media screen and (max-width: 752px) {
   .front-page .content-right {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
     box-sizing: border-box;
     margin-right: 0;
     padding: 40px;
@@ -2336,8 +2332,6 @@ ul.menu .menu-item:before {
 }
 
 .search-inner {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 @media screen and (max-width: 752px) {

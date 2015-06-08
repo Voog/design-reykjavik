@@ -11,7 +11,7 @@
       picture: true,
       color: true,
       showAlpha: true,
-      target_width: $('.frontpage-cover-image').width(),
+      target_width: 1280,
 
       preview: function(data) {
         var col = (data.color && data.color !== '') ? data.color : 'none';

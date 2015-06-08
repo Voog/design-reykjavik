@@ -42,7 +42,7 @@
 }
 
 .search-inner {
-  @include box-sizing(border-box);
+  box-sizing: border-box;
   @include query($tablet-2) {
     position: absolute;
     top: 41px;
@@ -134,7 +134,7 @@
     }
     line-height: 2;
   }
-  // @include box-sizing(border-box);
+  // box-sizing: border-box;
 
   @include query($tablet-2) {
     padding-right: 50px;

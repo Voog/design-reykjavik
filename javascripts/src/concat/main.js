@@ -1,6 +1,23 @@
 ;(function($) {
   var editmode = $('html').hasClass('editmode');
 
+  // Remove comments if debouncing is used.
+  // Function to limit the rate at which a function can fire.
+  // var debounce = function(func, wait, immediate) {
+  //   var timeout;
+  //   return function() {
+  //     var context = this, args = arguments;
+  //     var later = function() {
+  //       timeout = null;
+  //       if (!immediate) func.apply(context, args);
+  //     };
+  //     var callNow = immediate && !timeout;
+  //     clearTimeout(timeout);
+  //     timeout = setTimeout(later, wait);
+  //     if (callNow) func.apply(context, args);
+  //   };
+  // };
+
   $('.langmenu-with-popup').each(function() {
     var $popup = $(this).find('.langmenu-popup');
     $(this).find('.langmenu-content').click(function() {
@@ -52,17 +69,6 @@
     });
   };
 
-  // REDUCES OPACITY OF THE GALLERY IMAGES THAT ARE NOT UNDER THE CURSOR
-  var handleGalleryHover = function() {
-    $('.edys-gallery-item').mouseover(function() {
-      $(this).siblings('.edys-gallery-item').find('.edys-gallery-image').addClass('inactive');
-    });
-
-    $('.edys-gallery-item').mouseout(function() {
-      $(this).siblings('.edys-gallery-item').find('.edys-gallery-image').removeClass('inactive');
-    });
-  };
-
   // SCROLLS TO THE COMMENT-FORM IF COMMENT SUBMIT FAILED (TO SHOW THE ERROR MESSAGES TO THE USER)
   var focusFormWithErrors = function() {
     $(document).ready(function() {
@@ -81,34 +87,11 @@
     }
   };
 
-  // CHECK THE PRESENCE OF THE SCROLLBAR
-  var checkScrollBar = function() {
-    jQuery.fn.hasScrollBar = function(direction) {
-      if (direction == 'vertical') {
-        return this.get(0).scrollHeight > this.innerHeight();
-      } else if (direction == 'horizontal') {
-        return this.get(0).scrollWidth > this.innerWidth();
-      }
-      return false;
-    };
-  };
-
-  // ADDS HORIZONTAL SCROLL TO TABLES THAT DON'T FIT INTO THE CONTENT AREA
-  var handleTableHorizontalScrolling = function() {
-    $.each($('.table-container'), function() {
-      if ($(this).hasScrollBar('horizontal') === true) {
-        $(this).addClass('horizontal-scroll');
-      } else {
-        $(this).removeClass('horizontal-scroll');
-      }
-    });
-  };
-
-  // INITIATES THE TABLE HORISONTAL SCROLL FUNCTION WHEN WINDOW IS RESIZED
+  // Initiates the functions when window is resized.
   var handleWindowResize = function() {
-    $(window).resize(function() {
-      handleTableHorizontalScrolling();
-    });
+    // Add functions that should be trgiggered while resizing the window here.
+    // Example:
+    // $(window).resize(debounce(yourFunctionName, 3000));
   };
 
   var colorSum = function(bgColor, fgColor) {
@@ -310,15 +293,10 @@
       toggleMainMenu();
       handleColorScheme();
       handlePopoverMenuHide();
-      handleGalleryHover();
       handleWindowResize();
       initFrontPage();
       wrapTables();
       initSearchCancel();
-      if ($('.table-container').length > 0) {
-        checkScrollBar();
-        handleTableHorizontalScrolling();
-      }
       addMobileMenuResizeListener();
     };
 

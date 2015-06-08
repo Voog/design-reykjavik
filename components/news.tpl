@@ -3,7 +3,7 @@
   <ul>
   {% for article in site.latest_3_articles %}
     <li class="news-item">
-      <a class="link" href="{{article.url}}">{{article.title}}</a><span class="date">{{article.created_at | format_date:"long"}}</span>{% if article.author.firstname %}<span class="author">,&nbsp;{{article.author.firstname}}</span>{% endif %}
+      <a class="link" href="{{article.url}}">{{article.title}}</a><span class="date">{{article.created_at | format_date:"long"}}</span>
     </li>
   {% endfor %}
   </ul>
