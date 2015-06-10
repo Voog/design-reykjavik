@@ -5,14 +5,13 @@
 .menu-btn {
   @include query($tablet-2) {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 13px;
+    right: 10px;
     display: inline-block;
     float: right;
     margin: 0;
     padding: 0;
-    padding-right: 13px;
-    min-height: 41px;
+    // min-height: 41px;
     border: none;
     background: none;
     cursor: pointer;
@@ -238,7 +237,7 @@ ul.menu {
       min-width: 100%;
     }
   }
-  max-width: 80%;
+  // max-width: 80%;
   display: inline-block;
   z-index: 1;
   padding: 7px 0;
@@ -283,7 +282,7 @@ ul.menu {
   }
   .menu {
     text-align: left;
-    
+
     .menu-item {
       margin: 0;
       width: 100%;
@@ -306,7 +305,7 @@ ul.menu {
         &.untranslated {
           color: $red !important;
         }
-        
+
         &:hover {
           text-decoration: none;
         }

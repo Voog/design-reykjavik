@@ -7,7 +7,7 @@
   {{ site.stats_header }}
 </head>
 
-<body class="post-page js-body global-background-color {{ background_type }}-background{% if editmode %} editmode{% endif %}" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
+<body class="post-page js-body global-background-color {{ background_type }}-background{% if editmode %} editmode{% endif %}{% if site.search.enabled %} search-enabled{% endif %}" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
   <div class="header-wrapper {{ article_cover_type }}">
     {% include "header" %}
     <div class="post-header-wrapper">

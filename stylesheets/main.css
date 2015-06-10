@@ -1706,6 +1706,11 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   padding: 63px 0 20px;
   max-width: 960px;
 }
+.header::after {
+  clear: both;
+  content: "";
+  display: table;
+}
 @media screen and (max-width: 980px) {
   .header {
     padding-right: 20px;
@@ -1717,24 +1722,62 @@ body .header-wrapper .edy-bgpicker-toggle-button {
     padding: 0;
     margin-bottom: 45px;
   }
+  .header .edy-empty-bordered {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.5);
+  }
+  .header .placeholder {
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .header .edy-content-element-hover {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.2);
+  }
+  .header .edy-texteditor-active {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgba(255, 255, 255, 0.4);
+  }
+  .header .edy-texteditor-active:hover {
+    outline-color: rgba(255, 255, 255, 0.63);
+  }
+}
+.flexbox .header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  -moz-justify-content: flex-end;
+  justify-content: flex-end;
 }
 
 .header-title {
-  display: inline-block;
   padding-top: 4px;
 }
 @media screen and (max-width: 752px) {
   .header-title {
-    width: 80%;
     z-index: 12;
-    padding: 5px 0 5px 13px;
+    padding: 6px 48px 7px 13px;
     text-align: left;
     top: 0;
     left: 0;
   }
+  .search-enabled .header-title {
+    padding-right: 75px;
+  }
 }
-.header-title, .header-title a {
-  display: inline-block;
+.header-title, .header-title .title-link {
   text-decoration: none;
   font-weight: 500;
   font-style: normal;
@@ -1742,10 +1785,12 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   font-size: 24px;
   line-height: 1.2em;
 }
+.header-title .title-link {
+  display: inline-block;
+  max-width: 100%;
+}
 
 .main-menu-wrapper {
-  display: inline-block;
-  width: 59%;
   vertical-align: top;
   text-align: right;
 }
@@ -1754,11 +1799,34 @@ body .header-wrapper .edy-bgpicker-toggle-button {
     display: none;
   }
 }
+.no-flexbox .main-menu-wrapper {
+  float: right;
+}
 
 .mobile-menu-wrapper {
-  width: 40%;
   padding: 0;
-  display: inline-block;
+}
+@media screen and (min-width: 752px) {
+  .mobile-menu-wrapper {
+    min-width: 215px;
+  }
+}
+.flexbox .mobile-menu-wrapper {
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 0 auto;
+  -moz-box-flex: 1;
+  -moz-flex: 1 0 auto;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+.no-flexbox .mobile-menu-wrapper {
+  float: left;
+}
+@media screen and (max-width: 506px) {
+  .no-flexbox .mobile-menu-wrapper {
+    float: none;
+  }
 }
 
 .post-page .header {
@@ -1795,14 +1863,12 @@ body .header-wrapper .edy-bgpicker-toggle-button {
 @media screen and (max-width: 752px) {
   .menu-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 13px;
+    right: 10px;
     display: inline-block;
     float: right;
     margin: 0;
     padding: 0;
-    padding-right: 13px;
-    min-height: 41px;
     border: none;
     background: none;
     cursor: pointer;
@@ -2011,7 +2077,6 @@ ul.menu .menu-item:before {
 }
 
 .menu-main {
-  max-width: 80%;
   display: inline-block;
   z-index: 1;
   padding: 7px 0;

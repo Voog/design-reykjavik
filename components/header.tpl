@@ -1,8 +1,8 @@
-<header class="header">
-  <div class="mobile-menu-wrapper" id="mobile-menu">
-    <div class="mobile-menu-header">
+<header class="header js-header">
+  <div class="mobile-menu-wrapper js-header-left" id="mobile-menu">
+    <div class="mobile-menu-header js-header-left">
       <div class="header-title content-formatted">
-        {% unless editmode %}<a class="noborder" href="{{ site.root_item.url }}">{% endunless %}
+        {% unless editmode %}<a class="title-link noborder" href="{{ site.root_item.url }}">{% endunless %}
         {% editable site.header %}
         {% unless editmode %}</a>{% endunless %}
       </div>
@@ -12,12 +12,12 @@
         <span class="menu-stripe"></span>
         <span class="menu-stripe"></span>
         <span class="menu-stripe"></span>
-      </button>    
+      </button>
     </div>
     {% include "menu-mobile" %}
   </div>
 
-  <div class="main-menu-wrapper">
+  <div class="main-menu-wrapper js-header-right">
     <nav class="menu-main">
       {% include "menu-level-1" %}
     </nav>

@@ -207,6 +207,15 @@
     }
   });
 
+  var bindFallbackHeaderLeftWidthCalculation = function() {
+    console.log('jeaea');
+    var headerWidth = $('.js-header').width(),
+        headerRight = $('.js-header-right'),
+        headerRightWidth = headerRight.width();
+
+    $('.js-header-left').css('min-width', headerWidth - headerRightWidth);
+  };
+
     // Initiations
     var initBlogPage = function() {
       // ADD BLOG LISTING VIEW SPECIFIC FUNCTIONS HERE
@@ -298,6 +307,10 @@
       wrapTables();
       initSearchCancel();
       addMobileMenuResizeListener();
+
+      if (!Modernizr.flexbox && editmode) {
+        bindFallbackHeaderLeftWidthCalculation();
+      };
     };
 
     // ENABLES THE USAGE OF THE INITIATIONS OUTSIDE THIS FILE
