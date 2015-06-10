@@ -966,6 +966,12 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .comments .comment-header {
   line-height: 1.7em;
 }
+.comments .comment-body {
+  -webkit-hyphens: true;
+  -moz-hyphens: true;
+  -ms-hyphens: true;
+  hyphens: true;
+}
 .comments .comment {
   font-size: 1.1em;
   line-height: 1.45em;
@@ -1061,7 +1067,11 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 }
 
 .content-formatted {
-  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   display: block;
   /* TABLES */
 }
@@ -1072,7 +1082,11 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   margin-bottom: 0;
 }
 .content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
-  word-wrap: break-word;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
 }
 .content-formatted .content-header h1 {
   font-size: 1em;

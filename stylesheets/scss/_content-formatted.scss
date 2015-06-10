@@ -3,7 +3,7 @@
 // NB! Contact forms, image galleries and tables styling rules are located in the separate partials: "_forms.scss", "_gallery.scss" and "_tables.scss".
 .content-formatted {
   @extend %clearfix;
-  word-wrap: break-word;
+  @include hyphenate(true);
   display: block;
 
   // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
@@ -19,7 +19,7 @@
 
   // Styling rules for the editable content area headings.
   h1, h2, h3, h4, h5, h6 {
-    word-wrap: break-word;
+    @include hyphenate(true);
   }
 
   .content-header h1 {
