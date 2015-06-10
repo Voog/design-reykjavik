@@ -95,7 +95,7 @@ body {
     .light-background & {
       &, a {
         color: $dark-primary;
-      } 
+      }
       a:hover {
         color: $dark-hover;
       }
@@ -119,7 +119,7 @@ body {
     &,
     .light-background & {
       border: 1px solid $dark-tertiary !important;
-    }    
+    }
     .dark-background & {
       border: 1px solid $light-tertiary !important;
     }
@@ -128,7 +128,7 @@ body {
       &,
       .light-background & {
         border: 1px solid $dark-hover2 !important;
-      }    
+      }
       .dark-background & {
         border: 1px solid $light-hover2 !important;
       }
@@ -160,7 +160,7 @@ body {
           background: url('../assets/ico-tag-dark.svg') no-repeat center center;
         }
       }
-    }    
+    }
     .dark-background & {
       border-top: 1px solid $light-tertiary;
       .tag-icon {
@@ -394,7 +394,7 @@ a {
     }
   }
 }
-nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, 
+nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 .edy-btn-removecomment, .tag-link, .read-more, .edy-tag-suggestion {
   border: none !important;
   box-shadow: none !important;
@@ -612,16 +612,16 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
       }
     }
     ul li {
-      border-bottom: 1px solid rgba(255,255,255,.15); 
+      border-bottom: 1px solid rgba(255,255,255,.15);
 
     }
     ul ul li {
-      border-bottom: 1px solid rgba(255,255,255,.15); 
+      border-bottom: 1px solid rgba(255,255,255,.15);
       &:first-child {
         border-top: 1px solid rgba(255,255,255,.15);
       }
     }
-    .search-btn {    
+    .search-btn {
       .no-svg & {
         background-image: url("../images/ico-search.png");
         background-size: 20px;
@@ -680,27 +680,26 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 
 // ADMIN UI
 .dark-background {
-  .edy-empty-bordered,
-  .edy-tageditor {
-    border-color: rgba(228,222,219,0.33);
-    color: rgba(228,222,219,0.33);
+  .edy-empty-bordered {
+    color: rgba(#fff, .5);
+    border-color: rgba(#fff, .5);
   }
-  a.edy-tag-suggestion {
-    color: rgba(0,0,0,.9);
-    &:hover {
-      color: rgba(0,0,0,.7);
-    }
-  }
-  .edy-taglist-openarrow:after {
-    border-color: rgba(255,255,255,.2) transparent transparent;
+  .placeholder {
+    color: rgba(#fff, .5);
   }
   .edy-content-element-hover {
-    border: 1px solid rgba(255,255,255,.2);
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(#fff, .2);
   }
-  .edy-texteditor-active, .edy-texteditor-active:hover {
-    outline: 1px solid rgba(255,255,255,.4);
+  .edy-texteditor-active {
+    outline-width: 1px;
+    outline-style: solid;
+    outline-color: rgba(#fff, .4);
+
     &:hover {
-      outline: 1px solid rgba(255,255,255,.6);
+      outline-color: rgba(#fff, .63);
     }
   }
 }
+
