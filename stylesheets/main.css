@@ -1874,6 +1874,7 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   position: relative;
   left: 50px;
   top: auto;
+  margin-right: 50px;
 }
 @media screen and (max-width: 752px) {
   .editmode .post-page .header-title {
