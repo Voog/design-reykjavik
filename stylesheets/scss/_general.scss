@@ -239,17 +239,32 @@ body {
 
 // Styling rules for the main container that affects the entire site's other elements.
 .container {
+  margin: 0 auto;
+  max-width: 960px;
+
   @include query($tablet-1) {
     max-width: 1000px;
   }
-  margin: 0 auto;
-  max-width: 960px;
+
+  @include query($tablet-2) {
+    position: relative;
+  }
 
   a {
     text-decoration: none;
 
     img {
       border: none;
+    }
+  }
+
+  .global-background-settings {
+    top: 0;
+    left: 0;
+
+    @include query($tablet-2) {
+      top: -35px;
+      left: 10px;
     }
   }
 }

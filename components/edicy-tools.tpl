@@ -60,7 +60,7 @@
       }
     });
 
-    $('.global-background-settings').css({'left': 0, 'top': 0}).show();
+    $('.global-background-settings').show();
   </script>
 {% endeditorjsblock %}
 {% unless cover_image_sizes == '' or cover_image_sizes == nil %}

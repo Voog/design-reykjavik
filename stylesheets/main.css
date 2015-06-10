@@ -1667,11 +1667,26 @@ ul.menu .menu-item {
     max-width: 1000px;
   }
 }
+@media screen and (max-width: 752px) {
+  .container {
+    position: relative;
+  }
+}
 .container a {
   text-decoration: none;
 }
 .container a img {
   border: none;
+}
+.container .global-background-settings {
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 752px) {
+  .container .global-background-settings {
+    top: -35px;
+    left: 10px;
+  }
 }
 
 .header-wrapper .edy-bgpicker-toggle-button {
