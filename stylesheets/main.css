@@ -1414,18 +1414,21 @@ body:not(.front-page) .footer {
 }
 
 /* GALLERY */
-.edys-gallery-area:first-child {
-  margin-top: 0;
+.content-formatted .edys-gallery-area,
+.content-formatted .edy-gallery-area {
+  margin-left: -6px;
+  font-size: 0;
+  line-height: 1em;
 }
-
-.edys-gallery .edys-gallery-item {
+.content-formatted .edys-gallery-area .edys-gallery-item,
+.content-formatted .edys-gallery-area .edy-gallery-item,
+.content-formatted .edys-gallery-area .edy-gallery-sortable-placeholder,
+.content-formatted .edy-gallery-area .edys-gallery-item,
+.content-formatted .edy-gallery-area .edy-gallery-item,
+.content-formatted .edy-gallery-area .edy-gallery-sortable-placeholder {
   display: inline-block;
-}
-.edys-gallery .edys-gallery-item .edys-gallery-image.inactive {
-  opacity: 0.6;
-}
-.edys-gallery .edys-gallery-item:hover {
-  opacity: 1;
+  float: none;
+  margin: 3px 0 3px 6px;
 }
 
 /* GENERAL */
