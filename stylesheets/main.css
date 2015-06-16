@@ -1064,11 +1064,11 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
 }
 
 .content-formatted {
-  word-break: break-word;
-  -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
+  -webkit-hyphens: auto;
   hyphens: auto;
+  word-break: break-word;
   display: block;
   /* TABLES */
 }
@@ -1079,11 +1079,11 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
   margin-bottom: 0;
 }
 .content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
-  word-break: break-word;
-  -webkit-hyphens: auto;
   -moz-hyphens: auto;
   -ms-hyphens: auto;
+  -webkit-hyphens: auto;
   hyphens: auto;
+  word-break: break-word;
 }
 .content-formatted .content-header h1 {
   font-size: 1em;
