@@ -1052,6 +1052,11 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   min-height: 1.2em;
 }
 
+.front-page .content-body {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+}
 @media screen and (max-width: 752px) {
   .front-page .content-body {
     margin-top: 35px;

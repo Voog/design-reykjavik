@@ -74,6 +74,9 @@
 
 .content-body {
   .front-page & {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
 
     @include query($tablet-2) {
       margin-top: 35px;
