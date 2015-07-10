@@ -71,6 +71,9 @@
     &.expanded {
       display: block;
     }
+    .untranslated a {
+      color: $red !important;
+    }
     & > ul {
       padding: 0 20px 10px;
       & > li:last-child {

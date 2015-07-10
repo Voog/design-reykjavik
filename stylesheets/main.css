@@ -1937,6 +1937,9 @@ body .header-wrapper .edy-bgpicker-toggle-button {
 .mobile-menu-wrapper .mobile-menu-main.expanded {
   display: block;
 }
+.mobile-menu-wrapper .mobile-menu-main .untranslated a {
+  color: #cc0000 !important;
+}
 .mobile-menu-wrapper .mobile-menu-main > ul {
   padding: 0 20px 10px;
 }
