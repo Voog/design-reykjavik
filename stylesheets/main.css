@@ -423,7 +423,7 @@ a {
   box-shadow: none;
 }
 
-nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item,
+nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .edys-gallery-grid-item,
 .edy-btn-removecomment, .tag-link, .read-more, .edy-tag-suggestion {
   border: none !important;
   box-shadow: none !important;
