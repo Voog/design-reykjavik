@@ -19,6 +19,11 @@
         if (data.image && data.imageSizes) {
           var image_url = site.getPhotoByHeight(data.imageSizes, $('.frontpage-cover-image').height());
           $('.frontpage-cover-image').css({'background-image' : 'url("' + image_url + '")'});
+        } else if (data.image) {
+          // Fix Safari from constantly loading a new image on Bg picker slider change
+          var frontPageCoverBgImage = data.image.split('/').pop();
+
+          $('.frontpage-cover-image').css({'background-image' : 'url(images/"' + frontPageCoverBgImage + '")'});
         } else {
           $('.frontpage-cover-image').css({'background-image' : 'none'});
         }
