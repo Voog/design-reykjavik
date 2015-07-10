@@ -456,11 +456,11 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .content-formatted b, .light-background .content-formatted b,
 .content-formatted strong, .light-background
 .content-formatted strong {
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 .dark-background .content-formatted b, .dark-background
 .content-formatted strong {
-  color: white;
+  color: rgba(255, 255, 255, 0.8);
 }
 .content-formatted table th, .light-background .content-formatted table th {
   color: rgba(0, 0, 0, 0.8);
@@ -1041,6 +1041,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   .content-formatted .content-header {
     font-size: 200%;
   }
+}
+.content-formatted .content-header b, .content-formatted .content-header strong {
+  font-weight: 700;
 }
 .content-formatted .content-header:not(:empty) {
   padding-bottom: 20px;
