@@ -1030,7 +1030,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 
 .content-header {
+  display: inline-block;
   width: 100%;
+  box-sizing: border-box;
 }
 .content-formatted .content-header {
   font-weight: 700;
