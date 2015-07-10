@@ -15,7 +15,7 @@
                   <ul>
                     {% for level3 in level2.visible_children %}
                       <li class="{% if forloop.last %}last{% endif %} {% unless level3.translated? %}untranslated{% endunless %}">
-                        <a href="{{ level3.url }}"{% if level3.selected? %} class="active"{% endif%}{% unless level3.translated? %} class="fci-editor-menuadd"{% endunless %}>{{ level3.title }}</a>                         
+                        <a href="{{ level3.url }}"{% if level3.selected? %} class="active"{% endif%}{% unless level3.translated? %} class="fci-editor-menuadd"{% endunless %}>{{ level3.title }}</a>
                       </li>
                     {% endfor %}
                     {% if editmode %}
@@ -32,9 +32,15 @@
         {% endif %}
       </li>
     {% endfor %}
+
     {% if editmode %}
+      {% if site.hidden_menuitems.size > 0 %}
+        <li class="edit-btn">{% menubtn site.hidden_menuitems %}</li>
+      {% endif %}
+
       <li class="edit-btn">{% menuadd %}</li>
     {% endif %}
+
   </ul>
   <ul class="languages">
     {% for language in site.languages %}
