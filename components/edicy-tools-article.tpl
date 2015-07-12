@@ -9,7 +9,7 @@
         target_width: $('.post-header-wrapper').width(),
 
         preview: function(data) {
-          if (data.image && data.image !== '') {
+          if (data.image && data.imageSizes) {
             if (data.image.replace(/.*\/photos/g,'/photos') !== articleCover.prevBgImage) {
               var img = $('<img>'), canvas = $('<canvas>'),
                   url = (data.imageSizes ? data.imageSizes[data.imageSizes.length - 1].url : data.image);
@@ -25,6 +25,11 @@
               var image_url = site.getPhotoByWidth(data.imageSizes, $('.post-header-wrapper').width());
               $('.article-cover-image').css({'background-image' : 'url("' + image_url + '")'});
             }
+          } else if (data.image && data.image !== '') {
+            // Fix Safari from constantly loading a new image on Bg picker slider change
+            var articleCoverBgImage = data.image.split('/').pop();
+
+            $('.article-cover-image').css({'background-image' : 'url(images/"' + articleCoverBgImage + '")'});
           } else {
             $('.article-cover-image').css({'background-image' : 'none'});
             articleCover.bgColor = [255,255,255,0];
