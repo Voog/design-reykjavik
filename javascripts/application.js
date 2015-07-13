@@ -11308,7 +11308,6 @@ MMCQ = (function() {
   });
 
   var bindFallbackHeaderLeftWidthCalculation = function() {
-    console.log('jeaea');
     var headerWidth = $('.js-header').width(),
         headerRight = $('.js-header-right'),
         headerRightWidth = headerRight.width();
@@ -11347,7 +11346,7 @@ MMCQ = (function() {
       clearTimeout(resizeTimeout);
       resizeTimeout = setTimeout(function() {
         var height = parseInt($('.content-left .content-header').parent().css('height')),
-            padding = parseFloat($('.content-right').css('padding'));
+            padding = parseFloat($('.content-right').css('padding-top'));
         height += parseInt($('.content-left .news').parent().css('height'));
         $('.content-right').css('min-height', height - 2 * padding);
       }, 200);
