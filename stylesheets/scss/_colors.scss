@@ -360,7 +360,7 @@ a {
 .content-formatted,
 .voog-search-modal {
   .light-background &, & {
-    a:not(.noborder) {
+    a:not(.noborder):not(.custom-btn) {
       border-bottom: 1px solid $link-solid;
       border-bottom: 1px solid $link-rgba-light;
       box-shadow: inset 0 -4px 0$link-solid;
@@ -374,7 +374,7 @@ a {
     }
   }
   .dark-background & {
-    a:not(.noborder) {
+    a:not(.noborder):not(.custom-btn) {
       border-bottom: 1px solid $link-solid;
       border-bottom: 1px solid $link-rgba-dark;
       box-shadow: inset 0 -4px 0 $link-solid;
@@ -403,10 +403,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .content-formatted {
   h1,h2,h3,h4,h5,h6,
   li:before,
-  a:not(.noborder) {
+  a:not(.noborder):not(.custom-btn) {
     @include color-set($dark-primary, $light-primary);
   }
-  a:not(.noborder):hover {
+  a:not(.noborder):not(.custom-btn):hover {
     @include color-set($dark-hover, $light-hover);
   }
   pre {

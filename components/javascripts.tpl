@@ -12,6 +12,13 @@
       resultsContainer: $('.voog-search-modal').get(0)
     });
   </script>
-
 {% endif %}
+
+{% if editmode %}
+  <script type="text/javascript">
+    window.edy = window.edy || [];
+    edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+  </script>
+{% endif %}
+
 {% unless editmode %}{{ site.analytics }}{% endunless %}
