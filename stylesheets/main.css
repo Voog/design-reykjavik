@@ -1822,6 +1822,7 @@ body .header-wrapper .edy-bgpicker-toggle-button {
 }
 
 .main-menu-wrapper {
+  max-width: 100%;
   vertical-align: top;
   text-align: right;
 }
@@ -2112,6 +2113,11 @@ ul.menu .menu-item:before {
 }
 
 .menu-main {
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  word-break: break-word;
   display: inline-block;
   z-index: 1;
   padding: 7px 0;
