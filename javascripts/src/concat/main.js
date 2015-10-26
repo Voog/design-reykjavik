@@ -1,5 +1,7 @@
 ;(function($) {
-  var editmode = $('html').hasClass('editmode');
+  var editmode = function () {
+    return $('html').hasClass('editmode');
+  };
 
   // Remove comments if debouncing is used.
   // Function to limit the rate at which a function can fire.
@@ -82,7 +84,7 @@
 
   // TODO: Remove if Edicy is going to wrap table with the container
   var wrapTables = function() {
-    if (!editmode) {
+    if (!editmode()) {
       $('.content-formatted table').wrap('<div class="table-container overthrow"></div>');
     }
   };
@@ -295,6 +297,11 @@
       });
     };
 
+  var bindCustomTexteditorStyles = function() {
+    window.edy = window.edy || [];
+    edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+  };
+
     var init = function() {
       // ADD SITE WIDE FUNCTIONS HERE
       handleLanguageSwitch();
@@ -307,7 +314,11 @@
       initSearchCancel();
       addMobileMenuResizeListener();
 
-      if (!Modernizr.flexbox && editmode) {
+      if (editmode()) {
+        bindCustomTexteditorStyles();
+      }
+
+      if (!Modernizr.flexbox && editmode()) {
         bindFallbackHeaderLeftWidthCalculation();
       };
     };
