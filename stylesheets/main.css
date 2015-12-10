@@ -1082,10 +1082,10 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   display: block;
   /* TABLES */
 }
-.content-formatted > .content-formatted h1:first-child, .content-formatted > .content-formatted h2:first-child, .content-formatted > .content-formatted h3:first-child, .content-formatted > .content-formatted h4:first-child, .content-formatted > .content-formatted h5:first-child, .content-formatted > .content-formatted h6:first-child, .content-formatted > .content-formatted p:first-child, .content-formatted > .content-formatted ul:first-child, .content-formatted > .content-formatted ol:first-child, .content-formatted > .content-formatted pre:first-child, .content-formatted > .content-formatted code:first-child, .content-formatted > .content-formatted img:first-child, .content-formatted > .content-formatted table form:first-child, .content-formatted > .content-formatted .edy-partial-view:first-child {
+.content-formatted > .content-formatted h1:first-child, .content-formatted > .content-formatted h2:first-child, .content-formatted > .content-formatted h3:first-child, .content-formatted > .content-formatted h4:first-child, .content-formatted > .content-formatted h5:first-child, .content-formatted > .content-formatted h6:first-child, .content-formatted > .content-formatted p:first-child, .content-formatted > .content-formatted ul:first-child, .content-formatted > .content-formatted ol:first-child, .content-formatted > .content-formatted pre:first-child, .content-formatted > .content-formatted code:first-child, .content-formatted > .content-formatted table form:first-child, .content-formatted > .content-formatted .edy-partial-view:first-child {
   margin-top: 0;
 }
-.content-formatted > .content-formatted h1:last-child, .content-formatted > .content-formatted h2:last-child, .content-formatted > .content-formatted h3:last-child, .content-formatted > .content-formatted h4:last-child, .content-formatted > .content-formatted h5:last-child, .content-formatted > .content-formatted h6:last-child, .content-formatted > .content-formatted p:last-child, .content-formatted > .content-formatted ul:last-child, .content-formatted > .content-formatted ol:last-child, .content-formatted > .content-formatted pre:last-child, .content-formatted > .content-formatted code:last-child, .content-formatted > .content-formatted img:last-child, .content-formatted > .content-formatted table form:last-child, .content-formatted > .content-formatted .edy-partial-view:last-child {
+.content-formatted > .content-formatted h1:last-child, .content-formatted > .content-formatted h2:last-child, .content-formatted > .content-formatted h3:last-child, .content-formatted > .content-formatted h4:last-child, .content-formatted > .content-formatted h5:last-child, .content-formatted > .content-formatted h6:last-child, .content-formatted > .content-formatted p:last-child, .content-formatted > .content-formatted ul:last-child, .content-formatted > .content-formatted ol:last-child, .content-formatted > .content-formatted pre:last-child, .content-formatted > .content-formatted code:last-child, .content-formatted > .content-formatted table form:last-child, .content-formatted > .content-formatted .edy-partial-view:last-child {
   margin-bottom: 0;
 }
 .content-formatted h1, .content-formatted h2, .content-formatted h3, .content-formatted h4, .content-formatted h5, .content-formatted h6 {
@@ -1165,13 +1165,8 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .content-formatted a:hover {
   text-decoration: none;
 }
-.content-formatted img, .content-formatted iframe {
+.content-formatted iframe {
   max-width: 100%;
-}
-.content-formatted img {
-  border: none;
-  height: auto;
-  margin-bottom: -2px;
 }
 .content-formatted iframe, .content-formatted pre {
   margin-bottom: 20px;

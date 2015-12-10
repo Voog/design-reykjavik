@@ -7,7 +7,7 @@
   display: block;
 
   // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
-  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, img, table form, .edy-partial-view {
+  h1, h2, h3, h4, h5, h6, p, ul, ol, pre, code, table form, .edy-partial-view {
     .content-formatted > &:first-child {
       margin-top: 0;
     }
@@ -98,14 +98,8 @@
   }
 
   // Styling rules for the editable content area images, embedded videos, preformatted texts, code examples etc.
-  img, iframe {
+  iframe {
     max-width: 100%;
-  }
-
-  img {
-    border: none;
-    height: auto;
-    margin-bottom: -2px;
   }
 
   iframe, pre {
