@@ -75,14 +75,10 @@ body.dark-background .background-color {
   border-bottom-color: #444444;
 }
 .light-background .header .langmenu ul, .header .langmenu ul {
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
   background-color: #f7f7f7;
 }
 .dark-background .header .langmenu ul {
-  -webkit-box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15) ;
-  -moz-box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15) ;
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15) ;
   background-color: #444444;
 }
@@ -246,8 +242,6 @@ body.dark-background .background-color {
   border-bottom-color: #f7f7f7;
 }
 .light .header .langmenu ul {
-  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
-  -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) ;
   background-color: #f7f7f7;
 }
@@ -282,8 +276,6 @@ body.dark-background .background-color {
   border-bottom-color: #444444;
 }
 .dark .header .langmenu ul {
-  -webkit-box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15) ;
-  -moz-box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15) ;
   box-shadow: 0 10px 20px rgba(255, 255, 255, 0.15) ;
   background-color: #444444;
 }
@@ -498,14 +490,12 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .light-background .content-formatted .form_submit input, .content-formatted .form_submit input {
   background-color: #efefef;
   background-color: rgba(255, 255, 255, 0.8);
-  background: -webkit-linear-gradient( top , rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%);
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
 .dark-background .content-formatted .form_submit input {
   background-color: #1f1f1f;
   background-color: rgba(0, 0, 0, 0.8);
-  background: -webkit-linear-gradient( top , rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 );
   /* ie */
@@ -644,8 +634,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 
 .voog-search-modal {
-  -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ;
-  -moz-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) ;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -1361,8 +1349,6 @@ body:not(.front-page) .footer {
 .content-formatted .form_field_select,
 .content-formatted .form_field_file,
 .content-formatted .form_submit input {
-  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) ;
-  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) ;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04) ;
   font-size: 0.9em;
   font-family: inherit;
@@ -1380,8 +1366,6 @@ body:not(.front-page) .footer {
 .content-formatted .form_field_select,
 .content-formatted .form_field_file {
   max-width: 100%;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
   box-shadow: none;
 }
 .content-formatted .form_field_textfield,
@@ -1784,10 +1768,8 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   display: -ms-flexbox;
   display: flex;
   -webkit-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: end;
   -ms-flex-pack: end;
   -webkit-justify-content: flex-end;
   -moz-justify-content: flex-end;
@@ -1846,9 +1828,7 @@ body .header-wrapper .edy-bgpicker-toggle-button {
 }
 .flexbox .mobile-menu-wrapper {
   max-width: 100%;
-  -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
-  -moz-box-flex: 1;
   -moz-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
