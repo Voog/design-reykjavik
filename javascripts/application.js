@@ -10624,6 +10624,8 @@ MMCQ = (function() {
             padding = parseFloat($('.content-right').css('padding-top'));
         height += parseInt($('.content-left .news').parent().css('height'));
         $('.content-right').css('min-height', height - 2 * padding);
+        $('.frontpage-cover-image').removeClass('hidden');
+        $('.frontpage-cover-color').removeClass('hidden');
       }, 200);
     };
 

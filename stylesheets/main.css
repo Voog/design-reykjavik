@@ -1714,6 +1714,10 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 /* HEADER */
 .header {
   text-align: left;
