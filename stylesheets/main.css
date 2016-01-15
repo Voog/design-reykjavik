@@ -1536,11 +1536,17 @@ body {
   margin-left: 200px;
   padding-left: 15px;
   width: auto;
+  padding-right: 20px;
 }
 @media screen and (max-width: 752px) {
   .common-page .content .content-right {
     margin-left: 0;
     padding: 0;
+  }
+}
+@media screen and (min-width: 1004px) {
+  .common-page .content .content-right {
+    left: 20px;
   }
 }
 @media screen and (max-width: 752px) {
