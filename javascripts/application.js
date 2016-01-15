@@ -10407,11 +10407,6 @@ MMCQ = (function() {
     });
   });
 
-  $('.mobile-menu-btn').click(function() {
-    $('.mobile-menu-inner').toggle();
-    return false;
-  });
-
   $('a.news-older-show').click(function() { $(this).addClass('no-bg'); $('.news-older-hidden').show(); return false; });
 
   $('.mobile-menu-arr').click(function(event) {
