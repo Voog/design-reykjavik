@@ -1792,13 +1792,13 @@ body .header-wrapper .edy-bgpicker-toggle-button {
 @media screen and (max-width: 752px) {
   .header-title {
     z-index: 12;
-    padding: 6px 48px 7px 13px;
+    padding: 6px 48px 7px 20px;
     text-align: left;
     top: 0;
     left: 0;
   }
   .search-enabled .header-title {
-    padding-right: 75px;
+    padding-right: 80px;
   }
 }
 .header-title, .header-title .title-link {
@@ -1888,7 +1888,7 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   .menu-btn {
     position: absolute;
     top: 8px;
-    right: 5px;
+    right: 15px;
     display: inline-block;
     float: right;
     margin: 0;
@@ -2584,7 +2584,7 @@ ul.menu .menu-item:before {
     top: 0;
     right: 0;
     display: block;
-    margin-right: 40px;
+    margin-right: 45px;
     height: 41px;
   }
 }
