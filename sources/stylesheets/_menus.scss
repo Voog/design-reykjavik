@@ -5,12 +5,12 @@
 .menu-btn {
   @include query($tablet-2) {
     position: absolute;
-    top: 13px;
-    right: 10px;
+    top: 8px;
+    right: 5px;
     display: inline-block;
     float: right;
     margin: 0;
-    padding: 0;
+    padding: 5px;
     // min-height: 41px;
     border: none;
     background: none;
