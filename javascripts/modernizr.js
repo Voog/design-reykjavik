@@ -1,5 +1,5 @@
 /*!
- * modernizr v3.2.0
+ * modernizr v3.3.1
  * Build http://modernizr.com/download?-backgroundsize-flexbox-svg-setclasses-shiv-dontmin
  *
  * Copyright (c)
@@ -36,7 +36,7 @@
 
   var ModernizrProto = {
     // The current version, dummy
-    _version: '3.2.0',
+    _version: '3.3.1',
 
     // Any settings that don't work as separate modules
     // can go in here as configuration.
@@ -1091,10 +1091,10 @@
   "name": "Background Size",
   "property": "backgroundsize",
   "tags": ["css"],
-  "knownBugs": ["This will false positive in Opera Mini - http://github.com/Modernizr/Modernizr/issues/396"],
+  "knownBugs": ["This will false positive in Opera Mini - https://github.com/Modernizr/Modernizr/issues/396"],
   "notes": [{
     "name": "Related Issue",
-    "href": "http://github.com/Modernizr/Modernizr/issues/396"
+    "href": "https://github.com/Modernizr/Modernizr/issues/396"
   }]
 }
 !*/
