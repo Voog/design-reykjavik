@@ -50,6 +50,10 @@ body {
   }
 }
 
+.post-page .container {
+  // padding: 0;
+} 
+
 // BOTH BACKGROUND COLORS
 .light-background,
 .dark-background {
@@ -405,9 +409,12 @@ main.content-formatted {
 }
 
 // CONTENT 
-main.content-formatted,
-.post .post-excerpt,
-.post .post-body {
+main.content-formatted {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+}
+
+.post {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
 }

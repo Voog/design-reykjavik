@@ -11,7 +11,7 @@ body {
   font-weight: 400;
   font-size: 18px;
   font-family: $font;
-  line-height: 1.45em;
+  line-height: 1.45;
 }
  // Layout specific body classes
 
@@ -90,7 +90,7 @@ body {
       }
       position: relative;
       padding: 25px 30px;
-      line-height: 1.45em;
+      line-height: 1.45;
       &:empty {
         padding: 0;
       }

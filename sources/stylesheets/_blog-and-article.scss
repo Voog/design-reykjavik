@@ -4,13 +4,13 @@
   padding-top: 40px;
   .post-meta {
     margin-bottom: 5px;
-    line-height: 1.2em;
+    line-height: 1.2;
   }
 
   .post-title {
     margin-bottom: 5px;
     padding-bottom: 0;
-    line-height: 1.2em;
+    line-height: 1.2;
 
     &, a {
       @include query($tablet-2) {
@@ -40,7 +40,7 @@
     vertical-align: 1px;
     text-align: center;
     font-size: 12px;
-    line-height: 1em;
+    line-height: 1;
     &:hover { 
       text-decoration: none;
     }
@@ -74,7 +74,7 @@
     padding: 25px 0 5px;
     font-weight: bold;
     font-size: 0.9em;
-    line-height: 1.2em;
+    line-height: 1.2;
 
     .tag-link {
       margin-right: 20px;

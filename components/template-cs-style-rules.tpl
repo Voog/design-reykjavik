@@ -311,9 +311,12 @@ main.content-formatted h3 a:hover {
   text-transform: var(--content-submenu-active-text-transform);
 }
 
-main.content-formatted,
-.post .post-excerpt,
-.post .post-body {
+main.content-formatted {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+}
+
+.post {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
 }
