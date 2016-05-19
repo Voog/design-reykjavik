@@ -20,7 +20,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --h1-line-height: 1em;
+  --h1-line-height: 1.2;
   /* VoogStyle
      "pathI18n": ["headings", "title"],
      "titleI18n": "alignment",
@@ -41,7 +41,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --h1-font-weight: 400;
+  --h1-font-weight: 600;
   /* VoogStyle
     "pathI18n": ["headings", "title"],
     "titleI18n": "font_style",
@@ -82,15 +82,6 @@
   */
   --h1-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["headings", "title"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --h1-color: #333;
-  /* VoogStyle
     "pathI18n": ["headings", "heading"],
     "titleI18n": "size",
     "editor": "rangePicker",
@@ -100,7 +91,7 @@
     "scope": "global",
     "featured": true
   */
-  --h2-font-size: 24px;
+  --h2-font-size: 27px;
   /* VoogStyle
      "pathI18n": ["headings", "heading"],
      "titleI18n": "line_height",
@@ -111,7 +102,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --h2-line-height: 1.4;
+  --h2-line-height: 1.2;
   /* VoogStyle
      "pathI18n": ["headings", "heading"],
      "titleI18n": "alignment",
@@ -173,15 +164,6 @@
   */
   --h2-text-transform: uppercase;
   /* VoogStyle
-    "pathI18n": ["headings", "heading"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --h2-color: #c33;
-  /* VoogStyle
     "pathI18n": ["headings", "subheading"],
     "titleI18n": "size",
     "editor": "rangePicker",
@@ -191,7 +173,7 @@
     "scope": "global",
     "featured": true
   */
-  --h3-font-size: 18px;
+  --h3-font-size: 23px;
   /* VoogStyle
      "pathI18n": ["headings", "subheading"],
      "titleI18n": "line_height",
@@ -202,7 +184,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --h3-line-height: 1.4;
+  --h3-line-height: 1.2;
   /* VoogStyle
      "pathI18n": ["headings", "subheading"],
      "titleI18n": "alignment",
@@ -262,14 +244,5 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --h3-text-transform: uppercase;
-  /* VoogStyle
-    "pathI18n": ["headings", "subheading"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --h3-color: #c33;
+  --h3-text-transform: none;
 }

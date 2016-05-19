@@ -36,7 +36,7 @@
         },
         {
           "title": "Source Sans Pro",
-          "value": "\"Source Sans Pro\", sans-serif"
+          "value": "\"Source Sans Pro\", Arial, Verdana, sans-serif"
         },
         {
           "title": "Ubuntu",

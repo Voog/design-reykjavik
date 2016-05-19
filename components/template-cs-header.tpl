@@ -20,7 +20,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --header-site-title-line-height: 1.1em;
+  --header-site-title-line-height: 1.2;
   /* VoogStyle
     "pathI18n": ["header", "title"],
     "titleI18n": "font_weight",
@@ -72,16 +72,7 @@
     "icon": "uppercase",
     "scope": "global"
   */
-  --header-site-title-text-transform: uppercase;
-  /* VoogStyle
-    "pathI18n": ["header", "title"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --header-site-title-color: #333;
+  --header-site-title-text-transform: none;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "normal"],
     "titleI18n": "size",
@@ -92,7 +83,7 @@
     "scope": "global",
     "featured": true
   */
-  --header-mainmenu-font-size: 12px;
+  --header-mainmenu-font-size: 18px;
   /* VoogStyle
      "pathI18n": ["header", "main_menu", "normal"],
      "titleI18n": "line_height",
@@ -103,7 +94,7 @@
      "unit": "em",
      "scope": "global"
   */
-  --header-mainmenu-line-height: 1em;
+  --header-mainmenu-line-height: 1.3;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "normal"],
     "titleI18n": "font_weight",
@@ -146,7 +137,7 @@
     "icon": "bold",
     "scope": "global"
   */
-  --header-mainmenu-active-font-weight: 400;
+  --header-mainmenu-active-font-weight: 600;
   /* VoogStyle
     "pathI18n": ["header", "main_menu", "normal"],
     "titleI18n": "font_style",
@@ -276,29 +267,4 @@
     "scope": "global"
   */
   --header-mainmenu-active-text-transform: uppercase;
-  /* VoogStyle
-    "pathI18n": ["header", "main_menu", "normal"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --header-mainmenu-color: #919191;
- /* VoogStyle
-  "pathI18n": ["header", "main_menu", "hover"],
-  "titleI18n": "color",
-  "type": "button",
-  "editor": "colorPicker",
-  "scope": "global"
-*/
-  --header-mainmenu-hover-color: #333;
- /* VoogStyle
-  "pathI18n": ["header", "main_menu", "active"],
-  "titleI18n": "color",
-  "type": "button",
-  "editor": "colorPicker",
-  "scope": "global"
-*/
-  --header-mainmenu-active-color: #333;
 }

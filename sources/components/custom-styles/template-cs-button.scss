@@ -25,7 +25,7 @@
     "editor": "colorPicker",
     "scope": "global"
   */
-  --button-background-color: #dadada;
+  --button-background-color: none;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -37,7 +37,7 @@
     "featured": true,
     "scope": "global"
   */
-  --button-font-size: 16px;
+  --button-font-size: 17px;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -49,7 +49,7 @@
     "unit": "em",
     "scope": "global"
   */
-  --button-line-height: 1.7em;
+  --button-line-height: 1.7;
 
   /* VoogStyle
     "pathI18n": ["button"],
@@ -106,16 +106,6 @@
     "scope": "global"
   */
   --button-text-transform: none;
-
-  /* VoogStyle
-    "pathI18n": ["button"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "featured": true,
-    "scope": "global"
-  */
-  --button-color: $color-four;
 
   // scss-lint:enable Comment, Indentation
 }

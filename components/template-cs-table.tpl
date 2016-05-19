@@ -16,12 +16,5 @@
      "unit": "px",
      "scope": "global"
   */
-  --table-cell-padding: 10px;
-  /* VoogStyle
-    "pathI18n": ["table"],
-    "titleI18n": "color",
-    "editor": "colorPicker",
-    "scope": "global"
-  */
-  --table-border-color: #919191;
+  --table-cell-padding: 5px;
 }

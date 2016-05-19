@@ -71,7 +71,7 @@
       width: 100%;
     }
     margin: 0;
-    padding: 5px 5px 4px;
+    padding: .33em .33em .27em;
     border-radius: 3px;
   }
   .form_field_textarea {
@@ -102,9 +102,8 @@
     margin-bottom: 23px;
 
     input {
-      padding-right: 20px;
-      padding-left: 20px;
-      height: 35px;
+      padding: .12em 1.18em;
+      // height: 35px;
       border-radius: 2px;
       font-size: 95%;
       cursor: pointer;

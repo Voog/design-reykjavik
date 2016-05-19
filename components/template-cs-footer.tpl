@@ -9,7 +9,7 @@
     "scope": "global",
     "featured": true
   */
-  --footer-font-size: 12px;
+  --footer-font-size: 13px;
   /* VoogStyle
      "pathI18n": ["footer", "text"],
      "titleI18n": "line_height",
@@ -20,13 +20,5 @@
      "unit": "em",
      "scope": "global"
   */
-  --footer-line-height: 1.4;
-  /* VoogStyle
-    "pathI18n": ["footer", "text"],
-    "titleI18n": "color",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --footer-color: #333;
+  --footer-line-height: 1.7;
 }

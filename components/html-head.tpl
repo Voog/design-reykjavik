@@ -16,7 +16,7 @@
 {% if site.data.touch_icon %}<link rel="apple-touch-icon" href="{{ site.data.touch_icon }}">{% endif %}
 
 {% comment %}STYLESHEETS{% endcomment %}
-{% stylesheet_link "main.min.css" %}
+{% stylesheet_link "main.css" %}
 {% if editmode %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.css">{% endif %}
 {% if site.search.enabled %}<link rel="stylesheet" href="{{ site.static_asset_host }}/libs/edicy-search/latest/edicy-search.css">{% endif %}
 {% if page.language_code == "ru" or page.language_code == "ab" or page.language_code == "av" or page.language_code == "ba" or page.language_code == "be" or page.language_code == "bg" or page.language_code == "ce" or page.language_code == "cu" or page.language_code == "cv" or page.language_code == "kk" or page.language_code == "kv" or page.language_code == "ky" or page.language_code == "mk" or page.language_code == "mn" or page.language_code == "os" or page.language_code == "sh" or page.language_code == "sr" or page.language_code == "tg" or page.language_code == "tk" or page.language_code == "tt" or page.language_code == "ug" or page.language_code == "uk" or page.language_code == "uz" %}
@@ -30,9 +30,6 @@
 
 {% customstyle %}
   {% include "template-cs-main-styles" %}
-  {% include "template-cs-headings" %}
-
-{% comment %}
   {% include "template-cs-header" %}
   {% if blog_list %}
     {% include "template-cs-blog-list" %}
@@ -40,15 +37,14 @@
   {% if blog_article %}
     {% include "template-cs-blog-article" %}
   {% endif %}
-  {% if common_page %}
+  {% if front_page or common_page %}
     {% include "template-cs-content" %}
   {% endif %}
   {% include "template-cs-footer" %}
   {% include "template-cs-headings" %}
-  {% include "template-cs-button" %}
   {% include "template-cs-table" %}
   {% include "template-cs-form" %}
-{% endcomment %}
+  {% include "template-cs-button" %}
   {% include "template-cs-style-rules" %}
 {% endcustomstyle %}
 
