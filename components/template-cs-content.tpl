@@ -403,4 +403,20 @@
     "scope": "global"
   */
   --content-links-hover-text-transform: none;
+  /* VoogStyle
+     "pathI18n": ["content", "link"],
+     "titleI18n": "normal",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --content-links-color: rgba(0, 150, 255, 0.2);
+  /* VoogStyle
+     "pathI18n": ["content", "link", "hover"],
+     "titleI18n": "hover",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --content-links-hover-color: rgba(0, 150, 255, 0.3);
 }

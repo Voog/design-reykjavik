@@ -29,17 +29,17 @@
      "unit": "px",
      "scope": "global"
   */
-  --site-width: $site-width;
+  --site-width: 960px;
 
   /* VoogStyle
      "pathI18n": ["main_styles"],
-     "titleI18n": "font_primary",
+     "titleI18n": "font",
      "editor": "listPicker",
      "list": {{ base_font_set }},
      "featured": true,
      "scope": "global"
   */
-  --font-one: $font-one;
+  --font: $font;
 
   /* VoogStyle
      "pathI18n": ["main_styles", "colors"],
@@ -76,22 +76,4 @@
      "featured": true
   */
   --light-secondary: $light-secondary;
-
-  /* VoogStyle
-     "pathI18n": ["main_styles", "links"],
-     "titleI18n": "normal",
-     "editor": "colorPicker",
-     "scope": "global",
-     "featured": true
-  */
-  --light-link: $link-rgba-light;
-
-  /* VoogStyle
-     "pathI18n": ["main_styles", "links"],
-     "titleI18n": "hover",
-     "editor": "colorPicker",
-     "scope": "global",
-     "featured": true
-  */
-  --dark-link: $link-rgba-dark;
 }

@@ -454,5 +454,23 @@
   */
   --content-links-hover-text-transform: none;
 
+  /* VoogStyle
+     "pathI18n": ["content", "link"],
+     "titleI18n": "normal",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --content-links-color: $link-rgba-light;
+
+  /* VoogStyle
+     "pathI18n": ["content", "link", "hover"],
+     "titleI18n": "hover",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --content-links-hover-color: $link-rgba-hover-light;
+
   // scss-lint:enable Comment, Indentation
 }

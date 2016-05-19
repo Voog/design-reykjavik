@@ -1,8 +1,46 @@
+body {
+  font-family: var(--font);
+}
 body.light-background {
   color: var(--dark-primary);
 }
 body.dark-background {
   color: var(--light-primary);
+}
+
+.header,
+.container,
+.content,
+.footer .footer-inner,
+.voog-reference,
+.blog-page .tagged-list-header {
+  max-width: var(--site-width);
+}
+
+@media screen and (min-width: 752px) {
+  .header,
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .front-page .content-left {
+    max-width: 900px;
+  }
+}
+.light-background .content-formatted a:not(.noborder):not(.custom-btn),
+.light-background .voog-search-modal a:not(.noborder):not(.custom-btn),
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn),
+.dark-background .voog-search-modal a:not(.noborder):not(.custom-btn) {
+  border-bottom-color: var(--content-links-color);
+  box-shadow: inset 0 -4px 0 var(--content-links-color);
+}
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):hover,
+.light-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover,
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):hover,
+.dark-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover {
+  border-bottom-color: var(--content-links-color);
+  box-shadow: inset 0 -4px 0 var(--content-links-color);
 }
 
 .light-background .header .header-title,
@@ -27,6 +65,13 @@ body.dark-background {
 .light-background .post .post-excerpt,
 .light-background .post .post-body {
   color: var(--dark-secondary);
+}
+.light-background .post .post-date {
+  color: var(--dark-primary);
+  opacity: .4;
+}
+.light-background .comments .comment-body {
+  color: var(--dark-primary);
 }
 .light-background .content-formatted,
 .light-background .content-formatted b,
@@ -66,8 +111,110 @@ body.dark-background {
   color: var(--dark-primary);
 }
 
-.light-background .post .post-date {
-  color: var(--blog-list-date-color);
+.blog-page.light-background .tagged-list-header .menu-link.active {
+  color: var(--dark-primary);
+  font-weight: 600;
+}
+
+.light-background .search input {
+  color: var(--dark-secondary);
+}
+
+.light-background .news .date,
+.light-background .news .author,
+.light-background .comments .comment-date {
+  color: var(--dark-primary);
+  opacity: .4;
+}
+
+.light-background .voog-reference a, .voog-reference a {
+  color: var(--dark-secondary);
+}
+
+.dark-background .header .header-title,
+.dark-background .header .header-title a {
+  color: var(--light-primary);
+}
+.dark-background .menu-main .menu .menu-link {
+  color: var(--light-primary);
+}
+.dark-background .menu-main .menu .menu-link:hover {
+  color: var(--light-primary);
+}
+.dark-background .menu-main .menu .menu-link.active, .dark-background .menu-main .menu .menu-link.active:hover {
+  color: var(--light-primary);
+}
+.dark-background .header .langmenu .langmenu-content {
+  color: var(--light-secondary);
+}
+.dark-background .content-left .menu .menu-link.active {
+  color: var(--light-primary);
+}
+.dark-background .post .post-excerpt,
+.dark-background .post .post-body {
+  color: var(--light-secondary);
+}
+.dark-background .post .post-date {
+  color: var(--light-primary);
+  opacity: .4;
+}
+.dark-background .comments .comment-body {
+  color: var(--light-primary);
+}
+.dark-background .content-formatted,
+.dark-background .content-formatted b,
+.dark-background .content-formatted strong,
+.dark-background .content-formatted h1,
+.dark-background .content-formatted h2,
+.dark-background .content-formatted h3,
+.dark-background .content-formatted h4,
+.dark-background .content-formatted h5,
+.dark-background .content-formatted h6,
+.dark-background .content-formatted li:before,
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn) {
+  color: var(--light-primary);
+}
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):hover {
+  color: var(--light-primary);
+  opacity: .6;
+}
+.dark-background .content-formatted table tr {
+  border-top-color: var(--light-secondary);
+  border-top-style: var(--table-border-style);
+}
+.dark-background .content-formatted .form_field_textfield,
+.dark-background .content-formatted .form_field_textarea {
+  color: var(--dark-primary);
+}
+.dark-background .content-formatted .custom-btn,
+.dark-background .content-formatted .form_submit input {
+  background-color: var(--button-background-color);
+  color: var(--light-secondary);
+}
+
+.dark .post-header .post-title,
+.dark .post-header .post-meta {
+  color: var(--light-primary);
+}
+
+.blog-page.dark-background .tagged-list-header .menu-link.active {
+  color: var(--light-primary);
+  font-weight: 600;
+}
+
+.dark-background .search input {
+  color: var(--light-secondary);
+}
+
+.dark-background .news .date,
+.dark-background .news .author,
+.dark-background .comments .comment-date {
+  color: var(--light-primary);
+  opacity: .4;
+}
+
+.dark-background .voog-reference a, .voog-reference a {
+  color: var(--light-secondary);
 }
 
 .header .header-title,
@@ -91,6 +238,7 @@ body.dark-background {
 .menu-main .menu .menu-link:hover {
   font-style: var(--header-mainmenu-hover-font-style);
   font-weight: var(--header-mainmenu-hover-font-weight);
+  opacity: .6;
   text-decoration: var(--header-mainmenu-hover-text-decoration);
   text-transform: var(--header-mainmenu-hover-text-transform);
 }
@@ -218,6 +366,14 @@ main.content-formatted,
   text-decoration: var(--blog-article-title-text-decoration);
   text-transform: var(--blog-article-title-text-transform);
 }
+.post-page .header-wrapper .post-header .post-meta {
+  font-size: var(--blog-article-date-font-size);
+  font-style: var(--blog-article-date-font-style);
+  font-weight: var(--blog-article-date-font-weight);
+  line-height: var(--blog-article-date-line-height);
+  text-decoration: var(--blog-article-date-text-decoration);
+  text-transform: var(--blog-article-date-text-transform);
+}
 
 .footer .content-formatted {
   font-size: var(--footer-font-size);
@@ -247,11 +403,22 @@ main.content-formatted,
 .content-formatted .form_field_textfield,
 .content-formatted .form_field_textarea,
 .content-formatted .form_field_select,
-.content-formatted .form_field_file {
+.content-formatted .form_field_file,
+.content-formatted .form_field,
+.content-formatted .edy-fe-label {
   font-size: var(--form-field-text-font-size);
   font-style: var(--form-field-text-font-style);
   font-weight: var(--form-field-text-font-weight);
   line-height: var(--form-field-text-line-height);
   text-decoration: var(--form-field-text-decoration);
   text-transform: var(--form-field-text-transform);
+}
+
+.comments {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+}
+.comments .comment-form,
+.comments .comment-title {
+  font-size: 1.1em;
 }

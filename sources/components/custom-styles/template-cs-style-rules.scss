@@ -19,6 +19,8 @@
 
 // MAIN STYLES - Colors
 body {
+  font-family: var(--font);
+
   &.light-background {
     color: var(--dark-primary);
   }
@@ -27,6 +29,43 @@ body {
   }
 }
 
+.header,
+.container,
+.content,
+.footer .footer-inner,
+.voog-reference,
+.blog-page .tagged-list-header {
+  max-width: var(--site-width);
+}
+
+@media screen and (min-width: 752px) {
+  .header,
+  .container {  
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .front-page .content-left {
+    max-width: 900px;
+  }
+}
+
+// BOTH BACKGROUND COLORS
+.light-background,
+.dark-background {
+  .content-formatted a:not(.noborder):not(.custom-btn),
+  .voog-search-modal a:not(.noborder):not(.custom-btn) {
+    border-bottom-color: var(--content-links-color);
+    box-shadow: inset 0 -4px 0 var(--content-links-color);
+
+    &:hover {
+      border-bottom-color: var(--content-links-color);
+      box-shadow: inset 0 -4px 0 var(--content-links-color);
+    }
+  }
+}
+
+// LIGHT BACKGROUND 
 .light-background {
   .header .header-title,
   .header .header-title a {
@@ -54,9 +93,20 @@ body {
     color: var(--dark-primary);
   }
 
-  .post .post-excerpt,
-  .post .post-body {
-    color: var(--dark-secondary);
+  .post {
+    .post-excerpt,
+    .post-body {
+      color: var(--dark-secondary);
+    }
+
+    .post-date {
+      color: var(--dark-primary);
+      opacity: .4;
+    }
+  }
+
+  .comments .comment-body {
+    color: var(--dark-primary);
   }
 
   .content-formatted {
@@ -106,8 +156,133 @@ body {
   color: var(--dark-primary);
 }
 
-.light-background .post .post-date {
-  color: var(--blog-list-date-color);
+.blog-page.light-background .tagged-list-header .menu-link.active {
+  color: var(--dark-primary);
+  font-weight: 600;
+}
+
+.light-background .search input {
+  color: var(--dark-secondary);
+}
+
+.light-background .news .date,
+.light-background .news .author,
+.light-background .comments .comment-date {
+  color: var(--dark-primary);
+  opacity: .4;
+}
+
+.light-background .voog-reference a, .voog-reference a {
+  color: var(--dark-secondary);
+}
+
+// DARK BACKGROUND
+.dark-background {
+  .header .header-title,
+  .header .header-title a {
+    color: var(--light-primary);
+  }  
+
+  .menu-main .menu .menu-link {
+    color: var(--light-primary);
+
+    &:hover {
+      color: var(--light-primary);
+    }
+
+    &.active,
+    &.active:hover {
+      color: var(--light-primary);
+    }
+  }
+
+  .header .langmenu .langmenu-content {
+    color: var(--light-secondary);
+  }
+
+  .content-left .menu .menu-link.active {
+    color: var(--light-primary);
+  }
+
+  .post {
+    .post-excerpt,
+    .post-body {
+      color: var(--light-secondary);
+    }
+
+    .post-date {
+      color: var(--light-primary);
+      opacity: .4;
+    }
+  }
+
+  .comments .comment-body {
+    color: var(--light-primary);
+  }
+
+  .content-formatted {
+    &,
+    b,
+    strong,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    li:before,
+    a:not(.noborder):not(.custom-btn) {
+      color: var(--light-primary);
+    }
+
+    a:not(.noborder):not(.custom-btn):hover {
+      color: var(--light-primary);
+      opacity: .6;
+    }
+
+    table {
+      tr {
+        border-top-color: var(--light-secondary);
+        border-top-style: var(--table-border-style);
+      }
+    }
+
+    .form_field_textfield,
+    .form_field_textarea {
+      color: var(--dark-primary);
+    }
+
+    .custom-btn,
+    .form_submit input {
+      background-color: var(--button-background-color);
+      color: var(--light-secondary);
+    }
+  }
+}
+
+.dark .post-header .post-title,
+.dark .post-header .post-meta {
+  color: var(--light-primary);
+}
+
+.blog-page.dark-background .tagged-list-header .menu-link.active {
+  color: var(--light-primary);
+  font-weight: 600;
+}
+
+.dark-background .search input {
+  color: var(--light-secondary);
+}
+
+.dark-background .news .date,
+.dark-background .news .author,
+.dark-background .comments .comment-date {
+  color: var(--light-primary);
+  opacity: .4;
+}
+
+.dark-background .voog-reference a, .voog-reference a {
+  color: var(--light-secondary);
 }
 
 // HEADER - Site title
@@ -133,6 +308,7 @@ body {
   &:hover {
     font-style: var(--header-mainmenu-hover-font-style);
     font-weight: var(--header-mainmenu-hover-font-weight);
+    opacity: .6;
     text-decoration: var(--header-mainmenu-hover-text-decoration);
     text-transform: var(--header-mainmenu-hover-text-transform);
   }
@@ -286,13 +462,24 @@ main.content-formatted,
 
 // BLOG ARTICLE
 
-.post-page .header-wrapper .post-header h1 {
-  font-size: var(--blog-article-title-font-size);
-  font-style: var(--blog-article-title-font-style);
-  font-weight: var(--blog-article-title-font-weight);
-  line-height: var(--blog-article-title-line-height);
-  text-decoration: var(--blog-article-title-text-decoration);
-  text-transform: var(--blog-article-title-text-transform);
+.post-page .header-wrapper .post-header { 
+  h1 {
+    font-size: var(--blog-article-title-font-size);
+    font-style: var(--blog-article-title-font-style);
+    font-weight: var(--blog-article-title-font-weight);
+    line-height: var(--blog-article-title-line-height);
+    text-decoration: var(--blog-article-title-text-decoration);
+    text-transform: var(--blog-article-title-text-transform);
+  }
+
+  .post-meta {
+    font-size: var(--blog-article-date-font-size);
+    font-style: var(--blog-article-date-font-style);
+    font-weight: var(--blog-article-date-font-weight);
+    line-height: var(--blog-article-date-line-height);
+    text-decoration: var(--blog-article-date-text-decoration);
+    text-transform: var(--blog-article-date-text-transform);
+  }
 }
 
 // FOOTER
@@ -327,12 +514,24 @@ main.content-formatted,
   .form_field_textfield,
   .form_field_textarea,
   .form_field_select,
-  .form_field_file {
+  .form_field_file,
+  .form_field,
+  .edy-fe-label {
     font-size: var(--form-field-text-font-size);
     font-style: var(--form-field-text-font-style);
     font-weight: var(--form-field-text-font-weight);
     line-height: var(--form-field-text-line-height);
     text-decoration: var(--form-field-text-decoration);
     text-transform: var(--form-field-text-transform);
+  }
+}
+
+.comments {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
+
+  .comment-form,
+  .comment-title {
+    font-size: 1.1em;
   }
 }
