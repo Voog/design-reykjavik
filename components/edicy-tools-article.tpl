@@ -57,6 +57,8 @@
       });
       $('.article-cover-settings').css({'left': 0, 'top': 0}).show();
     });
+
+    site.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
   </script>
 {% endeditorjsblock %}
 {% unless article_cover_image_sizes == '' or article_cover_image_sizes == nil %}
