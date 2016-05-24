@@ -1485,7 +1485,8 @@ body {
 @media screen and (max-width: 980px) {
   .front-page .content-right {
     margin-right: 20px;
-    width: 35%;
+    width: 33%;
+    width: calc(35% - 20px);
     min-height: initial;
   }
 }

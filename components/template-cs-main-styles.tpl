@@ -20,7 +20,7 @@
   */
   --font: "Source Sans Pro", Arial, Verdana, sans-serif;
   /* VoogStyle
-     "pathI18n": ["main_styles", "colors"],
+     "pathI18n": ["main_styles", "for_light_background"],
      "titleI18n": "primary_color",
      "editor": "colorPicker",
      "scope": "global",
@@ -28,7 +28,7 @@
   */
   --dark-primary: rgba(0, 0, 0, 0.8);
   /* VoogStyle
-     "pathI18n": ["main_styles", "colors"],
+     "pathI18n": ["main_styles", "for_light_background"],
      "titleI18n": "secondary_color",
      "editor": "colorPicker",
      "scope": "global",
@@ -36,16 +36,16 @@
   */
   --dark-secondary: rgba(0, 0, 0, 0.6);
   /* VoogStyle
-     "pathI18n": ["main_styles", "colors"],
-     "titleI18n": "third_color",
+     "pathI18n": ["main_styles", "for_dark_background"],
+     "titleI18n": "primary_color",
      "editor": "colorPicker",
      "scope": "global",
      "featured": true
   */
   --light-primary: rgba(255, 255, 255, 0.8);
   /* VoogStyle
-     "pathI18n": ["main_styles", "colors"],
-     "titleI18n": "fourth_color",
+     "pathI18n": ["main_styles", "for_dark_background"],
+     "titleI18n": "secondary_color",
      "editor": "colorPicker",
      "scope": "global",
      "featured": true

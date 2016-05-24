@@ -303,7 +303,8 @@
     "pathI18n": ["blog", "link", "normal"],
     "titleI18n": "border_color",
     "editor": "colorPicker",
-    "scope": "global"
+    "scope": "global",
+    "featured": true
   */
   --content-links-border-bottom-color: $link-rgba-light;
 
@@ -311,9 +312,24 @@
     "pathI18n": ["blog", "link", "normal"],
     "titleI18n": "border_color",
     "editor": "colorPicker",
-    "scope": "global"
+    "scope": "global",
+    "featured": true
   */
   --content-links-hover-border-bottom-color: $link-rgba-hover-light;
+
+  /* VoogStyle
+    "pathI18n": ["blog", "link", "normal"],
+    "titleI18n": "text_transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  --content-links-text-transform: none;
 
   /* VoogStyle
     "pathI18n": ["blog", "link", "hover"],
@@ -328,24 +344,6 @@
     "scope": "global"
   */
   --content-links-hover-text-transform: none;
-
-  /* VoogStyle
-     "pathI18n": ["blog", "link"],
-     "titleI18n": "normal",
-     "editor": "colorPicker",
-     "scope": "global",
-     "featured": true
-  */
-  --content-links-color: $link-rgba-light;
-
-  /* VoogStyle
-     "pathI18n": ["blog", "link", "hover"],
-     "titleI18n": "hover",
-     "editor": "colorPicker",
-     "scope": "global",
-     "featured": true
-  */
-  --content-links-hover-color: $link-rgba-hover-light;
 
   // scss-lint:enable Comment, Indentation
 }

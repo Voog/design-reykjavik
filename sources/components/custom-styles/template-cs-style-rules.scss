@@ -59,12 +59,12 @@ body {
 .dark-background {
   .content-formatted a:not(.noborder):not(.custom-btn),
   .voog-search-modal a:not(.noborder):not(.custom-btn) {
-    border-bottom-color: var(--content-links-color);
-    box-shadow: inset 0 -4px 0 var(--content-links-color);
+    border-bottom-color: var(--content-links-border-bottom-color);
+    box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
 
     &:hover {
-      border-bottom-color: var(--content-links-color);
-      box-shadow: inset 0 -4px 0 var(--content-links-color);
+      border-bottom-color: var(--content-links-hover-border-bottom-color);
+      box-shadow: inset 0 -4px 0 0 var(--content-links-hover-border-bottom-color);
     }
   }
 }
@@ -382,6 +382,10 @@ main.content-formatted {
  }
 
  // CONTENT - submenu
+ #sidebar {
+  line-height: var(--content-submenu-line-height);
+ }
+
  #sidebar .menu .menu-item a {
   font-size: var(--content-submenu-font-size);
   font-style: var(--content-submenu-font-style);
@@ -410,8 +414,10 @@ main.content-formatted {
 
 // CONTENT 
 main.content-formatted {
-  font-size: var(--content-font-size);
-  line-height: var(--content-line-height);
+  .content-body {
+    font-size: var(--content-font-size);
+    line-height: var(--content-line-height);
+  }
 }
 
 .post {
@@ -420,15 +426,15 @@ main.content-formatted {
 }
 
 // CONTENT - links
-.content .content-formatted a:not(.noborder):not(.custom-btn) {
+main.content-formatted a:not(.noborder):not(.custom-btn),
+footer .content-formatted a:not(.noborder):not(.custom-btn) {
   border-bottom-style: var(--content-links-border-bottom);
-  border-bottom-color: var(--content-links-border-bottom-color);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
+  text-transform: var(--content-links-text-transform);
 
   &:hover {
     border-bottom-style: var(--content-links-hover-border-bottom);
-    border-bottom-color: var(--content-links-hover-border-bottom-color);
     font-style: var(--content-links-hover-font-style);
     font-weight: var(--content-links-hover-font-weight);
     text-transform: var(--content-links-hover-text-transform);
@@ -507,6 +513,10 @@ main.content-formatted {
   line-height: var(--button-line-height);
   text-decoration: var(--button-text-decoration);
   text-transform: var(--button-text-transform);
+
+  &:hover {
+    opacity: .6;
+  }
 }
 
 // TABLE
@@ -531,6 +541,12 @@ main.content-formatted {
     text-decoration: var(--form-field-text-decoration);
     text-transform: var(--form-field-text-transform);
   }
+}
+
+nav.tags,
+section.news {
+  font-size: var(--content-font-size);
+  line-height: var(--content-line-height);
 }
 
 .comments {
