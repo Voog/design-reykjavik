@@ -2365,7 +2365,6 @@ ul.menu .menu-item:before {
 }
 .news .date,
 .news .author {
-  white-space: nowrap;
   line-height: 1.2;
 }
 .news .date {

@@ -57,7 +57,7 @@ body {
 // BOTH BACKGROUND COLORS
 .light-background,
 .dark-background {
-  .content-formatted a:not(.noborder):not(.custom-btn),
+  .content-formatted a:not(.noborder):not(.custom-btn):not(.link),
   .voog-search-modal a:not(.noborder):not(.custom-btn) {
     border-bottom-color: var(--content-links-border-bottom-color);
     box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
@@ -426,8 +426,8 @@ main.content-formatted {
 }
 
 // CONTENT - links
-main.content-formatted a:not(.noborder):not(.custom-btn),
-footer .content-formatted a:not(.noborder):not(.custom-btn) {
+main.content-formatted a:not(.noborder):not(.custom-btn):not(.link),
+footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link) {
   border-bottom-style: var(--content-links-border-bottom);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);

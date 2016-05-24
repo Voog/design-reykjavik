@@ -28,16 +28,16 @@ body.dark-background {
     max-width: 900px;
   }
 }
-.light-background .content-formatted a:not(.noborder):not(.custom-btn),
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link),
 .light-background .voog-search-modal a:not(.noborder):not(.custom-btn),
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn),
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link),
 .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn) {
   border-bottom-color: var(--content-links-border-bottom-color);
   box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
 }
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):hover,
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover,
 .light-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover,
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):hover,
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover,
 .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover {
   border-bottom-color: var(--content-links-hover-border-bottom-color);
   box-shadow: inset 0 -4px 0 0 var(--content-links-hover-border-bottom-color);
@@ -325,15 +325,15 @@ main.content-formatted .content-body {
   line-height: var(--content-line-height);
 }
 
-main.content-formatted a:not(.noborder):not(.custom-btn),
-footer .content-formatted a:not(.noborder):not(.custom-btn) {
+main.content-formatted a:not(.noborder):not(.custom-btn):not(.link),
+footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link) {
   border-bottom-style: var(--content-links-border-bottom);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
   text-transform: var(--content-links-text-transform);
 }
-main.content-formatted a:not(.noborder):not(.custom-btn):hover,
-footer .content-formatted a:not(.noborder):not(.custom-btn):hover {
+main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover,
+footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover {
   border-bottom-style: var(--content-links-hover-border-bottom);
   font-style: var(--content-links-hover-font-style);
   font-weight: var(--content-links-hover-font-weight);
