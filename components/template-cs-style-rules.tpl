@@ -354,6 +354,7 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover {
   line-height: var(--blog-list-title-line-height);
   font-weight: var(--blog-list-title-font-weight);
   font-style: var(--blog-list-title-font-style);
+  text-align: var(--blog-list-title-alignment);
   text-decoration: var(--blog-list-title-text-decoration);
   text-transform: var(--blog-list-title-text-transform);
 }
@@ -372,6 +373,7 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover {
   font-style: var(--blog-article-title-font-style);
   font-weight: var(--blog-article-title-font-weight);
   line-height: var(--blog-article-title-line-height);
+  text-align: var(--blog-article-title-alignment);
   text-decoration: var(--blog-article-title-text-decoration);
   text-transform: var(--blog-article-title-text-transform);
 }

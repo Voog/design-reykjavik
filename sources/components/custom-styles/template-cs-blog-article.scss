@@ -47,6 +47,15 @@
   --blog-article-title-line-height: 1.2;
 
   /* VoogStyle
+     "pathI18n": ["blog", "title"],
+     "titleI18n": "alignment",
+     "editor": "listPicker",
+     "list": {{ base_alignment_set }},
+     "scope": "global"
+  */
+  --blog-article-title-alignment: center;
+
+  /* VoogStyle
     "pathI18n": ["blog", "title"],
     "titleI18n": "font_weight",
     "type": "button",
