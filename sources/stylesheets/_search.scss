@@ -122,19 +122,20 @@
   margin: 0;
   padding: 0 50px 0 15px;
   height: 35px;
-  border: none;
   background: none;
+  border: none;
+  box-sizing: border-box;
   vertical-align: middle;
   font-size: 1em;
   font-family: inherit;
   line-height: 1;
+  max-width: 235px;
   &::-moz-placeholder {
     @include query($tablet-2) {
       line-height: 1.6;
     }
     line-height: 2;
   }
-  // box-sizing: border-box;
 
   @include query($tablet-2) {
     padding-right: 50px;
