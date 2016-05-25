@@ -149,6 +149,7 @@ body {
 
     .custom-btn,
     .form_submit input {
+      background: linear-gradient(to bottom,rgba(255,255,255,.6) 0,rgba(255,255,255,.8) 100%);
       background-color: var(--button-background-color);
       color: var(--dark-secondary);
     }
@@ -420,7 +421,7 @@ main.content-formatted {
   }
 }
 
-.post {
+.post-page .post {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
 }
