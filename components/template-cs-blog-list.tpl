@@ -126,15 +126,6 @@
   */
   --blog-list-date-text-transform: none;
   /* VoogStyle
-    "pathI18n": ["blog", "date"],
-    "titleI18n": "color",
-    "type": "button",
-    "editor": "colorPicker",
-    "scope": "global",
-    "featured": true
-  */
-  --blog-list-date-color: rgba(0, 0, 0, 0.3);
-  /* VoogStyle
   "pathI18n": ["blog", "text"],
   "titleI18n": "size",
   "editor": "rangePicker",
@@ -252,13 +243,26 @@
   */
   --content-links-border-bottom-color: rgba(0, 150, 255, 0.2);
   /* VoogStyle
-    "pathI18n": ["blog", "link", "normal"],
+    "pathI18n": ["blog", "link", "hover"],
     "titleI18n": "border_color",
     "editor": "colorPicker",
     "scope": "global",
     "featured": true
   */
   --content-links-hover-border-bottom-color: rgba(0, 150, 255, 0.3);
+  /* VoogStyle
+    "pathI18n": ["blog", "link", "normal"],
+    "titleI18n": "text_transform",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "uppercase",
+      "off": "none"
+    },
+    "icon": "uppercase",
+    "scope": "global"
+  */
+  --content-links-text-transform: none;
   /* VoogStyle
     "pathI18n": ["blog", "link", "hover"],
     "titleI18n": "text_transform",

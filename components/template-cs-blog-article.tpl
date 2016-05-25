@@ -265,7 +265,7 @@
   */
   --content-links-border-bottom-color: rgba(0, 150, 255, 0.2);
   /* VoogStyle
-    "pathI18n": ["blog", "link", "normal"],
+    "pathI18n": ["blog", "link", "hover"],
     "titleI18n": "border_color",
     "editor": "colorPicker",
     "scope": "global",
