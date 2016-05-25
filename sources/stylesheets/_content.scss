@@ -63,16 +63,17 @@
       font-weight: 700;
     }
     font-size: 70px;
-    line-height: 1em;
+    line-height: 1;
 
     &:not(:empty) {
-      padding-bottom: 20px;
+      padding-bottom: .3em;
     }
     .edy-texteditor-view {
       min-height: 1.2em;
     }
   }
 }
+
 
 .content-body {
   .front-page & {

@@ -1,0 +1,79 @@
+// =============================================================================
+// TEMPLATE CUSTOM STYLES.
+// This file sets the configuration for design editor tool.
+//
+// This file will be converted to CSS, copied under "/components" and renamed to
+// "*.tpl".
+//
+// The output component can be included in any "layout" or "component".
+// =============================================================================
+
+// =============================================================================
+// Modules
+// =============================================================================
+@import '../../stylesheets/variables';
+
+// =============================================================================
+// Design editor configuration.
+// =============================================================================
+:root {
+  // scss-lint:disable Comment, Indentation
+
+  /* VoogStyle
+     "pathI18n": ["main_styles"],
+     "titleI18n": "maximum_width",
+     "editor": "rangePicker",
+     "min": 600,
+     "max": 1800,
+     "step": 20,
+     "unit": "px",
+     "scope": "global"
+  */
+  --site-width: 960px;
+
+  /* VoogStyle
+     "pathI18n": ["main_styles"],
+     "titleI18n": "font",
+     "editor": "listPicker",
+     "list": {{ base_font_set }},
+     "featured": true,
+     "scope": "global"
+  */
+  --font: $font;
+
+  /* VoogStyle
+     "pathI18n": ["main_styles", "for_light_background"],
+     "titleI18n": "primary_color",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --dark-primary: $dark-primary;
+
+  /* VoogStyle
+     "pathI18n": ["main_styles", "for_light_background"],
+     "titleI18n": "secondary_color",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --dark-secondary: $dark-secondary;
+
+  /* VoogStyle
+     "pathI18n": ["main_styles", "for_dark_background"],
+     "titleI18n": "primary_color",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --light-primary: $light-primary;
+
+  /* VoogStyle
+     "pathI18n": ["main_styles", "for_dark_background"],
+     "titleI18n": "secondary_color",
+     "editor": "colorPicker",
+     "scope": "global",
+     "featured": true
+  */
+  --light-secondary: $light-secondary;
+}

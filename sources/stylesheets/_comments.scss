@@ -25,20 +25,20 @@
     text-transform: uppercase;
     font-weight: 600;
     font-size: 1.2em;
-    line-height: 1.2em;
+    line-height: 1.2;
   }
   .comment-messages {
     padding: 0 0 35px;
   }
   .comment-header {
-    line-height: 1.7em;
+    line-height: 1.7;
   }
   .comment-body {
     @include hyphens(true);
   }
   .comment {
     font-size: 1.1em;
-    line-height: 1.45em;
+    line-height: 1.45;
     &:not(:last-child) {
       margin-bottom: 20px;
     }

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+{% include "template-variables" %}
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
+  {% assign blog_list = true %}
   {% include "edicy-tools-variables" %}
-  {% include "html-head" %}
+  {% include "html-head" blog_list: true %}
 </head>
 
 <body class="blog-page js-body global-background-color {{ background_type }}-background{% if site.search.enabled %} search-enabled{% endif %}" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>

@@ -10,8 +10,8 @@ body {
   background-size: cover;
   font-weight: 400;
   font-size: 18px;
-  font-family: 'Source Sans Pro', Arial, Verdana, sans-serif;
-  line-height: 1.45em;
+  font-family: $font;
+  line-height: 1.45;
 }
  // Layout specific body classes
 
@@ -65,7 +65,8 @@ body {
     .content-right {
       @include query($tablet-1) {
         margin-right: 20px;
-        width: 35%;
+        width: 33%;
+        width: calc(35% - 20px);
         min-height: initial;
       }
       @include query($tablet-2) {
@@ -90,7 +91,7 @@ body {
       }
       position: relative;
       padding: 25px 30px;
-      line-height: 1.45em;
+      line-height: 1.45;
       &:empty {
         padding: 0;
       }
