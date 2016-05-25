@@ -10678,10 +10678,10 @@ MMCQ = (function() {
       });
     };
 
-  var bindCustomTexteditorStyles = function() {
-    window.edy = window.edy || [];
-    edy.push(['texteditorStyles', {name: 'Button', tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
-  };
+    var bindCustomTexteditorStyles = function(buttonTranslation) {
+      window.edy = window.edy || [];
+      edy.push(['texteditorStyles', {name: buttonTranslation, tagname:'a', attribute: {'href': '#'}, classname: 'custom-btn', toggle: true}]);
+    };
 
     var init = function() {
       // ADD SITE WIDE FUNCTIONS HERE
@@ -10694,10 +10694,6 @@ MMCQ = (function() {
       wrapTables();
       initSearchCancel();
       addMobileMenuResizeListener();
-
-      if (editmode()) {
-        bindCustomTexteditorStyles();
-      }
 
       if (!Modernizr.flexbox && editmode()) {
         bindFallbackHeaderLeftWidthCalculation();
@@ -10714,7 +10710,8 @@ MMCQ = (function() {
       getCombinedLightness: getCombinedLightness,
       handleHeaderColorScheme: handleHeaderColorScheme,
       getPhotoByWidth: getPhotoByWidth,
-      getPhotoByHeight: getPhotoByHeight
+      getPhotoByHeight: getPhotoByHeight,
+      bindCustomTexteditorStyles: bindCustomTexteditorStyles
     });
 
     init();

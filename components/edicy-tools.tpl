@@ -65,6 +65,8 @@
       }
     });
 
+    site.bindCustomTexteditorStyles('{{ "button" | lc: editor_locale }}');
+
     $('.global-background-settings').show();
   </script>
 {% endeditorjsblock %}
