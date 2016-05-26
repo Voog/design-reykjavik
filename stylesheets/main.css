@@ -1199,7 +1199,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 .dark-background .content-formatted .custom-btn {
   color: rgba(255, 255, 255, 0.8);
-  border-color: white;
+  border-color: rgba(255, 255, 255, 0.3);
 }
 .content-formatted .table-container {
   margin-top: 20px;
