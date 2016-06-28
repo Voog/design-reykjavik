@@ -40,9 +40,9 @@
   }
 
   .flexbox & {
-    @include display(flex);
-    @include flex-wrap(wrap);
-    @include justify-content(flex-end);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
   }
 }
 
