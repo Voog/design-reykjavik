@@ -855,6 +855,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
     line-height: 1.45;
   }
 }
+.post-page .header-wrapper {
+  position: relative;
+}
 .post-page .header-wrapper .post-header-wrapper {
   position: relative;
   min-height: 475px;
@@ -881,6 +884,18 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+@media screen and (max-width: 752px) {
+  .post-page .header-wrapper .post-header {
+    position: static;
+    top: 0;
+    width: 100%;
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }
 .post-page .header-wrapper .post-header h1 {
   margin-bottom: 15px;
