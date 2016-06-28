@@ -855,16 +855,15 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
     line-height: 1.45;
   }
 }
-.post-page .header-wrapper {
-  position: relative;
-}
 .post-page .header-wrapper .post-header-wrapper {
   position: relative;
   min-height: 475px;
   width: 100%;
+  margin-top: -70px;
 }
 @media screen and (max-width: 752px) {
   .post-page .header-wrapper .post-header-wrapper {
+    margin-top: 0;
     min-height: 225px;
   }
 }
@@ -1844,17 +1843,13 @@ body .header-wrapper .edy-bgpicker-toggle-button {
 }
 
 .post-page .header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  position: relative;
   padding: 15px;
   max-width: 100%;
   margin: 0;
 }
 @media screen and (max-width: 752px) {
   .post-page .header {
-    position: static;
     padding: 0;
   }
 }

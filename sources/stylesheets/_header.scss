@@ -109,13 +109,9 @@
 .post-page {
   .header {
     @include query($tablet-2) {
-      position: static;
       padding: 0;
     }
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
+    position: relative;
     padding: 15px;
     max-width: 100%;
     margin: 0;

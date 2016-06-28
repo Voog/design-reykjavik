@@ -11,13 +11,15 @@
 
 <body class="post-page js-body global-background-color {{ background_type }}-background{% if editmode %} editmode{% endif %}{% if site.search.enabled %} search-enabled{% endif %}" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
   <div class="header-wrapper {{ article_cover_type }}">
+    <div class="background-image cover article-cover-image"></div>
+    {% if article_cover_color != '' or editmode %}<div class="background-color cover article-cover-color edy-img-drop-area"{{ article_cover_color_style }}></div>{% endif %}
+    
     {% include "header" %}
     <div class="post-header-wrapper">
       {% if editmode %}
         <button class="bgpicker-toggle-button article-cover-settings" style="display:none;" data-bg-color="{{ article_cover_color }}" data-bg-image="{{ article_cover_image }}"></button>
       {% endif %}
-      <div class="background-image cover article-cover-image"></div>
-      {% if article_cover_color != '' or editmode %}<div class="background-color cover article-cover-color edy-img-drop-area"{{ article_cover_color_style }}></div>{% endif %}
+      
       <header class="post-header content-formatted">
         <h1 class="post-title">
           {% editable article.title %}

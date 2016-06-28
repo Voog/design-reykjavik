@@ -122,14 +122,15 @@
     line-height: 1.45;
   }
   .header-wrapper {
-    position: relative;
     .post-header-wrapper {
       @include query($tablet-2) {
+        margin-top: 0;
         min-height: 225px;
       }
       position: relative;
       min-height: 475px;
       width: 100%;
+      margin-top: -70px;
     }
 
     .background-color {
