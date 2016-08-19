@@ -5,18 +5,28 @@
   margin: auto;
   padding: 35px 0 40px;
   max-width: 960px;
-
+  
   .content-left {
-    float: left;
-
-    &.last {
-      clear: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 170px;
+    
+    @include query($tablet-2) {
+      .common-page & {
+        display: none;
+      }
     }
   }
-
+  
   .content-right {
     position: relative;
-    float: right;
+    
+    @include query($tablet-2 + 1, 'min-width') {
+      display: inline-block;
+      vertical-align: top;
+      width: calc(100% - 235px);
+      margin-left: 61px;
+    }
   }
 
   .no-flexbox &,

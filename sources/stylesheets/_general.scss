@@ -45,12 +45,14 @@ body {
         margin-bottom: 20px;
         padding: 0;
         width: 100%;
+        max-width: 100%;
         &.last {
           margin-top: 20px;
         }
       }
       max-width: 480px;
       width: 50%;
+      float: left;
     }
 
     .content-header {
@@ -79,10 +81,12 @@ body {
         }
         min-height: initial;
       }
+      margin-left: 0;
       padding: 40px;
       padding: 6%;
       width: 37%;
       min-height: 360px;
+      float: right;
     }
 
     .content-body {
@@ -96,49 +100,12 @@ body {
         padding: 0;
       }
     }
-
-    .content-right,
-    .content-left {
-      @include query($tablet-2) {
-        display: block;
-      }
-    }
   }
 
   .common-page {
     .content {
       @include query($tablet-2) {
         padding: 0 20px;
-      }
-      .content-right {
-        @include query($tablet-2) {
-          margin-left: 0;
-          padding: 0;
-        }
-        float: none;
-        margin-left: 200px;
-        padding-left: 15px;
-        width: auto;
-        padding-right: 20px;
-
-        @media screen and (min-width: 1004px) {
-          left: 20px;
-        }
-
-        h1 {
-          @include query($tablet-2) {
-            font-size: 200%;
-          }
-        }
-      }
-      .content-left {
-        @include query($tablet-2) {
-          display: none;
-        }
-        float: left;
-        clear: left;
-        min-height: 10px;
-        width: 170px;
       }
     }
 

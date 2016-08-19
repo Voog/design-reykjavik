@@ -282,9 +282,9 @@ ul.menu {
 
 // Styling rules for the site's sub menu.
 #sidebar {
-  @include query($tablet-1) {
-    margin-left: 20px;
-  }
+  //@include query($tablet-1) {
+  //  margin-left: 20px;
+  //}
   .menu {
     text-align: left;
 
@@ -333,7 +333,8 @@ ul.menu {
     padding-left: 0;
     .menu-item {
       padding-left: 20px;
-      width: 150px;
+      padding-right: 20px;
+      width: auto;
       border: none;
       .menu-link {
         padding: 16px 0;
