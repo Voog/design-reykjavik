@@ -28,16 +28,16 @@ body.dark-background {
     max-width: 900px;
   }
 }
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link),
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button),
 .light-background .voog-search-modal a:not(.noborder):not(.custom-btn),
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link),
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button),
 .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn) {
   border-bottom-color: var(--content-links-border-bottom-color);
   box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
 }
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover,
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):hover,
 .light-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover,
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover,
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):hover,
 .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover {
   border-bottom-color: var(--content-links-hover-border-bottom-color);
   box-shadow: inset 0 -4px 0 0 var(--content-links-hover-border-bottom-color);
@@ -327,15 +327,15 @@ main.content-formatted .content-body {
   line-height: var(--content-line-height);
 }
 
-main.content-formatted a:not(.noborder):not(.custom-btn):not(.link),
-footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link) {
+main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button),
+footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button) {
   border-bottom-style: var(--content-links-border-bottom);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
   text-transform: var(--content-links-text-transform);
 }
-main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover,
-footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):hover {
+main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):hover,
+footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):hover {
   border-bottom-style: var(--content-links-hover-border-bottom);
   font-style: var(--content-links-hover-font-style);
   font-weight: var(--content-links-hover-font-weight);
