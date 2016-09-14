@@ -30,7 +30,7 @@
         </aside>
         <article class="content-right">
           <section class="content-header">{% content name="slogan" %}</section>
-          <section class="content-body">{% content %}</section>
+          <section class="content-body" {{ edy_intro_edit_text }}>{% content %}</section>
         </article>
       {% else %}
         <article class="content-centered">
