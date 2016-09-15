@@ -38,11 +38,11 @@
       <article class="post full">
 
         <section class="post-content content-centered">
-          <div class="post-excerpt content-formatted">
+          <div class="post-excerpt content-formatted" {{ edy_intro_edit_text }}>
             {% editable article.excerpt %}
           </div>
 
-          <div class="post-body content-formatted" {{ edy_intro_edit_text }}>
+          <div class="post-body content-formatted">
             {% editable article.body %}
           </div>
 
