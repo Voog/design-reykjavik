@@ -1,4 +1,4 @@
-<div class="langmenu langmenu-with-popup">
+<div class="langmenu langmenu-with-popup" {{ edy_intro_add_lang }}>
   <div class="langmenu-content">{% for language in site.languages %}{% if language.selected? %}{{language.title}}{% endif %}{% endfor %}</div>
   <div class="langmenu-popup">
     <div class="langmenu-arrow"></div>

@@ -27,7 +27,7 @@
         {% endif %}
         {% if cover_image != '' or editmode %}<div class="background-image cover frontpage-cover-image hidden"></div>{% endif %}
         {% if cover_color != '' or editmode %}<div class="background-color cover frontpage-cover-color hidden"{{ cover_color_style }}></div>{% endif %}
-        <section class="content-body global-background-color"{{ background_color_style }}>{% content %}</section>
+        <section class="content-body global-background-color"{{ background_color_style }} {{ edy_intro_edit_text }}>{% content %}</section>
       </article>
       {% if site.latest_1_articles.size > 0 %}
       <aside class="content-left last">
