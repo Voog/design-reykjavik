@@ -10844,7 +10844,7 @@ MMCQ = (function() {
     };
 
     var initFrontPage = function() {
-      $(window).load(function() {
+      $(window).on('load', function() {
         resizeContentRight();
         if (($('.content-body').children().length < 1) && ($('.content-body').text().trim().length === 0)) {
           $('.content-body').hide();

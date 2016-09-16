@@ -1,7 +1,7 @@
 {% editorjsblock %}
   <script src='{{ site.static_asset_host }}/libs/edicy-tools/latest/edicy-tools.js'></script>
   <script>
-    $(window).load(function(window) {
+    $(window).on('load', function(window) {
       var articleCover = new Edicy.BgPicker($('.article-cover-settings').eq(0), {
         picture: true,
         color: true,
@@ -14,7 +14,7 @@
               var img = $('<img>'), canvas = $('<canvas>'),
                   url = (data.imageSizes ? data.imageSizes[data.imageSizes.length - 1].url : data.image);
               img.attr('src', url.replace(/.*\/photos/g,'/photos'));
-              img.load(function() {
+              img.on('load', function() {
                 ColorExtract.extract(img[0], canvas[0], function(data) {
                   articleCover.bgColor = data.bgColor;
                   site.handleHeaderColorScheme(site.getCombinedLightness(articleCover.bgColor, articleCover.fgColor));
