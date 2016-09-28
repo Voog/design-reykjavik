@@ -730,27 +730,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   opacity: 1.0;
 }
 
-.dark-background .edy-empty-bordered {
-  color: rgba(255, 255, 255, 0.5);
-  border-color: rgba(255, 255, 255, 0.5);
-}
-.dark-background .placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.dark-background .edy-content-element-hover {
-  border-width: 1px;
-  border-style: solid;
-  border-color: rgba(255, 255, 255, 0.2);
-}
-.dark-background .edy-texteditor-active {
-  outline-width: 1px;
-  outline-style: solid;
-  outline-color: rgba(255, 255, 255, 0.4);
-}
-.dark-background .edy-texteditor-active:hover {
-  outline-color: rgba(255, 255, 255, 0.63);
-}
-
 /* BLOG & BLOG ARTICLE */
 .post {
   padding-top: 40px;
@@ -1732,26 +1711,6 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   .header {
     padding: 0;
     margin-bottom: 45px;
-  }
-  .header .edy-empty-bordered {
-    color: rgba(255, 255, 255, 0.5);
-    border-color: rgba(255, 255, 255, 0.5);
-  }
-  .header .placeholder {
-    color: rgba(255, 255, 255, 0.5);
-  }
-  .header .edy-content-element-hover {
-    border-width: 1px;
-    border-style: solid;
-    border-color: rgba(255, 255, 255, 0.2);
-  }
-  .header .edy-texteditor-active {
-    outline-width: 1px;
-    outline-style: solid;
-    outline-color: rgba(255, 255, 255, 0.4);
-  }
-  .header .edy-texteditor-active:hover {
-    outline-color: rgba(255, 255, 255, 0.63);
   }
 }
 .flexbox .header {
