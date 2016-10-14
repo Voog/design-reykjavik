@@ -13,6 +13,10 @@
       padding: 0;
       border: 0;
     }
+
+    &:hover {
+      opacity: .6;
+    }
   }
 
   .front-page &,

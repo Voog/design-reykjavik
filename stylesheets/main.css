@@ -2622,6 +2622,9 @@ ul.menu .menu-item:before {
   padding: 0;
   border: 0;
 }
+.public .edy-ecommerce-shopping-cart-button:hover {
+  opacity: .6;
+}
 .front-page .edy-ecommerce-shopping-cart-button, .common-page .edy-ecommerce-shopping-cart-button, .blog-page .edy-ecommerce-shopping-cart-button {
   right: 20px;
 }

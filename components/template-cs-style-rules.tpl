@@ -444,3 +444,9 @@ section.news {
 .comments .comment-title {
   font-size: 1.1em;
 }
+
+.public .edy-ecommerce-shopping-cart-button {
+  color: var(--dark-secondary);
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
+  background-color: var(--button-background-color);
+}

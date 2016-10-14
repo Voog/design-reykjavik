@@ -40,7 +40,7 @@ body {
 
 @media screen and (min-width: 752px) {
   .header,
-  .container {  
+  .container {
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -52,7 +52,7 @@ body {
 
 .post-page .container {
   // padding: 0;
-} 
+}
 
 // BOTH BACKGROUND COLORS
 .light-background,
@@ -69,12 +69,12 @@ body {
   }
 }
 
-// LIGHT BACKGROUND 
+// LIGHT BACKGROUND
 .light-background {
   .header .header-title,
   .header .header-title a {
     color: var(--dark-primary);
-  }  
+  }
 
   .menu-main .menu .menu-link {
     color: var(--dark-primary);
@@ -186,7 +186,7 @@ body {
   .header .header-title,
   .header .header-title a {
     color: var(--light-primary);
-  }  
+  }
 
   .menu-main .menu .menu-link {
     color: var(--light-primary);
@@ -292,7 +292,7 @@ body {
 }
 
 // HEADER - Site title
-.header .header-title, 
+.header .header-title,
 .header .header-title a {
   font-size: var(--header-site-title-font-size);
   font-style: var(--header-site-title-font-style);
@@ -402,7 +402,7 @@ main.content-formatted {
     text-decoration: var(--content-submenu-hover-text-decoration);
     text-transform: var(--content-submenu-hover-text-transform);
   }
-  
+
   &.menu-link.active,
   &.menu-link.active:hover,
   &.active,
@@ -414,7 +414,7 @@ main.content-formatted {
   }
 }
 
-// CONTENT 
+// CONTENT
 main.content-formatted {
   .content-body {
     font-size: var(--content-font-size);
@@ -478,7 +478,7 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
 
 // BLOG ARTICLE
 
-.post-page .header-wrapper .post-header { 
+.post-page .header-wrapper .post-header {
   h1 {
     font-size: var(--blog-article-title-font-size);
     font-style: var(--blog-article-title-font-style);
@@ -560,5 +560,16 @@ section.news {
   .comment-form,
   .comment-title {
     font-size: 1.1em;
+  }
+}
+
+//==============================================================================
+// ECOMMERCE
+//==============================================================================
+.public {
+  .edy-ecommerce-shopping-cart-button {
+    color: var(--dark-secondary);
+    background: linear-gradient(to bottom, rgba($white, .6) 0, rgba($white, .8) 100%);
+    background-color: var(--button-background-color);
   }
 }
