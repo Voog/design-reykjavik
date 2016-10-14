@@ -154,6 +154,11 @@
     border-radius: 2px;
     cursor: pointer;
 
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+
     .dark-background & {
       color: $light-primary;
       border-color: $light-tertiary;
