@@ -1,0 +1,43 @@
+.edy-ecommerce-shopping-cart-button {
+  .public & {
+    display: inline-block;
+    padding: .12em 1.18em;
+    font-size: 95%;
+    line-height: 1.7;
+    color: $dark-secondary;
+    cursor: pointer;
+    border: 1px solid $dark-tertiary;
+    border-radius: 2px;
+
+    &::-moz-focus-inner {
+      padding: 0;
+      border: 0;
+    }
+  }
+
+  .front-page &,
+  .common-page &,
+  .blog-page & {
+    right: 20px;
+
+    @include query($tablet-2) {
+      top: 51px;
+    }
+
+    @include query($tablet-2 + 1, 'min-width') {
+      top: 109px;
+    }
+  }
+
+  .post-page & {
+    right: 10px;
+
+    @include query($tablet-2) {
+      top: 51px;
+    }
+
+    @include query($tablet-2 + 1, 'min-width') {
+      top: 68px;
+    }
+  }
+}
