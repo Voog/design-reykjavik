@@ -51,6 +51,30 @@
         </section>
       </article>
 
+      {% if article.older or article.newer %}
+        <div class="post-nav">
+          <div class="post-nav-inner">
+            {% if article.older %}
+              <a class="post-nav-link post-nav-link-older noborder" href="{{ article.older.url }}">
+                <div class="post-nav-link-inner">
+                  <div class="post-nav-direction">{{ "previous" | lc }}</div>
+                  <div class="post-nav-title">{{ article.older.title }}</div>
+                </div>
+              </a>
+            {% endif %}
+
+            {% if article.newer %}
+              <a class="post-nav-link post-nav-link-newer noborder" href="{{ article.newer.url }}">
+                <div class="post-nav-link-inner">
+                  <div class="post-nav-direction">{{ "next" | lc }}</div>
+                  <div class="post-nav-title">{{ article.newer.title }}</div>
+                </div>
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+
       <section id="comments" class="comments content-formatted content-centered">
         {% include "comments" %}
         {% unless article.new_record? %}
