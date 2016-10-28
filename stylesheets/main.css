@@ -804,17 +804,11 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 .post .tags {
   position: relative;
-  margin: 60px 0 -40px;
-  padding: 25px 0 5px;
+  padding-top: 25px;
+  margin-top: 30px;
   font-weight: bold;
   font-size: 0.9em;
   line-height: 1.2;
-}
-@media screen and (max-width: 752px) {
-  .post .tags {
-    padding-bottom: 30px;
-    margin-top: 35px;
-  }
 }
 .post .tags .tag-link {
   margin-right: 20px;
@@ -927,15 +921,93 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   left: 45px;
 }
 
-/* COMMENTS */
-.comments {
-  margin-top: 60px;
-  font-size: 0.9em;
+.post-nav {
+  margin-top: 25px;
+  padding: 0 12%;
 }
 @media screen and (max-width: 752px) {
-  .comments {
-    margin-top: 35px;
+  .post-nav {
+    padding: 0;
   }
+}
+
+.post-nav-inner {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+}
+@media screen and (min-width: 507px) {
+  .post-nav-inner {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.post-nav-link {
+  position: relative;
+  display: block;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: currentColor;
+}
+.post-nav-link:hover .post-nav-direction {
+  opacity: 1;
+}
+.post-nav-link:hover .post-nav-title {
+  opacity: 1;
+}
+@media screen and (max-width: 506px) {
+  .post-nav-link:nth-child(2)::before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    border-top-color: currentColor;
+    border-top-style: solid;
+    border-top-width: 1px;
+    content: '';
+    opacity: .2;
+  }
+}
+@media screen and (max-width: 506px) {
+  .post-nav-link {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 507px) {
+  .post-nav-link-older {
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 507px) {
+  .post-nav-link-newer {
+    padding-left: 20px;
+    text-align: right;
+  }
+}
+
+.post-nav-direction {
+  font-size: 13px;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  opacity: .3;
+}
+
+.post-nav-title {
+  margin-top: 6px;
+  font-size: 18px;
+  opacity: .7;
+}
+
+/* COMMENTS */
+.comments {
+  font-size: 0.9em;
 }
 .comments .comment-author {
   border: none !important;
