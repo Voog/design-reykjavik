@@ -2438,6 +2438,9 @@ ul.menu .menu-item:before {
     top: 41px;
     width: 100%;
   }
+  .edy-checkout-button-visible .search-inner {
+    top: 82px;
+  }
 }
 
 .search-form {
@@ -2617,6 +2620,9 @@ ul.menu .menu-item:before {
     max-height: 100%;
     width: 100%;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+  .edy-checkout-button-visible .voog-search-modal {
+    top: 124px !important;
   }
 }
 .voog-search-modal.search-results-active {
