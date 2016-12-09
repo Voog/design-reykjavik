@@ -47,6 +47,10 @@
     position: absolute;
     top: 41px;
     width: 100%;
+
+    .edy-checkout-button-visible & {
+      top: 41px + 41px; // 41 is the height of the checkout button.
+    }
   }
 }
 
@@ -199,6 +203,10 @@
     max-height: 100%;
     width: 100%;
     box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+
+    .edy-checkout-button-visible & {
+      top: 83px + 41px !important; // 41 is the height of the checkout button.
+    }
   }
   bottom: 45px;
   z-index: 30;
