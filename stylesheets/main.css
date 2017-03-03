@@ -1144,6 +1144,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   display: block;
   /* TABLES */
 }
+.content-formatted:empty {
+  display: none;
+}
 .content-formatted > .content-formatted h1:first-child, .content-formatted > .content-formatted h2:first-child, .content-formatted > .content-formatted h3:first-child, .content-formatted > .content-formatted h4:first-child, .content-formatted > .content-formatted h5:first-child, .content-formatted > .content-formatted h6:first-child, .content-formatted > .content-formatted p:first-child, .content-formatted > .content-formatted ul:first-child, .content-formatted > .content-formatted ol:first-child, .content-formatted > .content-formatted pre:first-child, .content-formatted > .content-formatted code:first-child, .content-formatted > .content-formatted table form:first-child, .content-formatted > .content-formatted .edy-partial-view:first-child {
   margin-top: 0;
 }

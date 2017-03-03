@@ -4,6 +4,11 @@
 .content-formatted {
   @extend %clearfix;
   @include hyphenate(true);
+
+  &:empty {
+    display: none;
+  }
+
   display: block;
 
   // Resets the bottom margin for all elements and top margin for all first elements in the editable content-area (to prevent unwanted white-space at the beginning of a content-area).
