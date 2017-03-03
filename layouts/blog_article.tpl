@@ -38,15 +38,11 @@
       <article class="post full">
 
         <section class="post-content content-centered">
-          <div class="post-excerpt content-formatted" {{ edy_intro_edit_text }}>
-            {% editable article.excerpt %}
-          </div>
+          <div class="post-excerpt content-formatted" {{ edy_intro_edit_text }}>{% editable article.excerpt %}</div>
+          <div class="post-body content-formatted">{% editable article.body %}</div>
+          <div class="post-body content-formatted">{% content name="additional_body" bind="Article" %}</div>
 
-          <div class="post-body content-formatted">
-            {% editable article.body %}
-          </div>
-
-          {% unless article.new_record? %}{% content name="gallery" bind="Article" %}{% endunless %}
+          {% content name="gallery" bind="Article" %}
           {% include "tags-post" %}
         </section>
       </article>
