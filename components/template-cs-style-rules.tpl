@@ -100,7 +100,7 @@ body.dark-background {
 .light-background .content-formatted .form_field_file {
   color: var(--dark-primary);
 }
-.light-background .content-formatted .custom-btn,
+.light-background .content-formatted .custom-btn:not(.custom-btn-disabled),
 .light-background .content-formatted .form_submit input {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
   background-color: var(--button-background-color);
@@ -187,7 +187,7 @@ body.dark-background {
 .dark-background .content-formatted .form_field_textarea {
   color: var(--dark-primary);
 }
-.dark-background .content-formatted .custom-btn,
+.dark-background .content-formatted .custom-btn:not(.custom-btn-disabled),
 .dark-background .content-formatted .form_submit input {
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.8) 100%);
   background-color: var(--button-background-color);
@@ -407,7 +407,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
   text-decoration: var(--button-text-decoration);
   text-transform: var(--button-text-transform);
 }
-.content-formatted .custom-btn:hover,
+
+.content-formatted .custom-btn:not(.custom-btn-disabled):hover,
 .content-formatted .form_submit input:hover {
   opacity: .6;
 }

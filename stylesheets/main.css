@@ -1314,11 +1314,24 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   line-height: 1.7;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 2px;
+}
+.public .content-formatted .custom-btn {
   cursor: pointer;
 }
 .dark-background .content-formatted .custom-btn {
   color: rgba(255, 255, 255, 0.8);
   border-color: rgba(255, 255, 255, 0.3);
+}
+.public .content-formatted .custom-btn-disabled {
+  cursor: default;
+}
+.dark-background .content-formatted .custom-btn-disabled {
+  color: #333;
+  border-color: #333;
+}
+.light-background .content-formatted .custom-btn-disabled {
+  color: #dadada;
+  border-color: #dadada;
 }
 .content-formatted .table-container {
   margin-top: 20px;
