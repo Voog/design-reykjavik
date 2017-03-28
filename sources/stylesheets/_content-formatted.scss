@@ -172,8 +172,6 @@
 
   .custom-btn {
     display: inline-block;
-    margin-top: 10px;
-    margin-bottom: 10px;
     padding: .12em 1.18em;
     color: $dark-secondary;
     font-size: 95%;
@@ -228,15 +226,11 @@
       margin-top: 0;
     }
   }
-  .edy-partial-view {
-    margin-bottom: 20px;
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
+
   .edy-positionable-container-left {
     margin: 0 30px 20px 0;
   }
+
   .edy-positionable-container-right {
     margin: 0 0 20px 30px;
   }
