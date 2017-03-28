@@ -855,7 +855,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   top: 50%;
   width: 100%;
   -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
 }
 @media screen and (max-width: 752px) {
@@ -864,7 +863,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
     top: 0;
     width: 100%;
     -ms-transform: translateY(0);
-    -webkit-transform: translateY(0);
     transform: translateY(0);
     padding-top: 40px;
     padding-bottom: 40px;
@@ -915,7 +913,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 @media screen and (min-width: 507px) {
   .post-nav-inner {
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
   }
@@ -924,9 +921,8 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .post-nav-link {
   position: relative;
   display: block;
-  -webkit-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+      flex: 1;
   padding-top: 20px;
   padding-bottom: 20px;
   color: currentColor;
@@ -1835,15 +1831,12 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   }
 }
 .flexbox .header {
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-wrap: wrap;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-  -webkit-justify-content: flex-end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 .header-title {
@@ -1898,7 +1891,6 @@ body .header-wrapper .edy-bgpicker-toggle-button {
 }
 .flexbox .mobile-menu-wrapper {
   max-width: 100%;
-  -webkit-flex: 1 0 auto;
   -moz-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
