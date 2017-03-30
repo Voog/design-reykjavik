@@ -18,7 +18,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font: "Source Sans Pro", Arial, Verdana, sans-serif;
+  --font: "Source Sans Pro", sans-serif;
   /* VoogStyle
      "pathI18n": ["main_styles", "for_light_background"],
      "titleI18n": "primary_color",
