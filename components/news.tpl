@@ -3,7 +3,16 @@
   <ul>
   {% for article in site.latest_3_articles %}
     <li class="news-item">
-      <a class="link" href="{{article.url}}">{{article.title}}</a><span class="date">{{article.created_at | format_date:"long"}}</span>
+      <a class="link" href="{{article.url}}">{{article.title}}</a>
+      {% assign article_year = article.created_at | format_date: "%Y" | to_num %}
+
+      {% if article_year == current_year %}
+        {% assign article_date_format = "long_without_year" %}
+      {% else %}
+        {% assign article_date_format = "long" %}
+      {% endif %}
+
+      <time class="date" datetime="{{ article.created_at | date: '%Y-%m-%d' }}">{{ article.created_at | format_date: article_date_format }}</time>
     </li>
   {% endfor %}
   </ul>
