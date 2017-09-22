@@ -33,14 +33,16 @@ body.dark-background {
 .dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button),
 .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn) {
   border-bottom-color: var(--content-links-border-bottom-color);
-  box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
+  -webkit-box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
+          box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
 }
 .light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):hover,
 .light-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover,
 .dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):hover,
 .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover {
   border-bottom-color: var(--content-links-hover-border-bottom-color);
-  box-shadow: inset 0 -4px 0 0 var(--content-links-hover-border-bottom-color);
+  -webkit-box-shadow: inset 0 -4px 0 0 var(--content-links-hover-border-bottom-color);
+          box-shadow: inset 0 -4px 0 0 var(--content-links-hover-border-bottom-color);
 }
 
 .light-background .header .header-title,
@@ -102,6 +104,9 @@ body.dark-background {
 }
 .light-background .content-formatted .custom-btn:not(.custom-btn-disabled),
 .light-background .content-formatted .form_submit input {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.8)));
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
   background-color: var(--button-background-color);
   color: var(--dark-secondary);
@@ -189,6 +194,9 @@ body.dark-background {
 }
 .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled),
 .dark-background .content-formatted .form_submit input {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.8) 100%);
+  background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.8) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.8) 100%);
   background-color: var(--button-background-color);
   color: var(--light-secondary);
@@ -225,7 +233,8 @@ body.dark-background {
   font-style: var(--header-site-title-font-style);
   font-weight: var(--header-site-title-font-weight);
   line-height: var(--header-site-title-line-height);
-  text-decoration: var(--header-site-title-text-decoration);
+  -webkit-text-decoration: var(--header-site-title-text-decoration);
+          text-decoration: var(--header-site-title-text-decoration);
   text-transform: var(--header-site-title-text-transform);
 }
 
@@ -234,20 +243,23 @@ body.dark-background {
   font-style: var(--header-mainmenu-font-style);
   font-weight: var(--header-mainmenu-font-weight);
   line-height: var(--header-mainmenu-line-height);
-  text-decoration: var(--header-mainmenu-text-decoration);
+  -webkit-text-decoration: var(--header-mainmenu-text-decoration);
+          text-decoration: var(--header-mainmenu-text-decoration);
   text-transform: var(--header-mainmenu-text-transform);
 }
 .menu-main .menu .menu-link:hover {
   font-style: var(--header-mainmenu-hover-font-style);
   font-weight: var(--header-mainmenu-hover-font-weight);
   opacity: .6;
-  text-decoration: var(--header-mainmenu-hover-text-decoration);
+  -webkit-text-decoration: var(--header-mainmenu-hover-text-decoration);
+          text-decoration: var(--header-mainmenu-hover-text-decoration);
   text-transform: var(--header-mainmenu-hover-text-transform);
 }
 .menu-main .menu .menu-link.active, .menu-main .menu .menu-link.active:hover {
   font-style: var(--header-mainmenu-active-font-style);
   font-weight: var(--header-mainmenu-active-font-weight);
-  text-decoration: var(--header-mainmenu-active-text-decoration);
+  -webkit-text-decoration: var(--header-mainmenu-active-text-decoration);
+          text-decoration: var(--header-mainmenu-active-text-decoration);
   text-transform: var(--header-mainmenu-active-text-transform);
 }
 
@@ -259,7 +271,8 @@ main.content-formatted h1 a:hover {
   font-weight: var(--h1-font-weight);
   line-height: var(--h1-line-height);
   text-align: var(--h1-alignment);
-  text-decoration: var(--h1-text-decoration);
+  -webkit-text-decoration: var(--h1-text-decoration);
+          text-decoration: var(--h1-text-decoration);
   text-transform: var(--h1-text-transform);
 }
 main.content-formatted h2, main.content-formatted h2 a, main.content-formatted h2 a:hover {
@@ -268,7 +281,8 @@ main.content-formatted h2, main.content-formatted h2 a, main.content-formatted h
   font-weight: var(--h2-font-weight);
   line-height: var(--h2-line-height);
   text-align: var(--h2-alignment);
-  text-decoration: var(--h2-text-decoration);
+  -webkit-text-decoration: var(--h2-text-decoration);
+          text-decoration: var(--h2-text-decoration);
   text-transform: var(--h2-text-transform);
 }
 main.content-formatted h3,
@@ -279,7 +293,8 @@ main.content-formatted h3 a:hover {
   font-weight: var(--h3-font-weight);
   line-height: var(--h3-line-height);
   text-align: var(--h3-alignment);
-  text-decoration: var(--h3-text-decoration);
+  -webkit-text-decoration: var(--h3-text-decoration);
+          text-decoration: var(--h3-text-decoration);
   text-transform: var(--h3-text-transform);
 }
 
@@ -288,7 +303,8 @@ main.content-formatted h3 a:hover {
   font-style: var(--content-title-font-style);
   font-weight: var(--content-title-font-weight);
   line-height: var(--content-title-line-height);
-  text-decoration: var(--content-title-text-decoration);
+  -webkit-text-decoration: var(--content-title-text-decoration);
+          text-decoration: var(--content-title-text-decoration);
   text-transform: var(--content-title-text-transform);
 }
 
@@ -301,19 +317,22 @@ main.content-formatted h3 a:hover {
   font-style: var(--content-submenu-font-style);
   font-weight: var(--content-submenu-font-weight);
   line-height: var(--content-submenu-line-height);
-  text-decoration: var(--content-submenu-text-decoration);
+  -webkit-text-decoration: var(--content-submenu-text-decoration);
+          text-decoration: var(--content-submenu-text-decoration);
   text-transform: var(--content-submenu-text-transform);
 }
 #sidebar .menu .menu-item a:hover {
   font-style: var(--content-submenu-hover-font-style);
   font-weight: var(--content-submenu-hover-font-weight);
-  text-decoration: var(--content-submenu-hover-text-decoration);
+  -webkit-text-decoration: var(--content-submenu-hover-text-decoration);
+          text-decoration: var(--content-submenu-hover-text-decoration);
   text-transform: var(--content-submenu-hover-text-transform);
 }
 #sidebar .menu .menu-item a.menu-link.active, #sidebar .menu .menu-item a.menu-link.active:hover, #sidebar .menu .menu-item a.active, #sidebar .menu .menu-item a.active:hover {
   font-style: var(--content-submenu-active-font-style);
   font-weight: var(--content-submenu-active-font-weight);
-  text-decoration: var(--content-submenu-active-text-decoration);
+  -webkit-text-decoration: var(--content-submenu-active-text-decoration);
+          text-decoration: var(--content-submenu-active-text-decoration);
   text-transform: var(--content-submenu-active-text-transform);
 }
 
@@ -356,7 +375,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
   font-weight: var(--blog-list-title-font-weight);
   font-style: var(--blog-list-title-font-style);
   text-align: var(--blog-list-title-alignment);
-  text-decoration: var(--blog-list-title-text-decoration);
+  -webkit-text-decoration: var(--blog-list-title-text-decoration);
+          text-decoration: var(--blog-list-title-text-decoration);
   text-transform: var(--blog-list-title-text-transform);
 }
 
@@ -365,7 +385,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
   font-style: var(--blog-list-date-font-style);
   font-weight: var(--blog-list-date-font-weight);
   line-height: var(--content-line-height);
-  text-decoration: var(--blog-list-date-text-decoration);
+  -webkit-text-decoration: var(--blog-list-date-text-decoration);
+          text-decoration: var(--blog-list-date-text-decoration);
   text-transform: var(--blog-list-date-text-transform);
 }
 
@@ -375,7 +396,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
   font-weight: var(--blog-article-title-font-weight);
   line-height: var(--blog-article-title-line-height);
   text-align: var(--blog-article-title-alignment);
-  text-decoration: var(--blog-article-title-text-decoration);
+  -webkit-text-decoration: var(--blog-article-title-text-decoration);
+          text-decoration: var(--blog-article-title-text-decoration);
   text-transform: var(--blog-article-title-text-transform);
 }
 .post-page .header-wrapper .post-header .post-meta {
@@ -383,7 +405,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
   font-style: var(--blog-article-date-font-style);
   font-weight: var(--blog-article-date-font-weight);
   line-height: var(--blog-article-date-line-height);
-  text-decoration: var(--blog-article-date-text-decoration);
+  -webkit-text-decoration: var(--blog-article-date-text-decoration);
+          text-decoration: var(--blog-article-date-text-decoration);
   text-transform: var(--blog-article-date-text-transform);
 }
 
@@ -404,7 +427,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
   line-height: var(--button-line-height);
-  text-decoration: var(--button-text-decoration);
+  -webkit-text-decoration: var(--button-text-decoration);
+          text-decoration: var(--button-text-decoration);
   text-transform: var(--button-text-transform);
 }
 
@@ -427,7 +451,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
   font-style: var(--form-field-text-font-style);
   font-weight: var(--form-field-text-font-weight);
   line-height: var(--form-field-text-line-height);
-  text-decoration: var(--form-field-text-decoration);
+  -webkit-text-decoration: var(--form-field-text-decoration);
+          text-decoration: var(--form-field-text-decoration);
   text-transform: var(--form-field-text-transform);
 }
 
