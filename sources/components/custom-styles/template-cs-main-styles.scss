@@ -29,7 +29,7 @@
      "unit": "px",
      "scope": "global"
   */
-  --site-width: 960px;
+  #{--site-width}: 960px;
 
   /* VoogStyle
      "pathI18n": ["main_styles"],
@@ -39,7 +39,7 @@
      "featured": true,
      "scope": "global"
   */
-  --font: $font;
+  #{--font}: $font;
 
   /* VoogStyle
      "pathI18n": ["main_styles", "for_light_background"],
@@ -48,7 +48,7 @@
      "scope": "global",
      "featured": true
   */
-  --dark-primary: $dark-primary;
+  #{--dark-primary}: $dark-primary;
 
   /* VoogStyle
      "pathI18n": ["main_styles", "for_light_background"],
@@ -57,7 +57,7 @@
      "scope": "global",
      "featured": true
   */
-  --dark-secondary: $dark-secondary;
+  #{--dark-secondary}: $dark-secondary;
 
   /* VoogStyle
      "pathI18n": ["main_styles", "for_dark_background"],
@@ -66,7 +66,7 @@
      "scope": "global",
      "featured": true
   */
-  --light-primary: $light-primary;
+  #{--light-primary}: $light-primary;
 
   /* VoogStyle
      "pathI18n": ["main_styles", "for_dark_background"],
@@ -75,5 +75,5 @@
      "scope": "global",
      "featured": true
   */
-  --light-secondary: $light-secondary;
+  #{--light-secondary}: $light-secondary;
 }
