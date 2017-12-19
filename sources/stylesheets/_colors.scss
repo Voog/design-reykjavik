@@ -173,7 +173,7 @@ body {
     }
     .tags-editor input {
       @include color-set($dark-primary, $light-primary);
-      @include placeholder {
+      &::placeholder {
         line-height: 1.3;
       }
     }
@@ -457,13 +457,13 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
     .light-background &, & {
       background-color: #efefef;
       background-color: $light-primary;
-      @include background(linear-gradient(to bottom, $light-secondary 0%, $light-primary 100%));
+      background: linear-gradient(to bottom, $light-secondary 0%, $light-primary 100%);
       border: 1px solid $dark-tertiary;
     }
     .dark-background & {
       background-color: #1f1f1f;
       background-color: $dark-primary;
-      @include background(linear-gradient(to bottom, $dark-secondary 0%, $dark-primary 100%));
+      background: linear-gradient(to bottom, $dark-secondary 0%, $dark-primary 100%);
       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000',GradientType=0 ); /* ie */
       border: 1px solid $light-tertiary;
     }
@@ -486,11 +486,11 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .search {
   input {
     @include color-set($dark-secondary, $light-secondary);
-    @include placeholder {
+    &::placeholder {
       @include color-set(bgrey(0.5), wgrey(0.5));
     }
     .dark-background & {
-      @include placeholder {
+      &::placeholder {
         color: $light-secondary;
       }
       color: $light-secondary;
@@ -552,7 +552,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .search.js-modal-overlay.active {
    input {
     color: $dark-secondary;
-    @include placeholder {
+    &::placeholder {
       color: $dark-secondary;
     }
   }
