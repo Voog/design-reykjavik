@@ -199,13 +199,13 @@ body.dark-background .background-color {
 .post .tags .tags-editor input::-webkit-input-placeholder {
   line-height: 1.3;
 }
-.post .tags .tags-editor input::-moz-placeholder {
-  line-height: 1.3;
-}
-.post .tags .tags-editor input:-moz-placeholder {
-  line-height: 1.3;
-}
 .post .tags .tags-editor input:-ms-input-placeholder {
+  line-height: 1.3;
+}
+.post .tags .tags-editor input::-ms-input-placeholder {
+  line-height: 1.3;
+}
+.post .tags .tags-editor input::placeholder {
   line-height: 1.3;
 }
 .post .tags .tag-link, .light-background .post .tags .tag-link {
@@ -487,7 +487,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .light-background .content-formatted .form_submit input, .content-formatted .form_submit input {
   background-color: #efefef;
   background-color: rgba(255, 255, 255, 0.8);
-  background: -webkit-linear-gradient( top , rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.8)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.8) 100%);
@@ -497,7 +496,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .dark-background .content-formatted .form_submit input {
   background-color: #1f1f1f;
   background-color: rgba(0, 0, 0, 0.8);
-  background: -webkit-linear-gradient( top , rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.8) 100%);
@@ -527,25 +525,25 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .search input::-webkit-input-placeholder, .light-background .search input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
-.dark-background .search input::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.search input::-moz-placeholder, .light-background .search input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
-.dark-background .search input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
-.search input:-moz-placeholder, .light-background .search input:-moz-placeholder {
-  color: rgba(0, 0, 0, 0.5);
-}
-.dark-background .search input:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.5);
-}
 .search input:-ms-input-placeholder, .light-background .search input:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
+.search input::-ms-input-placeholder, .light-background .search input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.search input::placeholder, .light-background .search input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.dark-background .search input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
 .dark-background .search input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.dark-background .search input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+.dark-background .search input::placeholder {
   color: rgba(255, 255, 255, 0.5);
 }
 .dark-background .search input {
@@ -554,13 +552,13 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .dark-background .search input::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
-.dark-background .search input::-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-.dark-background .search input:-moz-placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
 .dark-background .search input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark-background .search input::-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+.dark-background .search input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 .search form, .light-background .search form, .dark-background .js-modal-overlay .search form {
@@ -609,13 +607,13 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .search.js-modal-overlay.active input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
-.search.js-modal-overlay.active input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-.search.js-modal-overlay.active input:-moz-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
 .search.js-modal-overlay.active input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+.search.js-modal-overlay.active input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+.search.js-modal-overlay.active input::placeholder {
   color: rgba(0, 0, 0, 0.6);
 }
 .no-svg .search.js-modal-overlay.active .search-clear {
@@ -1019,8 +1017,8 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 .comments .comment-body {
   -webkit-hyphens: true;
-  -ms-hyphens: true;
-  hyphens: true;
+      -ms-hyphens: true;
+          hyphens: true;
 }
 .comments .comment {
   font-size: 1.1em;
@@ -2601,15 +2599,15 @@ ul.menu .menu-item:before {
   padding: 4px 0 4px 0;
   line-height: 1;
 }
-.search-input::-moz-placeholder {
-  padding: 4px 0 4px 0;
-  line-height: 1;
-}
-.search-input:-moz-placeholder {
-  padding: 4px 0 4px 0;
-  line-height: 1;
-}
 .search-input:-ms-input-placeholder {
+  padding: 4px 0 4px 0;
+  line-height: 1;
+}
+.search-input::-ms-input-placeholder {
+  padding: 4px 0 4px 0;
+  line-height: 1;
+}
+.search-input::placeholder {
   padding: 4px 0 4px 0;
   line-height: 1;
 }

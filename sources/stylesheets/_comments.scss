@@ -30,7 +30,7 @@
     line-height: 1.7;
   }
   .comment-body {
-    @include hyphens(true);
+    hyphens: true;
   }
   .comment {
     font-size: 1.1em;
