@@ -10794,6 +10794,31 @@ MMCQ = (function() {
 }).call(this);
 
 ;(function($) {
+
+  // ===========================================================================
+  // Binds site search functionality.
+  // ===========================================================================
+  var bindSiteSearch = function(searchForm, languageCode, noResultsString) {
+    if (searchForm) {
+      var search = new VoogSearch(searchForm, {
+        // This defines the number of results per query.
+        per_page: 10,
+        // Language code for restricting the search to page language.
+        lang: languageCode,
+        // If given, an DOM element results are rendered inside that element
+        resultsContainer: $('.js-voog-search-moda').get(0),
+        // Defines if modal should close on sideclick.
+        sideclick: true,
+        // Mobile checkpoint.
+        mobileModeWidth: 600,
+        // Updates results on every keypress.
+        updateOnKeypress: true,
+        // String for feedback if no results are found.
+        noResults: noResultsString
+      });
+    } 
+  };
+
   var editmode = function () {
     return $('html').hasClass('editmode');
   };
@@ -10988,6 +11013,7 @@ MMCQ = (function() {
   $('html').on('click', '.voog-search-modal', function(e) {
     e.stopPropagation();
   });
+   
 
   $('html').click(function() {
     if ($('.js-popover').hasClass('expanded')) {
@@ -11122,7 +11148,8 @@ MMCQ = (function() {
       handleHeaderColorScheme: handleHeaderColorScheme,
       getPhotoByWidth: getPhotoByWidth,
       getPhotoByHeight: getPhotoByHeight,
-      bindCustomTexteditorStyles: bindCustomTexteditorStyles
+      bindCustomTexteditorStyles: bindCustomTexteditorStyles,
+      bindSiteSearch: bindSiteSearch
     });
 
     init();
