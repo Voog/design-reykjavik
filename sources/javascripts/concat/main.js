@@ -7,7 +7,7 @@
     if (searchForm) {
       var search = new VoogSearch(searchForm, {
         // This defines the number of results per query.
-        per_page: 3,
+        per_page: 10,
         // Language code for restricting the search to page language.
         lang: languageCode,
         // If given, an DOM element results are rendered inside that element

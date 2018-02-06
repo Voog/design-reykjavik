@@ -10810,7 +10810,7 @@ MMCQ = (function() {
         // Defines if modal should close on sideclick.
         sideclick: true,
         // Mobile checkpoint.
-        mobileModeWidth: 600,
+        mobileModeWidth: 752,
         // Updates results on every keypress.
         updateOnKeypress: true,
         // String for feedback if no results are found.
