@@ -2763,6 +2763,6 @@ ul.menu .menu-item:before {
 
 @media screen and (max-width: 752px) {
   .signout-btn-pad {
-    padding-top: 20px;
+    padding-top: 10px;
   }
 }
