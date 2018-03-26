@@ -11,7 +11,7 @@
         // Language code for restricting the search to page language.
         lang: languageCode,
         // If given, an DOM element results are rendered inside that element
-        resultsContainer: $('.js-voog-search-moda').get(0),
+        resultsContainer: $('.js-voog-search-modal').get(0),
         // Defines if modal should close on sideclick.
         sideclick: true,
         // Mobile checkpoint.

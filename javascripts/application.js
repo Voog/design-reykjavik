@@ -552,7 +552,7 @@ MMCQ = (function() {
         // Language code for restricting the search to page language.
         lang: languageCode,
         // If given, an DOM element results are rendered inside that element
-        resultsContainer: $('.js-voog-search-moda').get(0),
+        resultsContainer: $('.js-voog-search-modal').get(0),
         // Defines if modal should close on sideclick.
         sideclick: true,
         // Mobile checkpoint.
@@ -562,7 +562,7 @@ MMCQ = (function() {
         // String for feedback if no results are found.
         noResults: noResultsString
       });
-    } 
+    }
   };
 
   var editmode = function () {
@@ -759,7 +759,7 @@ MMCQ = (function() {
   $('html').on('click', '.voog-search-modal', function(e) {
     e.stopPropagation();
   });
-   
+
 
   $('html').click(function() {
     if ($('.js-popover').hasClass('expanded')) {
