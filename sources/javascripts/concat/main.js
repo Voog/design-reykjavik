@@ -21,7 +21,7 @@
         // String for feedback if no results are found.
         noResults: noResultsString
       });
-    } 
+    }
   };
 
   var editmode = function () {
@@ -218,7 +218,7 @@
   $('html').on('click', '.voog-search-modal', function(e) {
     e.stopPropagation();
   });
-   
+
 
   $('html').click(function() {
     if ($('.js-popover').hasClass('expanded')) {
