@@ -17,7 +17,7 @@
   <div class="container">
     <main class="content content-formatted" role="main">
       <section class="content-centered">
-        <div class="content-body content-formatted blog-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</div>
+        <section class="content-body content-formatted blog-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
         {% include "tags-blog" %}
 
         {% if editmode %}<div class="post-add-content">{% addbutton %}</div>{% endif %}
