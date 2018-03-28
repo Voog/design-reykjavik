@@ -63,12 +63,14 @@ body.dark-background .background-color {
   border-color: rgba(0, 0, 0, 0.01);
   border-top-color: rgba(255, 255, 255, 0.3);
 }
-.light-background .header .langmenu .langmenu-arrow, .header .langmenu .langmenu-arrow,
-.light-background .header .langmenu .langmenu-arrow2, .header .langmenu .langmenu-arrow2 {
+.light-background .header .langmenu .langmenu-arrow, .header .langmenu .langmenu-arrow, .light-background
+.header .langmenu .langmenu-arrow2,
+.header .langmenu .langmenu-arrow2 {
   border-color: transparent;
   border-bottom-color: #f7f7f7;
 }
-.dark-background .header .langmenu .langmenu-arrow, .dark-background .header .langmenu .langmenu-arrow2 {
+.dark-background .header .langmenu .langmenu-arrow, .dark-background
+.header .langmenu .langmenu-arrow2 {
   border-color: transparent;
   border-bottom-color: #444444;
 }
@@ -143,19 +145,21 @@ body.dark-background .background-color {
   border: 1px solid rgba(255, 255, 255, 0.7) !important;
 }
 .post .post-excerpt .placeholder, .light-background .post .post-excerpt .placeholder,
-.post .post-body .placeholder,
-.light-background .post .post-body .placeholder {
+.post .post-body .placeholder, .light-background
+.post .post-body .placeholder {
   color: rgba(0, 0, 0, 0.8);
 }
-.dark-background .post .post-excerpt .placeholder, .dark-background .post .post-body .placeholder {
+.dark-background .post .post-excerpt .placeholder, .dark-background
+.post .post-body .placeholder {
   color: rgba(255, 255, 255, 0.8);
 }
 .post .post-excerpt, .light-background .post .post-excerpt,
-.post .post-body,
-.light-background .post .post-body {
+.post .post-body, .light-background
+.post .post-body {
   color: rgba(0, 0, 0, 0.6);
 }
-.dark-background .post .post-excerpt, .dark-background .post .post-body {
+.dark-background .post .post-excerpt, .dark-background
+.post .post-body {
   color: rgba(255, 255, 255, 0.6);
 }
 .post .read-more, .light-background .post .read-more {
@@ -375,8 +379,9 @@ a {
   text-decoration: none;
 }
 
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button),
-.light-background .voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .light-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button),
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
   border-bottom: 1px solid #CBE9FE;
   border-bottom: 1px solid rgba(0, 150, 255, 0.2);
   -webkit-box-shadow: inset 0 -4px 0 #CBE9FE;
@@ -384,8 +389,9 @@ a {
   -webkit-box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.2);
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.2);
 }
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover,
-.light-background .voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover {
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .light-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover,
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover {
   border-bottom: 1px solid #B0DEFD;
   border-bottom: 1px solid rgba(0, 150, 255, 0.3);
   -webkit-box-shadow: inset 0 -4px 0 #B0DEFD;
@@ -393,7 +399,8 @@ a {
   -webkit-box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.3);
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.3);
 }
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .dark-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
   border-bottom: 1px solid #CBE9FE;
   border-bottom: 1px solid rgba(0, 150, 255, 0.4);
   -webkit-box-shadow: inset 0 -4px 0 #CBE9FE;
@@ -401,7 +408,8 @@ a {
   -webkit-box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.4);
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.4);
 }
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover {
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .dark-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover {
   border-bottom: 1px solid #B0DEFD;
   border-bottom: 1px solid rgba(0, 150, 255, 0.6);
   -webkit-box-shadow: inset 0 -4px 0 #B0DEFD;
@@ -409,7 +417,13 @@ a {
   -webkit-box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.6);
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.6);
 }
-.content-formatted h1 a, .content-formatted h2 a, .content-formatted h3 a, .content-formatted h4 a, .content-formatted h5 a, .content-formatted h6 a, .voog-search-modal h1 a, .voog-search-modal h2 a, .voog-search-modal h3 a, .voog-search-modal h4 a, .voog-search-modal h5 a, .voog-search-modal h6 a {
+.content-formatted h1 a, .content-formatted h2 a, .content-formatted h3 a, .content-formatted h4 a, .content-formatted h5 a, .content-formatted h6 a,
+.voog-search-modal h1 a,
+.voog-search-modal h2 a,
+.voog-search-modal h3 a,
+.voog-search-modal h4 a,
+.voog-search-modal h5 a,
+.voog-search-modal h6 a {
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -423,13 +437,15 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 
 .content-formatted h1, .light-background .content-formatted h1, .content-formatted h2, .light-background .content-formatted h2, .content-formatted h3, .light-background .content-formatted h3, .content-formatted h4, .light-background .content-formatted h4, .content-formatted h5, .light-background .content-formatted h5, .content-formatted h6, .light-background .content-formatted h6,
+.content-formatted li:before, .light-background
 .content-formatted li:before,
-.light-background .content-formatted li:before,
-.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button),
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .light-background
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
   color: rgba(0, 0, 0, 0.8);
 }
-.dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background .content-formatted li:before, .dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
+.dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background
+.content-formatted li:before, .dark-background
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
   color: rgba(255, 255, 255, 0.8);
 }
 .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover {
@@ -445,11 +461,12 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   background-color: rgba(255, 255, 255, 0.2);
 }
 .content-formatted b, .light-background .content-formatted b,
-.content-formatted strong,
-.light-background .content-formatted strong {
+.content-formatted strong, .light-background
+.content-formatted strong {
   color: rgba(0, 0, 0, 0.8);
 }
-.dark-background .content-formatted b, .dark-background .content-formatted strong {
+.dark-background .content-formatted b, .dark-background
+.content-formatted strong {
   color: rgba(255, 255, 255, 0.8);
 }
 .content-formatted table th, .light-background .content-formatted table th {
@@ -471,11 +488,12 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   border-top: none;
 }
 .content-formatted .form_field_textfield, .light-background .content-formatted .form_field_textfield,
-.content-formatted .form_field_textarea,
-.light-background .content-formatted .form_field_textarea {
+.content-formatted .form_field_textarea, .light-background
+.content-formatted .form_field_textarea {
   border: 1px solid rgba(0, 0, 0, 0.3);
 }
-.content-formatted .form_field_textfield .dark-background, .content-formatted .form_field_textarea .dark-background {
+.content-formatted .form_field_textfield .dark-background,
+.content-formatted .form_field_textarea .dark-background {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .content-formatted .form_submit input, .light-background .content-formatted .form_submit input {
@@ -573,20 +591,24 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .search .search-input {
   background: none;
 }
-.no-svg .light-background .search .search-submit, .no-svg .search .search-submit,
-.no-svg .light-background .search .search-btn,
-.no-svg .search .search-btn {
+.no-svg .light-background .search .search-submit, .no-svg .search .search-submit, .no-svg .light-background
+.search .search-btn, .no-svg
+.search .search-btn {
   background-image: url("../images/ico-search.png");
   background-size: 20px;
 }
-.svg .light-background .search .search-submit, .svg .search .search-submit, .svg .light-background .search .search-btn, .svg .search .search-btn {
+.svg .light-background .search .search-submit, .svg .search .search-submit, .svg .light-background
+.search .search-btn, .svg
+.search .search-btn {
   background-image: url("../assets/ico-search-dark.svg");
 }
-.no-svg .dark-background :not(.active) .search .search-submit, .no-svg .dark-background :not(.active) .search .search-btn {
+.no-svg .dark-background :not(.active) .search .search-submit, .no-svg .dark-background :not(.active)
+.search .search-btn {
   background-image: url("../images/ico-search.png");
   background-size: 20px;
 }
-.svg .dark-background :not(.active) .search .search-submit, .svg .dark-background :not(.active) .search .search-btn {
+.svg .dark-background :not(.active) .search .search-submit, .svg .dark-background :not(.active)
+.search .search-btn {
   background-image: url("../assets/ico-search.svg");
 }
 .no-svg .light-background .search .search-clear, .no-svg .search .search-clear {
@@ -624,12 +646,13 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .svg .search.js-modal-overlay.active .search-clear {
   background-image: url("../assets/close-round-dark.svg");
 }
-.no-svg .search.js-modal-overlay.active .search-submit,
-.no-svg .search.js-modal-overlay.active .search-btn {
+.no-svg .search.js-modal-overlay.active .search-submit, .no-svg
+.search.js-modal-overlay.active .search-btn {
   background-image: url("../images/ico-search-dark.png");
   background-size: 20px;
 }
-.svg .search.js-modal-overlay.active .search-submit, .svg .search.js-modal-overlay.active .search-btn {
+.svg .search.js-modal-overlay.active .search-submit, .svg
+.search.js-modal-overlay.active .search-btn {
   background-image: url("../assets/ico-search-dark.svg");
 }
 
@@ -686,11 +709,12 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 
 .news .date, .light-background .news .date,
-.news .author,
-.light-background .news .author {
+.news .author, .light-background
+.news .author {
   color: rgba(0, 0, 0, 0.3);
 }
-.dark-background .news .date, .dark-background .news .author {
+.dark-background .news .date, .dark-background
+.news .author {
   color: rgba(255, 255, 255, 0.3);
 }
 .news a, .light-background .news a {
@@ -731,6 +755,14 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 
 /* BLOG & BLOG ARTICLE */
+.blog-intro-content {
+  padding-bottom: 40px;
+}
+
+.post-add-content {
+  padding-top: 25px;
+}
+
 .post {
   padding-top: 40px;
 }
