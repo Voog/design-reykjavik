@@ -731,6 +731,14 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 }
 
 /* BLOG & BLOG ARTICLE */
+.blog-intro-content {
+  padding-bottom: 40px;
+}
+
+.post-add-content {
+  padding-top: 25px;
+}
+
 .post {
   padding-top: 40px;
 }
