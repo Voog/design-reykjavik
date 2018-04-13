@@ -36,9 +36,9 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/comments.tpl",
-      "layout_name": "comments",
-      "title": "comments"
+      "file": "components/menu-mobile.tpl",
+      "layout_name": "menu-mobile",
+      "title": "menu-mobile"
     },
     {
       "content_type": "component",
@@ -74,6 +74,13 @@
       "file": "components/menu-level-2.tpl",
       "layout_name": "menu-level-2",
       "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-signout.tpl",
+      "layout_name": "site-signout",
+      "title": "site-signout"
     },
     {
       "content_type": "component",
@@ -148,16 +155,16 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/menu-mobile.tpl",
-      "layout_name": "menu-mobile",
-      "title": "menu-mobile"
+      "file": "components/template-cs-content.tpl",
+      "layout_name": "template-cs-content",
+      "title": "template-cs-content"
     },
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-content.tpl",
-      "layout_name": "template-cs-content",
-      "title": "template-cs-content"
+      "file": "components/comments.tpl",
+      "layout_name": "comments",
+      "title": "comments"
     },
     {
       "content_type": "component",

@@ -40,6 +40,7 @@
     {% include "footer" %}
     {% include "voog-ref" %}
   </div>
+  {% include "site-signout" %}
   {% include "javascripts" %}
   <script type="text/javascript">site.initFrontPage();</script>
   {% include "edicy-tools" %}
