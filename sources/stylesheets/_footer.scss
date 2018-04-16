@@ -17,6 +17,12 @@
     position: relative;
     margin: auto;
     max-width: 960px;
+
+    @media screen and (max-width: $tablet-2) {
+      .signout-btn-margin {
+        margin-bottom: 15px;
+      }
+    }
   }
 
   .content-formatted {

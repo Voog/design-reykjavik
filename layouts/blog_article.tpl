@@ -90,6 +90,7 @@
     </main>
     {% include "footer" %}
   </div>
+  {% include "site-signout" %}
   {% include "javascripts" %}
   <script type="text/javascript">
     site.initArticlePage();
