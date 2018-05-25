@@ -21,5 +21,8 @@
     "grunt-exec": "^3.0.0",
     "grunt-modernizr-builder": "^0.1.9",
     "grunt-postcss": "^0.9.0"
+  },
+  "dependencies": {
+    "npm": "^6.1.0"
   }
 }
