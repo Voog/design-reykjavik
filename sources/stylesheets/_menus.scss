@@ -259,6 +259,12 @@ ul.menu {
       line-height: 1.3;
     }
 
+    li {
+      &.is-hidden {
+        display: none;
+      }
+    }
+
     .edit-btn {
       vertical-align: 1px;
     }

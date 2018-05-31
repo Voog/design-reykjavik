@@ -329,7 +329,8 @@ body {
 }
 
 // HEADINGS
-main.content-formatted {
+main.content-formatted,
+.item-page .content-header .content-item-title {
   h1 {
     &,
     a,
