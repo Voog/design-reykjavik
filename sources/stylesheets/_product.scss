@@ -197,6 +197,10 @@
     .with-image & {
       background-color: rgba($color-black, .05);
       border: 0;
+
+      .dark-background & {
+        background-color: rgba($color-white, .05);
+      }
     }
 
     .without-image & {
