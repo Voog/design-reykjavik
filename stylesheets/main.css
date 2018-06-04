@@ -2847,7 +2847,7 @@ ul.menu .menu-item:before {
   }
 }
 .content-illustrations .content-item-box {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 .content-item-box .top-inner {
   opacity: 1;
@@ -3170,6 +3170,10 @@ ul.menu .menu-item:before {
 }
 
 @media screen and (min-width: 241px) and (max-width: 640px) {
+  .content-illustrations {
+    padding-bottom: 40px;
+  }
+
   .content-item-boxes {
     margin-right: -10px;
     margin-left: -10px;

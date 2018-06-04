@@ -58,6 +58,10 @@
   line-height: 1.3;
 }
 @media screen and (min-width: 241px) and (max-width: 640px) {
+  .content-illustrations {
+    padding-bottom: 40px;
+  }
+
   .content-item-boxes {
     margin-right: -10px;
     margin-left: -10px;
