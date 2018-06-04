@@ -509,6 +509,12 @@
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "kind": "assets",
+      "file": "assets/ico-arrow-black.svg",
+      "filename": "ico-arrow-black.svg"
     }
   ]
 }
