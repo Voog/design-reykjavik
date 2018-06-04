@@ -1409,6 +1409,9 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   margin: 0 0 20px 30px;
 }
 
+.content-formatted .edy-buy-button-container {
+  margin: 20px 0;
+}
 .content-formatted .edy-buy-button-container .form_field {
   padding-top: 15px;
 }
