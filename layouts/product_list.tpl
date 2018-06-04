@@ -17,7 +17,7 @@
   <div class="container">
 
     <main class="content content-formatted" role="main">
-      <div class="intro-content" data-search-indexing-allowed="true">{% content %}</div>
+      <div class="content-formatted intro-content" data-search-indexing-allowed="true">{% content %}</div>
 
       {% include "menu-breadcrumbs" %}
       <section class="content-item-boxes">
