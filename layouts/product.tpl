@@ -89,7 +89,6 @@
   {% include "javascripts" %}
   {% include "edicy-tools" items_page: true %}
 
-  <script type="text/javascript">site.initCommonPage();</script>
   <script>site.initItemsPage({% if editmode %}false{% else %}true{% endif %});</script>
 </body>
 </html>
