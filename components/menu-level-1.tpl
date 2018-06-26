@@ -6,7 +6,7 @@
     {% endunless %}
 
     {% for item in site.visible_menuitems %}
-      {% if site.root_item.layout_title == product_list_layout or site.root_item.layout_title == product_layout %}
+      {% if site.root_item.layout_title == product_list_layout %}
         {% if editmode %}
           {% include "menu-level-1-link" render_hidden_categories: true %}
         {% else %}
@@ -22,7 +22,7 @@
         {% include "menu-level-1-link" %}
       {% endif %}
     {% endfor %}
-    
+
     {% if editmode %}
       {% if site.hidden_menuitems.size > 0 %}
         <li class="edit-btn">{% menubtn site.hidden_menuitems %}</li>
