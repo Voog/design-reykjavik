@@ -3060,7 +3060,8 @@ ul.menu .menu-item:before {
 }
 .item-title .item-link {
   color: inherit !important;
-  font-weight: 700 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 .item-title .item-link:hover {
   opacity: .7;
