@@ -410,6 +410,12 @@
     },
     {
       "content_type": "image/svg+xml",
+      "file": "assets/ico-arrow-black.svg",
+      "kind": "assets",
+      "filename": "ico-arrow-black.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
       "file": "assets/arr-bottom.svg",
       "kind": "assets",
       "filename": "arr-bottom.svg"
