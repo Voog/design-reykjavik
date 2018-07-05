@@ -5,6 +5,7 @@
     padding-top: 15px;
     padding-bottom: 15px;
     box-sizing: border-box;
+    box-shadow: none !important;
 
     @media screen and (max-width: $nano) {
       display: block;

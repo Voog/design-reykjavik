@@ -2826,6 +2826,8 @@ ul.menu .menu-item:before {
   padding-bottom: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 @media screen and (max-width: 320px) {
   .item-list-page .content-item-box {
