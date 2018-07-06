@@ -3067,6 +3067,7 @@ ul.menu .menu-item:before {
   color: inherit !important;
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
+  border-bottom: none !important;
 }
 .item-title .item-link:hover {
   opacity: .7;
