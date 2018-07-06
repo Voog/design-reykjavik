@@ -1579,6 +1579,9 @@ body:not(.front-page) .footer {
     width: 100%;
   }
 }
+.content-formatted select::-ms-expand {
+  display: none;
+}
 .content-formatted .form_field_size_small {
   width: 30%;
 }
