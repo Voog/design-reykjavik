@@ -2122,6 +2122,9 @@ body .header-wrapper .edy-bgpicker-toggle-button {
   width: 100%;
   line-height: 40px;
 }
+.mobile-menu-wrapper .mobile-menu-main ul li.is-hidden {
+  display: none;
+}
 .mobile-menu-wrapper .mobile-menu-main ul li.open > ul {
   display: block;
   border-top-color: transparent;

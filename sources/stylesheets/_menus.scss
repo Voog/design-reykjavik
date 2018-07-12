@@ -107,6 +107,9 @@
         min-height: 40px;
         width: 100%;
         line-height: 40px;
+        &.is-hidden {
+          display: none;
+        }
         &.open > ul {
           display: block;
           border-top-color: transparent;
