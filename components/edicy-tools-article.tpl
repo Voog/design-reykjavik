@@ -47,9 +47,17 @@
 
         commit: function(data) {
           var cover_type = (site.getCombinedLightness(articleCover.bgColor, articleCover.fgColor) > 0.6) ? 'light' : 'dark';
+          var normalizeValue = function(value) {
+            if (value == null || (typeof value == 'string' && value.match(/^[\\'"]+$/))) {
+              return '';
+            } else {
+              return value;
+            }
+          };
+
           Edicy.articles.currentArticle.setData({
             'cover_image': data.image || '',
-            'cover_image_sizes': data.imageSizes || '',
+            'cover_image_sizes': normalizeValue(data.imageSizes),
             'cover_color': data.color || '',
             'cover_type': cover_type
           });

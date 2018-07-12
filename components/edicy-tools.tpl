@@ -44,9 +44,16 @@
       },
 
       commit: function(data) {
+        var normalizeValue = function(value) {
+          if (value == null || (typeof value == 'string' && value.match(/^[\\'"]+$/))) {
+            return '';
+          } else {
+            return value;
+          }
+        };
         pageData.set({
           'cover_image': data.image || '',
-          'cover_image_sizes': data.imageSizes || '',
+          'cover_image_sizes': normalizeValue(data.imageSizes),
           'cover_color': data.color || ''
         });
       }
