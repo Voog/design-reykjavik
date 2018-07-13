@@ -113,7 +113,7 @@ body {
     color: var(--dark-primary);
   }
 
-  .content-formatted {
+  .content-formatted:not(.menu-separator) {
     &,
     b,
     strong,
