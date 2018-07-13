@@ -75,35 +75,35 @@ body.dark-background {
 .light-background .comments .comment-body {
   color: var(--dark-primary);
 }
-.light-background .content-formatted:not(.menu-separator),
-.light-background .content-formatted:not(.menu-separator) b,
-.light-background .content-formatted:not(.menu-separator) strong,
-.light-background .content-formatted:not(.menu-separator) h1,
-.light-background .content-formatted:not(.menu-separator) h2,
-.light-background .content-formatted:not(.menu-separator) h3,
-.light-background .content-formatted:not(.menu-separator) h4,
-.light-background .content-formatted:not(.menu-separator) h5,
-.light-background .content-formatted:not(.menu-separator) h6,
-.light-background .content-formatted:not(.menu-separator) li:before,
-.light-background .content-formatted:not(.menu-separator) a:not(.noborder):not(.custom-btn) {
+.light-background .content-formatted,
+.light-background .content-formatted b,
+.light-background .content-formatted strong,
+.light-background .content-formatted h1,
+.light-background .content-formatted h2,
+.light-background .content-formatted h3,
+.light-background .content-formatted h4,
+.light-background .content-formatted h5,
+.light-background .content-formatted h6,
+.light-background .content-formatted li:before,
+.light-background .content-formatted a:not(.noborder):not(.custom-btn) {
   color: var(--dark-primary);
 }
-.light-background .content-formatted:not(.menu-separator) a:not(.noborder):not(.custom-btn):hover {
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):hover {
   color: var(--dark-primary);
   opacity: .6;
 }
-.light-background .content-formatted:not(.menu-separator) table tr {
+.light-background .content-formatted table tr {
   border-top-color: var(--dark-secondary);
   border-top-style: var(--table-border-style);
 }
-.light-background .content-formatted:not(.menu-separator) .form_field_textfield,
-.light-background .content-formatted:not(.menu-separator) .form_field_textarea,
-.light-background .content-formatted:not(.menu-separator) .form_field_select,
-.light-background .content-formatted:not(.menu-separator) .form_field_file {
+.light-background .content-formatted .form_field_textfield,
+.light-background .content-formatted .form_field_textarea,
+.light-background .content-formatted .form_field_select,
+.light-background .content-formatted .form_field_file {
   color: var(--dark-primary);
 }
-.light-background .content-formatted:not(.menu-separator) .custom-btn:not(.custom-btn-disabled),
-.light-background .content-formatted:not(.menu-separator) .form_submit input {
+.light-background .content-formatted .custom-btn:not(.custom-btn-disabled),
+.light-background .content-formatted .form_submit input {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.8)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
