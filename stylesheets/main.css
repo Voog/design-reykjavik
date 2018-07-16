@@ -3031,6 +3031,7 @@ ul.menu .menu-item:before {
 }
 .item-top .top-inner .item-placeholder {
   padding: .5em;
+  text-transform: none;
 }
 .item-top .image-drop-area {
   background-position: center !important;
@@ -3072,6 +3073,7 @@ ul.menu .menu-item:before {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
   border-bottom: none !important;
+  text-transform: none !important;
 }
 .item-title .item-link:hover {
   opacity: .7;
@@ -3133,6 +3135,8 @@ ul.menu .menu-item:before {
 .menu-horizontal.menu-breadcrumbs .menu-item a {
   color: #000;
   opacity: .43;
+  text-transform: none !important;
+  font-weight: normal !important;
 }
 .menu-horizontal.menu-breadcrumbs .menu-item a:hover {
   color: #000;

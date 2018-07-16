@@ -217,6 +217,7 @@
 
     .item-placeholder {
       padding: .5em;
+      text-transform: none;
     }
   }
 
@@ -261,6 +262,7 @@
     color: inherit !important;
     box-shadow: none !important;
     border-bottom: none !important;
+    text-transform: none !important; 
 
     &:hover {
       opacity: .7;
