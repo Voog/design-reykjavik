@@ -3,6 +3,9 @@
 // =============================================================================
 .content-formatted {
   .edy-buy-button-container {
+
+    margin: 20px 0 10px;
+
     // sass-lint:disable class-name-format
     .form_field {
       padding-top: 15px;
@@ -19,7 +22,17 @@
 
     .form_field_select {
       width: initial;
+      background-color: $color-white;
+      padding: 6px 25px 6px 7px;
+      font-size: 14px;
+      line-height: 1.5;
+      background-image: url(../assets/ico-arrow-black.svg);
+      background-position: right 10px center;
+      background-repeat: no-repeat;
+      border-radius: 2px;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
     }
-    // sass-lint:enable class-name-format
   }
 }

@@ -265,7 +265,10 @@ body.dark-background {
 
 main.content-formatted h1,
 main.content-formatted h1 a,
-main.content-formatted h1 a:hover {
+main.content-formatted h1 a:hover,
+.item-page .content-header .content-item-title h1,
+.item-page .content-header .content-item-title h1 a,
+.item-page .content-header .content-item-title h1 a:hover {
   font-size: var(--h1-font-size);
   font-style: var(--h1-font-style);
   font-weight: var(--h1-font-weight);
@@ -275,7 +278,10 @@ main.content-formatted h1 a:hover {
           text-decoration: var(--h1-text-decoration);
   text-transform: var(--h1-text-transform);
 }
-main.content-formatted h2, main.content-formatted h2 a, main.content-formatted h2 a:hover {
+main.content-formatted h2, main.content-formatted h2 a, main.content-formatted h2 a:hover,
+.item-page .content-header .content-item-title h2,
+.item-page .content-header .content-item-title h2 a,
+.item-page .content-header .content-item-title h2 a:hover {
   font-size: var(--h2-font-size);
   font-style: var(--h2-font-style);
   font-weight: var(--h2-font-weight);
@@ -287,7 +293,10 @@ main.content-formatted h2, main.content-formatted h2 a, main.content-formatted h
 }
 main.content-formatted h3,
 main.content-formatted h3 a,
-main.content-formatted h3 a:hover {
+main.content-formatted h3 a:hover,
+.item-page .content-header .content-item-title h3,
+.item-page .content-header .content-item-title h3 a,
+.item-page .content-header .content-item-title h3 a:hover {
   font-size: var(--h3-font-size);
   font-style: var(--h3-font-style);
   font-weight: var(--h3-font-weight);

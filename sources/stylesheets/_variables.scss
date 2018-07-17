@@ -1,10 +1,12 @@
 // General colors
+$color-black: rgba(0,0,0,1);
 $dark-primary: rgba(0,0,0,.8);
 $dark-secondary: rgba(0,0,0,.6);
 $dark-tertiary: rgba(0,0,0,.3);
 $dark-hover: rgba(0,0,0,1);
 $dark-hover2: rgba(0,0,0,.7);
 
+$color-white: rgba(255,255,255,1);
 $light-primary: rgba(255,255,255,.8);
 $light-secondary: rgba(255,255,255,.6);
 $light-tertiary: rgba(255,255,255,.3);
@@ -32,13 +34,19 @@ $link-solid-hover: #B0DEFD;
 $disabled-light: #dadada;
 $disabled-dark: #333;
 
+$color-science-blue: #06b;
+
 // Media queries
 $tablet-1: 980px;
+$tablet: 768px;
 $tablet-2: 752px;
+$mobile: 640px;
 $tablet-3: 506px;
+$break-small: 500px;
 
 $mobile-1: 480px;
 $mobile-2: 420px;
+$nano: 320px;
 
 /// FONTS
 $font: 'Source Sans Pro', sans-serif;

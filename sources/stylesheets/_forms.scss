@@ -82,6 +82,10 @@
   .form_field_select {
   }
 
+  select::-ms-expand {
+    display: none;
+  }
+
   .form_field_size_small {
     width: 30%;
     @include query($mobile-2) {
