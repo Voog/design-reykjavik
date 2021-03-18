@@ -156,15 +156,15 @@
   */
   --blog-article-date-text-transform: none;
   /* VoogStyle
-  "pathI18n": ["blog", "text"],
-  "titleI18n": "size",
-  "editor": "rangePicker",
-  "min": 8,
-  "max": 80,
-  "unit": "px",
-  "scope": "global",
-  "featured": true
-*/
+    "pathI18n": ["blog", "text"],
+    "titleI18n": "size",
+    "editor": "rangePicker",
+    "min": 8,
+    "max": 80,
+    "unit": "px",
+    "scope": "global",
+    "featured": true
+  */
   --content-font-size: 18px;
   /* VoogStyle
      "pathI18n": ["blog", "text"],
@@ -178,20 +178,20 @@
   */
   --content-line-height: 1.45;
   /* VoogStyle
-      "pathI18n": ["blog", "link", "normal"],
-      "titleI18n": "font_weight",
-      "type": "button",
-      "editor": "toggleIcon",
-      "states": {
-        "on": "600",
-        "off": "400"
-      },
-      "icon": "bold",
-      "scope": "global",
-      "boundVariables": [
-        "--content-links-hover-font-weight"
-      ]
-    */
+    "pathI18n": ["blog", "link", "normal"],
+    "titleI18n": "font_weight",
+    "type": "button",
+    "editor": "toggleIcon",
+    "states": {
+      "on": "600",
+      "off": "400"
+    },
+    "icon": "bold",
+    "scope": "global",
+    "boundVariables": [
+      "--content-links-hover-font-weight"
+    ]
+  */
   --content-links-font-weight: 400;
   /* VoogStyle
     "pathI18n": ["blog", "link", "hover"],
