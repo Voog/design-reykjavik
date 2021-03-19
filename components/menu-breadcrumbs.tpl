@@ -1,4 +1,4 @@
-<ul class="menu menu-horizontal menu-public menu-breadcrumbs"> 
+<ul class="menu menu-horizontal menu-public menu-breadcrumbs">
   {% if site.root_item.layout_title == product_list_layout and show_product_related_pages_in_main_menu != true %}
     {% if page.level > 0 %}
       {% menulink site.root_item wrapper-tag="li" wrapper-class="menu-item" %}
@@ -18,7 +18,7 @@
       {% endif %}
 
       {% unless site.root_item.layout_title == product_layout %}
-        <li class="menu-item menu-item-cms">{% menuadd %}</li>
+        {% include 'add-page-button', _menuItem: site.root_item %}
       {% endunless %}
 
       {% if site.root_item.selected? and site.root_item.layout_title == product_list_layout %}

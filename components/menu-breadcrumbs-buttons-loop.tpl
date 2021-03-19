@@ -13,9 +13,9 @@
         {% endif %}
 
         {% unless item.layout_title == product_layout %}
-          <li class="menu-item menu-item-cms">{% menuadd parent="item" %}</li>
+          {% include 'add-page-button', _menuItem: item %}
         {% endunless %}
       {% endif %}
     {% endif %}
   {% endfor %}
-{% endfor %} 
+{% endfor %}
