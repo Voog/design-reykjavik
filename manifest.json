@@ -411,12 +411,6 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/dot-loader.svg",
-      "kind": "assets",
-      "filename": "dot-loader.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
       "file": "assets/ico-arrow-black.svg",
       "kind": "assets",
       "filename": "ico-arrow-black.svg"
