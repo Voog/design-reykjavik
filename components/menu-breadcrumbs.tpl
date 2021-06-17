@@ -1,33 +1,42 @@
-<ul class="menu menu-horizontal menu-public menu-breadcrumbs"> 
-  {% if site.root_item.layout_title == product_list_layout and show_product_related_pages_in_main_menu != true %}
-    {% if page.level > 0 %}
-      {% menulink site.root_item wrapper-tag="li" wrapper-class="menu-item" %}
-    {% endif %}
-  {% endif %}
+{%- assign breadcrumbsString = breadcrumbsScript | replace: '<script type="application/ld+json">', '' | replace: "</script>", '' | replace: site.url, '' | replace: '@', '' -%}
+{%- assign breadcrumbsObj = breadcrumbsString | json_parse -%}
 
-  {% include "menu-breadcrumbs-items-loop" %}
+<ul class="menu menu-horizontal menu-public menu-breadcrumbs">
+  {%- if breadcrumbsObj.itemListElement.size > 2 or site.root_item.layout_title == product_list_layout and breadcrumbsObj.itemListElement.size > 1 -%}
+    {% for listItem in breadcrumbsObj.itemListElement %}
+      {% if forloop.index != 1 or site.root_item.layout_title == product_list_layout %}
+        {%- assign pageUrl = page.url | remove_first: "/" -%}
 
-  {% if site.root_item.selected? %}
-    {% if editmode %}
-      {% if site.root_item.untranslated_children.size > 0 %}
-        <li class="menu-item menu-item-cms">{% menubtn site.root_item.untranslated_children %}</li>
-      {% endif %}
+        {%- if pageUrl == listItem.item.id -%}
+          {%- assign breadcrumbTag = 'div' -%}
+          {%- assign isCurrentPage = true -%}
+        {%- else -%}
+          {%- assign breadcrumbTag = 'a' -%}
+          {%- assign isCurrentPage = false -%}
+        {%- endif -%}
 
-      {% if site.root_item.hidden_children.size > 0 %}
-        <li class="menu-item menu-item-cms">{% menubtn site.root_item.hidden_children %}</li>
-      {% endif %}
-
-      {% unless site.root_item.layout_title == product_layout %}
-        <li class="menu-item menu-item-cms">{% menuadd %}</li>
-      {% endunless %}
-
-      {% if site.root_item.selected? and site.root_item.layout_title == product_list_layout %}
-        <li class="menu-item menu-item-cms float-right">
-          <a class="js-root-item-settings-toggle"></a>
+        <li class="menu-item">
+          <{{ breadcrumbTag }} class="{% if isCurrentPage == false %} menu-link" href="/{{ listItem.item.id }}{% endif %}">
+            {{ listItem.item.name }}
+          </{{ breadcrumbTag }}>
         </li>
-      {% endif %}
+        {% if forloop.rindex > 1 %}
+          <span class="menu-separator">/</span>
+        {% endif %}
+      {% endif -%}
+    {% endfor %}
+  {%- endif -%}
+
+  {%- if editmode and page.layout_title != product_layout -%}
+    {%- assign add_product_label = 'add_product' | lce | escape_once -%}
+    {%- assign add_product_title = 'add_product_page' | lce | escape_once -%}
+    <li class="menu-item menu-item-cms">
+      {% menuadd parent=page label=add_product_label title=add_product_title layout_title=product_layout %}
+    </li>
+    {% if site.root_item.selected? and site.root_item.layout_title == product_list_layout %}
+      <li class="menu-item menu-item-cms float-right">
+        <a class="js-root-item-settings-toggle"></a>
+      </li>
     {% endif %}
-  {% else %}
-    {% include "menu-breadcrumbs-buttons-loop" %}
-  {% endif %}
+  {%- endif -%}
 </ul>

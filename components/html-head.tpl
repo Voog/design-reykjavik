@@ -58,7 +58,11 @@
 {% include "template-meta" %}
 
 {% comment %}BREADCRUMBS{% endcomment %}
-{% sd_breadcrumbs %}
+{%- capture breadcrumbsScript -%}
+  {%- sd_breadcrumbs -%}
+{%- endcapture -%}
+
+{{ breadcrumbsScript }}
 
 {% comment %}MISCELLANEOUS{% endcomment %}
 {% if blog %}{{ blog.rss_link }}{% endif %}
