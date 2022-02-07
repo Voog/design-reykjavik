@@ -6,319 +6,11 @@
   "author": "Paavel Liik",
   "layouts": [
     {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/front_page.tpl",
-      "layout_name": "page_front",
-      "title": "Front page"
-    },
-    {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/product_list.tpl",
-      "layout_name": "product_list",
-      "title": "Product list"
-    },
-    {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/common_page.tpl",
-      "layout_name": "page_default",
-      "title": "Common page"
-    },
-    {
-      "content_type": "page",
-      "component": false,
-      "file": "layouts/product.tpl",
-      "layout_name": "product",
-      "title": "Product"
-    },
-    {
-      "content_type": "blog",
-      "component": false,
-      "file": "layouts/blog___news.tpl",
-      "layout_name": "blog",
-      "title": "Blog & news"
-    },
-    {
-      "content_type": "blog_article",
-      "component": false,
-      "file": "layouts/blog_article.tpl",
-      "layout_name": "blog_article",
-      "title": "Blog article"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-meta.tpl",
-      "layout_name": "template-meta",
-      "title": "template-meta"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-level-2.tpl",
-      "layout_name": "menu-level-2",
-      "title": "menu-level-2"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/mobile-menu-link.tpl",
-      "layout_name": "mobile-menu-link",
-      "title": "mobile-menu-link"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/site-signout.tpl",
-      "layout_name": "site-signout",
-      "title": "site-signout"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-level-1.tpl",
-      "layout_name": "menu-level-1",
-      "title": "menu-level-1"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/tags-blog.tpl",
-      "layout_name": "tags-blog",
-      "title": "tags-blog"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/news.tpl",
-      "layout_name": "news",
-      "title": "news"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools-variables.tpl",
-      "layout_name": "edicy-tools-variables",
-      "title": "edicy-tools-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/tags-translations.tpl",
-      "layout_name": "tags-translations",
-      "title": "tags-translations"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-footer.tpl",
-      "layout_name": "template-cs-footer",
-      "title": "template-cs-footer"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/topbar.tpl",
-      "layout_name": "topbar",
-      "title": "topbar"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/product-list-item.tpl",
-      "layout_name": "product-list-item",
-      "title": "product-list-item"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools-article-variables.tpl",
-      "layout_name": "edicy-tools-article-variables",
-      "title": "edicy-tools-article-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-blog-article.tpl",
-      "layout_name": "template-cs-blog-article",
-      "title": "template-cs-blog-article"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/search.tpl",
-      "layout_name": "search",
-      "title": "search"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/product-list-loop.tpl",
-      "layout_name": "product-list-loop",
-      "title": "product-list-loop"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-mobile.tpl",
-      "layout_name": "menu-mobile",
-      "title": "menu-mobile"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/comments.tpl",
-      "layout_name": "comments",
-      "title": "comments"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-button.tpl",
-      "layout_name": "template-cs-button",
-      "title": "template-cs-button"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/post-box.tpl",
-      "layout_name": "post-box",
-      "title": "post-box"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-lang-mobile.tpl",
-      "layout_name": "menu-lang-mobile",
-      "title": "menu-lang-mobile"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-blog-list.tpl",
-      "layout_name": "template-cs-blog-list",
-      "title": "template-cs-blog-list"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-lang.tpl",
-      "layout_name": "menu-lang",
-      "title": "menu-lang"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/voog-ref.tpl",
-      "layout_name": "voog-ref",
-      "title": "voog-ref"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/footer.tpl",
-      "layout_name": "footer",
-      "title": "footer"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/javascripts.tpl",
-      "layout_name": "javascripts",
-      "title": "javascripts"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-main-styles.tpl",
-      "layout_name": "template-cs-main-styles",
-      "title": "template-cs-main-styles"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/header.tpl",
-      "layout_name": "header",
-      "title": "header"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-variables.tpl",
-      "layout_name": "template-variables",
-      "title": "template-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/tags-post.tpl",
-      "layout_name": "tags-post",
-      "title": "tags-post"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-style-rules.tpl",
-      "layout_name": "template-cs-style-rules",
-      "title": "template-cs-style-rules"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/sidebar.tpl",
-      "layout_name": "sidebar",
-      "title": "sidebar"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools.tpl",
-      "layout_name": "edicy-tools",
-      "title": "edicy-tools"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/html-head.tpl",
-      "layout_name": "html-head",
-      "title": "html-head"
-    },
-    {
       "content_type": "component",
       "component": true,
       "file": "components/blog-article-variables.tpl",
       "layout_name": "blog-article-variables",
       "title": "blog-article-variables"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-svg-spritesheet.tpl",
-      "layout_name": "template-svg-spritesheet",
-      "title": "template-svg-spritesheet"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/menu-breadcrumbs.tpl",
-      "layout_name": "menu-breadcrumbs",
-      "title": "menu-breadcrumbs"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/template-cs-form.tpl",
-      "layout_name": "template-cs-form",
-      "title": "template-cs-form"
-    },
-    {
-      "content_type": "component",
-      "component": true,
-      "file": "components/edicy-tools-article.tpl",
-      "layout_name": "edicy-tools-article",
-      "title": "edicy-tools-article"
     },
     {
       "content_type": "component",
@@ -330,9 +22,86 @@
     {
       "content_type": "component",
       "component": true,
-      "file": "components/template-cs-content.tpl",
-      "layout_name": "template-cs-content",
-      "title": "template-cs-content"
+      "file": "components/comments.tpl",
+      "layout_name": "comments",
+      "title": "comments"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-article-variables.tpl",
+      "layout_name": "edicy-tools-article-variables",
+      "title": "edicy-tools-article-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-article.tpl",
+      "layout_name": "edicy-tools-article",
+      "title": "edicy-tools-article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools-variables.tpl",
+      "layout_name": "edicy-tools-variables",
+      "title": "edicy-tools-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/edicy-tools.tpl",
+      "layout_name": "edicy-tools",
+      "title": "edicy-tools"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/footer.tpl",
+      "layout_name": "footer",
+      "title": "footer"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/header.tpl",
+      "layout_name": "header",
+      "title": "header"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/html-head.tpl",
+      "layout_name": "html-head",
+      "title": "html-head"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/javascripts.tpl",
+      "layout_name": "javascripts",
+      "title": "javascripts"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-breadcrumbs.tpl",
+      "layout_name": "menu-breadcrumbs",
+      "title": "menu-breadcrumbs"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-lang-mobile.tpl",
+      "layout_name": "menu-lang-mobile",
+      "title": "menu-lang-mobile"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-lang.tpl",
+      "layout_name": "menu-lang",
+      "title": "menu-lang"
     },
     {
       "content_type": "component",
@@ -340,6 +109,146 @@
       "file": "components/menu-level-1-link.tpl",
       "layout_name": "menu-level-1-link",
       "title": "menu-level-1-link"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-1.tpl",
+      "layout_name": "menu-level-1",
+      "title": "menu-level-1"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-level-2.tpl",
+      "layout_name": "menu-level-2",
+      "title": "menu-level-2"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/menu-mobile.tpl",
+      "layout_name": "menu-mobile",
+      "title": "menu-mobile"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/mobile-menu-link.tpl",
+      "layout_name": "mobile-menu-link",
+      "title": "mobile-menu-link"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/news.tpl",
+      "layout_name": "news",
+      "title": "news"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/post-box.tpl",
+      "layout_name": "post-box",
+      "title": "post-box"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-list-item.tpl",
+      "layout_name": "product-list-item",
+      "title": "product-list-item"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/product-list-loop.tpl",
+      "layout_name": "product-list-loop",
+      "title": "product-list-loop"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/search.tpl",
+      "layout_name": "search",
+      "title": "search"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/sidebar.tpl",
+      "layout_name": "sidebar",
+      "title": "sidebar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/site-signout.tpl",
+      "layout_name": "site-signout",
+      "title": "site-signout"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-blog.tpl",
+      "layout_name": "tags-blog",
+      "title": "tags-blog"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-post.tpl",
+      "layout_name": "tags-post",
+      "title": "tags-post"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/tags-translations.tpl",
+      "layout_name": "tags-translations",
+      "title": "tags-translations"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-blog-article.tpl",
+      "layout_name": "template-cs-blog-article",
+      "title": "template-cs-blog-article"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-blog-list.tpl",
+      "layout_name": "template-cs-blog-list",
+      "title": "template-cs-blog-list"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-button.tpl",
+      "layout_name": "template-cs-button",
+      "title": "template-cs-button"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-content.tpl",
+      "layout_name": "template-cs-content",
+      "title": "template-cs-content"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-footer.tpl",
+      "layout_name": "template-cs-footer",
+      "title": "template-cs-footer"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-form.tpl",
+      "layout_name": "template-cs-form",
+      "title": "template-cs-form"
     },
     {
       "content_type": "component",
@@ -358,23 +267,114 @@
     {
       "content_type": "component",
       "component": true,
+      "file": "components/template-cs-main-styles.tpl",
+      "layout_name": "template-cs-main-styles",
+      "title": "template-cs-main-styles"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-cs-style-rules.tpl",
+      "layout_name": "template-cs-style-rules",
+      "title": "template-cs-style-rules"
+    },
+    {
+      "content_type": "component",
+      "component": true,
       "file": "components/template-cs-table.tpl",
       "layout_name": "template-cs-table",
       "title": "template-cs-table"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-meta.tpl",
+      "layout_name": "template-meta",
+      "title": "template-meta"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-svg-spritesheet.tpl",
+      "layout_name": "template-svg-spritesheet",
+      "title": "template-svg-spritesheet"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/template-variables.tpl",
+      "layout_name": "template-variables",
+      "title": "template-variables"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/topbar.tpl",
+      "layout_name": "topbar",
+      "title": "topbar"
+    },
+    {
+      "content_type": "component",
+      "component": true,
+      "file": "components/voog-ref.tpl",
+      "layout_name": "voog-ref",
+      "title": "voog-ref"
+    },
+    {
+      "content_type": "blog",
+      "component": false,
+      "file": "layouts/blog___news.tpl",
+      "layout_name": "blog",
+      "title": "Blog & news"
+    },
+    {
+      "content_type": "blog_article",
+      "component": false,
+      "file": "layouts/blog_article.tpl",
+      "layout_name": "blog_article",
+      "title": "Blog article"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/common_page.tpl",
+      "layout_name": "page_default",
+      "title": "Common page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/front_page.tpl",
+      "layout_name": "page_front",
+      "title": "Front page"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product.tpl",
+      "layout_name": "product",
+      "title": "Product"
+    },
+    {
+      "content_type": "page",
+      "component": false,
+      "file": "layouts/product_list.tpl",
+      "layout_name": "product_list",
+      "title": "Product list"
     }
   ],
   "assets": [
     {
       "content_type": "image/svg+xml",
-      "file": "assets/arr-top.svg",
+      "file": "assets/arr-bottom.svg",
       "kind": "assets",
-      "filename": "arr-top.svg"
+      "filename": "arr-bottom.svg"
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-tag-dark.svg",
+      "file": "assets/arr-top.svg",
       "kind": "assets",
-      "filename": "ico-tag-dark.svg"
+      "filename": "arr-top.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -384,9 +384,9 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/ico-search.svg",
+      "file": "assets/close-round.svg",
       "kind": "assets",
-      "filename": "ico-search.svg"
+      "filename": "close-round.svg"
     },
     {
       "content_type": "image/svg+xml",
@@ -396,33 +396,27 @@
     },
     {
       "content_type": "image/svg+xml",
-      "file": "assets/arr-bottom.svg",
+      "file": "assets/ico-search-dark.svg",
       "kind": "assets",
-      "filename": "arr-bottom.svg"
+      "filename": "ico-search-dark.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-search.svg",
+      "kind": "assets",
+      "filename": "ico-search.svg"
+    },
+    {
+      "content_type": "image/svg+xml",
+      "file": "assets/ico-tag-dark.svg",
+      "kind": "assets",
+      "filename": "ico-tag-dark.svg"
     },
     {
       "content_type": "image/svg+xml",
       "file": "assets/ico-tag.svg",
       "kind": "assets",
       "filename": "ico-tag.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/close-round.svg",
-      "kind": "assets",
-      "filename": "close-round.svg"
-    },
-    {
-      "content_type": "image/svg+xml",
-      "file": "assets/ico-search-dark.svg",
-      "kind": "assets",
-      "filename": "ico-search-dark.svg"
-    },
-    {
-      "content_type": "image/png",
-      "file": "images/ico-search.png",
-      "kind": "images",
-      "filename": "ico-search.png"
     },
     {
       "content_type": "image/png",
@@ -432,9 +426,9 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/ico-tag-dark.png",
+      "file": "images/close-round.png",
       "kind": "images",
-      "filename": "ico-tag-dark.png"
+      "filename": "close-round.png"
     },
     {
       "content_type": "image/png",
@@ -444,15 +438,21 @@
     },
     {
       "content_type": "image/png",
-      "file": "images/ico-tag.png",
+      "file": "images/ico-search.png",
       "kind": "images",
-      "filename": "ico-tag.png"
+      "filename": "ico-search.png"
     },
     {
       "content_type": "image/png",
-      "file": "images/close-round.png",
+      "file": "images/ico-tag-dark.png",
       "kind": "images",
-      "filename": "close-round.png"
+      "filename": "ico-tag-dark.png"
+    },
+    {
+      "content_type": "image/png",
+      "file": "images/ico-tag.png",
+      "kind": "images",
+      "filename": "ico-tag.png"
     },
     {
       "content_type": "image/jpeg",
@@ -462,15 +462,15 @@
     },
     {
       "content_type": "application/javascript",
-      "file": "javascripts/application.min.js",
-      "kind": "javascripts",
-      "filename": "application.min.js"
-    },
-    {
-      "content_type": "application/javascript",
       "file": "javascripts/application.js",
       "kind": "javascripts",
       "filename": "application.js"
+    },
+    {
+      "content_type": "application/javascript",
+      "file": "javascripts/application.min.js",
+      "kind": "javascripts",
+      "filename": "application.min.js"
     },
     {
       "content_type": "application/javascript",
@@ -480,15 +480,15 @@
     },
     {
       "content_type": "text/css",
-      "file": "stylesheets/main.min.css",
-      "kind": "stylesheets",
-      "filename": "main.min.css"
-    },
-    {
-      "content_type": "text/css",
       "file": "stylesheets/main.css",
       "kind": "stylesheets",
       "filename": "main.css"
+    },
+    {
+      "content_type": "text/css",
+      "file": "stylesheets/main.min.css",
+      "kind": "stylesheets",
+      "filename": "main.min.css"
     }
   ]
 }
