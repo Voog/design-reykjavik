@@ -57,7 +57,7 @@ body {
 // BOTH BACKGROUND COLORS
 .light-background,
 .dark-background {
-  .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button),
+  .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn),
   .voog-search-modal a:not(.noborder):not(.custom-btn) {
     border-bottom-color: var(--content-links-border-bottom-color);
     box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
@@ -429,8 +429,8 @@ main.content-formatted {
 }
 
 // CONTENT - links
-main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button),
-footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button) {
+main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn),
+footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
   border-bottom-style: var(--content-links-border-bottom);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
@@ -564,5 +564,30 @@ section.news {
   .comment-form,
   .comment-title {
     font-size: 1.1em;
+  }
+}
+
+// AUTO-GENERATED PRODUCT LAYOUT
+.item-page .product-content {
+  .product-price {
+    color: var(--content-area-product-price__color);
+    font-size: var(--content-area-product-price__font-size);
+    font-weight: var(--content-area-product-price__font-weight);
+    font-style: var(--content-area-product-price__font-style);
+    text-decoration: var(--content-area-product-price__text-decoration);
+  }
+  .product-description {
+    color: var(--content-area-product-description__color);
+    font-size: var(--content-area-product-description__font-size);
+    font-weight: var(--content-area-product-description__font-weight);
+    font-style: var(--content-area-product-description__font-style);
+    text-decoration: var(--content-area-product-description__text-decoration);
+  }
+  .content-item-title h1 {
+    color: var(--content-area-product-title__color);
+    font-size: var(--content-area-product-title__font-size);
+    font-weight: var(--content-area-product-title__font-weight);
+    font-style: var(--content-area-product-title__font-style);
+    text-decoration: var(--content-area-product-title__text-decoration);
   }
 }
