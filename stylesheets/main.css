@@ -510,9 +510,9 @@ a {
   text-decoration: none;
 }
 
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .light-background
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button),
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn), .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn), .light-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn),
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
   border-bottom: 1px solid #CBE9FE;
   border-bottom: 1px solid rgba(0, 150, 255, 0.2);
   -webkit-box-shadow: inset 0 -4px 0 #CBE9FE;
@@ -521,9 +521,9 @@ a {
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.2);
 }
 
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .light-background
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover,
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover {
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover, .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover, .light-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover,
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover {
   border-bottom: 1px solid #B0DEFD;
   border-bottom: 1px solid rgba(0, 150, 255, 0.3);
   -webkit-box-shadow: inset 0 -4px 0 #B0DEFD;
@@ -532,8 +532,8 @@ a {
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.3);
 }
 
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button), .dark-background
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn), .dark-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
   border-bottom: 1px solid #CBE9FE;
   border-bottom: 1px solid rgba(0, 150, 255, 0.4);
   -webkit-box-shadow: inset 0 -4px 0 #CBE9FE;
@@ -542,8 +542,8 @@ a {
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.4);
 }
 
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover, .dark-background
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover {
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover, .dark-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover {
   border-bottom: 1px solid #B0DEFD;
   border-bottom: 1px solid rgba(0, 150, 255, 0.6);
   -webkit-box-shadow: inset 0 -4px 0 #B0DEFD;
@@ -581,24 +581,24 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .content-formatted li:before,
 .light-background
 .content-formatted li:before,
-.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button),
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn),
 .light-background
-.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
   color: rgba(0, 0, 0, 0.8);
 }
 
 .dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background
 .content-formatted li:before, .dark-background
-.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button) {
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover,
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover {
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover,
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover {
   color: black;
 }
 
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):hover {
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover {
   color: white;
 }
 
@@ -1279,6 +1279,21 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   opacity: .7;
 }
 
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+  img {
+    image-rendering: -webkit-optimize-contrast !important;
+  }
+}
+
+/* Unset for Safari 11+ */
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) and (stroke-color: transparent) {
+    img {
+      image-rendering: unset !important;
+    }
+  }
+}
+
 /* COMMENTS */
 .comments {
   font-size: 0.9em;
@@ -1674,9 +1689,6 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   line-height: 1.7;
   border: 1px solid rgba(0, 0, 0, 0.3);
   border-radius: 2px;
-}
-
-.public .content-formatted .custom-btn {
   cursor: pointer;
 }
 
@@ -1685,7 +1697,7 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.public .content-formatted .custom-btn-disabled {
+.content-formatted .custom-btn-disabled {
   cursor: default;
 }
 
@@ -3571,12 +3583,12 @@ ul.menu .menu-item:before {
   height: auto;
 }
 
-.with-image .item-top .top-inner {
+.with-image .item-top .top-inner:not(.product-page) {
   background-color: rgba(0, 0, 0, 0.05);
   border: 0;
 }
 
-.dark-background .with-image .item-top .top-inner {
+.dark-background .with-image .item-top .top-inner:not(.product-page) {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -3588,6 +3600,13 @@ ul.menu .menu-item:before {
 
 .dark-background .without-image .item-top .top-inner {
   border-color: rgba(255, 255, 255, 0.1);
+}
+
+.item-top .top-inner.product-page > .item-image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .item-top .top-inner .item-placeholder {
@@ -3687,6 +3706,48 @@ ul.menu .menu-item:before {
   }
 }
 
+.product-content .edy-buy-button-container {
+  margin: 24px 0;
+}
+
+.product-content .without-image .item-top {
+  background-image: url("../assets/ico-placeholder.svg");
+  background-color: #F2F2F2;
+  background-size: 40px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.product-description {
+  margin-bottom: 24px;
+}
+
+.product-price {
+  margin-bottom: 24px;
+}
+
+.flex-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.flex-col .content-illustrations,
+.flex-col .content-body {
+  max-width: 100%;
+}
+
+.flex-col .content-body {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 104px;
+}
+
 .menu-horizontal {
   padding-left: 0 !important;
 }
@@ -3764,7 +3825,7 @@ ul.menu .menu-item:before {
 }
 
 @media screen and (min-width: 641px) {
-  .item-page .content-body {
+  .item-page .content-body:not(.product-content-right) {
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1;
