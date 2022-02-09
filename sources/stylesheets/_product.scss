@@ -341,6 +341,10 @@
 
 .product-price {
   margin-bottom: 24px;
+
+  &-divider {
+    margin: 0 4px;
+  }
 }
 
 .flex-col {

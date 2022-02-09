@@ -63,7 +63,7 @@
         </div>
 
         <div class="flex-col">
-          <div class="content-body product-content-right">
+          <div class="content-body js-product-content-right">
             <div class="content-item-title content-formatted" data-search-indexing-allowed="true">
               <h1>{%- editable product.name -%}</h1>
             </div>
