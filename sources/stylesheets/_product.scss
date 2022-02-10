@@ -79,6 +79,10 @@
   position: relative;
   @include aspect-ratio(1, 1);
 
+  .editmode & {
+    cursor: pointer;
+  }
+
   &:hover {
     .btn,
     .edy-img-drop-area-remove-image {
@@ -196,7 +200,7 @@
       // scss-lint:enable SelectorDepth
     }
 
-    .with-image & {
+    .with-image &:not(.product-page-image) {
       background-color: rgba($color-black, .05);
       border: 0;
 
@@ -213,6 +217,12 @@
       .dark-background & {
         border-color: rgba($color-white, .1);
       }
+    }
+
+    &.product-page-image > .item-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
     }
 
     .item-placeholder {
@@ -262,7 +272,7 @@
     color: inherit !important;
     box-shadow: none !important;
     border-bottom: none !important;
-    text-transform: none !important; 
+    text-transform: none !important;
 
     &:hover {
       opacity: .7;
@@ -312,5 +322,47 @@
         padding: 0 0 70px;
       }
     }
+  }
+}
+
+.product-content {
+  .edy-buy-button-container {
+    margin: 24px 0;
+  }
+
+  .without-image .item-top {
+    background-image: url('../assets/ico-placeholder.svg');
+    background-color: #F2F2F2;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.product-description {
+  margin-bottom: 24px;
+}
+
+.product-price {
+  margin-bottom: 24px;
+
+  &-divider {
+    margin: 0 4px;
+  }
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .content-illustrations,
+  .content-body {
+    max-width: 100%;
+  }
+
+  .content-body {
+    position: sticky;
+    top: 104px;
   }
 }

@@ -178,10 +178,7 @@
     line-height: 1.7;
     border: 1px solid $dark-tertiary;
     border-radius: 2px;
-
-    .public & {
-      cursor: pointer;
-    }
+    cursor: pointer;
 
     .dark-background & {
       color: $light-primary;
@@ -190,9 +187,7 @@
 
     &-disabled {
       // scss-lint:disable NestingDepth
-      .public & {
-        cursor: default;
-      }
+      cursor: default;
 
       .dark-background & {
         color: $disabled-dark;

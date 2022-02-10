@@ -6,6 +6,7 @@
 @import 'variables';
 @import 'colors';
 @import 'blog-and-article';
+@import 'browser-hacks';
 @import 'comments';
 @import 'content';
 @import 'content-formatted';
@@ -42,7 +43,7 @@
 }
 
 @media screen and (min-width: 641px) {
-  .item-page .content-body {
+  .item-page .content-body:not(.product-content-right) {
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
