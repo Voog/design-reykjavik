@@ -1195,6 +1195,8 @@ MMCQ = (function() {
       initFrontPage: initFrontPage,
       initItemsPage: initItemsPage,
       handleColorScheme: handleColorScheme,
+      handleProductPageContent: handleProductPageContent,
+      handleProductImageClick: handleProductImageClick,
       getCombinedLightness: getCombinedLightness,
       handleHeaderColorScheme: handleHeaderColorScheme,
       getPhotoByWidth: getPhotoByWidth,
@@ -1205,11 +1207,6 @@ MMCQ = (function() {
       bindContentItemImageCropToggle: bindContentItemImageCropToggle,
       bindSiteSearch: bindSiteSearch
     });
-
-    window.template = $.extend(window.template || {}, {
-      handleProductPageContent: handleProductPageContent,
-      handleProductImageClick: handleProductImageClick
-    })
 
     init();
   })(jQuery);
