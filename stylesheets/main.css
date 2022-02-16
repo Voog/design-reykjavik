@@ -3766,10 +3766,6 @@ ul.menu .menu-item:before {
   font-size: 12px;
 }
 
-.menu-horizontal .menu-separator:first-child {
-  display: none;
-}
-
 .menu-horizontal.menu-breadcrumbs {
   line-height: 16px;
   margin: 15px 0;
