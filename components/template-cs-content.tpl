@@ -391,6 +391,14 @@
   --content-links-hover-text-transform: none;
   /* VoogStyle
     "pathI18n": ["product", "title"],
+    "titleI18n": "alignment",
+    "editor": "listPicker",
+    "list": {{ base_alignment_set }},
+    "scope": "global"
+  */
+  --content-area-product-title__alignment: left;
+  /* VoogStyle
+    "pathI18n": ["product", "title"],
     "titleI18n": "size",
     "editor": "rangePicker",
     "min": 8,
