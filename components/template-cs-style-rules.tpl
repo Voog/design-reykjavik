@@ -30,18 +30,18 @@ body.dark-background {
   }
 }
 
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn),
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url),
 .light-background .voog-search-modal a:not(.noborder):not(.custom-btn),
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn),
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url),
 .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn) {
   border-bottom-color: var(--content-links-border-bottom-color);
   -webkit-box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
           box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
 }
 
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover,
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover,
 .light-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover,
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover,
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover,
 .dark-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover {
   border-bottom-color: var(--content-links-hover-border-bottom-color);
   -webkit-box-shadow: inset 0 -4px 0 0 var(--content-links-hover-border-bottom-color);
@@ -392,16 +392,16 @@ main.content-formatted .content-body {
   line-height: var(--content-line-height);
 }
 
-main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn),
-footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
+main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url),
+footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url) {
   border-bottom-style: var(--content-links-border-bottom);
   font-style: var(--content-links-font-style);
   font-weight: var(--content-links-font-weight);
   text-transform: var(--content-links-text-transform);
 }
 
-main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover,
-footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover {
+main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover,
+footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover {
   border-bottom-style: var(--content-links-hover-border-bottom);
   font-style: var(--content-links-hover-font-style);
   font-weight: var(--content-links-hover-font-weight);

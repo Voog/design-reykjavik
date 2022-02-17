@@ -510,9 +510,9 @@ a {
   text-decoration: none;
 }
 
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn), .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn), .light-background
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn),
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url), .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url), .light-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url),
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url) {
   border-bottom: 1px solid #CBE9FE;
   border-bottom: 1px solid rgba(0, 150, 255, 0.2);
   -webkit-box-shadow: inset 0 -4px 0 #CBE9FE;
@@ -521,9 +521,9 @@ a {
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.2);
 }
 
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover, .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover, .light-background
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover,
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover {
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover, .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover, .light-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover,
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover {
   border-bottom: 1px solid #B0DEFD;
   border-bottom: 1px solid rgba(0, 150, 255, 0.3);
   -webkit-box-shadow: inset 0 -4px 0 #B0DEFD;
@@ -532,8 +532,8 @@ a {
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.3);
 }
 
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn), .dark-background
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url), .dark-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url) {
   border-bottom: 1px solid #CBE9FE;
   border-bottom: 1px solid rgba(0, 150, 255, 0.4);
   -webkit-box-shadow: inset 0 -4px 0 #CBE9FE;
@@ -542,8 +542,8 @@ a {
           box-shadow: inset 0 -4px 0 rgba(0, 150, 255, 0.4);
 }
 
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover, .dark-background
-.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover {
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover, .dark-background
+.voog-search-modal a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover {
   border-bottom: 1px solid #B0DEFD;
   border-bottom: 1px solid rgba(0, 150, 255, 0.6);
   -webkit-box-shadow: inset 0 -4px 0 #B0DEFD;
@@ -581,24 +581,24 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .content-formatted li:before,
 .light-background
 .content-formatted li:before,
-.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn),
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url),
 .light-background
-.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url) {
   color: rgba(0, 0, 0, 0.8);
 }
 
 .dark-background .content-formatted h1, .dark-background .content-formatted h2, .dark-background .content-formatted h3, .dark-background .content-formatted h4, .dark-background .content-formatted h5, .dark-background .content-formatted h6, .dark-background
 .content-formatted li:before, .dark-background
-.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn) {
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url) {
   color: rgba(255, 255, 255, 0.8);
 }
 
-.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover,
-.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover {
+.content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover,
+.light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover {
   color: black;
 }
 
-.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):hover {
+.dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover {
   color: white;
 }
 
