@@ -148,7 +148,8 @@ body {
     }
 
     .custom-btn:not(.custom-btn-disabled),
-    .form_submit input {
+    .form_submit input,
+    .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
       background: linear-gradient(to bottom,rgba(255,255,255,.6) 0,rgba(255,255,255,.8) 100%);
       background-color: var(--button-background-color);
       color: var(--dark-secondary);
@@ -258,7 +259,8 @@ body {
     }
 
     .custom-btn:not(.custom-btn-disabled),
-    .form_submit input {
+    .form_submit input,
+    .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
       background: linear-gradient(to bottom,rgba(0,0,0,.6) 0,rgba(0,0,0,.8) 100%);
       background-color: var(--button-background-color);
       color: var(--light-secondary);
@@ -511,7 +513,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
 
 // BUTTON
 .content-formatted .custom-btn,
-.content-formatted .form_submit input {
+.content-formatted .form_submit input,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   font-size: var(--button-font-size);
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
@@ -521,7 +524,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
 }
 
 .content-formatted .custom-btn:not(.custom-btn-disabled),
-.content-formatted .form_submit input {
+.content-formatted .form_submit input,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   &:hover {
     opacity: .6;
   }
@@ -584,7 +588,7 @@ section.news {
     font-style: var(--content-area-product-description__font-style);
     text-decoration: var(--content-area-product-description__text-decoration);
   }
-  
+
   .content-item-title h1 {
     color: var(--content-area-product-title__color);
     font-size: var(--content-area-product-title__font-size);

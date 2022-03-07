@@ -1681,7 +1681,8 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   content: attr(data-title);
 }
 
-.content-formatted .custom-btn {
+.content-formatted .custom-btn,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   display: inline-block;
   padding: .12em 1.18em;
   color: rgba(0, 0, 0, 0.6);
@@ -1692,21 +1693,25 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   cursor: pointer;
 }
 
-.dark-background .content-formatted .custom-btn {
+.dark-background .content-formatted .custom-btn, .dark-background
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   color: rgba(255, 255, 255, 0.8);
   border-color: rgba(255, 255, 255, 0.3);
 }
 
-.content-formatted .custom-btn-disabled {
+.content-formatted .custom-btn-disabled,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn-disabled {
   cursor: default;
 }
 
-.dark-background .content-formatted .custom-btn-disabled {
+.dark-background .content-formatted .custom-btn-disabled, .dark-background
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn-disabled {
   color: #333;
   border-color: #333;
 }
 
-.light-background .content-formatted .custom-btn-disabled {
+.light-background .content-formatted .custom-btn-disabled, .light-background
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn-disabled {
   color: #dadada;
   border-color: #dadada;
 }

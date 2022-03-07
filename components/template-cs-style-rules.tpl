@@ -119,7 +119,8 @@ body.dark-background {
 }
 
 .light-background .content-formatted .custom-btn:not(.custom-btn-disabled),
-.light-background .content-formatted .form_submit input {
+.light-background .content-formatted .form_submit input,
+.light-background .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.8)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
@@ -222,7 +223,8 @@ body.dark-background {
 }
 
 .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled),
-.dark-background .content-formatted .form_submit input {
+.dark-background .content-formatted .form_submit input,
+.dark-background .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.8)));
   background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.8) 100%);
   background: -o-linear-gradient(top, rgba(0, 0, 0, 0.6) 0, rgba(0, 0, 0, 0.8) 100%);
@@ -472,7 +474,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
 }
 
 .content-formatted .custom-btn,
-.content-formatted .form_submit input {
+.content-formatted .form_submit input,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   font-size: var(--button-font-size);
   font-style: var(--button-font-style);
   font-weight: var(--button-font-weight);
@@ -483,7 +486,8 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
 }
 
 .content-formatted .custom-btn:not(.custom-btn-disabled):hover,
-.content-formatted .form_submit input:hover {
+.content-formatted .form_submit input:hover,
+.content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   opacity: .6;
 }
 
