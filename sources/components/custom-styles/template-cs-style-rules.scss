@@ -568,7 +568,7 @@ section.news {
 }
 
 // AUTO-GENERATED PRODUCT LAYOUT
-.item-page .product-content {
+.product-page {
   .product-price {
     color: var(--content-area-product-price__color);
     font-size: var(--content-area-product-price__font-size);
@@ -576,6 +576,7 @@ section.news {
     font-style: var(--content-area-product-price__font-style);
     text-decoration: var(--content-area-product-price__text-decoration);
   }
+
   .product-description {
     color: var(--content-area-product-description__color);
     font-size: var(--content-area-product-description__font-size);
@@ -583,6 +584,7 @@ section.news {
     font-style: var(--content-area-product-description__font-style);
     text-decoration: var(--content-area-product-description__text-decoration);
   }
+  
   .content-item-title h1 {
     color: var(--content-area-product-title__color);
     font-size: var(--content-area-product-title__font-size);
@@ -590,6 +592,14 @@ section.news {
     font-style: var(--content-area-product-title__font-style);
     text-decoration: var(--content-area-product-title__text-decoration);
     text-align: var(--content-area-product-title__alignment);
+  }
+  
+  &.dark-background {
+    .product-price,
+    .product-description,
+    .content-item-title h1 {
+      color: var(--light-primary);
+    }
   }
 }
 

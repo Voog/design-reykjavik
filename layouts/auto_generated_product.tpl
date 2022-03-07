@@ -23,7 +23,10 @@
 
 {%- assign gallery_content_size = gallery_content_html | strip | size -%}
 
-<body class="common-page item-page js-body global-background-color {{ background_type }}-background{% if site.search.enabled %} search-enabled{% endif %}" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
+<body class="common-page item-page product-page js-body global-background-color {{ background_type }}-background{% if site.search.enabled %} search-enabled{% endif %}" {% if background_color != '' or editmode %}{{ background_color_style }}{% endif %}>
+  {% if editmode %}<button class="bgpicker-toggle-button global-background-settings" style="display:none;" data-bg-color="{{ background_color }}"></button>{% endif %}
+  {% if background_color != '' or editmode %}<div class="background-color global-background-color"{{ background_color_style }}></div>{% endif %}
+
   {% include "header" %}
   {% include "template-svg-spritesheet" %}
 
@@ -108,6 +111,7 @@
 
   {% include "site-signout" %}
   {% include "javascripts" %}
+  {% include "edicy-tools" %}
 
   <script>
     if (site) {

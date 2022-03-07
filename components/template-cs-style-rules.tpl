@@ -522,7 +522,7 @@ section.news {
   font-size: 1.1em;
 }
 
-.item-page .product-content .product-price {
+.product-page .product-price {
   color: var(--content-area-product-price__color);
   font-size: var(--content-area-product-price__font-size);
   font-weight: var(--content-area-product-price__font-weight);
@@ -531,7 +531,7 @@ section.news {
           text-decoration: var(--content-area-product-price__text-decoration);
 }
 
-.item-page .product-content .product-description {
+.product-page .product-description {
   color: var(--content-area-product-description__color);
   font-size: var(--content-area-product-description__font-size);
   font-weight: var(--content-area-product-description__font-weight);
@@ -540,7 +540,7 @@ section.news {
           text-decoration: var(--content-area-product-description__text-decoration);
 }
 
-.item-page .product-content .content-item-title h1 {
+.product-page .content-item-title h1 {
   color: var(--content-area-product-title__color);
   font-size: var(--content-area-product-title__font-size);
   font-weight: var(--content-area-product-title__font-weight);
@@ -548,6 +548,12 @@ section.news {
   -webkit-text-decoration: var(--content-area-product-title__text-decoration);
           text-decoration: var(--content-area-product-title__text-decoration);
   text-align: var(--content-area-product-title__alignment);
+}
+
+.product-page.dark-background .product-price,
+.product-page.dark-background .product-description,
+.product-page.dark-background .content-item-title h1 {
+  color: var(--light-primary);
 }
 
 .dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-title,
