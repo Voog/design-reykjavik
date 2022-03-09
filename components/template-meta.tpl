@@ -10,14 +10,14 @@
   {%- assign og_obj = page -%}
 {%- endif -%}
 
-<meta property="og:type" content="{% if og_obj == article %}article{% else %}website{% endif %}">
+<meta property="og:type" content="{% if article %}article{% else %}website{% endif %}">
 <meta property="og:url" content="{{ site.url }}{{ og_obj.url | remove_first:"/" }}">
 <meta property="og:title" content="{% title %}">
 <meta property="og:site_name" content="{{ page.site_title | escape }}">
 
 {% comment %}Open Graph image{% endcomment %}
 {% if page.image == nil and page.data.cover_image %}
-  {% if page.data.cover_image_sizes != nil and page.data.cover_image_sizes != "" %}
+  {% if page.data.cover_image_sizes != blank %}
     {% for size in page.data.cover_image_sizes reversed %}
       {% if size.width <= 1280 %}
         {% assign og_image = size %}
@@ -30,8 +30,8 @@
   {% if og_obj.image? %}
     {% assign og_image = og_obj.image.for-width-1200 %}
   {% else %}
-    {% if og_obj == article %}
-      {% if article.data.cover_image_sizes != nil and article.data.cover_image_sizes != "" %}
+    {% if article %}
+      {% if article.data.cover_image_sizes != blank %}
         {% for size in article.data.cover_image_sizes reversed %}
           {% if size.width <= 1280 %}
             {% assign og_image = size %}
