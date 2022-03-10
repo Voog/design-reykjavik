@@ -1,3 +1,3 @@
 {
-  "version": "reykjavik-2.4.1"
+  "version": "reykjavik-2.4.2"
 }
