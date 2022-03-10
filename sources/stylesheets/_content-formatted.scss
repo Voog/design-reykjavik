@@ -170,7 +170,8 @@
     }
   }
 
-  .custom-btn {
+  .custom-btn,
+  .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
     display: inline-block;
     padding: .12em 1.18em;
     color: $dark-secondary;
@@ -249,5 +250,16 @@
 
   .edy-positionable-container-right {
     margin: 0 0 20px 30px;
+  }
+}
+
+.dark-background {
+  .edy-product-widget-filter-sort,
+  .edy-product-widget-filter-search-input {
+    opacity: .7;
+  }
+
+  .edy-product-widget-filter-label {
+    opacity: .5;
   }
 }

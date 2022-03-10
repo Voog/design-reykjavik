@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-{% include "template-variables" %}
+{%- include "template-settings" -%}
+{%- include "template-variables" -%}
 
 <html class="{% if editmode %}editmode{% else %}public{% endif %}" lang="{{ page.language_code }}">
 <head prefix="og: http://ogp.me/ns#">
@@ -23,7 +24,10 @@
 
 {%- assign gallery_content_size = gallery_content_html | strip | size -%}
 
-<body class="common-page item-page js-body global-background-color {{ background_type }}-background{% if site.search.enabled %} search-enabled{% endif %}" {% if background_color != '' or editmode %}{{ background_color_style}}{% endif %}>
+<body class="common-page item-page product-page js-body global-background-color {{ background_type }}-background{% if site.search.enabled %} search-enabled{% endif %}" {% if background_color != '' or editmode %}{{ background_color_style }}{% endif %}>
+  {% if editmode %}<button class="bgpicker-toggle-button global-background-settings" style="display:none;" data-bg-color="{{ background_color }}"></button>{% endif %}
+  {% if background_color != '' or editmode %}<div class="background-color global-background-color"{{ background_color_style }}></div>{% endif %}
+
   {% include "header" %}
   {% include "template-svg-spritesheet" %}
 
@@ -47,7 +51,7 @@
                 {%- if product.image != blank -%}
                   <div class="top-inner aspect-ratio-inner product-page-image">
                     {%- assign image_class = "item-image not-cropped" -%}
-                    {% image product.image target_width: "1280" class: image_class loading: "lazy" %}
+                    {% image product.image target_width: "600" class: image_class loading: "lazy" %}
                   </div>
                 {%- endif -%}
               </div>
@@ -108,6 +112,7 @@
 
   {% include "site-signout" %}
   {% include "javascripts" %}
+  {% include "edicy-tools" %}
 
   <script>
     if (site) {
