@@ -18,7 +18,11 @@
   <div class="container">
     <main class="content content-formatted" role="main">
       <section class="content-centered">
-        <section class="content-body content-formatted blog-intro-content" data-search-indexing-allowed="true" {{ edy_intro_edit_text }}>{% content %}</section>
+        <section class="content-body content-formatted blog-intro-content" data-search-indexing-allowed="true">
+          {%- assign content_default_title = "content" | lce -%}
+          {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+          {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+        </section>
         {% include "tags-blog" %}
 
         {% if editmode %}<div class="post-add-content">{% addbutton %}</div>{% endif %}

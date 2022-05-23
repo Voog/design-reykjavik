@@ -50,9 +50,20 @@
         <section class="post-content content-centered">
           <div class="post-excerpt content-formatted" {{ edy_intro_edit_text }}>{% editable article.excerpt %}</div>
           <div class="post-body content-formatted">{% editable article.body %}</div>
-          <div class="post-body content-formatted">{% content name="additional_body" bind="Article" %}</div>
+          <div class="post-body content-formatted">
+            {%- assign additional_content_title = "additional_content" | lce -%}
+            {%- assign additional_content_title_tooltip = "content_tooltip_additional_information" | lce -%}
+            {% content
+              name="additional_body"
+              bind="Article"
+              title=additional_content_title
+              title_tooltip=additional_content_title_tooltip
+            %}
+          </div>
 
-          {% content name="gallery" bind="Article" %}
+          {%- assign gallery_title = "gallery" | lce -%}
+          {%- assign gallery_title_tooltip = "content_tooltip_additional_images" | lce -%}
+          {% content name="gallery" bind="Article" title=gallery_title title_tooltip=gallery_title_tooltip %}
           {% include "tags-post" %}
         </section>
       </article>
