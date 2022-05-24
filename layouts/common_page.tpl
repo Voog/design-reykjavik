@@ -25,18 +25,32 @@
         {% endif %}
       {% endfor %}
 
+      {%- assign content_default_title = "content" | lce -%}
+      {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+
+      {%- assign bottom_content_title = "additional_content" | lce -%}
+      {%- assign bottom_content_title_tooltip = "content_tooltip_additional_information" | lce -%}
+
       {% if editmode or centered == false %}
         <aside class="content-left">
           {% include "sidebar" %}
         </aside>
         <article class="content-right">
-          <section class="content-header">{% content name="slogan" %}</section>
-          <section class="content-body" {{ edy_intro_edit_text }}>{% content %}</section>
+          <section class="content-header">
+            {% content name="slogan" title=content_default_title title_tooltip=content_default_title_tooltip %}
+          </section>
+          <section class="content-body">
+            {% content title=bottom_content_title title_tooltip=bottom_content_title_tooltip %}
+          </section>
         </article>
       {% else %}
         <article class="content-centered">
-          <section class="content-header">{% content name="slogan" %}</section>
-          <section class="content-body">{% content %}</section>
+          <section class="content-header">
+            {% content name="slogan" title=content_default_title title_tooltip=content_default_title_tooltip %}
+          </section>
+          <section class="content-body">
+            {% content title=bottom_content_title title_tooltip=bottom_content_title_tooltip %}
+          </section>
         </article>
       {% endif %}
     </main>

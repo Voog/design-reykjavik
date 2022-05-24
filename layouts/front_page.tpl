@@ -18,9 +18,13 @@
     {% if editmode %}<button class="bgpicker-toggle-button global-background-settings" style="display:none;" data-bg-color="{{ background_color }}"></button>{% endif %}
 
     <main class="content content-formatted" role="main">
+      {%- assign content_default_title = "content" | lce -%}
+      {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
 
       <aside class="content-left">
-        <section class="content-header">{% content name="slogan" %}</section>
+        <section class="content-header">
+          {% content name="slogan" title=content_default_title title_tooltip=content_default_title_tooltip %}
+        </section>
       </aside>
 
       <article class="content-right">
@@ -29,7 +33,9 @@
         {% endif %}
         {% if cover_image != '' or editmode %}<div class="background-image cover frontpage-cover-image hidden"></div>{% endif %}
         {% if cover_color != '' or editmode %}<div class="background-color cover frontpage-cover-color hidden"{{ cover_color_style }}></div>{% endif %}
-        <section class="content-body global-background-color"{{ background_color_style }} {{ edy_intro_edit_text }}>{% content %}</section>
+        <section class="content-body global-background-color"{{ background_color_style }}>
+          {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+        </section>
       </article>
       {% if site.latest_1_articles.size > 0 %}
       <aside class="content-left last">

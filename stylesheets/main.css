@@ -3699,6 +3699,10 @@ ul.menu .menu-item:before {
   text-align: left;
 }
 
+.item-page .product-cross-page-info {
+  margin-bottom: 32px;
+}
+
 @media screen and (max-width: 500px), screen and (max-height: 325px) {
   .item-page .sub-menu,
   .item-list-page .sub-menu {

@@ -18,7 +18,11 @@
   <div class="container">
 
     <main class="content content-formatted" role="main">
-      <div class="content-formatted intro-content" data-search-indexing-allowed="true">{% content %}</div>
+      <div class="content-formatted intro-content" data-search-indexing-allowed="true">
+        {%- assign content_default_title = "content" | lce -%}
+        {%- assign content_default_title_tooltip = "content_tooltip_specific_page" | lce -%}
+        {% content title=content_default_title title_tooltip=content_default_title_tooltip %}
+      </div>
 
       {% include "menu-breadcrumbs" %}
       <section class="content-item-boxes">
