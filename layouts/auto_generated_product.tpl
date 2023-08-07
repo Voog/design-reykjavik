@@ -6,6 +6,8 @@
 <head prefix="og: http://ogp.me/ns#">
   {% include "edicy-tools-variables" %}
   {% include "html-head" product_page: true %}
+
+  {% sd_product %}
 </head>
 
 {%- capture bottom_content_html -%}
