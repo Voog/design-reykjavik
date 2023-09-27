@@ -3615,8 +3615,13 @@ ul.menu .menu-item:before {
 .product-price {
   margin-bottom: 24px;
 }
-.product-price-divider {
-  margin: 0 4px;
+.product-price-original {
+  padding-right: 4px;
+  opacity: 0.4;
+  display: inline-block;
+}
+.product-price-final {
+  display: inline-block;
 }
 
 .flex-col {
