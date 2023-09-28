@@ -290,20 +290,20 @@
   */
   --content-line-height: 1.45;
   /* VoogStyle
-    "pathI18n": ["content", "link", "normal"],
-    "titleI18n": "font_weight",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "600",
-      "off": "400"
-    },
-    "icon": "bold",
-    "scope": "global",
-    "boundVariables": [
-      "--content-links-hover-font-weight"
-    ]
-  */
+      "pathI18n": ["content", "link", "normal"],
+      "titleI18n": "font_weight",
+      "type": "button",
+      "editor": "toggleIcon",
+      "states": {
+        "on": "600",
+        "off": "400"
+      },
+      "icon": "bold",
+      "scope": "global",
+      "boundVariables": [
+        "--content-links-hover-font-weight"
+      ]
+    */
   --content-links-font-weight: 400;
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],
@@ -364,17 +364,17 @@
   */
   --content-links-hover-border-bottom-color: rgba(0, 150, 255, 0.3);
   /* VoogStyle
-    "pathI18n": ["content", "link", "normal"],
-    "titleI18n": "text_transform",
-    "type": "button",
-    "editor": "toggleIcon",
-    "states": {
-      "on": "uppercase",
-      "off": "none"
-    },
-    "icon": "uppercase",
-    "scope": "global"
-  */
+      "pathI18n": ["content", "link", "normal"],
+      "titleI18n": "text_transform",
+      "type": "button",
+      "editor": "toggleIcon",
+      "states": {
+        "on": "uppercase",
+        "off": "none"
+      },
+      "icon": "uppercase",
+      "scope": "global"
+    */
   --content-links-text-transform: none;
   /* VoogStyle
     "pathI18n": ["content", "link", "hover"],

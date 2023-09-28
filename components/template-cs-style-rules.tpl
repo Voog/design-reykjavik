@@ -1,11 +1,9 @@
 body {
   font-family: var(--font);
 }
-
 body.light-background {
   color: var(--dark-primary);
 }
-
 body.dark-background {
   color: var(--light-primary);
 }
@@ -29,7 +27,6 @@ body.dark-background {
     max-width: 900px;
   }
 }
-
 .light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url),
 .light-background .voog-search-modal a:not(.noborder):not(.custom-btn),
 .dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url),
@@ -38,7 +35,6 @@ body.dark-background {
   -webkit-box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
           box-shadow: inset 0 -4px 0 var(--content-links-border-bottom-color);
 }
-
 .light-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover,
 .light-background .voog-search-modal a:not(.noborder):not(.custom-btn):hover,
 .dark-background .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover,
@@ -52,41 +48,32 @@ body.dark-background {
 .light-background .header .header-title a {
   color: var(--dark-primary);
 }
-
 .light-background .menu-main .menu .menu-link {
   color: var(--dark-primary);
 }
-
 .light-background .menu-main .menu .menu-link:hover {
   color: var(--dark-primary);
 }
-
 .light-background .menu-main .menu .menu-link.active, .light-background .menu-main .menu .menu-link.active:hover {
   color: var(--dark-primary);
 }
-
 .light-background .header .langmenu .langmenu-content {
   color: var(--dark-secondary);
 }
-
 .light-background .content-left .menu .menu-link.active {
   color: var(--dark-primary);
 }
-
 .light-background .post .post-excerpt,
 .light-background .post .post-body {
   color: var(--dark-secondary);
 }
-
 .light-background .post .post-date {
   color: var(--dark-primary);
-  opacity: .4;
+  opacity: 0.4;
 }
-
 .light-background .comments .comment-body {
   color: var(--dark-primary);
 }
-
 .light-background .content-formatted,
 .light-background .content-formatted b,
 .light-background .content-formatted strong,
@@ -100,24 +87,20 @@ body.dark-background {
 .light-background .content-formatted a:not(.noborder):not(.custom-btn) {
   color: var(--dark-primary);
 }
-
 .light-background .content-formatted a:not(.noborder):not(.custom-btn):hover {
   color: var(--dark-primary);
-  opacity: .6;
+  opacity: 0.6;
 }
-
 .light-background .content-formatted table tr {
   border-top-color: var(--dark-secondary);
   border-top-style: var(--table-border-style);
 }
-
 .light-background .content-formatted .form_field_textfield,
 .light-background .content-formatted .form_field_textarea,
 .light-background .content-formatted .form_field_select,
 .light-background .content-formatted .form_field_file {
   color: var(--dark-primary);
 }
-
 .light-background .content-formatted .custom-btn:not(.custom-btn-disabled),
 .light-background .content-formatted .form_submit input,
 .light-background .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
@@ -147,7 +130,7 @@ body.dark-background {
 .light-background .news .author,
 .light-background .comments .comment-date {
   color: var(--dark-primary);
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .light-background .voog-reference a, .voog-reference a {
@@ -158,41 +141,32 @@ body.dark-background {
 .dark-background .header .header-title a {
   color: var(--light-primary);
 }
-
 .dark-background .menu-main .menu .menu-link {
   color: var(--light-primary);
 }
-
 .dark-background .menu-main .menu .menu-link:hover {
   color: var(--light-primary);
 }
-
 .dark-background .menu-main .menu .menu-link.active, .dark-background .menu-main .menu .menu-link.active:hover {
   color: var(--light-primary);
 }
-
 .dark-background .header .langmenu .langmenu-content {
   color: var(--light-secondary);
 }
-
 .dark-background .content-left .menu .menu-link.active {
   color: var(--light-primary);
 }
-
 .dark-background .post .post-excerpt,
 .dark-background .post .post-body {
   color: var(--light-secondary);
 }
-
 .dark-background .post .post-date {
   color: var(--light-primary);
-  opacity: .4;
+  opacity: 0.4;
 }
-
 .dark-background .comments .comment-body {
   color: var(--light-primary);
 }
-
 .dark-background .content-formatted,
 .dark-background .content-formatted b,
 .dark-background .content-formatted strong,
@@ -206,22 +180,18 @@ body.dark-background {
 .dark-background .content-formatted a:not(.noborder):not(.custom-btn) {
   color: var(--light-primary);
 }
-
 .dark-background .content-formatted a:not(.noborder):not(.custom-btn):hover {
   color: var(--light-primary);
-  opacity: .6;
+  opacity: 0.6;
 }
-
 .dark-background .content-formatted table tr {
   border-top-color: var(--light-secondary);
   border-top-style: var(--table-border-style);
 }
-
 .dark-background .content-formatted .form_field_textfield,
 .dark-background .content-formatted .form_field_textarea {
   color: var(--dark-primary);
 }
-
 .dark-background .content-formatted .custom-btn:not(.custom-btn-disabled),
 .dark-background .content-formatted .form_submit input,
 .dark-background .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
@@ -251,7 +221,7 @@ body.dark-background {
 .dark-background .news .author,
 .dark-background .comments .comment-date {
   color: var(--light-primary);
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .dark-background .voog-reference a, .voog-reference a {
@@ -278,16 +248,14 @@ body.dark-background {
           text-decoration: var(--header-mainmenu-text-decoration);
   text-transform: var(--header-mainmenu-text-transform);
 }
-
 .menu-main .menu .menu-link:hover {
   font-style: var(--header-mainmenu-hover-font-style);
   font-weight: var(--header-mainmenu-hover-font-weight);
-  opacity: .6;
+  opacity: 0.6;
   -webkit-text-decoration: var(--header-mainmenu-hover-text-decoration);
           text-decoration: var(--header-mainmenu-hover-text-decoration);
   text-transform: var(--header-mainmenu-hover-text-transform);
 }
-
 .menu-main .menu .menu-link.active, .menu-main .menu .menu-link.active:hover {
   font-style: var(--header-mainmenu-active-font-style);
   font-weight: var(--header-mainmenu-active-font-weight);
@@ -311,10 +279,7 @@ main.content-formatted h1 a:hover,
           text-decoration: var(--h1-text-decoration);
   text-transform: var(--h1-text-transform);
 }
-
-main.content-formatted h2,
-main.content-formatted h2 a,
-main.content-formatted h2 a:hover,
+main.content-formatted h2, main.content-formatted h2 a, main.content-formatted h2 a:hover,
 .item-page .content-header .content-item-title h2,
 .item-page .content-header .content-item-title h2 a,
 .item-page .content-header .content-item-title h2 a:hover {
@@ -327,7 +292,6 @@ main.content-formatted h2 a:hover,
           text-decoration: var(--h2-text-decoration);
   text-transform: var(--h2-text-transform);
 }
-
 main.content-formatted h3,
 main.content-formatted h3 a,
 main.content-formatted h3 a:hover,
@@ -367,7 +331,6 @@ main.content-formatted h3 a:hover,
           text-decoration: var(--content-submenu-text-decoration);
   text-transform: var(--content-submenu-text-transform);
 }
-
 #sidebar .menu .menu-item a:hover {
   font-style: var(--content-submenu-hover-font-style);
   font-weight: var(--content-submenu-hover-font-weight);
@@ -375,7 +338,6 @@ main.content-formatted h3 a:hover,
           text-decoration: var(--content-submenu-hover-text-decoration);
   text-transform: var(--content-submenu-hover-text-transform);
 }
-
 #sidebar .menu .menu-item a.menu-link.active, #sidebar .menu .menu-item a.menu-link.active:hover, #sidebar .menu .menu-item a.active, #sidebar .menu .menu-item a.active:hover {
   font-style: var(--content-submenu-active-font-style);
   font-weight: var(--content-submenu-active-font-weight);
@@ -401,7 +363,6 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
   font-weight: var(--content-links-font-weight);
   text-transform: var(--content-links-text-transform);
 }
-
 main.content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover,
 footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-content-social-button):not(.edy-product-widget-item-btn):not(.edy-product-widget-item-link):not(.edy-product-widget-item-url):hover {
   border-bottom-style: var(--content-links-hover-border-bottom);
@@ -449,7 +410,6 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
           text-decoration: var(--blog-article-title-text-decoration);
   text-transform: var(--blog-article-title-text-transform);
 }
-
 .post-page .header-wrapper .post-header .post-meta {
   font-size: var(--blog-article-date-font-size);
   font-style: var(--blog-article-date-font-style);
@@ -464,11 +424,9 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
   font-size: var(--footer-font-size);
   line-height: var(--footer-line-height);
 }
-
 .light-background .footer .content-formatted {
   color: var(--dark-primary);
 }
-
 .dark-background .footer .content-formatted {
   color: var(--light-primary);
 }
@@ -488,7 +446,7 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
 .content-formatted .custom-btn:not(.custom-btn-disabled):hover,
 .content-formatted .form_submit input:hover,
 .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
-  opacity: .6;
+  opacity: 0.6;
 }
 
 .content-formatted table td {
@@ -520,7 +478,6 @@ section.news {
   font-size: var(--content-font-size);
   line-height: var(--content-line-height);
 }
-
 .comments .comment-form,
 .comments .comment-title {
   font-size: 1.1em;
@@ -534,7 +491,6 @@ section.news {
   -webkit-text-decoration: var(--content-area-product-price__text-decoration);
           text-decoration: var(--content-area-product-price__text-decoration);
 }
-
 .product-page .product-description {
   color: var(--content-area-product-description__color);
   font-size: var(--content-area-product-description__font-size);
@@ -543,7 +499,6 @@ section.news {
   -webkit-text-decoration: var(--content-area-product-description__text-decoration);
           text-decoration: var(--content-area-product-description__text-decoration);
 }
-
 .product-page .content-item-title h1 {
   color: var(--content-area-product-title__color);
   font-size: var(--content-area-product-title__font-size);
@@ -553,7 +508,6 @@ section.news {
           text-decoration: var(--content-area-product-title__text-decoration);
   text-align: var(--content-area-product-title__alignment);
 }
-
 .product-page.dark-background .product-price,
 .product-page.dark-background .product-description,
 .product-page.dark-background .content-item-title h1 {
@@ -564,23 +518,19 @@ section.news {
 .dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-link {
   color: var(--light-primary);
 }
-
 .dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-price,
 .dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-description {
   color: var(--light-primary);
-  opacity: .7;
+  opacity: 0.7;
 }
-
 .dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-top-outer .edy-product-widget-item-top.edy-product-widget-item-without-image {
   border: 1px solid var(--light-primary);
-  opacity: .5;
+  opacity: 0.5;
 }
-
 .dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-details-flex-wrap .edy-product-widget-item-out-of-stock,
 .dark-background .edy-product-widget-grid .edy-product-widget-item .edy-product-widget-item-details-flex-wrap .edy-product-widget-item-btn {
   color: var(--light-primary);
 }
-
 .dark-background .edy-product-widget-grid .edy-product-widget-item:hover .edy-product-widget-item-price {
   opacity: 0;
 }
@@ -588,23 +538,19 @@ section.news {
 .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-header .edy-product-widget-item-title .edy-product-widget-item-link {
   color: var(--light-primary);
 }
-
 .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-header .edy-product-widget-item-price {
   color: var(--light-primary);
-  opacity: .7;
+  opacity: 0.7;
 }
-
 .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-header .edy-product-widget-item-out-of-stock {
   color: var(--light-primary);
 }
-
 .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-description {
   color: var(--light-primary);
 }
-
 .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-without-image {
   border: 1px solid var(--light-primary);
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .edy-product-widget-filter-sort option {
