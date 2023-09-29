@@ -607,18 +607,31 @@ section.news {
   }
 }
 
+.light-background {
+  .edy-buy-button-price-container .edy-buy-button-price-original,
+  .edy-buy-button-price-container .edy-buy-button-effective-price {
+    color: var(--dark-primary);
+  }
+}
+
+.edy-product-widget-item-price-original, 
+.edy-buy-button-price-container .edy-buy-button-price-original {
+  opacity: .7;
+}
+
 .dark-background {
+  .edy-buy-button-price-container .edy-buy-button-price-original,
+  .edy-buy-button-price-container .edy-buy-button-effective-price,
+  .edy-product-widget-item-price-original,
+  .edy-product-widget-item-price-final {
+    color: var(--light-primary);
+  }
+
   .edy-product-widget-grid .edy-product-widget-item {
     .edy-product-widget-item-details-wrap {
       .edy-product-widget-item-title,
       .edy-product-widget-item-link {
         color: var(--light-primary);
-      }
-
-      .edy-product-widget-item-price,
-      .edy-product-widget-item-description {
-        color: var(--light-primary);
-        opacity: .7;
       }
     }
 
