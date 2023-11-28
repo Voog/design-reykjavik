@@ -618,16 +618,6 @@
       }
     };
 
-    // Opens product admin view on product image click
-
-    var handleProductImageClick = function(product_id) {
-      if (editmode()) {
-        $('.product-content .product-image').click(function() {
-          window.open('/admin/ecommerce/products/' + product_id, '_blank').focus();
-        });
-      }
-    };
-
     var init = function() {
       // ADD SITE WIDE FUNCTIONS HERE
       handleLanguageSwitch();
@@ -655,7 +645,6 @@
       initItemsPage: initItemsPage,
       handleColorScheme: handleColorScheme,
       handleProductPageContent: handleProductPageContent,
-      handleProductImageClick: handleProductImageClick,
       getCombinedLightness: getCombinedLightness,
       handleHeaderColorScheme: handleHeaderColorScheme,
       getPhotoByWidth: getPhotoByWidth,
