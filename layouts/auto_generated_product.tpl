@@ -50,21 +50,18 @@
         <div class="flex-col">
           <div class="content-illustrations">
 
-            {%- if product.image != blank %}
-              {% assign item_image_state = "with-image" %}
+            {%- if product.photos != blank %}
+              {% assign item_image_state = "with-images" %}
             {% else %}
-              {% assign item_image_state = "without-image" %}
+              {% assign item_image_state = "without-images" %}
             {% endif -%}
 
-            <div class="content-item-box {{ item_image_state }} js-content-item-box" href="{{ page.url }}">
-              <div class="item-top product-image">
-                {%- if product.image != blank -%}
-                  <div class="top-inner aspect-ratio-inner product-page-image">
-                    {%- assign image_class = "item-image not-cropped" -%}
-                    {% image product.image target_width: "600" class: image_class loading: "lazy" %}
-                  </div>
-                {%- endif -%}
-              </div>
+            <div class="content-item-box {{ item_image_state }} js-content-item-box">
+              {%- if product.photos == blank -%}
+                <div class="item-top without-pointer"></div>
+              {%- else -%}
+                {% gallery product layout="product_slider" %}
+              {%- endif -%}
             </div>
 
             {%- if gallery_content_size > 0 or editmode -%}
@@ -168,9 +165,6 @@
   <script>
     if (site) {
       site.handleProductPageContent();
-      {%- if product and editmode %}
-        site.handleProductImageClick({{ product.id }});
-      {% endif -%}
     }
   </script>
 </body>
