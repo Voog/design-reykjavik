@@ -101,9 +101,10 @@ body.dark-background {
 .light-background .content-formatted .form_field_file {
   color: var(--dark-primary);
 }
-.light-background .content-formatted .custom-btn:not(.custom-btn-disabled),
-.light-background .content-formatted .form_submit input,
-.light-background .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
+.light-background .custom-btn:not(.custom-btn-disabled),
+.light-background .edy-product-widget-modal .edy-product-widget-modal-btn-wrapper .custom-btn.custom-btn:not(.custom-btn-disabled),
+.light-background .form_submit input,
+.light-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0.6)), to(rgba(255, 255, 255, 0.8)));
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
   background: -o-linear-gradient(top, rgba(255, 255, 255, 0.6) 0, rgba(255, 255, 255, 0.8) 100%);
@@ -444,6 +445,7 @@ footer .content-formatted a:not(.noborder):not(.custom-btn):not(.link):not(.edy-
 }
 
 .content-formatted .custom-btn:not(.custom-btn-disabled):hover,
+.edy-product-widget-modal .edy-product-widget-modal-btn-wrapper .custom-btn.custom-btn:not(.custom-btn-disabled):hover,
 .content-formatted .form_submit input:hover,
 .content-formatted .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-btn-wrap .edy-product-widget-item-btn:hover {
   opacity: 0.6;
@@ -544,6 +546,12 @@ section.news {
 }
 .dark-background .edy-product-widget-grid .edy-product-widget-item:hover .edy-product-widget-item-price {
   opacity: 0;
+}
+
+.edy-product-widget-modal .edy-product-widget-modal-title,
+.edy-product-widget-modal .edy-buy-button-price-container .edy-buy-button-price-original,
+.edy-product-widget-modal .edy-buy-button-price-container .edy-buy-button-effective-price {
+  color: var(--primary-color);
 }
 
 .dark-background .edy-product-widget-list .edy-product-widget-item-wrap .edy-product-widget-item .edy-product-widget-item-details-wrap .edy-product-widget-item-header .edy-product-widget-item-title .edy-product-widget-item-link {

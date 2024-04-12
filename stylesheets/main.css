@@ -1885,11 +1885,13 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
 .content-formatted .edy-buy-button-container .form_field {
   padding-top: 15px;
 }
-.content-formatted .edy-buy-button-variants .form_field {
+
+.content-formatted .edy-buy-button-variants .form_field, .edy-product-widget-modal-container .edy-buy-button-variants .form_field {
   padding-top: 5px;
   padding-bottom: 5px;
 }
-.content-formatted .edy-buy-button-variants .form_field_select {
+.content-formatted .edy-buy-button-variants .form_field_select, .edy-product-widget-modal-container .edy-buy-button-variants .form_field_select {
+  background: none;
   width: initial;
   background-color: rgb(255, 255, 255);
   padding: 6px 25px 6px 7px;
@@ -1902,6 +1904,20 @@ nav a, .menu a, .header a, .edy-cbtn, .edy-btn-cm-round, .edys-gallery-item, .ed
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
+  appearance: none;
+  border-radius: 0;
+  background-image: url("../assets/chevron-down-black.svg");
+  background-repeat: no-repeat;
+}
+.edy-product-widget-modal-container .edy-buy-button-variants {
+  padding-bottom: 24px;
+}
+.edy-product-widget-modal-container .edy-buy-button-variants .form_field:first-child {
+  padding-top: 0px;
+}
+.edy-product-widget-modal-container .edy-buy-button-variants .form_field:last-child {
+  padding-bottom: 0px;
 }
 
 /* FOOTER */
