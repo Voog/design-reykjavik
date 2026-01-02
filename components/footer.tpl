@@ -11,3 +11,5 @@
     {% endif %}
   </div>
 </footer>
+
+{% include "voog-ref" %}
