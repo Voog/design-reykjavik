@@ -45,7 +45,6 @@
 
     </main>
     {% include "footer" %}
-    {% include "voog-ref" %}
   </div>
   {% include "site-signout" %}
   {% include "javascripts" %}
