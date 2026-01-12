@@ -12,8 +12,10 @@
     }
     // sass-lint:enable class-name-format
   }
+}
 
-  .edy-buy-button-variants {
+.edy-buy-button-variants {
+  .content-formatted &, .edy-product-widget-modal-container & {
     // sass-lint:disable class-name-format
     .form_field {
       padding-top: 5px;
@@ -21,6 +23,7 @@
     }
 
     .form_field_select {
+      background: none;
       width: initial;
       background-color: $color-white;
       padding: 6px 25px 6px 7px;
@@ -33,6 +36,27 @@
       -webkit-appearance: none;
       -moz-appearance: none;
       appearance: none;
+      outline: none;
+      appearance: none;
+      border-radius: 0;
+      background-image: url('../assets/chevron-down-black.svg');
+      background-repeat: no-repeat;
     }
   }
+
+  .edy-product-widget-modal-container & {
+    padding-bottom: 24px;
+
+    .form_field {
+      &:first-child {
+        padding-top: 0px;
+      }
+
+      &:last-child {
+        padding-bottom: 0px;
+      }
+    }
+  }
+
+    // sass-lint:enable class-name-format
 }
